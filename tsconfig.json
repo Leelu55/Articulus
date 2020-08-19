@@ -61,5 +61,8 @@
   },
   "exclude": [
     "node_modules", "babel.config.js", "metro.config.js", "jest.config.js"
+  ],
+  "include": [
+    "type_defs/decs.d.ts"
   ]
 }
