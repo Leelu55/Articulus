@@ -9,17 +9,9 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  StatusBar,
-} from 'react-native';
+import {SafeAreaView, StyleSheet, ScrollView, StatusBar} from 'react-native';
 
-import {
-  Header,
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Word from './components/Word';
 
 declare const global: {HermesInternal: null | {}};
@@ -32,7 +24,7 @@ const App = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-            <Word />
+          <Word />
         </ScrollView>
       </SafeAreaView>
     </>
@@ -42,7 +34,7 @@ const App = () => {
 const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
-  }
+  },
 });
 
 export default App;
