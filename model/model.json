@@ -1,0 +1,54 @@
+{
+  "words":[
+    {
+      "value": "Haus", 
+      "slot": 0,
+      "article": "das"
+    },
+    {
+      "value": "Baum", 
+      "slot": 0,
+      "article": "der"
+    },
+    {
+      "value": "Hund", 
+      "slot": 0,
+      "article": "der"
+    },
+    {
+      "value": "Katze", 
+      "slot": 0,
+      "article": "die"
+    },
+    {
+      "value": "Tasse", 
+      "slot": 0,
+      "article": "die"
+    },
+    {
+      "value": "Sonne", 
+      "slot": 0,
+      "article": "die"
+    },
+    {
+      "value": "Mensch", 
+      "slot": 0,
+      "article": "der"
+    },
+    {
+      "value": "Wasser", 
+      "slot": 0,
+      "article": "das"
+    },
+    {
+      "value": "Tisch", 
+      "slot": 0,
+      "article": "der"
+    },
+    {
+      "value": "Eule", 
+      "slot": 0,
+      "article": "die"
+    }
+  ]
+}
