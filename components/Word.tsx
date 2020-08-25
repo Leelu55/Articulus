@@ -1,66 +1,69 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import React, {useState, useEffect, useRef} from 'react';
+import {View, Text, Button} from 'react-native';
 
 import model from '../model/model.json';
-import Tts from 'react-native-tts';
-import Voice from '@react-native-community/voice';
+import ttsLibrary from 'react-native-tts';
+import voiceLibrary from '@react-native-community/voice';
 
-const MAX_LENGTH = 5;
+export default function Word() {
+  const [wordIndex, setWordIndex] = useState(0);
 
-export default class Word extends React.Component {
-  state = {wordIndex: 0};
-  voiceStart = () => Voice.start('de-DE');
+  const wordIndexRef = useRef<number>();
+  wordIndexRef.current = wordIndex;
 
-  speakWord = () => Tts.speak(model.words[this.state.wordIndex].value);
-  repeatWord = (prefixText) =>
-    Tts.speak(prefixText + ',,' + model.words[this.state.wordIndex].value);
+  const value = model.words[wordIndex].value;
 
-  checkArticle = (voiceResultArray) => {
-    const newArray = voiceResultArray
-      .filter(
-        (resultString: string) => resultString.split(' ').length <= MAX_LENGTH,
-      )
-      .map((resultString: string) => {
-        return resultString;
+  useEffect(() => {
+    speakWord(value);
+  }, [value]);
+
+  useEffect(() => {
+    const voiceStart = () => voiceLibrary.start('de-DE');
+
+    ttsLibrary.addEventListener('tts-finish', voiceStart);
+
+    voiceLibrary.onSpeechResults = (event) => {
+      console.error({
+        event,
+        wordIndexRefCurrent: wordIndexRef.current,
+        modelWordsLength: model.words.length,
       });
-    console.log(newArray);
-  };
 
-  componentDidMount() {
-    // set callback handlers
-    Tts.addEventListener('tts-finish', this.voiceStart);
-    Voice.onSpeechResults = (event) => {
-      console.log(event.value);
-      if (this.state.wordIndex < model.words.length - 1) {
-        this.setState({wordIndex: this.state.wordIndex + 1});
+      if (wordIndexRef.current < model.words.length - 1) {
+        setWordIndex((wi) => wi + 1);
       }
     };
 
-    Voice.onSpeechError = () => {
-      this.repeatWord(
-        'Ich habe dich nicht verstanden. Bitte wiederhole den Artikel für das Wort!',
+    voiceLibrary.onSpeechError = () => {
+      repeatWord(
+        'Bitte wiederhole den Artikel für',
+        model.words[wordIndexRef.current].value,
       );
     };
 
-    // speak first word
-    this.speakWord();
-  }
+    return function cleanup() {
+      ttsLibrary.removeEventListener('tts-finish', voiceStart);
+      voiceLibrary.onSpeechResults = undefined;
+      voiceLibrary.onSpeechError = undefined;
+    };
+  }, []);
 
-  componentDidUpdate() {
-    this.speakWord();
-  }
+  const speakWord = (wordValue) => ttsLibrary.speak(wordValue);
+  const repeatWord = (prefixText, wordValue) => {
+    ttsLibrary.speak(prefixText + ',,' + wordValue);
+  };
 
-  componentWillUnmount() {
-    Tts.removeEventListener('tts-finish', this.voiceStart);
-    Voice.onSpeechResults = undefined;
-  }
-
-  render() {
-    return (
-      <View>
-        <Text>Word Component</Text>
-        <Text>{model.words[this.state.wordIndex].value}</Text>
-      </View>
-    );
-  }
+  console.log('render Word', value);
+  return (
+    <View>
+      <Text>Word Component</Text>
+      <Text>{value}</Text>
+      <Button
+        title="next"
+        onPress={() => {
+          setWordIndex((wi) => wi + 1);
+        }}
+      />
+    </View>
+  );
 }
