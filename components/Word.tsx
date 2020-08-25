@@ -4,6 +4,7 @@ import {View, Text, Button} from 'react-native';
 import model from '../model/model.json';
 import ttsLibrary from 'react-native-tts';
 import voiceLibrary from '@react-native-community/voice';
+import extractArticle from '../libs/extractArticle';
 
 export default function Word() {
   const [wordIndex, setWordIndex] = useState(0);
@@ -11,11 +12,10 @@ export default function Word() {
   const wordIndexRef = useRef<number>();
   wordIndexRef.current = wordIndex;
 
-  const value = model.words[wordIndex].value;
-
+  const currentWord = model.words[wordIndex];
   useEffect(() => {
-    speakWord(value);
-  }, [value]);
+    speakWord(currentWord.value);
+  }, [currentWord.value]);
 
   useEffect(() => {
     const voiceStart = () => voiceLibrary.start('de-DE');
@@ -28,6 +28,19 @@ export default function Word() {
         wordIndexRefCurrent: wordIndexRef.current,
         modelWordsLength: model.words.length,
       });
+
+
+      console.log(
+        'correct article:',
+        {
+          currentWordValue: model.words[wordIndexRef.current].value,
+          eventValue: event.value,
+          extractArticleEventValue: extractArticle(event.value),
+          currentWordArticle: model.words[wordIndexRef.current].article,
+        },
+        extractArticle(event.value) ===
+          model.words[wordIndexRef.current].article,
+      );
 
       if (wordIndexRef.current < model.words.length - 1) {
         setWordIndex((wi) => wi + 1);
@@ -53,11 +66,10 @@ export default function Word() {
     ttsLibrary.speak(prefixText + ',,' + wordValue);
   };
 
-  console.log('render Word', value);
   return (
     <View>
       <Text>Word Component</Text>
-      <Text>{value}</Text>
+      <Text>{currentWord.value}</Text>
       <Button
         title="next"
         onPress={() => {
