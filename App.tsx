@@ -13,12 +13,14 @@ import {SafeAreaView, StyleSheet, ScrollView, StatusBar} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Word from './components/Word';
+import {Provider} from 'mobx-react';
+import WordsStore from './stores/WordsStore';
 
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
   return (
-    <>
+    <Provider {...WordsStore}>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
@@ -27,7 +29,7 @@ const App = () => {
           <Word />
         </ScrollView>
       </SafeAreaView>
-    </>
+    </Provider>
   );
 };
 

@@ -5,24 +5,26 @@
 <div hidden>
 
 ```
-@startuml plantUml
-
+@startuml
 [*] --> startSession
 startSession --> getNextWordFromSession
 getNextWordFromSession --> speakWord
 getNextWordFromSession --> [*]: End Of List
 speakWord --> listenWord
 listenWord --> checkAnswer
-checkAnswer --> repeatWord
-checkAnswer --> updateTimestampForWord
+listenWord --> repeatWord : [speechRecognitionError]
+state a <<choice>> 
+checkAnswer --> a 
+a --> repeatWord : [isNoArticleFound || answerWordCount >= 5]
+a --> updateTimestampForWord : [isArticleFound  &&  answerWordCount < 5]
 state c <<choice>>
 updateTimestampForWord --> c
-c --> getNextWordFromSession : [correctAnswer == false]
-c --> incrementSlotForWord : [correctAnswer == true]
+c --> getNextWordFromSession : [isNotCorrectArticle]
+c --> incrementSlotForWord : [isCorrectArticle]
 repeatWord --> listenWord
 incrementSlotForWord --> getNextWordFromSession
-
 @enduml
+
 ```
 </div>
 

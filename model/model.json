@@ -3,52 +3,63 @@
     {
       "value": "Haus", 
       "slot": 0,
-      "article": "das"
+      "article": "das",
+      "timestamp": null
     },
     {
       "value": "Baum", 
       "slot": 0,
-      "article": "der"
+      "article": "der",
+      "timestamp": null
     },
     {
       "value": "Hund", 
       "slot": 0,
-      "article": "der"
+      "article": "der",
+      "timestamp": null
+
     },
     {
       "value": "Katze", 
       "slot": 0,
-      "article": "die"
+      "article": "die",
+      "timestamp": null
     },
     {
       "value": "Tasse", 
       "slot": 0,
-      "article": "die"
+      "article": "die",
+      "timestamp": null
     },
     {
       "value": "Sonne", 
       "slot": 0,
-      "article": "die"
+      "article": "die",
+      "timestamp": null
     },
     {
       "value": "Mensch", 
       "slot": 0,
-      "article": "der"
+      "article": "der",
+      "timestamp": null
     },
     {
       "value": "Wasser", 
       "slot": 0,
-      "article": "das"
+      "article": "das",
+      "timestamp": null
     },
     {
       "value": "Tisch", 
       "slot": 0,
-      "article": "der"
+      "article": "der",
+      "timestamp": null
     },
     {
       "value": "Eule", 
       "slot": 0,
-      "article": "die"
+      "article": "die",
+      "timestamp": null
     }
   ]
 }
