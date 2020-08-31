@@ -10,16 +10,18 @@ import WordsStore from '../stores/WordsStore';
 import styles from '../styles/wordStyle';
 
 import '../styles/wordStyle';
+import UIStore from '../stores/UIStore';
 
-function Word() {
+function PlayerScreen() {
   const [wordIndex, setWordIndex] = useState(0);
 
   const wordIndexRef = useRef<number>();
   wordIndexRef.current = wordIndex;
 
   const wordsStore = useContext(WordsStore);
-  const currentWord = wordsStore.words[wordIndex];
+  
 
+  const currentWord = wordsStore.words[wordIndex];
   useEffect(() => {
     if (wordIndexRef.current > 0) {
       speakWord(currentWord.value);
@@ -67,21 +69,92 @@ function Word() {
 
   return (
     <View>
+      <Header />
+      <Word />
+      <Selector />
+      <ControlBar />
       <View style={styles.wrongArticle}>
-        <Text>Word Component</Text>
+        <Text>{currentWord.value}</Text>
       </View>
-      <Text>{currentWord.value}</Text>
-      <Button
-        title="begin learning"
-        onPress={() => {
-          if (wordIndex === 0) {
-            speakWord(currentWord.value);
-          }
-        }}
-      />
     </View>
   );
 }
 
 //extended component (observer with word)
-export default observer(Word);
+export default observer(PlayerScreen);
+
+function Word() {
+  return (
+    <View style={styles.viewHorizontal}>
+      <WordImage />
+      <WordValue />
+    </View>
+  );
+}
+
+function WordImage() {
+  return (
+    <View>
+      <Text>Word Image</Text>
+    </View>
+  );
+}
+
+function WordValue() {
+  return (
+    <View>
+      <Text>Word Value</Text>
+    </View>
+  );
+}
+
+function Header() {
+  return (
+    <View style={styles.viewHorizontal}>
+      <CancelButton />
+      <ProgressBar />
+    </View>
+  );
+}
+
+function CancelButton() {
+  const uiStore = useContext(UIStore);
+  return (
+    <Button
+      title="cancel"
+      onPress={() => {
+        uiStore.setIsInitial(true);
+      }}
+    />
+  );
+}
+
+function ProgressBar() {
+  return (
+    <View>
+      <Text>ProgressBar</Text>
+    </View>
+  );
+}
+
+function Selector() {
+  return (
+    <View style={styles.viewHorizontal}>
+      <Button title="DER" onPress={() => {}} />
+      <Button title="DIE" onPress={() => {}} />
+      <Button title="DAS" onPress={() => {}} />
+    </View>
+  );
+}
+
+function ControlBar() {
+  return (
+    <View style={styles.viewHorizontal}>
+      <Button title="forward" onPress={() => {}} />
+      <View>
+        <Text>Status</Text>
+      </View>
+      <Button title="pause" onPress={() => {}} />
+    </View>
+  );
+}

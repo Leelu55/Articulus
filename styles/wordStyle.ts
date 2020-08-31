@@ -11,6 +11,10 @@ const styles = StyleSheet.create({
     padding: 24,
     backgroundColor: 'green',
   },
+  viewHorizontal: {
+    flex: 1,
+    flexDirection: 'row',
+  },
 });
 
 export default styles;

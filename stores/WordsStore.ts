@@ -51,5 +51,4 @@ hydrate('WordsStore', wordsStore).then(() =>
 );
 
 //create react context for my store
-const wordsStoreExport = createContext(wordsStore);
-export default wordsStoreExport;
+export default createContext(wordsStore);
