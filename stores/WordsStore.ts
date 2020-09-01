@@ -4,7 +4,7 @@ import {createContext} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 import model from '../model/model.json';
 
-interface WordType {
+export interface WordType {
   value: string;
   slot: number;
   article: string;
@@ -17,13 +17,11 @@ class WordsStore {
 
   //load initial words array into WordsStore
   constructor() {
-    console.error('calling wordStore costructor', this.words.length);
     if (this.words.length === 0) {
       let i = 0;
       for (const word of model.words) {
         this.words[i++] = word;
       }
-      console.error('inside if', this.words.length);
     }
   }
 

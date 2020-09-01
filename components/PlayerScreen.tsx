@@ -1,160 +1,26 @@
-import React, {useState, useEffect, useRef, useContext} from 'react';
-import {View, Text, Button} from 'react-native';
-
-import ttsLibrary from 'react-native-tts';
-import voiceLibrary from '@react-native-community/voice';
-import extractArticle from '../libs/extractArticle';
+import React from 'react';
+import {View} from 'react-native';
 
 import {observer} from 'mobx-react';
-import WordsStore from '../stores/WordsStore';
-import styles from '../styles/wordStyle';
 
 import '../styles/wordStyle';
-import UIStore from '../stores/UIStore';
+
+import {Selector} from './Selector';
+import ControlBar from './ControlBar';
+import {Header} from './Header';
+import Word from './Word';
 
 function PlayerScreen() {
-  const [wordIndex, setWordIndex] = useState(0);
-
-  const wordIndexRef = useRef<number>();
-  wordIndexRef.current = wordIndex;
-
-  const wordsStore = useContext(WordsStore);
-  
-
-  const currentWord = wordsStore.words[wordIndex];
-  useEffect(() => {
-    if (wordIndexRef.current > 0) {
-      speakWord(currentWord.value);
-    }
-  }, [currentWord.value]);
-
-  useEffect(() => {
-    const voiceStart = () => voiceLibrary.start('de-DE');
-
-    ttsLibrary.addEventListener('tts-finish', voiceStart);
-
-    voiceLibrary.onSpeechResults = (event) => {
-      const cw = wordsStore.words[wordIndexRef.current];
-
-      //checkAnswer && checkArticle
-      if (extractArticle(event.value) === cw.article) {
-        wordsStore.incrementSlotForWord(cw.value);
-        console.log(cw);
-      }
-      wordsStore.updateTimeStampForWord(cw.value);
-
-      if (wordIndexRef.current < wordsStore.words.length - 1) {
-        setWordIndex((wi) => wi + 1);
-      }
-    };
-
-    voiceLibrary.onSpeechError = () => {
-      const cw = wordsStore.words[wordIndexRef.current];
-      repeatWord('Bitte wiederhole den Artikel für', cw.value);
-    };
-
-    return function cleanup() {
-      ttsLibrary.removeEventListener('tts-finish', voiceStart);
-      voiceLibrary.onSpeechResults = undefined;
-      voiceLibrary.onSpeechError = undefined;
-    };
-  }, [wordsStore]);
-
-  function speakWord(wordValue) {
-    ttsLibrary.speak(wordValue);
-  }
-  function repeatWord(prefixText, wordValue) {
-    ttsLibrary.speak(prefixText + ',,' + wordValue);
-  }
-
   return (
-    <View>
+    // eslint-disable-next-line react-native/no-inline-styles
+    <View style={{flex: 1}}>
       <Header />
       <Word />
       <Selector />
       <ControlBar />
-      <View style={styles.wrongArticle}>
-        <Text>{currentWord.value}</Text>
-      </View>
     </View>
   );
 }
 
 //extended component (observer with word)
 export default observer(PlayerScreen);
-
-function Word() {
-  return (
-    <View style={styles.viewHorizontal}>
-      <WordImage />
-      <WordValue />
-    </View>
-  );
-}
-
-function WordImage() {
-  return (
-    <View>
-      <Text>Word Image</Text>
-    </View>
-  );
-}
-
-function WordValue() {
-  return (
-    <View>
-      <Text>Word Value</Text>
-    </View>
-  );
-}
-
-function Header() {
-  return (
-    <View style={styles.viewHorizontal}>
-      <CancelButton />
-      <ProgressBar />
-    </View>
-  );
-}
-
-function CancelButton() {
-  const uiStore = useContext(UIStore);
-  return (
-    <Button
-      title="cancel"
-      onPress={() => {
-        uiStore.setIsInitial(true);
-      }}
-    />
-  );
-}
-
-function ProgressBar() {
-  return (
-    <View>
-      <Text>ProgressBar</Text>
-    </View>
-  );
-}
-
-function Selector() {
-  return (
-    <View style={styles.viewHorizontal}>
-      <Button title="DER" onPress={() => {}} />
-      <Button title="DIE" onPress={() => {}} />
-      <Button title="DAS" onPress={() => {}} />
-    </View>
-  );
-}
-
-function ControlBar() {
-  return (
-    <View style={styles.viewHorizontal}>
-      <Button title="forward" onPress={() => {}} />
-      <View>
-        <Text>Status</Text>
-      </View>
-      <Button title="pause" onPress={() => {}} />
-    </View>
-  );
-}

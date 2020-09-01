@@ -12,8 +12,39 @@ const styles = StyleSheet.create({
     backgroundColor: 'green',
   },
   viewHorizontal: {
+    flexDirection: 'row',
+    borderColor: 'red',
+    borderWidth: 1,
+    margin: 5,
+    padding: 5,
+  },
+  word: {
     flex: 1,
     flexDirection: 'row',
+    borderColor: 'red',
+    borderWidth: 1,
+    margin: 5,
+    padding: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  wordStyle: {
+    fontSize: 50,
+    fontWeight: 'bold',
+  },
+
+  articleButton: {
+    flex: 1,
+    margin: 10,
+    padding: 10,
+    borderRadius: 3,
+    backgroundColor: 'blue',
+    alignItems: 'center',
+  },
+  articleButtonText: {
+    fontWeight: 'bold',
+    color: 'white',
   },
 });
 
