@@ -11,6 +11,7 @@ import voiceLibrary from '@react-native-community/voice';
 import extractArticle from '../libs/extractArticle';
 import UIStore from '../stores/UIStore';
 import {observer} from 'mobx-react';
+import {AudioState} from '../stores/UIStore';
 
 function Word() {
   const uiStore = useContext(UIStore);
@@ -20,18 +21,23 @@ function Word() {
   const currentWord = wordsStore.words[uiStore.wordIndex];
 
   useEffect(() => {
+    uiStore.setAudioState(AudioState.IsSpeaking);
     speakWord(currentWord.value);
-  }, [currentWord.value]);
+  }, [currentWord.value, uiStore]);
 
   useEffect(() => {
     const voiceStart = () => voiceLibrary.start('de-DE');
 
     ttsLibrary.addEventListener('tts-finish', voiceStart);
+    voiceLibrary.onSpeechStart = () => {
+      uiStore.setAudioState(AudioState.IsListening);
+    };
 
     voiceLibrary.onSpeechResults = (event) => {
       const wordIndex = uiStore.wordIndex;
 
       const cw = wordsStore.words[wordIndex];
+      uiStore.setAudioState(AudioState.IsInactive);
 
       //checkAnswer && checkArticle
       if (extractArticle(event.value) === cw.article) {
@@ -49,11 +55,13 @@ function Word() {
       const wordIndex = uiStore.wordIndex;
 
       const cw = wordsStore.words[wordIndex];
+      uiStore.setAudioState(AudioState.IsSpeaking);
       repeatWord('Bitte wiederhole den Artikel für', cw.value);
     };
 
     return function cleanup() {
       ttsLibrary.removeEventListener('tts-finish', voiceStart);
+      voiceLibrary.onSpeechStart = undefined;
       voiceLibrary.onSpeechResults = undefined;
       voiceLibrary.onSpeechError = undefined;
     };
@@ -62,6 +70,7 @@ function Word() {
   function speakWord(wordValue) {
     ttsLibrary.speak(wordValue);
   }
+
   function repeatWord(prefixText, wordValue) {
     ttsLibrary.speak(prefixText + ',,' + wordValue);
   }

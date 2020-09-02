@@ -42,10 +42,40 @@ const styles = StyleSheet.create({
     backgroundColor: 'blue',
     alignItems: 'center',
   },
+
   articleButtonText: {
     fontWeight: 'bold',
     color: 'white',
   },
+
+  controllButton: {
+    flex: 1,
+    margin: 10,
+    padding: 10,
+    borderRadius: 3,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  controllButtonText: {
+    fontWeight: 'bold',
+    color: 'white',
+  },
+
+  audioStateIndicator: {
+    flex: 1,
+    margin: 10,
+    padding: 10,
+    borderRadius: 3,
+    alignItems: 'center',
+  },
+
+  audioStateIndicatorText: {
+    fontWeight: 'bold',
+    fontSize: 30,
+    color: 'white',
+  },
+
+ 
 });
 
 export default styles;
