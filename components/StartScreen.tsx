@@ -1,32 +1,33 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {useContext} from 'react';
-import {View, Button, Text} from 'react-native';
+import {View, Text, TouchableHighlight} from 'react-native';
 import UIStore from '../stores/UIStore';
+import styles from '../styles/wordStyle';
 
 function StartScreen() {
   const uiStore = useContext(UIStore);
 
   return (
-    <View>
+    <View style={styles.startScreen}>
       <Title />
-      <Button
-        title="begin learning"
-        onPress={() => uiStore.setIsInitial(false)}
-      />
+      <View style={styles.viewHorizontal}>
+        <TouchableHighlight
+          style={[styles.articleButton, {backgroundColor: 'red'}]}
+          onPress={() => uiStore.setIsInitial(false)}>
+          <Text style={styles.articleButtonText}>Start</Text>
+        </TouchableHighlight>
+      </View>
     </View>
   );
 }
 
 function Title() {
   return (
-    <Text
-      // eslint-disable-next-line react-native/no-inline-styles
-      style={{
-        color: 'blue',
-        fontWeight: 'bold',
-        fontSize: 30,
-      }}>
-      der die das
-    </Text>
+    <View style={styles.viewHorizontal}>
+      <Text style={[styles.appTitle, {color: 'green'}]}>der</Text>
+      <Text style={[styles.appTitle, {color: 'orange'}]}>die</Text>
+      <Text style={[styles.appTitle, {color: 'yellow'}]}>das</Text>
+    </View>
   );
 }
 export default StartScreen;
