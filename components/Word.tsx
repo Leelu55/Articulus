@@ -11,7 +11,7 @@ import voiceLibrary from '@react-native-community/voice';
 import extractArticle from '../libs/extractArticle';
 import UIStore from '../stores/UIStore';
 import {observer} from 'mobx-react';
-import {AudioState} from '../stores/UIStore';
+import {LessonState} from '../stores/UIStore';
 
 function Word() {
   const uiStore = useContext(UIStore);
@@ -21,7 +21,7 @@ function Word() {
   const currentWord = wordsStore.words[uiStore.wordIndex];
 
   useEffect(() => {
-    uiStore.setAudioState(AudioState.IsSpeaking);
+    uiStore.setLessonState(LessonState.IsSpeaking);
     speakWord(currentWord.value);
   }, [currentWord.value, uiStore]);
 
@@ -30,14 +30,14 @@ function Word() {
 
     ttsLibrary.addEventListener('tts-finish', voiceStart);
     voiceLibrary.onSpeechStart = () => {
-      uiStore.setAudioState(AudioState.IsListening);
+      uiStore.setLessonState(LessonState.IsListening);
     };
 
     voiceLibrary.onSpeechResults = (event) => {
       const wordIndex = uiStore.wordIndex;
 
       const cw = wordsStore.words[wordIndex];
-      uiStore.setAudioState(AudioState.IsInactive);
+      uiStore.setLessonState(LessonState.IsInactive);
 
       //checkAnswer && checkArticle
       if (extractArticle(event.value) === cw.article) {
@@ -48,6 +48,8 @@ function Word() {
 
       if (wordIndex < wordsStore.words.length - 1) {
         uiStore.setWordIndex(wordIndex + 1);
+      } else {
+        uiStore.setLessonState(LessonState.IsFinished);
       }
     };
 
@@ -55,7 +57,7 @@ function Word() {
       const wordIndex = uiStore.wordIndex;
 
       const cw = wordsStore.words[wordIndex];
-      uiStore.setAudioState(AudioState.IsSpeaking);
+      uiStore.setLessonState(LessonState.IsSpeaking);
       repeatWord('Bitte wiederhole den Artikel für', cw.value);
     };
 

@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  audioStateIndicator: {
+  lessonStateIndicator: {
     flex: 2,
     margin: 10,
     padding: 10,

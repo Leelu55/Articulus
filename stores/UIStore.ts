@@ -4,33 +4,30 @@ import {createContext} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 import {WordType} from './WordsStore';
 
-export enum AudioState {
+export enum LessonState {
   IsListening,
   IsSpeaking,
   IsInactive,
+  IsFinished,
 }
 
 class UIStore {
-  @observable isInitial: Boolean = true;
   @observable wordIndex: number = 0;
-  @observable audioState: AudioState = AudioState.IsInactive;
+  @observable lessonState: LessonState = LessonState.IsInactive;
+
 
   @persist('object') @observable lessonWords: WordType[] = [];
 
   //avoid mobx-persist error
   @persist foo: string = 'bar';
 
-  //return to start screen
-  @action setIsInitial = (isInitial) => {
-    this.isInitial = isInitial;
-  };
 
   @action setWordIndex = (wordIndex) => {
     this.wordIndex = wordIndex;
   };
 
-  @action setAudioState = (audioState) => {
-    this.audioState = audioState;
+  @action setLessonState = (lessonState) => {
+    this.lessonState = lessonState;
   };
 }
 

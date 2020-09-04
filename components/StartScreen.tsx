@@ -1,11 +1,9 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useContext} from 'react';
+import React from 'react';
 import {View, Text, TouchableHighlight} from 'react-native';
-import UIStore from '../stores/UIStore';
 import styles from '../styles/wordStyle';
 
-function StartScreen() {
-  const uiStore = useContext(UIStore);
+function StartScreen({navigation}) {
 
   return (
     <View style={styles.startScreen}>
@@ -13,7 +11,7 @@ function StartScreen() {
       <View style={styles.viewHorizontal}>
         <TouchableHighlight
           style={[styles.articleButton, {backgroundColor: 'red'}]}
-          onPress={() => uiStore.setIsInitial(false)}>
+          onPress={() => navigation.navigate('PlayerScreen')}>
           <Text style={styles.articleButtonText}>Start</Text>
         </TouchableHighlight>
       </View>
