@@ -4,7 +4,6 @@ import {View, Text, TouchableHighlight} from 'react-native';
 import styles from '../styles/wordStyle';
 
 function StartScreen({navigation}) {
-
   return (
     <View style={styles.startScreen}>
       <Title />

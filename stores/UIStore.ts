@@ -21,7 +21,6 @@ class UIStore {
   //avoid mobx-persist error
   @persist foo: string = 'bar';
 
-
   @action setWordIndex = (wordIndex) => {
     this.wordIndex = wordIndex;
   };
