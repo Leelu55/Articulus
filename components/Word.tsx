@@ -26,6 +26,7 @@ function Word() {
   }, [currentWord.value, uiStore]);
 
   useEffect(() => {
+    console.error('useEffect');
     const voiceStart = () => voiceLibrary.start('de-DE');
 
     ttsLibrary.addEventListener('tts-finish', voiceStart);
@@ -62,18 +63,21 @@ function Word() {
     };
 
     return function cleanup() {
+      console.error('cleanup');
+      ttsLibrary.stop();
       ttsLibrary.removeEventListener('tts-finish', voiceStart);
-      voiceLibrary.onSpeechStart = undefined;
-      voiceLibrary.onSpeechResults = undefined;
-      voiceLibrary.onSpeechError = undefined;
+      voiceLibrary.removeAllListeners();
+      voiceLibrary.destroy();
     };
   }, [wordsStore, uiStore]);
 
   function speakWord(wordValue) {
+    console.error('speakWord');
     ttsLibrary.speak(wordValue);
   }
 
   function repeatWord(prefixText, wordValue) {
+    console.error('repeatWord');
     ttsLibrary.speak(prefixText + ',,' + wordValue);
   }
 
