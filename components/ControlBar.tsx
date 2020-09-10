@@ -15,19 +15,24 @@ import {
   faPause,
   faCheckCircle,
 } from '@fortawesome/fontawesome-free-solid';
+import {LessonState} from '../stores/UIStore';
 
 export const ICONS = {
-  0: 'assistive-listening-systems',
-  1: 'microphone-alt',
-  2: 'user-check',
-  3: 'check-circle',
+  [LessonState.IsInitial]: 'assistive-listening-systems',
+  [LessonState.IsListening]: 'assistive-listening-systems',
+  [LessonState.IsSpeaking]: 'microphone-alt',
+  [LessonState.IsEvaluating]: 'check-circle',
+  [LessonState.IsPaused]: 'pause',
+  [LessonState.IsFinished]: 'user-check',
 };
 
 export const COLORS = {
-  0: '#00bfff',
-  1: '#ffa500',
-  2: '#ffff00',
-  3: 'green',
+  [LessonState.IsInitial]: 'black',
+  [LessonState.IsListening]: '#00bfff',
+  [LessonState.IsSpeaking]: '#ffa500',
+  [LessonState.IsEvaluating]: '#ffff00',
+  [LessonState.IsPaused]: 'blue',
+  [LessonState.IsFinished]: 'green',
 };
 
 function ControlBar() {

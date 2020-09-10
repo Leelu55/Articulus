@@ -11,6 +11,12 @@ export interface WordType {
   timestamp: Date;
 }
 
+export interface LessonWordType {
+  value: string;
+  article: string;
+  answerArticle: string;
+}
+
 //app data state
 class WordsStore {
   @persist('object') @observable words: WordType[] = [];
@@ -24,6 +30,32 @@ class WordsStore {
       }
     }
   }
+
+  @persist('object') @observable lessonWords: LessonWordType[] = [];
+
+  @action populateLesson = () => {
+    for (const word of this.words) {
+      this.lessonWords.push({
+        value: word.value,
+        article: word.article,
+        answerArticle: null,
+      });
+    }
+  };
+
+  @action emptyLesson = () => {
+    this.lessonWords = [];
+  };
+
+  @action setAnswerArticleForLessonWord = (
+    value: string,
+    answerArticle: string,
+  ) => {
+    const index = this.lessonWords.findIndex(
+      (lessonWord) => lessonWord.value === value,
+    );
+    this.lessonWords[index].answerArticle = answerArticle;
+  };
 
   @action incrementSlotForWord = (value: string) => {
     const index = this.words.findIndex((word) => word.value === value);

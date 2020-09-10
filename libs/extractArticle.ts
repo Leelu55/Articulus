@@ -11,9 +11,7 @@ export default function extractArticle(voiceResultArray): string | null {
   }
 
   for (const answer of filteredVoiceResults) {
-    //console.log({answer});
     for (const word of answer.split(' ').reverse()) {
-      //console.log({word});
       if (['der', 'die', 'das'].includes(word)) {
         return word;
       }

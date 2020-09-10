@@ -7,8 +7,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
 const MainApp = () => {
-  //const uiStore = useContext(UIStore);
-  //const isInitial = uiStore.isInitial;
   const Stack = createStackNavigator();
 
   return (
