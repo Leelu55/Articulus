@@ -8,6 +8,7 @@ import audioVoice from '../libs/audioVoice';
 import UIStore from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {LessonState} from '../stores/UIStore';
+import {WordImage} from './WordImage';
 
 function Word() {
   const uiStore = useContext(UIStore);
@@ -26,11 +27,10 @@ function Word() {
     audioVoice.speakWord(currentLessonWord.value);
   }, [currentLessonWord.value, uiStore]);
 
-
   return (
     <View style={styles.word}>
-      {/* <WordImage /> */}
       <WordValue value={currentLessonWord.value} />
+      <WordImage imageUrl={currentLessonWord.imageUrl} />
     </View>
   );
 }

@@ -5,22 +5,13 @@ import styles from '../styles/wordStyle';
 export function Selector() {
   return (
     <View style={styles.viewHorizontal}>
-      <TouchableHighlight
-        // eslint-disable-next-line react-native/no-inline-styles
-        style={[styles.articleButton, {backgroundColor: 'green'}]}
-        onPress={() => {}}>
+      <TouchableHighlight style={[styles.articleButton]} onPress={() => {}}>
         <Text style={styles.articleButtonText}>DER</Text>
       </TouchableHighlight>
-      <TouchableHighlight
-        // eslint-disable-next-line react-native/no-inline-styles
-        style={[styles.articleButton, {backgroundColor: 'yellow'}]}
-        onPress={() => {}}>
+      <TouchableHighlight style={[styles.articleButton]} onPress={() => {}}>
         <Text style={styles.articleButtonText}>DIE</Text>
       </TouchableHighlight>
-      <TouchableHighlight
-        // eslint-disable-next-line react-native/no-inline-styles
-        style={[styles.articleButton, {backgroundColor: 'orange'}]}
-        onPress={() => {}}>
+      <TouchableHighlight style={[styles.articleButton]} onPress={() => {}}>
         <Text style={styles.articleButtonText}>DAS</Text>
       </TouchableHighlight>
     </View>

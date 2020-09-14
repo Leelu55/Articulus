@@ -49,12 +49,12 @@ function ControlBar() {
   );
 
   return (
-    <View style={styles.viewHorizontal}>
+    <View style={[styles.viewHorizontal, styles.controlBar]}>
       <TouchableHighlight
-        style={[styles.controllButton, {backgroundColor: 'lightblue'}]}
+        style={styles.controlButton}
         onPress={() => {}}
         disabled={wordIndex === wordsLength - 1}>
-        <FontAwesomeIcon icon="forward" size={20} />
+        <FontAwesomeIcon icon="forward" size={20} color="white" />
       </TouchableHighlight>
       <View
         style={[
@@ -63,10 +63,8 @@ function ControlBar() {
         ]}>
         <FontAwesomeIcon icon={ICONS[lessonState]} size={32} color="white" />
       </View>
-      <TouchableHighlight
-        style={[styles.controllButton, {backgroundColor: 'lightblue'}]}
-        onPress={() => {}}>
-        <FontAwesomeIcon icon="pause" size={20}/>
+      <TouchableHighlight style={styles.controlButton} onPress={() => {}}>
+        <FontAwesomeIcon icon="pause" size={20} color="white" />
       </TouchableHighlight>
     </View>
   );

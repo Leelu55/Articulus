@@ -32,17 +32,14 @@ const styles = StyleSheet.create({
     margin: 5,
     padding: 5,
   },
-  progressBarContainer: {
-    flex: 4,
-    marginLeft: 5,
-    justifyContent: 'center',
-    alignContent: 'center',
+  progressBar: {
+    flex: 1,
+    flexDirection: 'row',
+    height: 20,
   },
   word: {
     flex: 1,
-    flexDirection: 'row',
-    borderColor: 'red',
-    borderWidth: 1,
+    flexDirection: 'column',
     margin: 5,
     padding: 5,
     justifyContent: 'center',
@@ -50,8 +47,17 @@ const styles = StyleSheet.create({
   },
 
   wordStyle: {
-    fontSize: 50,
+    fontSize: 80,
     fontWeight: 'bold',
+  },
+
+  wordImage: {
+    marginTop: 20,
+    borderRadius: 5,
+    borderWidth: 5,
+    borderColor: 'lightgrey',
+    width: 150,
+    height: 150,
   },
 
   articleButton: {
@@ -59,47 +65,47 @@ const styles = StyleSheet.create({
     margin: 10,
     padding: 10,
     borderRadius: 3,
-    backgroundColor: 'blue',
+    backgroundColor: 'lightgrey',
     alignItems: 'center',
     justifyContent: 'center',
-    borderColor: 'black',
-    borderWidth: 1,
   },
 
   cancelButton: {
     marginRight: 5,
-    borderRadius: 3,
-    backgroundColor: 'red',
     alignItems: 'center',
     justifyContent: 'center',
-    borderColor: 'black',
-    borderWidth: 1,
   },
 
   articleButtonText: {
     fontWeight: 'bold',
-    color: 'white',
-    padding: 10,
-    fontSize: 20,
+    color: 'black',
+    padding: 5,
+    fontSize: 30,
   },
 
-  controllButton: {
-    margin: 10,
+  controlButton: {
     padding: 10,
-    borderRadius: 100,
-    borderWidth: 2,
+    width: 60,
+    height: 60,
+    borderRadius: 30,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: 'black',
   },
 
   lessonStateIndicator: {
-    flex: 2,
-    margin: 10,
-    padding: 10,
-    borderWidth: 2,
-    borderRadius: 100,
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    marginLeft: 30,
+    marginRight: 30,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  controlBar: {
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

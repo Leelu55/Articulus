@@ -23,7 +23,7 @@ export function CancelButton() {
         navigation.goBack();
         uiStore.setLessonState(LessonState.IsFinished);
       }}>
-      <FontAwesomeIcon icon="times" color="white" />
+      <FontAwesomeIcon icon="times" color="lightgrey" size={40} />
     </TouchableHighlight>
   );
 }

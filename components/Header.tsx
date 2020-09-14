@@ -6,7 +6,7 @@ import {CancelButton} from './CancelButton';
 
 export function Header() {
   return (
-    <View style={styles.viewHorizontal}>
+    <View style={[styles.viewHorizontal, {alignItems: 'center'}]}>
       <CancelButton />
       <ProgressBar />
     </View>

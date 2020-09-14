@@ -1,10 +1,8 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Image} from 'react-native';
+import styles from '../styles/wordStyle';
 
-export function WordImage() {
-  return (
-    <View>
-      <Text>Word Image</Text>
-    </View>
-  );
+
+export function WordImage({imageUrl}) {
+  return <Image style={styles.wordImage} source={{uri: imageUrl}} />;
 }

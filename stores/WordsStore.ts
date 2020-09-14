@@ -9,12 +9,14 @@ export interface WordType {
   slot: number;
   article: string;
   timestamp: Date;
+  imageUrl: string;
 }
 
 export interface LessonWordType {
   value: string;
   article: string;
   answerArticle: string;
+  imageUrl: string;
 }
 
 //app data state
@@ -39,6 +41,7 @@ class WordsStore {
         value: word.value,
         article: word.article,
         answerArticle: null,
+        imageUrl: word.imageUrl,
       });
     }
   };

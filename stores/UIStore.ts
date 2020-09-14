@@ -17,7 +17,6 @@ class UIStore {
   @observable lessonState: LessonState = LessonState.IsInitial;
   @observable currentAnswer: string = '';
 
-
   //avoid mobx-persist error
   @persist foo: string = 'bar';
 

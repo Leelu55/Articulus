@@ -4,6 +4,8 @@ import {View} from 'react-native';
 import WordsStore from '../stores/WordsStore';
 import {observer} from 'mobx-react';
 import UIStore, {LessonState} from '../stores/UIStore';
+import styles from '../styles/wordStyle';
+import {isBoxedObservable} from 'mobx';
 
 function ProgressBar() {
   const wordIndex = useContext(UIStore).wordIndex;
@@ -12,15 +14,29 @@ function ProgressBar() {
   const uiStore = useContext(UIStore);
 
   return (
-    <View style={{backgroundColor: 'blue', flex: 1, flexDirection: 'row'}}>
+    <View style={styles.progressBar}>
       {lessonWords.map(function (lessonWord, index) {
         const wordWithinRange =
           index < wordIndex || uiStore.lessonState === LessonState.IsFinished;
         const correctAnswer = lessonWord.answerArticle === lessonWord.article;
-        let bgColor = 'white';
+        let bgColor = 'lightgrey';
 
         if (wordWithinRange) {
-          bgColor = correctAnswer ? 'green' : 'red';
+          bgColor = correctAnswer ? 'yellowgreen' : 'tomato';
+        }
+
+        let borderTopLeftRadius = 0;
+        let borderBottomLeftRadius = 0;
+        let borderTopRightRadius = 0;
+        let borderBottomRightRadius = 0;
+
+        if (index === 0) {
+          borderTopLeftRadius = 10;
+          borderBottomLeftRadius = 10;
+        }
+        if (index === lessonWords.length - 1) {
+          borderTopRightRadius = 10;
+          borderBottomRightRadius = 10;
         }
 
         return (
@@ -29,8 +45,13 @@ function ProgressBar() {
             style={{
               flex: 1,
               backgroundColor: bgColor,
+              borderBottomLeftRadius,
+              borderTopLeftRadius,
+              borderTopRightRadius,
+              borderBottomRightRadius,
               borderColor: 'black',
-              borderWidth: 1,
+              height: 20,
+              marginRight: 0.3,
             }}
           />
         );

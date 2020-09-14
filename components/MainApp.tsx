@@ -11,7 +11,7 @@ const MainApp = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator headerMode="none">
         <Stack.Screen name="StartScreen" component={StartScreen} />
         <Stack.Screen name="PlayerScreen" component={PlayerScreen} />
       </Stack.Navigator>

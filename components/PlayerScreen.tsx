@@ -15,8 +15,8 @@ function PlayerScreen() {
     // eslint-disable-next-line react-native/no-inline-styles
     <View style={{flex: 1}}>
       <Header />
-      <Word />
       <Selector />
+      <Word />
       <ControlBar />
     </View>
   );
