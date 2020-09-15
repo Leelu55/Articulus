@@ -5,25 +5,16 @@ import styles from '../styles/wordStyle';
 import UIStore from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 import {observer} from 'mobx-react';
-import fontawesome from '@fortawesome/fontawesome';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {
-  faAssistiveListeningSystems,
-  faMicrophoneAlt,
-  faUserCheck,
-  faForward,
-  faPause,
-  faCheckCircle,
-} from '@fortawesome/fontawesome-free-solid';
 import {LessonState} from '../stores/UIStore';
 
 export const ICONS = {
   [LessonState.IsInitial]: 'assistive-listening-systems',
-  [LessonState.IsListening]: 'assistive-listening-systems',
-  [LessonState.IsSpeaking]: 'microphone-alt',
+  [LessonState.IsListening]: 'microphone',
+  [LessonState.IsSpeaking]: 'volume-down',
   [LessonState.IsEvaluating]: 'check-circle',
   [LessonState.IsPaused]: 'pause',
-  [LessonState.IsFinished]: 'user-check',
+  [LessonState.IsFinished]: 'flag-checkered',
 };
 
 export const COLORS = {
@@ -39,14 +30,7 @@ function ControlBar() {
   const wordIndex = useContext(UIStore).wordIndex;
   const wordsLength = useContext(WordsStore).words.length;
   const lessonState: number = useContext(UIStore).lessonState.valueOf();
-  fontawesome.library.add(
-    faAssistiveListeningSystems,
-    faMicrophoneAlt,
-    faUserCheck,
-    faForward,
-    faPause,
-    faCheckCircle,
-  );
+
 
   return (
     <View style={[styles.viewHorizontal, styles.controlBar]}>
@@ -61,7 +45,7 @@ function ControlBar() {
           styles.lessonStateIndicator,
           {backgroundColor: COLORS[lessonState]},
         ]}>
-        <FontAwesomeIcon icon={ICONS[lessonState]} size={32} color="white" />
+        <FontAwesomeIcon icon={ICONS[lessonState]} size={60} color="white" />
       </View>
       <TouchableHighlight style={styles.controlButton} onPress={() => {}}>
         <FontAwesomeIcon icon="pause" size={20} color="white" />

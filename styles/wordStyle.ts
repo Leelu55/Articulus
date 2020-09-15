@@ -49,6 +49,8 @@ const styles = StyleSheet.create({
   wordStyle: {
     fontSize: 80,
     fontWeight: 'bold',
+    marginLeft: 10,
+    marginRight: 10,
   },
 
   wordImage: {

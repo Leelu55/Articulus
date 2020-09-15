@@ -4,7 +4,10 @@ import styles from '../styles/wordStyle';
 export function WordValue({value}: {value: string}) {
   return (
     <View>
-      <Text style={styles.wordStyle}>{value}</Text>
+      // dynamic font size to prevent overflow
+      <Text adjustsFontSizeToFit numberOfLines={1} style={styles.wordStyle}>
+        {value}
+      </Text>
     </View>
   );
 }
