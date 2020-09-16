@@ -15,7 +15,6 @@ class AudioVoice {
       const wordIndex = uiStore.wordIndex;
 
       const clw = wordsStore.lessonWords[wordIndex];
-      uiStore.setLessonState(LessonState.IsEvaluating);
 
       const currentArticle = extractArticle(event.value);
       //checkAnswer && checkArticle
@@ -29,17 +28,16 @@ class AudioVoice {
 
       if (wordIndex < wordsStore.lessonWords.length - 1) {
         uiStore.setWordIndex(wordIndex + 1);
+        uiStore.setLessonState(LessonState.IsSpeaking);
       } else {
         uiStore.setLessonState(LessonState.IsFinished);
       }
     };
 
     voiceLibrary.onSpeechError = () => {
-      const wordIndex = uiStore.wordIndex;
-
-      const cw = wordsStore.lessonWords[wordIndex];
-      uiStore.setLessonState(LessonState.IsSpeaking);
-      this.repeatWord('Bitte wiederhole den Artikel für', cw.value);
+      if (uiStore.LessonState !== LessonState.IsSpeaking) {
+        uiStore.setLessonState(LessonState.IsRepeating);
+      }
     };
   }
 
@@ -51,6 +49,14 @@ class AudioVoice {
 
   voiceStart() {
     voiceLibrary.start('de-DE');
+  }
+
+  voiceStop() {
+    voiceLibrary.destroy();
+  }
+
+  stopSpeakWord() {
+    ttsLibrary.stop();
   }
 
   speakWord(wordValue) {

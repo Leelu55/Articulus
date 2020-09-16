@@ -5,9 +5,9 @@ import AsyncStorage from '@react-native-community/async-storage';
 
 export enum LessonState {
   IsInitial,
-  IsListening,
   IsSpeaking,
-  IsEvaluating,
+  IsRepeating,
+  IsListening,
   IsPaused,
   IsFinished,
 }

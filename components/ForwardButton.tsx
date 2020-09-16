@@ -7,8 +7,9 @@ import {faForward} from '@fortawesome/fontawesome-free-solid';
 
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
+import {observer} from 'mobx-react';
 
-export function ForwardButton() {
+function ForwardButton() {
   const wordIndex = useContext(UIStore).wordIndex;
   const wordsLength = useContext(WordsStore).words.length;
   const uiStore = useContext(UIStore);
@@ -21,15 +22,16 @@ export function ForwardButton() {
     <TouchableHighlight
       style={styles.controlButton}
       onPress={() => {
-        if (
-          wordIndex < wordsStore.lessonWords.length &&
-          lessonState !== LessonState.IsFinished
-        ) {
+        if (wordIndex < wordsStore.lessonWords.length - 1) {
           uiStore.setWordIndex(wordIndex + 1);
+          uiStore.setLessonState(LessonState.IsSpeaking);
+        } else {
+          uiStore.setLessonState(LessonState.IsFinished);
         }
-      }}
-      disabled={wordIndex === wordsLength - 1}>
+      }}>
       <FontAwesomeIcon icon="forward" size={20} color="white" />
     </TouchableHighlight>
   );
 }
+
+export default observer(ForwardButton);
