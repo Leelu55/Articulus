@@ -14,6 +14,7 @@ IsSpeaking --> IsSpeaking : ["forward" wordIndex++]
 IsSpeaking --> IsPaused : ["pause"]
 
 IsListening --> IsEvaluating : ["onSpeechResult"]
+IsListening --> IsRepeating : ["onSpeechError"]
 IsListening --> IsSpeaking : ["forward" wordIndex++]
 IsListening --> IsPaused : ["pause"]
 
@@ -24,7 +25,6 @@ IsRepeating --> IsListening : ["Wiederhole den Artikel"]
 IsRepeating --> IsSpeaking : ["forward" wordIndex++]
 IsRepeating --> IsPaused : ["pause"]
 
-IsEvaluating --> IsRepeating : ["onSpeechError"]
 IsEvaluating --> IsSpeaking: ["articleFound" wordIndex++]
 IsEvaluating --> IsSpeaking : ["forward" wordIndex++]
 IsEvaluating --> IsPaused : ["pause"]

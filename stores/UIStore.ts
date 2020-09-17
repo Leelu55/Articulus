@@ -8,7 +8,7 @@ export enum LessonState {
   IsSpeaking,
   IsRepeating,
   IsListening,
-  IsEvaluated,
+  IsEvaluating,
   IsPaused,
   IsFinished,
 }

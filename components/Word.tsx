@@ -42,8 +42,9 @@ function Word() {
     } else if (lessonState === LessonState.IsFinished) {
       audioVoice.voiceStop();
       audioVoice.stopSpeakWord();
+    } else if (lessonState === LessonState.IsEvaluating) {
     }
-  }, [currentLessonWord.value, uiStore, lessonState]);
+  }, [currentLessonWord.value, uiStore, lessonState, wordsStore]);
 
   return (
     <View style={styles.word}>

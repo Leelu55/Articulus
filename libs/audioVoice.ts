@@ -13,6 +13,7 @@ class AudioVoice {
 
     voiceLibrary.onSpeechResults = (event) => {
       const wordIndex = uiStore.wordIndex;
+      const lessonWordsLength = wordsStore.lessonWords.length;
 
       const clw = wordsStore.lessonWords[wordIndex];
 
@@ -20,18 +21,18 @@ class AudioVoice {
       //checkAnswer && checkArticle
       if (currentArticle === clw.article) {
         wordsStore.setAnswerArticleForLessonWord(clw.value, currentArticle);
-        console.log(clw);
-
         wordsStore.incrementSlotForWord(clw.value);
       }
       wordsStore.updateTimeStampForWord(clw.value);
-
-      if (wordIndex < wordsStore.lessonWords.length - 1) {
-        uiStore.setWordIndex(wordIndex + 1);
-        uiStore.setLessonState(LessonState.IsSpeaking);
-      } else {
-        uiStore.setLessonState(LessonState.IsFinished);
-      }
+      uiStore.setLessonState(LessonState.IsEvaluating);
+      setTimeout(() => {
+        if (wordIndex < lessonWordsLength - 1) {
+          uiStore.setWordIndex(wordIndex + 1);
+          uiStore.setLessonState(LessonState.IsSpeaking);
+        } else {
+          uiStore.setLessonState(LessonState.IsFinished);
+        }
+      }, 1000);
     };
 
     voiceLibrary.onSpeechError = () => {

@@ -12,7 +12,7 @@ export const ICONS = {
   [LessonState.IsSpeaking]: 'volume-down',
   [LessonState.IsRepeating]: 'volume-down',
   [LessonState.IsListening]: 'microphone',
-  [LessonState.IsEvaluated]: 'check',
+  [LessonState.IsEvaluating]: 'check',
   [LessonState.IsPaused]: 'coffee',
   [LessonState.IsFinished]: 'flag-checkered',
 };
@@ -22,7 +22,7 @@ export const COLORS = {
   [LessonState.IsSpeaking]: '#ffa500',
   [LessonState.IsRepeating]: '#ffa500',
   [LessonState.IsListening]: '#00bfff',
-  [LessonState.IsEvaluated]: 'green',
+  [LessonState.IsEvaluating]: 'green',
   [LessonState.IsPaused]: 'lightgrey',
   [LessonState.IsFinished]: 'green',
 };
