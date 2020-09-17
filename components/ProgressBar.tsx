@@ -16,11 +16,11 @@ function ProgressBar() {
     <View style={styles.progressBar}>
       {lessonWords.map(function (lessonWord, index) {
         const wordWithinRange =
-          index < wordIndex || uiStore.lessonState === LessonState.IsFinished;
+          index <= wordIndex || uiStore.lessonState === LessonState.IsFinished;
         const correctAnswer = lessonWord.answerArticle === lessonWord.article;
         let bgColor = 'lightgrey';
 
-        if (wordWithinRange) {
+        if (wordWithinRange && lessonWord.answerArticle !== null) {
           bgColor = correctAnswer ? 'yellowgreen' : 'tomato';
         }
 

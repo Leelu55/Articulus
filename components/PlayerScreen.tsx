@@ -5,7 +5,7 @@ import {observer} from 'mobx-react';
 
 import '../styles/wordStyle';
 
-import {Selector} from './Selector';
+import Selector from './Selector';
 import ControlBar from './ControlBar';
 import {Header} from './Header';
 import Word from './Word';
