@@ -6,23 +6,29 @@
 
 ```
 @startuml
-[*] --> startSession
-startSession --> getNextWordFromSession
-getNextWordFromSession --> speakWord
-getNextWordFromSession --> [*]: End Of List
-speakWord --> listenWord
-listenWord --> checkAnswer
-listenWord --> repeatWord : [speechRecognitionError]
-state a <<choice>> 
-checkAnswer --> a 
-a --> repeatWord : [isNoArticleFound || answerWordCount >= 5]
-a --> updateTimestampForWord : [isArticleFound  &&  answerWordCount < 5]
-state c <<choice>>
-updateTimestampForWord --> c
-c --> getNextWordFromSession : [isNotCorrectArticle]
-c --> incrementSlotForWord : [isCorrectArticle]
-repeatWord --> listenWord
-incrementSlotForWord --> getNextWordFromSession
+[*] --> IsInitial
+IsInitial --> IsSpeaking : [wordIndex = 0]
+
+IsSpeaking --> IsListening :["tts-finish"]
+IsSpeaking --> IsSpeaking : ["forward" wordIndex++]
+IsSpeaking --> IsPaused : ["pause"]
+
+IsListening --> IsEvaluating : ["onSpeechResult"]
+IsListening --> IsSpeaking : ["forward" wordIndex++]
+IsListening --> IsPaused : ["pause"]
+
+IsPaused --> IsSpeaking : ["play"]
+IsPaused --> IsSpeaking : ["forward" wordIndex++]
+
+IsRepeating --> IsListening : ["Wiederhole den Artikel"]
+IsRepeating --> IsSpeaking : ["forward" wordIndex++]
+IsRepeating --> IsPaused : ["pause"]
+
+IsEvaluating --> IsRepeating : ["onSpeechError"]
+IsEvaluating --> IsSpeaking: ["articleFound" wordIndex++]
+IsEvaluating --> IsSpeaking : ["forward" wordIndex++]
+IsEvaluating --> IsPaused : ["pause"]
+IsEvaluating --> [*]: IsFinished
 @enduml
 
 ```

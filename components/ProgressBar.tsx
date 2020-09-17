@@ -5,7 +5,6 @@ import WordsStore from '../stores/WordsStore';
 import {observer} from 'mobx-react';
 import UIStore, {LessonState} from '../stores/UIStore';
 import styles from '../styles/wordStyle';
-import {isBoxedObservable} from 'mobx';
 
 function ProgressBar() {
   const wordIndex = useContext(UIStore).wordIndex;

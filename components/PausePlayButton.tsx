@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {useContext} from 'react';
 import {TouchableHighlight, View} from 'react-native';
 import styles from '../styles/wordStyle';
@@ -10,10 +11,16 @@ function PausePlayButton() {
   const uiStore = useContext(UIStore);
   const lessonState = uiStore.lessonState;
   const icon = lessonState === LessonState.IsPaused ? 'play' : 'pause';
+  const isFinished = uiStore.lessonState === LessonState.IsFinished;
 
   return (
     <TouchableHighlight
-      style={styles.controlButton}
+      style={[
+        styles.controlButton,
+        {
+          backgroundColor: isFinished ? 'lightgrey' : 'black',
+        },
+      ]}
       onPress={() => {
         if (lessonState !== LessonState.IsPaused) {
           uiStore.setLessonState(LessonState.IsPaused);

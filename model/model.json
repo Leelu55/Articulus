@@ -5,21 +5,21 @@
       "slot": 0,
       "article": "das",
       "timestamp": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/31/04/12/mushroom-3051519_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/09/02/22/30/cottage-5539685_960_720.jpg"
     },
     {
       "value": "Baum", 
       "slot": 0,
       "article": "der",
       "timestamp": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/31/04/12/mushroom-3051519_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/03/26/10/50/green-692079_960_720.jpg"
     },
     {
       "value": "Hund", 
       "slot": 0,
       "article": "der",
       "timestamp": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/31/04/12/mushroom-3051519_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/18/18/06/australian-shepherd-3237735_960_720.jpg"
 
     },
     {
@@ -27,49 +27,49 @@
       "slot": 0,
       "article": "die",
       "timestamp": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/31/04/12/mushroom-3051519_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg"
     },
     {
       "value": "Tasse", 
       "slot": 0,
       "article": "die",
       "timestamp": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/31/04/12/mushroom-3051519_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/03/27/14/48/tea-2179175_960_720.jpg"
     },
     {
       "value": "Sonne", 
       "slot": 0,
       "article": "die",
       "timestamp": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/31/04/12/mushroom-3051519_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/03/27/21/38/sunset-2180346_960_720.jpg"
     },
     {
       "value": "Mensch", 
       "slot": 0,
       "article": "der",
       "timestamp": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/31/04/12/mushroom-3051519_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/07/31/00/26/woman-868522_960_720.jpg"
     },
     {
       "value": "Wasser", 
       "slot": 0,
       "article": "das",
       "timestamp": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/31/04/12/mushroom-3051519_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/12/24/05/02/drops-of-water-578897_960_720.jpg"
     },
     {
       "value": "Tisch", 
       "slot": 0,
       "article": "der",
       "timestamp": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/31/04/12/mushroom-3051519_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/11/20/08/modern-kitchen-3217932_960_720.jpg"
     },
     {
       "value": "Eule", 
       "slot": 0,
       "article": "die",
       "timestamp": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/31/04/12/mushroom-3051519_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/01/26/11/17/european-eagle-owl-2010346_960_720.jpg"
     }
   ]
 }

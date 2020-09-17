@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {useContext} from 'react';
 import {TouchableHighlight} from 'react-native';
 import styles from '../styles/wordStyle';
@@ -11,16 +12,20 @@ import {observer} from 'mobx-react';
 
 function ForwardButton() {
   const wordIndex = useContext(UIStore).wordIndex;
-  const wordsLength = useContext(WordsStore).words.length;
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
-  const lessonState = uiStore.lessonState;
+  const isFinished = uiStore.lessonState === LessonState.IsFinished;
 
   fontawesome.library.add(faForward);
 
   return (
     <TouchableHighlight
-      style={styles.controlButton}
+      style={[
+        styles.controlButton,
+        {
+          backgroundColor: isFinished ? 'lightgrey' : 'black',
+        },
+      ]}
       onPress={() => {
         if (wordIndex < wordsStore.lessonWords.length - 1) {
           uiStore.setWordIndex(wordIndex + 1);
@@ -28,7 +33,8 @@ function ForwardButton() {
         } else {
           uiStore.setLessonState(LessonState.IsFinished);
         }
-      }}>
+      }}
+      disabled={isFinished}>
       <FontAwesomeIcon icon="forward" size={20} color="white" />
     </TouchableHighlight>
   );

@@ -9,18 +9,20 @@ import {LessonState} from '../stores/UIStore';
 
 export const ICONS = {
   [LessonState.IsInitial]: 'assistive-listening-systems',
-  [LessonState.IsListening]: 'microphone',
   [LessonState.IsSpeaking]: 'volume-down',
   [LessonState.IsRepeating]: 'volume-down',
+  [LessonState.IsListening]: 'microphone',
+  [LessonState.IsEvaluated]: 'check',
   [LessonState.IsPaused]: 'coffee',
   [LessonState.IsFinished]: 'flag-checkered',
 };
 
 export const COLORS = {
   [LessonState.IsInitial]: 'black',
-  [LessonState.IsListening]: '#00bfff',
   [LessonState.IsSpeaking]: '#ffa500',
   [LessonState.IsRepeating]: '#ffa500',
+  [LessonState.IsListening]: '#00bfff',
+  [LessonState.IsEvaluated]: 'green',
   [LessonState.IsPaused]: 'lightgrey',
   [LessonState.IsFinished]: 'green',
 };
