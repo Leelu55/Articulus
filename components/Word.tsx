@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react';
-import {View} from 'react-native';
+import {View, Text} from 'react-native';
 import styles from '../styles/wordStyle';
 import {WordValue} from './WordValue';
 import WordsStore from '../stores/WordsStore';
@@ -50,6 +50,7 @@ function Word() {
     <View style={styles.word}>
       <WordValue value={currentLessonWord.value} />
       <WordImage imageUrl={currentLessonWord.imageUrl} />
+      <Text>{lessonState.toString()}</Text>
     </View>
   );
 }

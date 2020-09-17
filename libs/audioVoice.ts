@@ -38,7 +38,8 @@ class AudioVoice {
     };
 
     voiceLibrary.onSpeechError = () => {
-      if (uiStore.LessonState !== LessonState.IsSpeaking) {
+      console.log('vor if', uiStore.lessonState);
+      if (uiStore.lessonState !== LessonState.IsSpeaking) {
         uiStore.setLessonState(LessonState.IsRepeating);
       }
     };
