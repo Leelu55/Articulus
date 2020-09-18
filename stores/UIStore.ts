@@ -17,6 +17,7 @@ class UIStore {
   @observable wordIndex: number = 0;
   @observable lessonState: LessonState = LessonState.IsInitial;
   @observable currentAnswer: string = '';
+  @observable repeatCount: number = 0;
 
   //avoid mobx-persist error
   @persist foo: string = 'bar';
@@ -27,6 +28,13 @@ class UIStore {
 
   @action setLessonState = (lessonState) => {
     this.lessonState = lessonState;
+  };
+
+  @action increaseRepeatCount = () => {
+    this.repeatCount++;
+  };
+  @action resetRepeatCount = () => {
+    this.repeatCount = 0;
   };
 }
 

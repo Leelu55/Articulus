@@ -9,9 +9,9 @@ import {faForward} from '@fortawesome/fontawesome-free-solid';
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 import {observer} from 'mobx-react';
+import nextWord from '../libs/nextWord';
 
 function ForwardButton() {
-  const wordIndex = useContext(UIStore).wordIndex;
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
   const isFinished = uiStore.lessonState === LessonState.IsFinished;
@@ -27,12 +27,7 @@ function ForwardButton() {
         },
       ]}
       onPress={() => {
-        if (wordIndex < wordsStore.lessonWords.length - 1) {
-          uiStore.setWordIndex(wordIndex + 1);
-          uiStore.setLessonState(LessonState.IsSpeaking);
-        } else {
-          uiStore.setLessonState(LessonState.IsFinished);
-        }
+        nextWord(uiStore, wordsStore);
       }}
       disabled={isFinished}>
       <FontAwesomeIcon icon="forward" size={20} color="white" />
