@@ -18,6 +18,12 @@ class AudioVoice {
       const clw = wordsStore.lessonWords[wordIndex];
 
       const currentArticle = extractArticle(event.value);
+
+      if (currentArticle === null) {
+        uiStore.setLessonState(LessonState.IsRepeating);
+        return;
+      }
+
       wordsStore.setAnswerArticleForLessonWord(clw.value, currentArticle);
       //checkAnswer && checkArticle
       if (currentArticle === clw.article) {
