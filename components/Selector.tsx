@@ -4,6 +4,7 @@ import {View, Text} from 'react-native';
 import UIStore from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 import styles from '../styles/wordStyle';
+import settings from '../libs/settings.json';
 
 function Selector() {
   const uiStore = useContext(UIStore);
@@ -18,8 +19,11 @@ function Selector() {
     currentLessonWord.answerArticle === article ? true : false;
 
   const styleDefault = {opacity: 0.5};
-  const styleCorrect = {backgroundColor: 'yellowgreen', opacity: 1};
-  const styleWrong = {backgroundColor: 'tomato', opacity: 1};
+  const styleCorrect = {
+    backgroundColor: settings.colors.correctAnswer,
+    opacity: 1,
+  };
+  const styleWrong = {backgroundColor: settings.colors.wrongAnswer, opacity: 1};
 
   const styleSelector = (article: string) =>
     chosenArticle(article) && isCorrectArticle

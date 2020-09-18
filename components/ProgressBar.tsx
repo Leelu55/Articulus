@@ -5,6 +5,8 @@ import WordsStore from '../stores/WordsStore';
 import {observer} from 'mobx-react';
 import UIStore, {LessonState} from '../stores/UIStore';
 import styles from '../styles/wordStyle';
+import settings from '../libs/settings.json';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
 function ProgressBar() {
   const wordIndex = useContext(UIStore).wordIndex;
@@ -21,7 +23,9 @@ function ProgressBar() {
         let bgColor = 'lightgrey';
 
         if (wordWithinRange && lessonWord.answerArticle !== null) {
-          bgColor = correctAnswer ? 'yellowgreen' : 'tomato';
+          bgColor = correctAnswer
+            ? settings.colors.correctAnswer
+            : settings.colors.wrongAnswer;
         }
 
         let borderTopLeftRadius = 0;
@@ -51,8 +55,29 @@ function ProgressBar() {
               borderColor: 'black',
               height: 20,
               marginRight: 0.3,
-            }}
-          />
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+            {index === wordIndex &&
+              uiStore.lessonState !== LessonState.IsFinished && (
+                <FontAwesomeIcon
+                  icon="circle"
+                  size={5}
+                  color="black"
+                  style={{opacity: 0.75}}
+                />
+              )}
+            {lessonWords[index].answerArticle === null &&
+              (index < wordIndex ||
+                uiStore.lessonState === LessonState.IsFinished) && (
+                <FontAwesomeIcon
+                  icon="minus"
+                  size={10}
+                  color="black"
+                  style={{opacity: 0.6}}
+                />
+              )}
+          </View>
         );
       })}
     </View>
