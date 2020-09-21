@@ -54,7 +54,7 @@ function ProgressBar() {
               borderBottomRightRadius,
               borderColor: 'black',
               height: 20,
-              marginRight: 0.3,
+              marginRight: 0.5,
               justifyContent: 'center',
               alignItems: 'center',
             }}>
@@ -72,7 +72,7 @@ function ProgressBar() {
                 uiStore.lessonState === LessonState.IsFinished) && (
                 <FontAwesomeIcon
                   icon="minus"
-                  size={10}
+                  size={7}
                   color="black"
                   style={{opacity: 0.6}}
                 />
