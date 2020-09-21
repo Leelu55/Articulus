@@ -6,6 +6,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faTimes} from '@fortawesome/fontawesome-free-solid';
 import audioVoice from '../libs/audioVoice';
 
+fontawesome.library.add(faTimes);
+
 import {useNavigation} from '@react-navigation/native';
 import UIStore, {LessonState} from '../stores/UIStore';
 
@@ -13,8 +15,6 @@ export function CancelButton() {
   const uiStore = useContext(UIStore);
   const navigation = useNavigation();
 
-  //const uiStore = useContext(UIStore);
-  fontawesome.library.add(faTimes);
   return (
     <TouchableHighlight
       style={[styles.cancelButton]}
