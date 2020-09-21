@@ -2,20 +2,21 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   startScreen: {
+    backgroundColor: 'white',
     flexDirection: 'column',
     flex: 1,
+  },
+  appTitleWrapper: {
+    position: 'absolute',
+    opacity: 0.5,
+    width: 120,
+    height: 120,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'white',
   },
   appTitle: {
     fontSize: 50,
     fontWeight: 'bold',
-    padding: 10,
-    margin: 10,
-    borderWidth: 1,
-    borderRadius: 10,
-    borderColor: 'black',
   },
   wrongArticle: {
     flex: 1,
@@ -29,6 +30,11 @@ const styles = StyleSheet.create({
   },
   viewHorizontal: {
     flexDirection: 'row',
+    margin: 5,
+    padding: 5,
+  },
+  viewVertical: {
+    flexDirection: 'column',
     margin: 5,
     padding: 5,
   },
@@ -72,6 +78,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
+  startScreenButton: {
+    marginLeft: 10,
+    marginRight: 10,
+    marginBottom: 10,
+    padding: 10,
+    borderRadius: 5,
+    backgroundColor: 'lightgrey',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
   cancelButton: {
     marginRight: 5,
     alignItems: 'center',
@@ -83,6 +100,12 @@ const styles = StyleSheet.create({
     color: 'black',
     padding: 5,
     fontSize: 30,
+  },
+  startScreenButtonText: {
+    fontWeight: 'bold',
+    color: 'black',
+    padding: 5,
+    fontSize: 20,
   },
 
   controlButton: {

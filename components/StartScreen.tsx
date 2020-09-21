@@ -1,46 +1,151 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useContext} from 'react';
-import {View, Text, TouchableHighlight} from 'react-native';
+import React, {useContext, useRef} from 'react';
+import {View, Text, TouchableHighlight, Animated} from 'react-native';
 import styles from '../styles/wordStyle';
 import WordsStore from '../stores/WordsStore';
 import UIStore, {LessonState} from '../stores/UIStore';
+import {observer} from 'mobx-react';
 
 function StartScreen({navigation}) {
   const wordsStore = useContext(WordsStore);
   const uiStore = useContext(UIStore);
 
   const onStartLesson = () => {
+    wordsStore.emptyLesson();
+    wordsStore.populateLesson();
+    uiStore.setWordIndex(0);
+    uiStore.setLessonState(LessonState.IsInitial);
     navigation.navigate('PlayerScreen');
-    if (
-      uiStore.lessonState === LessonState.IsFinished ||
-      uiStore.lessonState === LessonState.IsInitial
-    ) {
-      wordsStore.emptyLesson();
-      wordsStore.populateLesson();
-    }
+  };
+
+  const onContinueLesson = () => {
+    navigation.navigate('PlayerScreen');
   };
 
   return (
     <View style={styles.startScreen}>
       <Title />
-      <View style={styles.viewHorizontal}>
+      <View style={[styles.viewVertical, {padding: 0, margin: 0}]}>
         <TouchableHighlight
-          style={[styles.articleButton, {backgroundColor: 'red'}]}
+          style={[styles.startScreenButton, {backgroundColor: 'orange'}]}
           onPress={onStartLesson}>
-          <Text style={styles.articleButtonText}>Start</Text>
+          <Text style={[styles.startScreenButtonText, {color: 'white'}]}>
+            New Lesson
+          </Text>
         </TouchableHighlight>
+
+        {![LessonState.IsInitial, LessonState.IsFinished].includes(
+          uiStore.lessonState,
+        ) && (
+          <TouchableHighlight
+            style={[styles.startScreenButton, {backgroundColor: 'lightgrey'}]}
+            onPress={onContinueLesson}>
+            <Text style={styles.startScreenButtonText}>Continue</Text>
+          </TouchableHighlight>
+        )}
       </View>
     </View>
   );
 }
 
 function Title() {
+  const anim1 = useRef(new Animated.Value(1)).current;
+  const anim2 = useRef(new Animated.Value(1)).current;
+  const anim3 = useRef(new Animated.Value(1)).current;
+
+  React.useEffect(() => {
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(anim1, {
+          toValue: 1.25,
+          duration: 1500,
+          useNativeDriver: true,
+        }),
+        Animated.timing(anim1, {
+          toValue: 1,
+          duration: 1500,
+          useNativeDriver: true,
+        }),
+      ]),
+    ).start();
+
+    Animated.loop(
+      Animated.sequence([
+        Animated.delay(500),
+        Animated.timing(anim2, {
+          toValue: 1.25,
+          duration: 1500,
+          useNativeDriver: true,
+        }),
+        Animated.timing(anim2, {
+          toValue: 1,
+          duration: 1500,
+          useNativeDriver: true,
+        }),
+      ]),
+    ).start();
+
+    Animated.loop(
+      Animated.sequence([
+        Animated.delay(1000),
+        Animated.timing(anim3, {
+          toValue: 1.25,
+          duration: 1500,
+          useNativeDriver: true,
+        }),
+        Animated.timing(anim3, {
+          toValue: 1,
+          duration: 1500,
+          useNativeDriver: true,
+        }),
+      ]),
+    ).start();
+  }, [anim1, anim2, anim3]);
+
   return (
-    <View style={styles.viewHorizontal}>
-      <Text style={[styles.appTitle, {color: 'green'}]}>der</Text>
-      <Text style={[styles.appTitle, {color: 'orange'}]}>die</Text>
-      <Text style={[styles.appTitle, {color: 'yellow'}]}>das</Text>
+    <View style={{flex: 1}}>
+      <Animated.View
+        style={[
+          styles.appTitleWrapper,
+          {
+            scaleX: anim1,
+            scaleY: anim1,
+            translateX: 60,
+            translateY: 150,
+            backgroundColor: '#fcc',
+          },
+        ]}>
+        <Text style={styles.appTitle}>DER</Text>
+      </Animated.View>
+
+      <Animated.View
+        style={[
+          styles.appTitleWrapper,
+          {
+            scaleX: anim2,
+            scaleY: anim2,
+            translateX: 110,
+            translateY: 280,
+            backgroundColor: '#cfc',
+          },
+        ]}>
+        <Text style={styles.appTitle}>DIE</Text>
+      </Animated.View>
+
+      <Animated.View
+        style={[
+          styles.appTitleWrapper,
+          {
+            scaleX: anim3,
+            scaleY: anim3,
+            translateX: 180,
+            translateY: 200,
+            backgroundColor: '#ccf',
+          },
+        ]}>
+        <Text style={styles.appTitle}>DAS</Text>
+      </Animated.View>
     </View>
   );
 }
-export default StartScreen;
+export default observer(StartScreen);

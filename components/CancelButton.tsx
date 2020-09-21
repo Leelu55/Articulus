@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {TouchableHighlight} from 'react-native';
 import styles from '../styles/wordStyle';
 import fontawesome from '@fortawesome/fontawesome';
@@ -9,10 +9,8 @@ import audioVoice from '../libs/audioVoice';
 fontawesome.library.add(faTimes);
 
 import {useNavigation} from '@react-navigation/native';
-import UIStore, {LessonState} from '../stores/UIStore';
 
 export function CancelButton() {
-  const uiStore = useContext(UIStore);
   const navigation = useNavigation();
 
   return (
@@ -21,7 +19,6 @@ export function CancelButton() {
       onPress={() => {
         audioVoice.cleanup();
         navigation.goBack();
-        uiStore.setLessonState(LessonState.IsFinished);
       }}>
       <FontAwesomeIcon icon="times" color="lightgrey" size={40} />
     </TouchableHighlight>
