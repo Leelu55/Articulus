@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {View} from 'react-native';
 import styles from '../styles/wordStyle';
 import {WordValue} from './WordValue';
@@ -65,5 +65,3 @@ function Word() {
 }
 
 export default observer(Word);
-
-
