@@ -95,7 +95,7 @@
     {
       "value": "Computer", 
       "slot": 0,
-      "article": "die",
+      "article": "der",
       "timestamp": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2015/05/15/02/07/computer-767781_960_720.jpg"
     },
@@ -109,7 +109,7 @@
     {
       "value": "Taschentuch", 
       "slot": 0,
-      "article": "die",
+      "article": "das",
       "timestamp": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2015/10/22/07/55/tissues-1000849_960_720.png"
     },
