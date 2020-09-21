@@ -1,10 +1,12 @@
 import {observer} from 'mobx-react';
 import React, {useContext} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableHighlight} from 'react-native';
 import UIStore from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 import styles from '../styles/wordStyle';
 import settings from '../libs/settings.json';
+import processAnswer from '../libs/processAnswer';
+import audioVoice from '../libs/audioVoice';
 
 function Selector() {
   const uiStore = useContext(UIStore);
@@ -34,15 +36,35 @@ function Selector() {
 
   return (
     <View style={styles.viewHorizontal}>
-      <View style={[styles.articleButton, styleSelector('der')]}>
+      <TouchableHighlight
+        style={[styles.articleButton, styleSelector('der')]}
+        onPress={() => {
+          audioVoice.voiceStop();
+          audioVoice.stopSpeakWord();
+          processAnswer(wordsStore, uiStore, 'der');
+        }}>
         <Text style={styles.articleButtonText}>DER</Text>
-      </View>
-      <View style={[styles.articleButton, styleSelector('die')]}>
+      </TouchableHighlight>
+
+      <TouchableHighlight
+        style={[styles.articleButton, styleSelector('die')]}
+        onPress={() => {
+          audioVoice.voiceStop();
+          audioVoice.stopSpeakWord();
+          processAnswer(wordsStore, uiStore, 'die');
+        }}>
         <Text style={styles.articleButtonText}>DIE</Text>
-      </View>
-      <View style={[styles.articleButton, styleSelector('das')]}>
+      </TouchableHighlight>
+
+      <TouchableHighlight
+        style={[styles.articleButton, styleSelector('das')]}
+        onPress={() => {
+          audioVoice.voiceStop();
+          audioVoice.stopSpeakWord();
+          processAnswer(wordsStore, uiStore, 'das');
+        }}>
         <Text style={styles.articleButtonText}>DAS</Text>
-      </View>
+      </TouchableHighlight>
     </View>
   );
 }
