@@ -2,5 +2,8 @@
   "colors": {
     "correctAnswer": "#4CBB17",
     "wrongAnswer": "#F4512C"
-  }
+  },
+
+  "lessonSize": 20,
+  "numberOfSlots": 6
 }

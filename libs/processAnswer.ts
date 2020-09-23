@@ -14,8 +14,12 @@ export default function processAnswer(
   //checkAnswer && checkArticle
   if (currentArticle === clw.article) {
     wordsStore.incrementSlotForWord(clw.value);
+  } else {
+    wordsStore.decrementSlotForWord(clw.value);
   }
+
   wordsStore.updateTimeStampForWord(clw.value);
+  wordsStore.updateDueDateTimeForWord(clw.value);
   uiStore.setLessonState(LessonState.IsEvaluating);
   setTimeout(() => {
     if (uiStore.lessonState === LessonState.IsEvaluating) {

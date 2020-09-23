@@ -3,6 +3,8 @@ import {persist, create} from 'mobx-persist';
 import {createContext} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 import model from '../model/model.json';
+import settings from '../libs/settings.json';
+import populateLesson from '../libs/populateLesson';
 
 export interface WordType {
   value: string;
@@ -10,6 +12,7 @@ export interface WordType {
   article: string;
   timestamp: Date;
   imageUrl: string;
+  dueDateTime: Date;
 }
 
 export interface LessonWordType {
@@ -29,21 +32,15 @@ class WordsStore {
       let i = 0;
       for (const word of model.words) {
         this.words[i++] = word;
+        console.log(word.slot);
       }
     }
   }
-
   @persist('object') @observable lessonWords: LessonWordType[] = [];
 
-  @action populateLesson = () => {
-    for (const word of this.words) {
-      this.lessonWords.push({
-        value: word.value,
-        article: word.article,
-        answerArticle: null,
-        imageUrl: word.imageUrl,
-      });
-    }
+  @action populateLesson = (): Boolean => {
+    this.lessonWords = populateLesson(this.words);
+    return this.lessonWords.length ? true : false;
   };
 
   @action emptyLesson = () => {
@@ -62,11 +59,29 @@ class WordsStore {
 
   @action incrementSlotForWord = (value: string) => {
     const index = this.words.findIndex((word) => word.value === value);
-    this.words[index].slot++;
+    if (this.words[index].slot < settings.lessonSize - 1) {
+      this.words[index].slot++;
+    }
   };
+
+  @action decrementSlotForWord = (value: string) => {
+    const index = this.words.findIndex((word) => word.value === value);
+    if (this.words[index].slot > 0) {
+      this.words[index].slot--;
+    }
+  };
+
   @action updateTimeStampForWord = (value: string) => {
     const index = this.words.findIndex((word) => word.value === value);
     this.words[index].timestamp = new Date();
+  };
+
+  @action updateDueDateTimeForWord = (value: string) => {
+    const index = this.words.findIndex((word) => word.value === value);
+    this.words[index].dueDateTime = new Date(
+      Date.now() + Math.pow(2, this.words[index].slot) * 1000 * 60 * 60 * 24,
+    );
+    console.log(this.words[index].dueDateTime);
   };
 }
 
