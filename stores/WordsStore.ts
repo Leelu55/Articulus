@@ -59,7 +59,7 @@ class WordsStore {
 
   @action incrementSlotForWord = (value: string) => {
     const index = this.words.findIndex((word) => word.value === value);
-    if (this.words[index].slot < settings.lessonSize - 1) {
+    if (this.words[index].slot < settings.numberOfSlots - 1) {
       this.words[index].slot++;
     }
   };
