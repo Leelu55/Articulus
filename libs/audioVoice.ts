@@ -23,7 +23,6 @@ class AudioVoice {
     };
 
     voiceLibrary.onSpeechError = () => {
-      console.log('vor if', uiStore.lessonState);
       if (uiStore.lessonState !== LessonState.IsSpeaking) {
         uiStore.setLessonState(LessonState.IsRepeating);
       }
@@ -37,6 +36,7 @@ class AudioVoice {
   }
 
   voiceStart() {
+    //console.error(1);
     voiceLibrary.start('de-DE');
   }
 
