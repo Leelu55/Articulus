@@ -33,7 +33,8 @@
     "react-native-screens": "^2.10.1",
     "react-native-svg": "^12.1.0",
     "react-native-tts": "^3.2.0",
-    "react-navigation": "^4.4.0"
+    "react-navigation": "^4.4.0",
+    "react-navigation-stack": "^2.8.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

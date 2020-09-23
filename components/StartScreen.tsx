@@ -5,17 +5,21 @@ import styles from '../styles/wordStyle';
 import WordsStore from '../stores/WordsStore';
 import UIStore, {LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
+import {NavigationStackProp} from 'react-navigation-stack';
 
-function StartScreen({navigation}) {
+function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
   const uiStore = useContext(UIStore);
 
   const onStartLesson = () => {
     wordsStore.emptyLesson();
-    wordsStore.populateLesson();
-    uiStore.setWordIndex(0);
-    uiStore.setLessonState(LessonState.IsInitial);
-    navigation.navigate('PlayerScreen');
+    if (wordsStore.populateLesson()) {
+      uiStore.setWordIndex(0);
+      uiStore.setLessonState(LessonState.IsInitial);
+      navigation.navigate('PlayerScreen');
+    } else {
+      navigation.navigate('EmptyWordsScreen');
+    }
   };
 
   const onContinueLesson = () => {
