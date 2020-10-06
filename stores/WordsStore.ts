@@ -38,8 +38,10 @@ class WordsStore {
   }
   @persist('object') @observable lessonWords: LessonWordType[] = [];
 
+  // @return Boolean true if lesson words not empty, false otherwise
+  // calss the populate lesson function with @param words array and current DateTime
   @action populateLesson = (): Boolean => {
-    this.lessonWords = populateLesson(this.words);
+    this.lessonWords = populateLesson(this.words, Date.now());
     return this.lessonWords.length ? true : false;
   };
 
