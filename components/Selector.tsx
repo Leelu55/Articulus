@@ -1,7 +1,7 @@
 import {observer} from 'mobx-react';
 import React, {useContext} from 'react';
 import {View, Text, TouchableHighlight} from 'react-native';
-import UIStore from '../stores/UIStore';
+import UIStore, { LessonState } from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 import styles from '../styles/wordStyle';
 import settings from '../libs/settings.json';
@@ -37,6 +37,7 @@ function Selector() {
   return (
     <View style={styles.viewHorizontal}>
       <TouchableHighlight
+        disabled={uiStore.lessonState === LessonState.IsEvaluating}
         style={[styles.articleButton, styleSelector('der')]}
         onPress={() => {
           audioVoice.voiceStop();
@@ -47,6 +48,7 @@ function Selector() {
       </TouchableHighlight>
 
       <TouchableHighlight
+        disabled={uiStore.lessonState === LessonState.IsEvaluating}
         style={[styles.articleButton, styleSelector('die')]}
         onPress={() => {
           audioVoice.voiceStop();
@@ -57,6 +59,7 @@ function Selector() {
       </TouchableHighlight>
 
       <TouchableHighlight
+        disabled={uiStore.lessonState === LessonState.IsEvaluating}
         style={[styles.articleButton, styleSelector('das')]}
         onPress={() => {
           audioVoice.voiceStop();
