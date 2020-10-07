@@ -1,32 +1,7 @@
 import {LessonWordType, WordType} from '../stores/WordsStore';
 import settings from './settings.json';
 import {getRandomInt} from '../libs/utils';
-
-export function sortWordsByDueDateTime(
-  wordA: WordType,
-  wordB: WordType,
-): number {
-  const aIsEarlierThanB = -1;
-  const bIsEarlierThanA = 1;
-
-  if (wordA.dueDateTime === wordB.dueDateTime) {
-    return 0;
-  }
-
-  if (wordA.dueDateTime === null) {
-    return aIsEarlierThanB;
-  }
-
-  if (wordB.dueDateTime === null) {
-    return bIsEarlierThanA;
-  }
-
-  if (wordA.dueDateTime < wordB.dueDateTime) {
-    return aIsEarlierThanB;
-  }
-
-  return bIsEarlierThanA;
-}
+import {sortWordsByDueDateTime} from './sortWordsByDueDateTime';
 
 export function getRandomNewWords(numberOfNewWords: number, words: WordType[]) {
   let randomNewWords: WordType[] = [];

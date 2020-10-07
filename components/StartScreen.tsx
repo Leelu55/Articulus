@@ -34,7 +34,7 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
           style={[styles.startScreenButton, {backgroundColor: 'orange'}]}
           onPress={onStartLesson}>
           <Text style={[styles.startScreenButtonText, {color: 'white'}]}>
-            New Lesson
+            Start neue Runde
           </Text>
         </TouchableHighlight>
 

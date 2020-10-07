@@ -1,10 +1,11 @@
-import {observable, action} from 'mobx';
+import {observable, action, comparer, computed} from 'mobx';
 import {persist, create} from 'mobx-persist';
 import {createContext} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 import model from '../model/model.json';
 import settings from '../libs/settings.json';
 import populateLesson from '../libs/populateLesson';
+import {sortWordsByDueDateTime} from '../libs/sortWordsByDueDateTime';
 
 export interface WordType {
   value: string;
@@ -81,10 +82,16 @@ class WordsStore {
   @action updateDueDateTimeForWord = (value: string) => {
     const index = this.words.findIndex((word) => word.value === value);
     this.words[index].dueDateTime = new Date(
-      Date.now() + Math.pow(2, this.words[index].slot) * 1000 * 60 * 60 * 24,
+      new Date(
+        Date.now() + Math.pow(2, this.words[index].slot) * 1000 * 60 * 60 * 24,
+      ).setHours(0, 0, 0, 0),
     );
     console.log(this.words[index].dueDateTime);
   };
+
+  @computed get nextDueDate(): Date {
+    return this.words.sort(sortWordsByDueDateTime)[0].dueDateTime;
+  }
 }
 
 //create state instance

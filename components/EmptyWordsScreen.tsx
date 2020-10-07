@@ -1,21 +1,40 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useContext, useRef} from 'react';
-import {View, Text, TouchableHighlight, Animated, Pressable} from 'react-native';
-import styles from '../styles/wordStyle';
+import React from 'react';
+import {View, Text, TouchableHighlight, StyleSheet} from 'react-native';
+import sharedStyles from '../styles/wordStyle';
+import SuccessIcon from './SuccessIcon';
+import {observer} from 'mobx-react';
 import {NavigationStackProp} from 'react-navigation-stack';
 
 function EmptyWordsScreen({navigation}: {navigation: NavigationStackProp}) {
-  const onBack = () => {
-    navigation.goBack();
+  const onContinueLesson = () => {
+    navigation.navigate('StartScreen');
   };
 
+  const styles = StyleSheet.create({
+    emptyWordsScreen: {
+      backgroundColor: 'lightyellow',
+      flexDirection: 'column',
+      flex: 1,
+    },
+  });
   return (
-    <View style={styles.startScreen}>
-      <Pressable onPress={onBack}>
-        <Text>Go Back</Text>
-      </Pressable>
+    <View style={styles.emptyWordsScreen}>
+      <SuccessIcon />
+      <View style={[sharedStyles.viewVertical, {padding: 0, margin: 0}]}>
+        <TouchableHighlight
+          style={[
+            sharedStyles.startScreenButton,
+            {backgroundColor: 'darkblue'},
+          ]}
+          onPress={onContinueLesson}>
+          <Text style={[sharedStyles.startScreenButtonText, {color: 'white'}]}>
+           Zurück auf Start
+          </Text>
+        </TouchableHighlight>
+      </View>
     </View>
   );
 }
 
-export default EmptyWordsScreen;
+export default observer(EmptyWordsScreen);

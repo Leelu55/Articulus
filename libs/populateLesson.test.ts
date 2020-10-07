@@ -1,8 +1,8 @@
 import {WordType} from '../stores/WordsStore';
 import populateLesson, {
   getRandomNewWords,
-  sortWordsByDueDateTime,
 } from './populateLesson';
+import { sortWordsByDueDateTime } from "./sortWordsByDueDateTime";
 import testmodel from '../model/testmodel.json';
 
 function getSequentialNewWords(numberOfNewWords: number, words: WordType[]) {
