@@ -26,9 +26,7 @@ const styles = StyleSheet.create({
 function SvgComponent() {
   const wordsStore = useContext(WordsStore);
   const nextDueDate = wordsStore.nextDueDate;
-  const options = {
-    weekday: 'short',
-  };
+
   console.log(nextDueDate);
   return (
     <View style={styles.svgWrapper}>
@@ -45,7 +43,7 @@ function SvgComponent() {
       </Svg>
       <Text style={styles.text}>Nothing to learn today</Text>
       <Text style={[styles.text, {fontWeight: 'normal'}]}>
-        Komm am {' '}{getWeekDayString(new Date(nextDueDate).getDay())} wieder
+        Komm am {getWeekDayString(new Date(nextDueDate).getDay())} wieder
       </Text>
     </View>
   );

@@ -29,7 +29,7 @@ function EmptyWordsScreen({navigation}: {navigation: NavigationStackProp}) {
           ]}
           onPress={onContinueLesson}>
           <Text style={[sharedStyles.startScreenButtonText, {color: 'white'}]}>
-           Zurück auf Start
+            Zurück auf Start
           </Text>
         </TouchableHighlight>
       </View>

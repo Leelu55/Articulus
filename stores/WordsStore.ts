@@ -90,7 +90,7 @@ class WordsStore {
   };
 
   @computed get nextDueDate(): Date {
-    return this.words.sort(sortWordsByDueDateTime)[0].dueDateTime;
+    return this.words.slice().sort(sortWordsByDueDateTime)[0].dueDateTime;
   }
 }
 
