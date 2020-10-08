@@ -26,7 +26,7 @@
     },
     {
       "value": "Baum", 
-      "slot": 0,
+      "slot": 3,
       "article": "der" ,
       "timestamp": null,
       "dueDateTime": null,
@@ -43,7 +43,7 @@
     },
     {
       "value": "Katze", 
-      "slot": 0,
+      "slot": 2,
       "article": "die" ,
       "timestamp": null,
       "dueDateTime": null,
