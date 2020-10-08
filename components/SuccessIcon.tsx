@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 
 function SvgComponent() {
   const wordsStore = useContext(WordsStore);
-  const nextDueDate = wordsStore.nextDueDate;
+  const nextDueDate = wordsStore.nextDueDate();
 
   console.log(nextDueDate);
   return (

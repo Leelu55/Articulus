@@ -1,4 +1,4 @@
-import {observable, action, comparer, computed} from 'mobx';
+import {observable, action, computed} from 'mobx';
 import {persist, create} from 'mobx-persist';
 import {createContext} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
@@ -83,15 +83,19 @@ class WordsStore {
     const index = this.words.findIndex((word) => word.value === value);
     this.words[index].dueDateTime = new Date(
       new Date(
-        Date.now() + Math.pow(2, this.words[index].slot) * 1000 * 60 * 60 * 24,
+        Date.now() + Math.pow(2, this.words[index].s) * 1000 * 60 * 60 * 24,
       ).setHours(0, 0, 0, 0),
     );
     console.log(this.words[index].dueDateTime);
   };
 
-  @computed get nextDueDate(): Date {
+  nextDueDate = (): Date => {
     return this.words.slice().sort(sortWordsByDueDateTime)[0].dueDateTime;
-  }
+  };
+
+  wordsForSlot = (slot): number => {
+    return this.words.filter((word) => word.slot === slot).length;
+  };
 }
 
 //create state instance
