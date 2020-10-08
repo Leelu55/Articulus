@@ -1,12 +1,13 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext} from 'react';
 import {View, Text, TouchableHighlight} from 'react-native';
-import styles from '../styles/wordStyle';
+import sharedStyles from '../styles/wordStyle';
 import WordsStore from '../stores/WordsStore';
 import UIStore, {LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {NavigationStackProp} from 'react-navigation-stack';
 import BucketView from './BucketView';
+import LearnedWordsView from './LearnedWordsView';
 
 function SecondStartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
@@ -28,14 +29,18 @@ function SecondStartScreen({navigation}: {navigation: NavigationStackProp}) {
   };
 
   return (
-    <View style={styles.startScreen}>
-      <View style={[styles.viewVertical, {padding: 0, margin: 0, flex: 1}]}>
-        <BucketView />
+    <View style={sharedStyles.startScreen}>
+      <View
+        style={[sharedStyles.viewVertical, {padding: 0, margin: 0, flex: 1}]}>
+        <View style={{flex: 1}}>
+          <BucketView />
+          <LearnedWordsView />
+        </View>
 
         <TouchableHighlight
-          style={[styles.startScreenButton, {backgroundColor: 'orange'}]}
+          style={[sharedStyles.startScreenButton, {backgroundColor: 'orange'}]}
           onPress={onStartLesson}>
-          <Text style={[styles.startScreenButtonText, {color: 'white'}]}>
+          <Text style={[sharedStyles.startScreenButtonText, {color: 'white'}]}>
             Start neue Runde
           </Text>
         </TouchableHighlight>
@@ -44,9 +49,12 @@ function SecondStartScreen({navigation}: {navigation: NavigationStackProp}) {
           uiStore.lessonState,
         ) && (
           <TouchableHighlight
-            style={[styles.startScreenButton, {backgroundColor: 'lightgrey'}]}
+            style={[
+              sharedStyles.startScreenButton,
+              {backgroundColor: 'lightgrey'},
+            ]}
             onPress={onContinueLesson}>
-            <Text style={styles.startScreenButtonText}>Continue</Text>
+            <Text style={sharedStyles.startScreenButtonText}>Continue</Text>
           </TouchableHighlight>
         )}
       </View>

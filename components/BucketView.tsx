@@ -6,7 +6,6 @@ import settings from '../libs/settings.json';
 
 const styles = StyleSheet.create({
   BucketView: {
-    flex: 1,
     justifyContent: 'space-evenly',
   },
 });
