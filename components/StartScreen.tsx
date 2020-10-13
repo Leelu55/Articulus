@@ -1,6 +1,13 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext, useRef} from 'react';
-import {View, Text, TouchableHighlight, Animated} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableHighlight,
+  Animated,
+  Image,
+  ImageBackground,
+} from 'react-native';
 import styles from '../styles/wordStyle';
 import WordsStore from '../stores/WordsStore';
 import UIStore, {LessonState} from '../stores/UIStore';
@@ -28,26 +35,30 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
 
   return (
     <View style={styles.startScreen}>
-      <Title />
-      <View style={[styles.viewVertical, {padding: 0, margin: 0}]}>
-        <TouchableHighlight
-          style={[styles.startScreenButton, {backgroundColor: 'orange'}]}
-          onPress={onStartLesson}>
-          <Text style={[styles.startScreenButtonText, {color: 'white'}]}>
-            Start neue Runde
-          </Text>
-        </TouchableHighlight>
-
-        {![LessonState.IsInitial, LessonState.IsFinished].includes(
-          uiStore.lessonState,
-        ) && (
+      <ImageBackground
+        source={require('../assets/parrots.jpg')}
+        style={{width: '100%', height: '100%', justifyContent: 'flex-end'}}>
+        <Title />
+        <View style={[styles.viewVertical, {padding: 0, margin: 0}]}>
           <TouchableHighlight
-            style={[styles.startScreenButton, {backgroundColor: 'lightgrey'}]}
-            onPress={onContinueLesson}>
-            <Text style={styles.startScreenButtonText}>Continue</Text>
+            style={[styles.startScreenButton, {backgroundColor: 'orange'}]}
+            onPress={onStartLesson}>
+            <Text style={[styles.startScreenButtonText, {color: 'white'}]}>
+              START
+            </Text>
           </TouchableHighlight>
-        )}
-      </View>
+
+          {/*    {![LessonState.IsInitial, LessonState.IsFinished].includes(
+            uiStore.lessonState,
+          ) && (
+            <TouchableHighlight
+              style={[styles.startScreenButton, {backgroundColor: 'lightgrey'}]}
+              onPress={onContinueLesson}>
+              <Text style={styles.startScreenButtonText}>Continue</Text>
+            </TouchableHighlight>
+          )} */}
+        </View>
+      </ImageBackground>
     </View>
   );
 }
@@ -115,7 +126,7 @@ function Title() {
             scaleX: anim1,
             scaleY: anim1,
             translateX: 60,
-            translateY: 150,
+            translateY: 50,
             backgroundColor: '#fcc',
           },
         ]}>
@@ -129,7 +140,7 @@ function Title() {
             scaleX: anim2,
             scaleY: anim2,
             translateX: 110,
-            translateY: 280,
+            translateY: 180,
             backgroundColor: '#cfc',
           },
         ]}>
@@ -143,7 +154,7 @@ function Title() {
             scaleX: anim3,
             scaleY: anim3,
             translateX: 180,
-            translateY: 200,
+            translateY: 100,
             backgroundColor: '#ccf',
           },
         ]}>
