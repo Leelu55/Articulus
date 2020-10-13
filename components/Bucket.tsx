@@ -21,11 +21,11 @@ function Bucket({slot}: {slot: number}) {
       alignContent: 'center',
       flexWrap: 'wrap',
       flexDirection: 'row',
-      backgroundColor: 'pink',
+      backgroundColor: 'lightgrey',
       borderWidth: 0,
     },
     BucketIcon: {
-      color: 'blue',
+      color: 'green',
       margin: 6,
     },
     BucketText: {
