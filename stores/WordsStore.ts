@@ -1,4 +1,4 @@
-import {observable, action, computed} from 'mobx';
+import {observable, action} from 'mobx';
 import {persist, create} from 'mobx-persist';
 import {createContext} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
