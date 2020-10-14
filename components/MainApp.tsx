@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 
 import PlayerScreen from './PlayerScreen';
 import EmptyWordsScreen from './EmptyWordsScreen';
@@ -9,8 +9,10 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import StatisticsScreen from './StatisticsScreen';
 import StartScreen from './StartScreen';
 import SkeletonScreen from './SkeletonScreen';
+import UIStore from '../stores/UIStore';
 
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import IntroSlider from './IntroSlider';
 
 const SettingsScreen = () => <SkeletonScreen text="Settings" />;
 const AboutScreen = () => <SkeletonScreen text="About" />;
@@ -68,8 +70,11 @@ const HomeStack = () => {
 };
 
 const MainApp = () => {
+  const uiStore = useContext(UIStore);
   const Stack = createStackNavigator();
-
+  if (uiStore.showIntro) {
+    return <IntroSlider />;
+  }
   return (
     <NavigationContainer>
       <Stack.Navigator headerMode="none">

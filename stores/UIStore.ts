@@ -19,8 +19,7 @@ class UIStore {
   @observable currentAnswer: string = '';
   @observable repeatCount: number = 0;
 
-  //avoid mobx-persist error
-  @persist foo: string = 'bar';
+  @persist showIntro: boolean = true;
 
   @action setWordIndex = (wordIndex) => {
     this.wordIndex = wordIndex;
@@ -35,6 +34,11 @@ class UIStore {
   };
   @action resetRepeatCount = () => {
     this.repeatCount = 0;
+  };
+
+  @action hideIntro = () => {
+    console.error('hideIntro');
+    this.showIntro = false;
   };
 }
 
