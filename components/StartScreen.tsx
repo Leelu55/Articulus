@@ -5,7 +5,6 @@ import {
   Text,
   TouchableHighlight,
   Animated,
-  Image,
   ImageBackground,
 } from 'react-native';
 import styles from '../styles/wordStyle';
@@ -27,10 +26,6 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
     } else {
       navigation.navigate('EmptyWordsScreen');
     }
-  };
-
-  const onContinueLesson = () => {
-    navigation.navigate('PlayerScreen');
   };
 
   return (
