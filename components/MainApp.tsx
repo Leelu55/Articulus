@@ -72,6 +72,7 @@ const HomeStack = () => {
 const MainApp = () => {
   const uiStore = useContext(UIStore);
   const Stack = createStackNavigator();
+  console.error('rerender mainapp');
   if (uiStore.showIntro) {
     return <IntroSlider />;
   }

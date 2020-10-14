@@ -19,7 +19,7 @@ class UIStore {
   @observable currentAnswer: string = '';
   @observable repeatCount: number = 0;
 
-  @persist showIntro: boolean = true;
+  @persist @observable showIntro: boolean = true;
 
   @action setWordIndex = (wordIndex) => {
     this.wordIndex = wordIndex;
