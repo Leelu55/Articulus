@@ -5,9 +5,9 @@ import {observer} from 'mobx-react';
 import UIStore from '../stores/UIStore';
 import {useContext} from 'react';
 
-import Svg1 from './intro/Slide1';
-import Svg2 from './intro/Slide2';
-import Svg3 from './intro/Slide3';
+import Svg1 from './intro/Slide1SVG';
+import Svg2 from './intro/Slide2SVG';
+import Svg3 from './intro/Slide3SVG';
 
 const slides = [
   {

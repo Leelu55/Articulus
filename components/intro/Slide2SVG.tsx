@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Svg, {Path} from 'react-native-svg';
 
-function SvgComponent(props: React.SVGProps<SVGSVGElement>) {
+function SvgComponent(props: any) {
   return (
     <Svg height="50%" width="70%" viewBox="0 -34 512 512" {...props}>
       <Path
