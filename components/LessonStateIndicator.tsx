@@ -26,7 +26,7 @@ export const COLORS = {
   [LessonState.IsInitial]: 'black',
   [LessonState.IsSpeaking]: '#ffa500',
   [LessonState.IsRepeating]: '#ffa500',
-  [LessonState.IsWaitingForUserAction]: 'lightblue',
+  [LessonState.IsWaitingForUserAction]: 'white',
   [LessonState.IsListening]: '#00bfff',
   [LessonState.IsEvaluating]: settings.colors.correctAnswer,
   [LessonState.IsPaused]: 'lightgrey',
@@ -65,6 +65,11 @@ function LessonStateIndicator() {
   }, [fadeAnim, lessonState]);
 
   let icon = ICONS[lessonState];
+  const iconColor =
+    !uiStore.autoMode &&
+    uiStore.lessonState === LessonState.IsWaitingForUserAction
+      ? '#00bfff'
+      : 'white';
   let bgColor = COLORS[lessonState];
   const currentWord = wordsStore.lessonWords[uiStore.wordIndex];
   if (
@@ -95,7 +100,7 @@ function LessonStateIndicator() {
             position: 'absolute',
           }, // Bind opacity to animated value
         ]}>
-        <FontAwesomeIcon icon={icon} size={60} color="white" />
+        <FontAwesomeIcon icon={icon} size={60} color={iconColor} />
       </View>
       <Animated.View // Special animatable View
         style={[
