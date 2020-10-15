@@ -15,7 +15,7 @@ function PlayerScreen() {
     // eslint-disable-next-line react-native/no-inline-styles
     <View style={{flex: 1}}>
       <Header />
-      <View style={styles.viewHorizontal}>
+      <View style={[styles.viewHorizontal]}>
         <SelectorButton articleText="der" />
         <SelectorButton articleText="die" />
         <SelectorButton articleText="das" />

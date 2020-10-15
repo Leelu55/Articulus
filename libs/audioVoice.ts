@@ -7,7 +7,10 @@ import processAnswer from './processAnswer';
 
 class AudioVoice {
   setup(uiStore, wordsStore) {
-    ttsLibrary.addEventListener('tts-finish', this.voiceStart);
+    ttsLibrary.addEventListener('tts-finish', () => {
+      this.startUserInteraction(uiStore);
+    });
+
     voiceLibrary.onSpeechStart = () => {
       uiStore.setLessonState(LessonState.IsListening);
     };
@@ -27,6 +30,14 @@ class AudioVoice {
         uiStore.setLessonState(LessonState.IsRepeating);
       }
     };
+  }
+
+  private startUserInteraction(uiStore: any) {
+    if (uiStore.autoMode) {
+      this.voiceStart();
+    } else {
+      uiStore.setLessonState(LessonState.IsWaitingForUserAction);
+    }
   }
 
   cleanup() {

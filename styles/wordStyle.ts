@@ -48,8 +48,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     margin: 5,
     padding: 5,
-    justifyContent: 'center',
     alignItems: 'center',
+    justifyContent: 'center',
   },
 
   wordStyle: {
@@ -70,7 +70,8 @@ const styles = StyleSheet.create({
 
   articleButton: {
     flex: 1,
-    margin: 10,
+    marginLeft: 10,
+    marginRight: 10,
     padding: 10,
     borderRadius: 3,
     backgroundColor: 'lightgrey',
@@ -131,6 +132,7 @@ const styles = StyleSheet.create({
   controlBar: {
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: 10,
   },
 });
 

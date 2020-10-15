@@ -7,6 +7,7 @@ export enum LessonState {
   IsInitial,
   IsSpeaking,
   IsRepeating,
+  IsWaitingForUserAction,
   IsListening,
   IsEvaluating,
   IsPaused,
@@ -20,6 +21,13 @@ class UIStore {
   @observable repeatCount: number = 0;
 
   @persist @observable showIntro: boolean = true;
+  @persist @observable showInitialSettings: boolean = true;
+
+  @persist @observable autoMode: boolean = false;
+
+  @action toggleAutoMode = () => {
+    this.autoMode = !this.autoMode;
+  };
 
   @action setWordIndex = (wordIndex) => {
     this.wordIndex = wordIndex;
@@ -37,8 +45,11 @@ class UIStore {
   };
 
   @action hideIntro = () => {
-    console.error('hideIntro');
     this.showIntro = false;
+  };
+
+  @action hideInitialSettings = () => {
+    this.showInitialSettings = false;
   };
 }
 

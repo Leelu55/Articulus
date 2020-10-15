@@ -1,13 +1,12 @@
 import React, {useContext, useEffect} from 'react';
 import {View} from 'react-native';
-import styles from '../styles/wordStyle';
+import sharedStyle from '../styles/wordStyle';
 import {WordValue} from './WordValue';
 import WordsStore from '../stores/WordsStore';
 
 import audioVoice from '../libs/audioVoice';
-import UIStore from '../stores/UIStore';
+import UIStore, {LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
-import {LessonState} from '../stores/UIStore';
 import {WordImage} from './WordImage';
 import nextWord from '../libs/nextWord';
 
@@ -34,6 +33,7 @@ function Word() {
       audioVoice.voiceStop();
       audioVoice.stopSpeakWord();
     } else if (lessonState === LessonState.IsSpeaking) {
+      //console.error('Word: lessonState === LessonState.IsSpeaking');
       audioVoice.voiceStop();
       audioVoice.stopSpeakWord();
       audioVoice.speakWord(currentLessonWord.value);
@@ -57,7 +57,7 @@ function Word() {
   }, [currentLessonWord.value, uiStore, lessonState, wordsStore]);
 
   return (
-    <View style={styles.word}>
+    <View style={sharedStyle.word}>
       <WordValue value={currentLessonWord.value} />
       <WordImage imageUrl={currentLessonWord.imageUrl} />
     </View>

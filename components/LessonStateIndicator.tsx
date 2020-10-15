@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext, useRef} from 'react';
-import {Animated, View} from 'react-native';
+import {Animated, Pressable, View} from 'react-native';
 import styles from '../styles/wordStyle';
 import settings from '../libs/settings.json';
 
@@ -9,11 +9,13 @@ import {observer} from 'mobx-react';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
+import audioVoice from '../libs/audioVoice';
 
 export const ICONS = {
   [LessonState.IsInitial]: 'assistive-listening-systems',
   [LessonState.IsSpeaking]: 'volume-down',
   [LessonState.IsRepeating]: 'volume-down',
+  [LessonState.IsWaitingForUserAction]: 'microphone',
   [LessonState.IsListening]: 'microphone',
   [LessonState.IsEvaluating]: 'check',
   [LessonState.IsPaused]: 'coffee',
@@ -24,6 +26,7 @@ export const COLORS = {
   [LessonState.IsInitial]: 'black',
   [LessonState.IsSpeaking]: '#ffa500',
   [LessonState.IsRepeating]: '#ffa500',
+  [LessonState.IsWaitingForUserAction]: 'lightblue',
   [LessonState.IsListening]: '#00bfff',
   [LessonState.IsEvaluating]: settings.colors.correctAnswer,
   [LessonState.IsPaused]: 'lightgrey',
@@ -71,14 +74,23 @@ function LessonStateIndicator() {
     icon = 'times';
     bgColor = settings.colors.wrongAnswer;
   }
+  function onPress() {
+    audioVoice.voiceStart();
+  }
+  const isDisabled = uiStore.lessonState !== LessonState.IsWaitingForUserAction;
 
   return (
-    <View style={{marginBottom: 20}}>
+    <Pressable disabled={isDisabled} onPress={onPress}>
       <View // Special animatable View
         style={[
           styles.lessonStateIndicator,
           {
             backgroundColor: bgColor,
+            borderWidth: 5,
+            borderColor:
+              uiStore.lessonState === LessonState.IsWaitingForUserAction
+                ? '#00bfff'
+                : bgColor,
             zIndex: 1,
             position: 'absolute',
           }, // Bind opacity to animated value
@@ -96,7 +108,7 @@ function LessonStateIndicator() {
           }, // Bind opacity to animated value
         ]}
       />
-    </View>
+    </Pressable>
   );
 }
 
