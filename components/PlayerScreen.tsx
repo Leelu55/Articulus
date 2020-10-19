@@ -9,6 +9,7 @@ import {Header} from './Header';
 import Word from './Word';
 import styles from '../styles/wordStyle';
 import SelectorButton from './SelectorButton';
+import DebugLessonState from './DebugLessonState';
 
 function PlayerScreen() {
   return (
@@ -22,6 +23,7 @@ function PlayerScreen() {
       </View>
       <Word />
       <ControlBar />
+      <DebugLessonState />
     </View>
   );
 }

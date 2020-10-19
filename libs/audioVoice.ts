@@ -33,6 +33,7 @@ class AudioVoice {
   }
 
   private startUserInteraction(uiStore: any) {
+    console.log('startUserInteraction', uiStore.autoMode);
     if (uiStore.autoMode) {
       this.voiceStart();
     } else {

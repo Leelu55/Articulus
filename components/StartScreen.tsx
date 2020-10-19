@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import styles from '../styles/wordStyle';
 import WordsStore from '../stores/WordsStore';
-import UIStore, {LessonState} from '../stores/UIStore';
+import UIStore from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {NavigationStackProp} from 'react-navigation-stack';
 
@@ -17,14 +17,10 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
   const uiStore = useContext(UIStore);
 
-  wordsStore.words.forEach((word) => {
-    console.log('DueDate', word.value, word.dueDateTime);
-  });
   const onStartLesson = () => {
     wordsStore.emptyLesson();
     if (wordsStore.populateLesson()) {
       uiStore.setWordIndex(0);
-      uiStore.setLessonState(LessonState.IsInitial);
       navigation.navigate('PlayerScreen');
     } else {
       navigation.navigate('EmptyWordsScreen');

@@ -12,7 +12,7 @@ import WordsStore from '../stores/WordsStore';
 import audioVoice from '../libs/audioVoice';
 
 export const ICONS = {
-  [LessonState.IsInitial]: 'assistive-listening-systems',
+  [LessonState.IsInitial]: 'volume-down',
   [LessonState.IsSpeaking]: 'volume-down',
   [LessonState.IsRepeating]: 'volume-down',
   [LessonState.IsWaitingForUserAction]: 'microphone',
@@ -36,7 +36,7 @@ export const COLORS = {
 function LessonStateIndicator() {
   const fadeAnim = useRef(new Animated.Value(1.1)).current; // Initial value for opacity: 0
   const uiStore = useContext(UIStore);
-  const lessonState: number = uiStore.lessonState.valueOf();
+  const lessonState: string = uiStore.lessonState.valueOf();
   const wordsStore = useContext(WordsStore);
 
   React.useEffect(() => {
@@ -81,8 +81,10 @@ function LessonStateIndicator() {
   }
   function onPress() {
     audioVoice.voiceStart();
+    console.log('onpress');
   }
   const isDisabled = uiStore.lessonState !== LessonState.IsWaitingForUserAction;
+  console.log('LessonstateButton disabled', {isDisabled});
 
   return (
     <Pressable disabled={isDisabled} onPress={onPress}>

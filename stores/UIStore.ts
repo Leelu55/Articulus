@@ -4,14 +4,14 @@ import {createContext} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 
 export enum LessonState {
-  IsInitial,
-  IsSpeaking,
-  IsRepeating,
-  IsWaitingForUserAction,
-  IsListening,
-  IsEvaluating,
-  IsPaused,
-  IsFinished,
+  IsInitial = 'IsInitial',
+  IsSpeaking = 'IsSpeaking',
+  IsRepeating = 'IsRepeating',
+  IsWaitingForUserAction = 'IsWaitingForUserAction',
+  IsListening = 'IsListening',
+  IsEvaluating = 'IsEvaluating',
+  IsPaused = 'IsPaused',
+  IsFinished = 'IsFinished',
 }
 
 class UIStore {
@@ -27,6 +27,10 @@ class UIStore {
 
   @action toggleAutoMode = () => {
     this.autoMode = !this.autoMode;
+  };
+
+  @action setAutoMode = (autoMode) => {
+    this.autoMode = autoMode;
   };
 
   @action setWordIndex = (wordIndex) => {
