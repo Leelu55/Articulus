@@ -79,13 +79,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  startScreenButton: {
+  bigButton: {
     marginLeft: 20,
     marginRight: 20,
     marginBottom: 20,
     padding: 10,
     borderRadius: 10,
-    backgroundColor: 'lightgrey',
+    backgroundColor: 'orange',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -102,9 +102,9 @@ const styles = StyleSheet.create({
     padding: 5,
     fontSize: 30,
   },
-  startScreenButtonText: {
+  bigButtonText: {
     fontWeight: 'bold',
-    color: 'black',
+    color: 'white',
     padding: 5,
     fontSize: 40,
   },

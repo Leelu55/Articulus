@@ -26,8 +26,6 @@ const styles = StyleSheet.create({
 function SvgComponent() {
   const wordsStore = useContext(WordsStore);
   const nextDueDate = wordsStore.nextDueDate();
-
-  console.log(nextDueDate);
   return (
     <View style={styles.svgWrapper}>
       <Svg height="50%" width="70%" viewBox="0 0 500 500">

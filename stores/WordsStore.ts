@@ -33,7 +33,6 @@ class WordsStore {
       let i = 0;
       for (const word of model.words) {
         this.words[i++] = word;
-        console.log(word.slot);
       }
     }
   }
@@ -83,14 +82,23 @@ class WordsStore {
     const index = this.words.findIndex((word) => word.value === value);
     this.words[index].dueDateTime = new Date(
       new Date(
-        Date.now() + Math.pow(2, this.words[index].s) * 1000 * 60 * 60 * 24,
+        Date.now() + Math.pow(2, this.words[index].slot) * 1000 * 60 * 60 * 24,
       ).setHours(0, 0, 0, 0),
     );
-    console.log(this.words[index].dueDateTime);
   };
 
   nextDueDate = (): Date => {
-    return this.words.slice().sort(sortWordsByDueDateTime)[0].dueDateTime;
+    console.log(
+      'word for next duedate',
+      this.words
+        .filter((word) => word.dueDateTime != null)
+        .slice()
+        .sort(sortWordsByDueDateTime)[0],
+    );
+    return this.words
+      .filter((word) => word.dueDateTime !== null)
+      .slice()
+      .sort(sortWordsByDueDateTime)[0].dueDateTime;
   };
 
   wordsForSlot = (slot): number => {

@@ -23,14 +23,9 @@ function EmptyWordsScreen({navigation}: {navigation: NavigationStackProp}) {
       <SuccessIcon />
       <View style={[sharedStyles.viewVertical, {padding: 0, margin: 0}]}>
         <TouchableHighlight
-          style={[
-            sharedStyles.startScreenButton,
-            {backgroundColor: 'darkblue'},
-          ]}
+          style={[sharedStyles.bigButton]}
           onPress={onContinueLesson}>
-          <Text style={[sharedStyles.startScreenButtonText, {color: 'white'}]}>
-            Zurück auf Start
-          </Text>
+          <Text style={sharedStyles.bigButtonText}>Zurück</Text>
         </TouchableHighlight>
       </View>
     </View>

@@ -14,6 +14,7 @@ function Word() {
   const uiStore = useContext(UIStore);
 
   const wordsStore = useContext(WordsStore);
+
   const currentLessonWord = wordsStore.lessonWords[uiStore.wordIndex];
   const lessonState = uiStore.lessonState;
 

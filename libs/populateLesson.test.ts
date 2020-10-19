@@ -1,8 +1,6 @@
 import {WordType} from '../stores/WordsStore';
-import populateLesson, {
-  getRandomNewWords,
-} from './populateLesson';
-import { sortWordsByDueDateTime } from "./sortWordsByDueDateTime";
+import populateLesson, {getRandomNewWords} from './populateLesson';
+import {sortWordsByDueDateTime} from './sortWordsByDueDateTime';
 import testmodel from '../model/testmodel.json';
 
 function getSequentialNewWords(numberOfNewWords: number, words: WordType[]) {
@@ -125,11 +123,9 @@ it('populateLesson with modified words 1', () => {
   const modifiedWords = testmodel.words.slice();
 
   const now = new Date('2021-01-05');
-  console.log(modifiedWords);
   modifyWord(modifiedWords, 'Gartenzwerg', setDueDateTime('2020-01-04'));
   modifyWord(modifiedWords, 'Gartenzwerg', setSlot(1));
   modifyWord(modifiedWords, 'Haus', setDueDateTime('2020-01-08'));
-  console.log(modifiedWords);
 
   expect(
     populateLesson(modifiedWords, now.getTime(), getSequentialNewWords).map(

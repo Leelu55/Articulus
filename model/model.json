@@ -1,210 +1,209 @@
 {
-  "words":[
+  "words": [
     {
-      "value": "Gartenzwerg", 
+      "value": "Gartenzwerg",
       "slot": 0,
-      "article": "der"  ,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2016/04/18/11/33/dwarf-1336356_960_720.jpg"
     },
     {
-      "value": "Schornsteinfeger", 
+      "value": "Schornsteinfeger",
       "slot": 0,
-      "article": "der" ,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2015/02/24/18/37/chimney-sweep-647678_960_720.jpg"
     },
     {
-      "value": "Haus", 
+      "value": "Haus",
       "slot": 0,
-      "article": "das" ,
+      "article": "das",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2020/09/02/22/30/cottage-5539685_960_720.jpg"
     },
     {
-      "value": "Baum", 
-      "slot": 3,
-      "article": "der" ,
+      "value": "Baum",
+      "slot": 0,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2015/03/26/10/50/green-692079_960_720.jpg"
     },
     {
-      "value": "Hund", 
+      "value": "Hund",
       "slot": 0,
-      "article": "der" ,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2018/03/18/18/06/australian-shepherd-3237735_960_720.jpg"
-
     },
     {
-      "value": "Katze", 
-      "slot": 2,
-      "article": "die" ,
+      "value": "Katze",
+      "slot": 0,
+      "article": "die",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg"
     },
     {
-      "value": "Tasse", 
+      "value": "Tasse",
       "slot": 0,
-      "article": "die" ,
+      "article": "die",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2017/03/27/14/48/tea-2179175_960_720.jpg"
     },
     {
-      "value": "Sonne", 
+      "value": "Sonne",
       "slot": 0,
-      "article": "die" ,
+      "article": "die",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2017/03/27/21/38/sunset-2180346_960_720.jpg"
     },
     {
-      "value": "Mensch", 
+      "value": "Mensch",
       "slot": 0,
-      "article": "der" ,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2015/07/31/00/26/woman-868522_960_720.jpg"
     },
     {
-      "value": "Wasser", 
+      "value": "Wasser",
       "slot": 0,
-      "article": "das" ,
+      "article": "das",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2014/12/24/05/02/drops-of-water-578897_960_720.jpg"
     },
     {
-      "value": "Tisch", 
+      "value": "Tisch",
       "slot": 0,
-      "article": "der" ,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2018/03/11/20/08/modern-kitchen-3217932_960_720.jpg"
     },
     {
-      "value": "Eule", 
+      "value": "Eule",
       "slot": 0,
-      "article": "die" ,
+      "article": "die",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2017/01/26/11/17/european-eagle-owl-2010346_960_720.jpg"
     },
     {
-      "value": "Sonnenbrille", 
+      "value": "Sonnenbrille",
       "slot": 0,
-      "article": "die" ,
+      "article": "die",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2014/09/07/22/16/sunglasses-438429_960_720.jpg"
     },
     {
-      "value": "Computer", 
+      "value": "Computer",
       "slot": 0,
-      "article": "der" ,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2015/05/15/02/07/computer-767781_960_720.jpg"
     },
     {
-      "value": "Handtasche", 
+      "value": "Handtasche",
       "slot": 0,
-      "article": "die" ,
+      "article": "die",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2018/10/06/14/51/leather-craft-3728005_960_720.jpg"
     },
     {
-      "value": "Taschentuch", 
+      "value": "Taschentuch",
       "slot": 0,
-      "article": "das" ,
+      "article": "das",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2015/10/22/07/55/tissues-1000849_960_720.png"
     },
     {
-      "value": "Weihnachtsmann", 
+      "value": "Weihnachtsmann",
       "slot": 0,
-      "article": "der" ,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
     },
     {
-      "value": "Zahn", 
+      "value": "Zahn",
       "slot": 0,
-      "article": "der" ,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2015/11/02/18/37/horse-1018835__340.jpg"
     },
     {
-      "value": "Kopf", 
+      "value": "Kopf",
       "slot": 0,
-      "article": "der" ,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2017/06/21/19/35/head-2428333__340.png"
     },
     {
-      "value": "Fuß", 
+      "value": "Fuß",
       "slot": 0,
-      "article": "der" ,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2017/05/30/21/57/feet-2358333__340.jpg"
     },
     {
-      "value": "Hand", 
+      "value": "Hand",
       "slot": 0,
-      "article": "die" ,
+      "article": "die",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2018/01/31/09/42/people-3120717_960_720.jpg"
     },
     {
-      "value": "Auge", 
+      "value": "Auge",
       "slot": 0,
-      "article": "das" ,
+      "article": "das",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2016/11/23/13/58/animal-1853031__340.jpg"
     },
     {
-      "value": "Mund", 
+      "value": "Mund",
       "slot": 0,
-      "article": "der" ,
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2020/01/09/01/45/scream-4751647__340.jpg"
     },
     {
-      "value": "Nase", 
+      "value": "Nase",
       "slot": 0,
-      "article": "die" ,
+      "article": "die",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2017/11/04/14/25/pinocchio-2917652__340.jpg"
     },
     {
-      "value": "Ohr", 
+      "value": "Ohr",
       "slot": 0,
-      "article": "das" ,
+      "article": "das",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2018/03/22/09/39/grass-3249879__340.jpg"
     },
     {
-      "value": "Telefon", 
+      "value": "Telefon",
       "slot": 0,
-      "article": "das" ,
+      "article": "das",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.pixabay.com/photo/2017/04/03/15/52/mobile-phone-2198770_960_720.png"

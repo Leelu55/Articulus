@@ -17,6 +17,9 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
   const uiStore = useContext(UIStore);
 
+  wordsStore.words.forEach((word) => {
+    console.log('DueDate', word.value, word.dueDateTime);
+  });
   const onStartLesson = () => {
     wordsStore.emptyLesson();
     if (wordsStore.populateLesson()) {
@@ -36,11 +39,9 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
         <Title />
         <View style={[styles.viewVertical, {padding: 0, margin: 0}]}>
           <TouchableHighlight
-            style={[styles.startScreenButton, {backgroundColor: 'orange'}]}
+            style={[styles.bigButton]}
             onPress={onStartLesson}>
-            <Text style={[styles.startScreenButtonText, {color: 'white'}]}>
-              START
-            </Text>
+            <Text style={[styles.bigButtonText]}>START</Text>
           </TouchableHighlight>
 
           {/*    {![LessonState.IsInitial, LessonState.IsFinished].includes(

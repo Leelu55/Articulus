@@ -35,7 +35,6 @@ export default function populateLesson(
       if (word.dueDateTime === null) {
         return false;
       }
-      console.log(word.dueDateTime);
       return new Date(word.dueDateTime).getTime() <= now;
     })
     .sort(sortWordsByDueDateTime)
