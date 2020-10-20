@@ -9,21 +9,16 @@ import {NavigationStackProp} from 'react-navigation-stack';
 import {useState} from 'react';
 import StartModal from './StartModal';
 import StartScreenAnimation from './StartScreenAnimation';
+import startLesson from '../libs/startLesson';
 
 function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
   const uiStore = useContext(UIStore);
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const onStartLesson = () => {
-    wordsStore.emptyLesson();
-    if (wordsStore.populateLesson()) {
-      uiStore.setWordIndex(0);
-      navigation.navigate('PlayerScreen');
-    } else {
-      navigation.navigate('EmptyWordsScreen');
-    }
-  };
+  function onStartLesson() {
+    startLesson(wordsStore, uiStore, navigation);
+  }
 
   const onContinueLesson = () => {
     navigation.navigate('PlayerScreen');

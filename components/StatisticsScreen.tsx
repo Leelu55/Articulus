@@ -1,12 +1,14 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 import {observer} from 'mobx-react';
 import BucketView from './BucketView';
 import {LineChart} from 'react-native-chart-kit';
 import {Dimensions} from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import {ScrollView} from 'react-native-gesture-handler';
+import SavedLessons from './SavedLessons';
 
 function StatisticsScreen() {
   const screenWidth = Dimensions.get('window').width;
@@ -21,11 +23,11 @@ function StatisticsScreen() {
   };
 
   return (
-    <View style={sharedStyles.startScreen}>
+    <ScrollView style={sharedStyles.startScreen}>
       <View
         style={[sharedStyles.viewVertical, {padding: 0, margin: 0, flex: 1}]}>
         <BucketView />
-
+        <SavedLessons />
         <View style={{marginTop: 10, flex: 1}}>
           <Text
             style={{
@@ -100,7 +102,7 @@ function StatisticsScreen() {
                       left: x,
                       color: 'black',
                     }}>
-                    {data.datasets[0].data[index]}{' '}
+                    {data.datasets[0].data[index]}
                   </Text>
                 );
               }}
@@ -109,7 +111,14 @@ function StatisticsScreen() {
           </View>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 }
+
+export const styles = StyleSheet.create({
+  savedLessonsWrapper: {
+    backgroundColor: 'yellow',
+    flexDirection: 'column',
+  },
+});
 export default observer(StatisticsScreen);

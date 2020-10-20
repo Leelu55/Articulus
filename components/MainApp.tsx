@@ -14,6 +14,7 @@ import UIStore from '../stores/UIStore';
 
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import IntroSlider from './IntroSlider';
+import FinishedScreen from './FinishedScreen';
 
 const SettingsScreen = () => <SkeletonScreen text="Settings" />;
 const AboutScreen = () => <SkeletonScreen text="About" />;
@@ -78,6 +79,7 @@ const AppStack = () => {
       <Stack.Screen name="StartScreen" component={HomeStack} />
       <Stack.Screen name="PlayerScreen" component={PlayerScreen} />
       <Stack.Screen name="EmptyWordsScreen" component={EmptyWordsScreen} />
+      <Stack.Screen name="FinishedScreen" component={FinishedScreen} />
     </Stack.Navigator>
   );
 };

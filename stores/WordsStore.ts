@@ -7,6 +7,7 @@ import settings from '../libs/settings.json';
 import populateLesson from '../libs/populateLesson';
 import {sortWordsByDueDateTime} from '../libs/sortWordsByDueDateTime';
 
+// words in pool
 export interface WordType {
   value: string;
   slot: number;
@@ -16,11 +17,26 @@ export interface WordType {
   dueDateTime: Date;
 }
 
+// words in lesson
 export interface LessonWordType {
   value: string;
   article: string;
   answerArticle: string;
   imageUrl: string;
+}
+
+// words in lesson history
+export interface SavedLessonWordType {
+  value: string;
+  answerArticle: string;
+  isAnswerCorrect: boolean | null;
+}
+
+export interface SavedLessonType {
+  date: Date;
+  countCorrectAnswers: number;
+  countWrongAnswers: number;
+  words: SavedLessonWordType[];
 }
 
 //app data state
@@ -42,8 +58,25 @@ class WordsStore {
   // calss the populate lesson function with @param words array and current DateTime
   @action populateLesson = (): Boolean => {
     this.lessonWords = populateLesson(this.words, Date.now());
+    let savedLessonWords = [];
+    this.lessonWords.forEach((word) => {
+      savedLessonWords.push({
+        value: word.value,
+        answerArticle: '',
+        isAnswerCorrect: null,
+      });
+    });
+    const newSavedLesson: SavedLessonType = {
+      countCorrectAnswers: 0,
+      countWrongAnswers: 0,
+      words: savedLessonWords,
+      date: new Date(),
+    };
+    this.savedLessons.push(newSavedLesson);
     return this.lessonWords.length ? true : false;
   };
+
+  @persist('object') @observable savedLessons: SavedLessonType[] = [];
 
   @action emptyLesson = () => {
     this.lessonWords = [];

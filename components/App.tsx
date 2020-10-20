@@ -1,4 +1,5 @@
 import React from 'react';
+import settings from '../libs/settings.json';
 
 import {Provider} from 'mobx-react';
 import WordsStore from '../stores/WordsStore';
@@ -16,7 +17,7 @@ const App = () => {
   return (
     <Provider {...stores}>
       <MainApp />
-      <DebugLessonState />
+      {settings.isDebugging && <DebugLessonState />}
     </Provider>
   );
 };

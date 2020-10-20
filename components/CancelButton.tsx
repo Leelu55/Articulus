@@ -1,12 +1,9 @@
 import React from 'react';
 import {TouchableHighlight} from 'react-native';
 import styles from '../styles/sharedStyles';
-import fontawesome from '@fortawesome/fontawesome';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {faTimes} from '@fortawesome/fontawesome-free-solid';
 import audioVoice from '../libs/audioVoice';
 
-fontawesome.library.add(faTimes);
 import {useNavigation} from '@react-navigation/native';
 
 export function CancelButton() {
