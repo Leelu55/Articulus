@@ -5,6 +5,7 @@ import WordsStore from '../stores/WordsStore';
 
 import UIStore from '../stores/UIStore';
 import MainApp from './MainApp';
+import DebugLessonState from './DebugLessonState';
 
 const App = () => {
   const stores = {
@@ -15,6 +16,7 @@ const App = () => {
   return (
     <Provider {...stores}>
       <MainApp />
+      <DebugLessonState />
     </Provider>
   );
 };

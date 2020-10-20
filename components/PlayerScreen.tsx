@@ -23,7 +23,6 @@ function PlayerScreen() {
       </View>
       <Word />
       <ControlBar />
-      <DebugLessonState />
     </View>
   );
 }

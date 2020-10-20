@@ -38,6 +38,7 @@ class UIStore {
   };
 
   @action setLessonState = (lessonState) => {
+    console.log('setLessonState(', this.lessonState, '=>', lessonState, ')');
     this.lessonState = lessonState;
   };
 

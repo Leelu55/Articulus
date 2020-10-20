@@ -6,16 +6,58 @@ import {
   TouchableHighlight,
   Animated,
   ImageBackground,
+  StyleSheet,
 } from 'react-native';
-import styles from '../styles/wordStyle';
+import sharedStyles from '../styles/wordStyle';
 import WordsStore from '../stores/WordsStore';
-import UIStore from '../stores/UIStore';
+import UIStore, {LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {NavigationStackProp} from 'react-navigation-stack';
+import {useState} from 'react';
+import {Modal} from 'react-native';
 
+const styles = StyleSheet.create({
+  centeredView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 22,
+  },
+  modalView: {
+    margin: 20,
+    backgroundColor: 'white',
+    borderRadius: 20,
+    padding: 35,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  openButton: {
+    backgroundColor: '#F194FF',
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2,
+  },
+  textStyle: {
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  modalText: {
+    marginBottom: 15,
+    textAlign: 'center',
+  },
+});
 function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
   const uiStore = useContext(UIStore);
+  const [modalVisible, setModalVisible] = useState(false);
 
   const onStartLesson = () => {
     wordsStore.emptyLesson();
@@ -27,28 +69,57 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
     }
   };
 
+  const onContinueLesson = () => {
+    navigation.navigate('PlayerScreen');
+    setModalVisible(!modalVisible);
+  };
+
   return (
-    <View style={styles.startScreen}>
+    <View style={sharedStyles.startScreen}>
+      <Modal animationType="slide" transparent={true} visible={modalVisible}>
+        <View style={styles.centeredView}>
+          <View style={styles.modalView}>
+            <TouchableHighlight
+              style={{...styles.openButton, backgroundColor: '#2196F3'}}
+              onPress={() => {
+                onStartLesson();
+                setModalVisible(!modalVisible);
+              }}>
+              <Text style={styles.textStyle}>Start</Text>
+            </TouchableHighlight>
+            {![LessonState.IsInitial, LessonState.IsFinished].includes(
+              uiStore.lessonState,
+            ) && (
+              <TouchableHighlight
+                style={[sharedStyles.bigButton, {backgroundColor: 'lightgrey'}]}
+                onPress={onContinueLesson}>
+                <Text style={sharedStyles.bigButtonText}>Continue</Text>
+              </TouchableHighlight>
+            )}
+          </View>
+        </View>
+      </Modal>
+
       <ImageBackground
         source={require('../assets/parrots.jpg')}
         style={{width: '100%', height: '100%', justifyContent: 'flex-end'}}>
         <Title />
-        <View style={[styles.viewVertical, {padding: 0, margin: 0}]}>
+        <View style={[sharedStyles.viewVertical, {padding: 0, margin: 0}]}>
           <TouchableHighlight
-            style={[styles.bigButton]}
-            onPress={onStartLesson}>
-            <Text style={[styles.bigButtonText]}>START</Text>
+            style={[sharedStyles.bigButton]}
+            onPress={() => {
+              if (
+                ![LessonState.IsInitial, LessonState.IsFinished].includes(
+                  uiStore.lessonState,
+                )
+              ) {
+                setModalVisible(true);
+              } else {
+                onStartLesson();
+              }
+            }}>
+            <Text style={[sharedStyles.bigButtonText]}>START</Text>
           </TouchableHighlight>
-
-          {/*    {![LessonState.IsInitial, LessonState.IsFinished].includes(
-            uiStore.lessonState,
-          ) && (
-            <TouchableHighlight
-              style={[styles.startScreenButton, {backgroundColor: 'lightgrey'}]}
-              onPress={onContinueLesson}>
-              <Text style={styles.startScreenButtonText}>Continue</Text>
-            </TouchableHighlight>
-          )} */}
         </View>
       </ImageBackground>
     </View>
@@ -113,7 +184,7 @@ function Title() {
     <View style={{flex: 1}}>
       <Animated.View
         style={[
-          styles.appTitleWrapper,
+          sharedStyles.appTitleWrapper,
           {
             scaleX: anim1,
             scaleY: anim1,
@@ -122,12 +193,12 @@ function Title() {
             backgroundColor: '#fcc',
           },
         ]}>
-        <Text style={styles.appTitle}>DER</Text>
+        <Text style={sharedStyles.appTitle}>DER</Text>
       </Animated.View>
 
       <Animated.View
         style={[
-          styles.appTitleWrapper,
+          sharedStyles.appTitleWrapper,
           {
             scaleX: anim2,
             scaleY: anim2,
@@ -136,12 +207,12 @@ function Title() {
             backgroundColor: '#cfc',
           },
         ]}>
-        <Text style={styles.appTitle}>DIE</Text>
+        <Text style={sharedStyles.appTitle}>DIE</Text>
       </Animated.View>
 
       <Animated.View
         style={[
-          styles.appTitleWrapper,
+          sharedStyles.appTitleWrapper,
           {
             scaleX: anim3,
             scaleY: anim3,
@@ -150,7 +221,7 @@ function Title() {
             backgroundColor: '#ccf',
           },
         ]}>
-        <Text style={styles.appTitle}>DAS</Text>
+        <Text style={sharedStyles.appTitle}>DAS</Text>
       </Animated.View>
     </View>
   );
