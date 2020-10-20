@@ -6,7 +6,6 @@ import {
   TouchableHighlight,
   Animated,
   ImageBackground,
-  StyleSheet,
 } from 'react-native';
 import sharedStyles from '../styles/wordStyle';
 import WordsStore from '../stores/WordsStore';
@@ -14,50 +13,12 @@ import UIStore, {LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {NavigationStackProp} from 'react-navigation-stack';
 import {useState} from 'react';
-import {Modal} from 'react-native';
+import StartModal from './StartModal';
 
-const styles = StyleSheet.create({
-  centeredView: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 22,
-  },
-  modalView: {
-    margin: 20,
-    backgroundColor: 'white',
-    borderRadius: 20,
-    padding: 35,
-    alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
-  },
-  openButton: {
-    backgroundColor: '#F194FF',
-    borderRadius: 20,
-    padding: 10,
-    elevation: 2,
-  },
-  textStyle: {
-    color: 'white',
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  modalText: {
-    marginBottom: 15,
-    textAlign: 'center',
-  },
-});
 function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
   const uiStore = useContext(UIStore);
-  const [modalVisible, setModalVisible] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const onStartLesson = () => {
     wordsStore.emptyLesson();
@@ -71,34 +32,17 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
 
   const onContinueLesson = () => {
     navigation.navigate('PlayerScreen');
-    setModalVisible(!modalVisible);
+    setIsModalVisible(false);
   };
 
   return (
     <View style={sharedStyles.startScreen}>
-      <Modal animationType="slide" transparent={true} visible={modalVisible}>
-        <View style={styles.centeredView}>
-          <View style={styles.modalView}>
-            <TouchableHighlight
-              style={{...styles.openButton, backgroundColor: '#2196F3'}}
-              onPress={() => {
-                onStartLesson();
-                setModalVisible(!modalVisible);
-              }}>
-              <Text style={styles.textStyle}>Start</Text>
-            </TouchableHighlight>
-            {![LessonState.IsInitial, LessonState.IsFinished].includes(
-              uiStore.lessonState,
-            ) && (
-              <TouchableHighlight
-                style={[sharedStyles.bigButton, {backgroundColor: 'lightgrey'}]}
-                onPress={onContinueLesson}>
-                <Text style={sharedStyles.bigButtonText}>Continue</Text>
-              </TouchableHighlight>
-            )}
-          </View>
-        </View>
-      </Modal>
+      <StartModal
+        isModalVisible={isModalVisible}
+        setIsModalVisible={setIsModalVisible}
+        onStartLesson={onStartLesson}
+        onContinueLesson={onContinueLesson}
+      />
 
       <ImageBackground
         source={require('../assets/parrots.jpg')}
@@ -113,7 +57,7 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
                   uiStore.lessonState,
                 )
               ) {
-                setModalVisible(true);
+                setIsModalVisible(true);
               } else {
                 onStartLesson();
               }

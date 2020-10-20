@@ -80,9 +80,7 @@ const styles = StyleSheet.create({
   },
 
   bigButton: {
-    marginLeft: 20,
-    marginRight: 20,
-    marginBottom: 20,
+    margin: 20,
     padding: 10,
     borderRadius: 10,
     backgroundColor: 'orange',
