@@ -26,8 +26,6 @@ function StatisticsScreen() {
     <ScrollView style={sharedStyles.startScreen}>
       <View
         style={[sharedStyles.viewVertical, {padding: 0, margin: 0, flex: 1}]}>
-        <BucketView />
-        <SavedLessons />
         <View style={{marginTop: 10, flex: 1}}>
           <Text
             style={{
@@ -110,6 +108,8 @@ function StatisticsScreen() {
             />
           </View>
         </View>
+        <BucketView />
+        <SavedLessons />
       </View>
     </ScrollView>
   );
