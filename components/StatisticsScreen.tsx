@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {View, Text} from 'react-native';
-import sharedStyles from '../styles/wordStyle';
+import sharedStyles from '../styles/sharedStyles';
 import {observer} from 'mobx-react';
 import BucketView from './BucketView';
 import {LineChart} from 'react-native-chart-kit';

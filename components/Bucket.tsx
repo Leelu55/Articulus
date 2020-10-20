@@ -1,9 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import sharedStyles from '../styles/wordStyle';
-import {useWindowDimensions} from 'react-native';
+import {StyleSheet, Text, View, useWindowDimensions} from 'react-native';
+import sharedStyles from '../styles/sharedStyles';
 import WordsStore from '../stores/WordsStore';
 import {useContext} from 'react';
 

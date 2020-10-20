@@ -1,8 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useContext} from 'react';
+import React from 'react';
 import {Modal, Pressable, StyleSheet, Text, View} from 'react-native';
-import sharedStyles from '../styles/wordStyle';
-import UIStore, {LessonState} from '../stores/UIStore';
+import sharedStyles from '../styles/sharedStyles';
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -21,6 +20,11 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
   },
+  modalText: {
+    fontSize: 20,
+    margin: 20,
+    marginBottom: 0,
+  },
 });
 function StartModal({
   isModalVisible,
@@ -33,34 +37,33 @@ function StartModal({
   onStartLesson: Function;
   onContinueLesson: Function;
 }) {
-  const uiStore = useContext(UIStore);
-
   return (
     <Modal animationType="slide" transparent={true} visible={isModalVisible}>
       <View style={styles.wrapper}>
         <View style={styles.modalView}>
+          <Text style={styles.modalText}>
+            Unterbrochene Lektion fortsetzen oder neu beginnen?
+          </Text>
+
+          <Pressable
+            style={[
+              sharedStyles.bigButton,
+              {marginBottom: 0, backgroundColor: '#00bfff'},
+            ]}
+            onPress={() => {
+              onContinueLesson();
+            }}>
+            <Text style={sharedStyles.bigButtonText}>Fortsetzen</Text>
+          </Pressable>
+
           <Pressable
             style={[sharedStyles.bigButton]}
             onPress={() => {
               onStartLesson();
               setIsModalVisible(false);
             }}>
-            <Text style={sharedStyles.bigButtonText}>Start</Text>
+            <Text style={sharedStyles.bigButtonText}>Neue Lektion</Text>
           </Pressable>
-          {![LessonState.IsInitial, LessonState.IsFinished].includes(
-            uiStore.lessonState,
-          ) && (
-            <Pressable
-              style={[
-                sharedStyles.bigButton,
-                {marginTop: 0, backgroundColor: '#00bfff'},
-              ]}
-              onPress={() => {
-                onContinueLesson();
-              }}>
-              <Text style={sharedStyles.bigButtonText}>Continue</Text>
-            </Pressable>
-          )}
         </View>
       </View>
     </Modal>

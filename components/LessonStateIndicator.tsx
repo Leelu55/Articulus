@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext, useRef} from 'react';
 import {Animated, Pressable, View} from 'react-native';
-import styles from '../styles/wordStyle';
+import styles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
 
 import UIStore from '../stores/UIStore';

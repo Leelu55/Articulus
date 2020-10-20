@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import sharedStyles from '../styles/wordStyle';
+import sharedStyles from '../styles/sharedStyles';
 import Bucket from './Bucket';
 import settings from '../libs/settings.json';
 

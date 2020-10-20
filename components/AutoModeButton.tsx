@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {Pressable, StyleSheet, Text} from 'react-native';
-import sharedStyles from '../styles/wordStyle';
+import sharedStyles from '../styles/sharedStyles';
 import {observer} from 'mobx-react';
 import UIStore, {LessonState} from '../stores/UIStore';
 import {useContext} from 'react';

@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableHighlight} from 'react-native';
-import styles from '../styles/wordStyle';
+import styles from '../styles/sharedStyles';
 import fontawesome from '@fortawesome/fontawesome';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faTimes} from '@fortawesome/fontawesome-free-solid';

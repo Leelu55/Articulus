@@ -3,11 +3,11 @@ import {View} from 'react-native';
 
 import {observer} from 'mobx-react';
 
-import '../styles/wordStyle';
+import '../styles/sharedStyles';
 import ControlBar from './ControlBar';
 import {Header} from './Header';
 import Word from './Word';
-import styles from '../styles/wordStyle';
+import styles from '../styles/sharedStyles';
 import SelectorButton from './SelectorButton';
 import DebugLessonState from './DebugLessonState';
 

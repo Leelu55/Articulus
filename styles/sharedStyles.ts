@@ -6,18 +6,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     flex: 1,
   },
-  appTitleWrapper: {
-    position: 'absolute',
-    opacity: 0.5,
-    width: 120,
-    height: 120,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  appTitle: {
-    fontSize: 50,
-    fontWeight: 'bold',
-  },
   wrongArticle: {
     flex: 1,
     padding: 24,
@@ -104,7 +92,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     padding: 5,
-    fontSize: 40,
+    fontSize: 30,
   },
 
   controlButton: {

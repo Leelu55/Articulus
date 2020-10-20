@@ -3,7 +3,7 @@ import React, {useContext} from 'react';
 import {Text, TouchableHighlight} from 'react-native';
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
-import styles from '../styles/wordStyle';
+import styles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
 import processAnswer from '../libs/processAnswer';
 import audioVoice from '../libs/audioVoice';

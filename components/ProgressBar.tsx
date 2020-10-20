@@ -4,7 +4,7 @@ import {View} from 'react-native';
 import WordsStore from '../stores/WordsStore';
 import {observer} from 'mobx-react';
 import UIStore, {LessonState} from '../stores/UIStore';
-import styles from '../styles/wordStyle';
+import styles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 

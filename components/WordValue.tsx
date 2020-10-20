@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import styles from '../styles/wordStyle';
+import styles from '../styles/sharedStyles';
 export function WordValue({value}: {value: string}) {
   return (
     <View>

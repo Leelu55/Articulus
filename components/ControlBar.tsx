@@ -1,6 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
-import styles from '../styles/wordStyle';
+import styles from '../styles/sharedStyles';
 import {observer} from 'mobx-react';
 import LessonStateIndicator from './LessonStateIndicator';
 import ForwardButton from './ForwardButton';

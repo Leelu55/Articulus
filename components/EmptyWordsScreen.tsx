@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {View, Text, TouchableHighlight, StyleSheet} from 'react-native';
-import sharedStyles from '../styles/wordStyle';
+import sharedStyles from '../styles/sharedStyles';
 import SuccessIcon from './SuccessIcon';
 import {observer} from 'mobx-react';
 import {NavigationStackProp} from 'react-navigation-stack';
