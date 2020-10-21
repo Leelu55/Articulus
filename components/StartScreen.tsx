@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext} from 'react';
-import {View, Text, TouchableHighlight, ImageBackground} from 'react-native';
+import {View, Text, ImageBackground, Pressable} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 import WordsStore from '../stores/WordsStore';
 import UIStore, {LessonState} from '../stores/UIStore';
@@ -10,6 +10,7 @@ import {useState} from 'react';
 import StartModal from './StartModal';
 import StartScreenAnimation from './StartScreenAnimation';
 import startLesson from '../libs/startLesson';
+import AnimatedNumber from './AnimatedNumber';
 
 function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
@@ -38,8 +39,9 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
         source={require('../assets/parrots.jpg')}
         style={{width: '100%', height: '100%', justifyContent: 'flex-end'}}>
         <StartScreenAnimation />
+
         <View style={[sharedStyles.viewVertical, {padding: 0, margin: 0}]}>
-          <TouchableHighlight
+          <Pressable
             style={[sharedStyles.bigButton]}
             onPress={() => {
               if (
@@ -53,7 +55,7 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
               }
             }}>
             <Text style={[sharedStyles.bigButtonText]}>Start</Text>
-          </TouchableHighlight>
+          </Pressable>
         </View>
       </ImageBackground>
     </View>
