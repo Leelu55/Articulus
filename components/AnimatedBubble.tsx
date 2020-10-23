@@ -1,13 +1,15 @@
 import React, {useEffect, useRef} from 'react';
-import {View, Animated} from 'react-native';
+import {View, Animated, Easing, EasingFunction} from 'react-native';
 
 function AnimatedBubble({
   duration = 1000,
-  maxSize = 20,
+  maxSize = 50,
   color = 'red',
   delay = 0,
   isFilled = true,
   positionRandom = true,
+  easingFunction = Easing.inOut(Easing.linear),
+  doStart = false,
 }: {
   duration: number;
   maxSize: number;
@@ -15,23 +17,31 @@ function AnimatedBubble({
   delay: number;
   isFilled: boolean;
   positionRandom: boolean;
+  easingFunction?: EasingFunction;
+  doStart?: boolean;
 }) {
   const animValue = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
-    Animated.timing(animValue, {
-      toValue: 100,
-      useNativeDriver: true,
-      duration: duration,
-      delay: delay,
-    }).start();
-  }, [animValue, delay, duration, maxSize]);
+    if (doStart) {
+      Animated.timing(animValue, {
+        toValue: 100,
+        useNativeDriver: true,
+        duration: duration,
+        delay: delay,
+        easing: easingFunction,
+      }).start();
+    }
+  }, [animValue, delay, doStart, duration, easingFunction, maxSize]);
 
   const style = {
     wrapperRandom: {
       position: 'absolute' as 'absolute',
       top: Math.random() * 100 + '%',
       left: Math.random() * 100 + '%',
+      marginLeft: -maxSize / 2,
+      marginTop: -maxSize / 2,
+      //transform: [{translateX: -maxSize / 2, translateY: -maxSize / 2}],
     },
     wrapper: {},
     bubble: {

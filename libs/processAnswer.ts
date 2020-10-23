@@ -42,5 +42,5 @@ export default function processAnswer(
         uiStore.setLessonState(LessonState.IsFinished);
       }
     }
-  }, 2000);
+  }, 1000);
 }

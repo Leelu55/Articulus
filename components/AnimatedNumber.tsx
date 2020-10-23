@@ -17,18 +17,20 @@ function AnimatedNumber({
   duration = 1000,
   height = 20,
   color = 'black',
+  doStart = false,
 }: {
   to: number;
   duration: number;
   height: number;
   color: string;
+  doStart?: boolean;
 }) {
   const bounceAnim = useRef(new Animated.Value(0)).current;
 
-  const spacing = 10;
+  const spacing = 0;
   const styles = StyleSheet.create({
     wrapper: {
-      height: height + 20,
+      height: height + spacing * 2,
       overflow: 'hidden',
     },
     numbers: {
@@ -45,13 +47,15 @@ function AnimatedNumber({
   });
 
   useEffect(() => {
-    Animated.timing(bounceAnim, {
-      toValue: to * -height,
-      useNativeDriver: true,
-      duration: duration,
-      easing: easeInOutBack,
-    }).start();
-  }, [bounceAnim, duration, height, to]);
+    if (doStart) {
+      Animated.timing(bounceAnim, {
+        toValue: to * -height,
+        useNativeDriver: true,
+        duration: duration,
+        easing: easeInOutBack,
+      }).start();
+    }
+  }, [bounceAnim, doStart, duration, height, to]);
 
   return (
     <View style={styles.wrapper}>
