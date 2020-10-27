@@ -1,4 +1,4 @@
-import React, {useEffect, useReducer, useState} from 'react';
+import React, {useEffect, useReducer} from 'react';
 import sharedStyles from '../styles/sharedStyles';
 import BucketView from './BucketView';
 import {ScrollView} from 'react-native-gesture-handler';
