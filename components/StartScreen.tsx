@@ -10,7 +10,6 @@ import {useState} from 'react';
 import StartModal from './StartModal';
 import StartScreenAnimation from './StartScreenAnimation';
 import startLesson from '../libs/startLesson';
-import AnimatedNumber from './AnimatedNumber';
 
 function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
@@ -27,7 +26,7 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   };
 
   return (
-    <View style={sharedStyles.startScreen}>
+    <View style={sharedStyles.screen}>
       <StartModal
         isModalVisible={isModalVisible}
         setIsModalVisible={setIsModalVisible}

@@ -15,7 +15,6 @@ import {
 import startLesson from '../libs/startLesson';
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore, {SavedLessonType} from '../stores/WordsStore';
-import ControlBar from './ControlBar';
 
 import sharedStyles from '../styles/sharedStyles';
 

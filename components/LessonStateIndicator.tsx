@@ -81,10 +81,8 @@ function LessonStateIndicator() {
   }
   function onPress() {
     audioVoice.voiceStart();
-    console.log('onpress');
   }
   const isDisabled = uiStore.lessonState !== LessonState.IsWaitingForUserAction;
-  console.log('LessonstateButton disabled', {isDisabled});
 
   return (
     <Pressable disabled={isDisabled} onPress={onPress}>

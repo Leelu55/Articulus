@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-  startScreen: {
+  screen: {
     backgroundColor: 'white',
     flexDirection: 'column',
     flex: 1,

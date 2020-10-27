@@ -59,7 +59,6 @@ export function AutoModeButton() {
       return;
     }
     uiStore.toggleAutoMode();
-    console.log('AutoMode.onPress (autoMode after: ', uiStore.autoMode, ')');
   }
   const isDisabled = uiStore.lessonState === LessonState.IsFinished || isFrozen;
 
