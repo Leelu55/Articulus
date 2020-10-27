@@ -13,3 +13,10 @@ export function getWeekDayString(weekDay: number): string {
     'Samstag',
   ][weekDay];
 }
+// https://stackoverflow.com/a/3224854
+export function getDiffDays(date1: Date, date2: Date) {
+  const diffTime = Math.abs(date2.getDate() - date1.getDate());
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+  return diffDays;
+}

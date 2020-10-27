@@ -11,7 +11,6 @@ function SavedLessons() {
   const wordsStore = useContext(WordsStore);
   const [openedIndex, setOpenedIndex] = useState(-1);
 
-  console.log(wordsStore.savedLessons);
   return (
     <View style={styles.wrapper}>
       {wordsStore.savedLessons.map((savedLesson, index) => (
