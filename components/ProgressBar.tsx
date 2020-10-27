@@ -77,6 +77,7 @@ function ProgressBar() {
                 delay={0}
                 isFilled={true}
                 positionRandom={false}
+                doStart={true}
               />
             )}
             {lessonWords[index].answerArticle === null &&
