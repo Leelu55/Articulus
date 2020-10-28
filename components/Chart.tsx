@@ -5,45 +5,79 @@ import sharedStyles from '../styles/sharedStyles';
 import {observer} from 'mobx-react';
 import {Dimensions} from 'react-native';
 import {LineChart} from 'react-native-chart-kit';
+import {arrayRotate} from '../libs/utils';
+import {extDayjs} from '../libs/utils';
 
 function Chart({
   chartType = 'week',
-  chartData = [],
+  data = {},
 }: {
   chartType: string;
-  chartData: number[];
+  data: Object;
 }) {
   const screenWidth = Dimensions.get('window').width;
+  const today = new Date(Date.now());
 
-  let data;
+  const currentCalWeek = extDayjs().week();
+  console.log(currentCalWeek);
+
   if (chartType === 'week') {
+    const targetChartData = [];
+    for (let dayIndex = 0; dayIndex < 7; dayIndex++) {
+      targetChartData.push(data[dayIndex] || 0);
+    }
+
     data = {
-      labels: ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'],
-      datasets: [{label: 'week', data: chartData}],
+      labels: arrayRotate(
+        ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'],
+        today.getDay() - 6,
+      ),
+      datasets: [
+        {label: 'week', data: arrayRotate(targetChartData, today.getDay() - 6)},
+      ],
     };
   } else if (chartType === 'month') {
+    const targetChartData = [];
+    const labels = [];
+    for (let i = 4; i >= 0; i--) {
+      const cw = extDayjs().subtract(i, 'week').week();
+      console.log({i, cw});
+      targetChartData.push(data[cw] || 0);
+      labels.push('W' + cw);
+    }
+
     data = {
-      labels: ['W1', 'W2', 'W3', 'W4', 'W5'],
-      datasets: [{label: 'month', data: chartData}],
+      labels: labels,
+      datasets: [{label: 'month', data: targetChartData}],
+      //datasets: [{label: 'month', data: chartData}],
     };
   } else if (chartType === 'year') {
+    const targetChartData = [];
+    const labels = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
+    for (let month = 1; month <= 12; month++) {
+      console.log({month, data: data[month] || 0});
+      targetChartData.push(data[month] || 0);
+    }
+
+    const numRotate = extDayjs().month() - 11;
     data = {
-      labels: [
-        'Jan',
-        'Feb',
-        'Mär',
-        'Apr',
-        'Mai',
-        'Jun',
-        'Jul',
-        'Aug',
-        'Sep',
-        'Okt',
-        'Nov',
-        'Dez',
+      labels: arrayRotate(labels, numRotate),
+      datasets: [
+        {label: 'month', data: arrayRotate(targetChartData, numRotate)},
       ],
-      datasets: [{label: 'year', data: chartData}],
+      //datasets: [{label: 'month', data: chartData}],
     };
+
+    /*
+    const targetChartData = [];
+    for (let i = 0; i < 12; i++) {
+      targetChartData.push(0);
+    }
+    data = {
+      labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
+      datasets: [{label: 'year', data: targetChartData}],
+    };
+    */
   }
 
   return (
