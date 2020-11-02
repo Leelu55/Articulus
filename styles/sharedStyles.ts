@@ -120,6 +120,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 10,
   },
+
+  scene: {flex: 1},
 });
 
 export default styles;

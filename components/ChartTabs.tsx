@@ -7,7 +7,10 @@ import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
 import Chart from './Chart';
 
 import {SavedLessonType} from '../stores/WordsStore';
-import {extDayjs} from '../libs/utils';
+import populateLineChart from '../libs/populateLineChart';
+import WeekChartTab from './ChartTabs/WeekChartTab';
+import MonthChartTab from './ChartTabs/MonthChartTab';
+import YearChartTab from './ChartTabs/YearChartTab';
 
 const savedLessons: SavedLessonType[] = [
   {
@@ -93,61 +96,11 @@ const savedLessons: SavedLessonType[] = [
 
 const initialLayout = {width: Dimensions.get('window').width};
 
-function mapChartData(_savedLessons) {
-  const today = extDayjs();
-  let weekData = {};
-  let monthData = {};
-  let yearData = {};
-
-  _savedLessons.forEach((lesson) => {
-    const lessonDate = extDayjs(lesson.date);
-    if (today.diff(lessonDate, 'day') < 7) {
-      weekData[lessonDate.day()] =
-        lesson.countCorrectAnswers + (weekData[lessonDate.day()] || 0);
-    }
-
-    if (today.diff(lessonDate, 'day') < 35) {
-      monthData[lessonDate.week()] =
-        lesson.countCorrectAnswers + (monthData[lessonDate.week()] || 0);
-    }
-
-    if (today.diff(lessonDate, 'day') < 365) {
-      yearData[lessonDate.month() + 1] =
-        lesson.countCorrectAnswers + (yearData[lessonDate.month() + 1] || 0);
-    }
-  });
-
-  //console.log({weekData, monthData, yearData});
-
-  return {
-    weekData,
-    monthData,
-    yearData,
-  };
-}
-
 function ChartTabs() {
-  const chartData = mapChartData(savedLessons);
+  const chartData = populateLineChart(savedLessons);
 
   const [index, setIndex] = React.useState(0);
 
-  const FirstRoute = () => (
-    <View style={[styles.scene, {backgroundColor: '#ff4081'}]}>
-      <Chart chartType="week" data={chartData.weekData} />
-    </View>
-  );
-
-  const SecondRoute = () => (
-    <View style={[styles.scene, {backgroundColor: '#673ab7'}]}>
-      <Chart chartType="month" data={chartData.monthData} />
-    </View>
-  );
-
-  const ThirdRoute = () => (
-    <View style={[styles.scene, {backgroundColor: '#673ab7'}]}>
-      <Chart chartType="year" data={chartData.yearData} />
-    </View>
-  );
   const renderTabBar = (props) => (
     <TabBar
       {...props}
@@ -167,17 +120,23 @@ function ChartTabs() {
     />
   );
   const routes = [
-    {key: 'first', title: 'Week'},
-    {key: 'second', title: 'Month'},
-    {key: 'third', title: 'Year'},
+    {key: 'week', title: 'Week'},
+    {key: 'month', title: 'Month'},
+    {key: 'year', title: 'Year'},
   ];
 
-  const renderScene = SceneMap({
-    first: FirstRoute,
-    second: SecondRoute,
-    third: ThirdRoute,
-  });
-
+  const renderScene = ({route}) => {
+    switch (route.key) {
+      case 'week':
+        return <WeekChartTab weekData={chartData._weekData} />;
+      case 'month':
+        return <MonthChartTab monthData={chartData._monthData} />;
+      case 'year':
+        return <YearChartTab yearData={chartData._yearData} />;
+      default:
+        return null;
+    }
+  };
   return (
     <View style={styles.chartTabWrapper}>
       <TabView

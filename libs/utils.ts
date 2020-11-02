@@ -33,3 +33,12 @@ export function arrayRotate<T>(arr: T[], count: number) {
 }
 
 export const extDayjs = myDayjs;
+
+export function getLastFourCalenderWeeks() {
+  const _calWeeks = [];
+  for (let i = 4; i >= 0; i--) {
+    const cw = extDayjs().subtract(i, 'week').week();
+    _calWeeks.push(cw);
+  }
+  return _calWeeks;
+}
