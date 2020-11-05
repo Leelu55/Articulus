@@ -5,7 +5,6 @@ import testmodel from '../model/testmodel.json';
 import settings from './settings.json';
 
 function getSequentialNewWords(numberOfNewWords: number, words: WordType[]) {
-  console.log({numberOfNewWords});
   const sequentialNewWords = words
     .filter((word) => word.slot === 0 && word.dueDateTime === null)
     .slice(0, numberOfNewWords);

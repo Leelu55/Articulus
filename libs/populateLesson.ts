@@ -40,7 +40,6 @@ export default function populateLesson(
     })
     .sort(sortWordsByDueDateTime)
     .slice(0, settings.lessonSize);
-  console.log({_lessonWords});
   _lessonWords = _lessonWords.concat(
     wordPickerFunction(settings.lessonSize - _lessonWords.length, words),
   );
