@@ -4,7 +4,7 @@
     "wrongAnswer": "#F4512C"
   },
 
-  "lessonSize": 5,
+  "lessonSize": 20,
   "numberOfSlots": 6,
   "isDebugging": false
 }
