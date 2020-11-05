@@ -11,4 +11,6 @@ function YearChartTab({yearData}) {
     </View>
   );
 }
+
+// https://github.com/satya164/react-native-tab-view#avoid-unnecessary-re-renders
 export default React.memo(YearChartTab);

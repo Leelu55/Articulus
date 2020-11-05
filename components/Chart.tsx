@@ -8,19 +8,26 @@ import {
   VictoryLine,
   VictoryChart,
   VictoryScatter,
+  VictoryClipContainer,
 } from 'victory-native';
 
 function Chart({vdata = []}: {vdata: any[]}) {
   return (
     <View style={sharedStyles.screen}>
       <VictoryChart
+        domainPadding={20}
         height={220}
         padding={{left: 20, right: 50, top: 30, bottom: 60}}>
+        {/* https://github.com/FormidableLabs/victory/issues/1735#issuecomment-720682264
+          used clipPadding to avoid reducing strokeWidth */}
         <VictoryLine
+          groupComponent={
+            <VictoryClipContainer clipPadding={{top: 5, bottom: 5}} />
+          }
           data={vdata}
           style={{
             data: {
-              strokeWidth: 10,
+              strokeWidth: 8,
               stroke: 'orange',
             },
           }}
@@ -51,17 +58,11 @@ function Chart({vdata = []}: {vdata: any[]}) {
         <VictoryScatter
           labels={({datum}) => datum.y}
           data={vdata}
-          size={10}
+          size={8}
           symbol="circle"
           style={{
             data: {fill: 'green', opacity: 1},
-            // data: {
-            //   strokeWidth: 3,
-            //   stroke: 'green',
-            //   borderColor: 'blue',
-            //   fill: 'white',
-            //   opacity: 1,
-            // },
+
             labels: {
               fill: 'green',
               fontSize: 15,

@@ -3,8 +3,7 @@ import {observer} from 'mobx-react';
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {Dimensions} from 'react-native';
-import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
-import Chart from './Chart';
+import {TabView, TabBar} from 'react-native-tab-view';
 
 import {SavedLessonType} from '../stores/WordsStore';
 import populateLineChart from '../libs/populateLineChart';
@@ -33,7 +32,7 @@ const savedLessons: SavedLessonType[] = [
   },
   {
     date: new Date('2020-10-27'),
-    countCorrectAnswers: 76,
+    countCorrectAnswers: 50,
     countWrongAnswers: 0,
     words: [],
   },
@@ -97,8 +96,10 @@ const savedLessons: SavedLessonType[] = [
 const initialLayout = {width: Dimensions.get('window').width};
 
 function ChartTabs() {
+  //get processed and formatted data for displaying week|year|months
   const chartData = populateLineChart(savedLessons);
 
+  // tab index
   const [index, setIndex] = React.useState(0);
 
   const renderTabBar = (props) => (
@@ -119,12 +120,14 @@ function ChartTabs() {
       }}
     />
   );
+
   const routes = [
     {key: 'week', title: 'Week'},
     {key: 'month', title: 'Month'},
     {key: 'year', title: 'Year'},
   ];
 
+  // https://github.com/satya164/react-native-tab-view#optimization-tips
   const renderScene = ({route}) => {
     switch (route.key) {
       case 'week':
