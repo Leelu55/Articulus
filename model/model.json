@@ -1,28 +1,468 @@
 {
   "words": [
     {
-      "value": "Gartenzwerg",
+      "value": "Ärger",
       "slot": 0,
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2016/04/18/11/33/dwarf-1336356_960_720.jpg"
+      "imageUrl": "https://pixabay.com/get/52e8dd434855af14f1dc8460da29317e113cd7e0525472_640.jpg"
     },
     {
-      "value": "Schornsteinfeger",
+      "value": "Ärztin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/12/06/13/40/anesthesia-4677401__340.jpg"
+    },
+    {
+      "value": "Abend",
       "slot": 0,
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/02/24/18/37/chimney-sweep-647678_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/01/05/19/20/tree-3063715__340.jpg"
     },
     {
-      "value": "Haus",
+      "value": "Abfahrt",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/05/09/17/26/girl-1381994__340.jpg"
+    },
+    {
+      "value": "Abflug",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/07/29/19/30/aircraft-1555434__340.jpg"
+    },
+    {
+      "value": "Absender",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/09/10/17/17/letters-1659715__340.jpg"
+    },
+    {
+      "value": "Adresse",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/02/19/17/49/diary-2080420__340.jpg"
+    },
+    {
+      "value": "Alkohol",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/08/22/10/15/bottles-3623317__340.jpg"
+    },
+    {
+      "value": "Alter",
       "slot": 0,
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2020/09/02/22/30/cottage-5539685_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/07/29/05/45/face-4369947__340.jpg"
+    },
+    {
+      "value": "Ampel",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/08/05/10/23/traffic-light-876056__340.jpg"
+    },
+    {
+      "value": "Anfang",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/10/09/17/31/asphalt-2834149__340.jpg"
+    },
+    {
+      "value": "Angebot",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/10/13/15/48/offer-986378__340.jpg"
+    },
+    {
+      "value": "Angestellte",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/03/26/09/41/tie-690084__340.jpg"
+    },
+    {
+      "value": "Angst",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/01/26/18/08/danbo-2011237__340.jpg"
+    },
+    {
+      "value": "Ankunft",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://pixabay.com/photos/airport-travelers-persons-business-731196/"
+    },
+    {
+      "value": "Anmeldung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/05/30/17/09/event-registration-3441960__340.jpg"
+    },
+    {
+      "value": "Anrede",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/01/04/13/30/doorplates-238472__340.jpg"
+    },
+    {
+      "value": "Anruf",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/12/11/12/22/smartphone-564155__340.jpg"
+    },
+    {
+      "value": "Ansage",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/14/02/56/adult-1822449__340.jpg"
+    },
+    {
+      "value": "Anschluss",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/08/05/16/51/network-1572617__340.jpg"
+    },
+    {
+      "value": "Antwort",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/04/30/11/37/quiz-4168371__340.jpg"
+    },
+    {
+      "value": "Anzeige",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/03/26/09/54/airport-690556__340.jpg"
+    },
+    {
+      "value": "Anzug",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/01/14/10/56/men-1979261__340.jpg"
+    },
+    {
+      "value": "Apfel",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/07/09/12/16/apple-1506119__340.jpg"
+    },
+    {
+      "value": "Apotheke",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/06/30/20/59/pharmacy-380780__340.jpg"
+    },
+    {
+      "value": "Appartement",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/28/11/52/concrete-1864808__340.jpg"
+    },
+    {
+      "value": "Appetit",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/07/01/18/18/macaron-2462247__340.jpg"
+    },
+    {
+      "value": "April",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/01/26/20/18/april-3109706__340.jpg"
+    },
+    {
+      "value": "Arbeit",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/08/22/14/42/engineer-1612104__340.jpg"
+    },
+    {
+      "value": "Arbeitsplatz",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/02/10/18/12/furniture-4837230__340.jpg"
+    },
+    {
+      "value": "Arm",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/08/07/18/52/arm-2606730__340.jpg"
+    },
+    {
+      "value": "Arzt",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/07/30/15/57/dentist-4373290__340.jpg"
+    },
+    {
+      "value": "Aufenthalt",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/04/25/22/18/pass-2260989__340.jpg"
+    },
+    {
+      "value": "Aufgabe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/17/20/42/homework-3235100__340.jpg"
+    },
+    {
+      "value": "Aufzug",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/04/26/15/47/metro-1354665__340.jpg"
+    },
+    {
+      "value": "Auge",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/04/29/01/23/skin-3358873__340.jpg"
+    },
+    {
+      "value": "August",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/06/20/07/33/planner-3485976__340.jpg"
+    },
+    {
+      "value": "Ausbildung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585__340.jpg"
+    },
+    {
+      "value": "Ausflug",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/03/14/13/35/istanbul-4930630__340.jpg"
+    },
+    {
+      "value": "Ausgang",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/02/21/09/53/railway-station-2085267__340.jpg"
+    },
+    {
+      "value": "Auskunft",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/04/05/11/27/business-315671__340.jpg"
+    },
+    {
+      "value": "Ausland",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/05/08/13/56/globe-3383088__340.jpg"
+    },
+    {
+      "value": "Ausstellung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/09/24/10/38/theatre-955148__340.jpg"
+    },
+    {
+      "value": "Ausweis",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/01/16/14/56/buffer-1143485__340.jpg"
+    },
+    {
+      "value": "Auto",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/07/07/14/03/fiat-4322521__340.jpg"
+    },
+    {
+      "value": "Autobahn",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/04/27/00/43/traffic-332857__340.jpg"
+    },
+    {
+      "value": "Automat",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/04/02/14/33/park-ticket-vending-machine-306600__340.jpg"
+    },
+    {
+      "value": "Bäckerei",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/29/10/09/bakery-1868925__340.jpg"
+    },
+    {
+      "value": "Büro",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926__340.jpg"
+    },
+    {
+      "value": "Baby",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2012/03/01/01/42/baby-20339__340.jpg"
+    },
+    {
+      "value": "Bad",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/02/24/12/24/bathroom-2094733__340.jpg"
+    },
+    {
+      "value": "Bahn",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2012/10/25/23/18/train-62849__340.jpg"
+    },
+    {
+      "value": "Bahnhof",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/02/01/01/34/railway-station-619082__340.jpg"
+    },
+    {
+      "value": "Bahnsteig",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/05/09/08/15/train-3384786__340.jpg"
+    },
+    {
+      "value": "Balkon",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/21/15/09/apartments-1845884__340.jpg"
+    },
+    {
+      "value": "Banane",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/09/24/20/12/bananas-3700718__340.jpg"
+    },
+    {
+      "value": "Bank",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/12/08/02/59/benches-560435__340.jpg"
+    },
+    {
+      "value": "Batterie",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2012/03/04/00/52/battery-22119__340.jpg"
     },
     {
       "value": "Baum",
@@ -30,79 +470,375 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/03/26/10/50/green-692079_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/11/17/22/15/tree-3822149__340.jpg"
     },
     {
-      "value": "Hund",
+      "value": "Beamte",
       "slot": 0,
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/18/18/06/australian-shepherd-3237735_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/05/31/11/17/office-2360063__340.jpg"
     },
     {
-      "value": "Katze",
+      "value": "Beamtin",
       "slot": 0,
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/05/31/11/17/office-2360063__340.jpg"
     },
     {
-      "value": "Tasse",
-      "slot": 0,
-      "article": "die",
-      "timestamp": null,
-      "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/03/27/14/48/tea-2179175_960_720.jpg"
-    },
-    {
-      "value": "Sonne",
-      "slot": 0,
-      "article": "die",
-      "timestamp": null,
-      "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/03/27/21/38/sunset-2180346_960_720.jpg"
-    },
-    {
-      "value": "Mensch",
-      "slot": 0,
-      "article": "der",
-      "timestamp": null,
-      "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/07/31/00/26/woman-868522_960_720.jpg"
-    },
-    {
-      "value": "Wasser",
+      "value": "Bein",
       "slot": 0,
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/12/24/05/02/drops-of-water-578897_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/29/03/26/adult-1867051__340.jpg"
     },
     {
-      "value": "Tisch",
+      "value": "Beispiel",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/10/09/14/15/school-4537531__340.jpg"
+    },
+    {
+      "value": "Bekannte",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/04/21/00/38/conversation-3337443__340.jpg"
+    },
+    {
+      "value": "Benzin",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/03/23/19/39/petrol-stations-1275484__340.jpg"
+    },
+    {
+      "value": "Beratung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/10/05/17/01/it-consultant-3726359__340.jpg"
+    },
+    {
+      "value": "Berg",
       "slot": 0,
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/11/20/08/modern-kitchen-3217932_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/08/05/20/adventure-1807524__340.jpg"
     },
     {
-      "value": "Eule",
+      "value": "Beruf",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/04/07/01/09/lecture-318124__340.jpg"
+    },
+    {
+      "value": "Berufsschule",
       "slot": 0,
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/01/26/11/17/european-eagle-owl-2010346_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/08/01/00/38/laptop-2562325__340.jpg"
     },
     {
-      "value": "Sonnenbrille",
+      "value": "Besuch",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/04/17/22/49/grandma-1335722__340.jpg"
+    },
+    {
+      "value": "Betrag",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/10/26/21/08/money-1772641__340.jpg"
+    },
+    {
+      "value": "Bett",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940169__340.jpg"
+    },
+    {
+      "value": "Bewerbung",
       "slot": 0,
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/09/07/22/16/sunglasses-438429_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/05/14/01/41/calculator-4201244__340.jpg"
+    },
+    {
+      "value": "Bier",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/06/24/23/41/beer-2439237__340.jpg"
+    },
+    {
+      "value": "Bild",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/08/25/07/14/smartphone-1618909__340.jpg"
+    },
+    {
+      "value": "Bildschirm",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427__340.jpg"
+    },
+    {
+      "value": "Birne",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/07/22/09/59/fruit-1534494__340.jpg"
+    },
+    {
+      "value": "Bitte",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/07/26/07/18/man-5438612__340.jpg"
+    },
+    {
+      "value": "Blatt",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/11/07/11/06/leaves-1030816__340.jpg"
+    },
+    {
+      "value": "Bleistift",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2013/03/13/13/56/school-93200__340.jpg"
+    },
+    {
+      "value": "Blick",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/11/22/08/07/cat-2969932__340.jpg"
+    },
+    {
+      "value": "Blume",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/01/05/16/24/rose-3063284__340.jpg"
+    },
+    {
+      "value": "Bluse",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://pixabay.com/photos/woman-model-young-fashion-beauty-1409015/"
+    },
+    {
+      "value": "Blut",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/03/11/18/43/finger-669008__340.jpg"
+    },
+    {
+      "value": "Bogen",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/07/30/16/22/arrow-1557462__340.jpg"
+    },
+    {
+      "value": "Bohne",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2011/02/06/21/58/beans-4785__340.jpg"
+    },
+    {
+      "value": "Brötchen",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/06/10/20/30/bread-3467243__340.jpg"
+    },
+    {
+      "value": "Brücke",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2012/08/06/00/53/bridge-53769__340.jpg"
+    },
+    {
+      "value": "Brief",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/09/12/08/05/communication-3671504__340.jpg"
+    },
+    {
+      "value": "Briefkasten",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/07/29/12/14/mailbox-2551322__340.jpg"
+    },
+    {
+      "value": "Briefmarke",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/03/29/19/21/france-1289073__340.jpg"
+    },
+    {
+      "value": "Brieftasche",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/06/13/01/17/wallet-367975__340.jpg"
+    },
+    {
+      "value": "Briefumschlag",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/08/03/09/50/envelope-2575253__340.jpg"
+    },
+    {
+      "value": "Brille",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/15/21/glasses-1246611__340.jpg"
+    },
+    {
+      "value": "Brot",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/07/11/17/31/bread-1510155__340.jpg"
+    },
+    {
+      "value": "Bruder",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/08/13/19/39/children-887393__340.jpg"
+    },
+    {
+      "value": "Buch",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/09/10/17/18/book-1659717__340.jpg"
+    },
+    {
+      "value": "Buchstabe",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/04/16/55/wood-cube-473703__340.jpg"
+    },
+    {
+      "value": "Bus",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/07/01/03/27/bus-2460482__340.jpg"
+    },
+    {
+      "value": "Butter",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/05/18/12/55/butter-3411126__340.jpg"
+    },
+    {
+      "value": "Café",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/01/19/15/05/coffee-shop-1149155__340.jpg"
+    },
+    {
+      "value": "CD",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/07/28/13/21/cd-864402__340.jpg"
+    },
+    {
+      "value": "CD-ROM",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/09/21/01/27/dvd-949228__340.jpg"
+    },
+    {
+      "value": "Chef",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://pixabay.com/photos/boss-software-business-success-734288/"
+    },
+    {
+      "value": "Chefin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/11/08/23/25/asian-3803525__340.jpg"
     },
     {
       "value": "Computer",
@@ -110,47 +846,719 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/15/02/07/computer-767781_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/17/computer-1245714__340.jpg"
     },
     {
-      "value": "Handtasche",
+      "value": "Creme",
       "slot": 0,
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2018/10/06/14/51/leather-craft-3728005_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/06/17/22/44/cream-1464295__340.png"
     },
     {
-      "value": "Taschentuch",
+      "value": "Dach",
       "slot": 0,
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/10/22/07/55/tissues-1000849_960_720.png"
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/02/18/18/52/buildings-1207824__340.jpg"
     },
     {
-      "value": "Weihnachtsmann",
+      "value": "Dame",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/08/13/03/22/old-lady-417174__340.jpg"
+    },
+    {
+      "value": "Dank",
       "slot": 0,
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/12/28/11/32/namaste-1935938__340.jpg"
     },
     {
-      "value": "Zahn",
+      "value": "Datum",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/02/24/18/31/time-273857__340.jpg"
+    },
+    {
+      "value": "Dauer",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/09/01/18/11/temporal-distance-917364__340.jpg"
+    },
+    {
+      "value": "Dezember",
       "slot": 0,
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/11/02/18/37/horse-1018835__340.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/21/15/16/winter-3031969__340.jpg"
     },
     {
-      "value": "Kopf",
+      "value": "Dienstag",
       "slot": 0,
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/06/21/19/35/head-2428333__340.png"
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/06/22/00/01/agenda-3489747__340.jpg"
+    },
+    {
+      "value": "Ding",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/08/07/22/36/still-2608676__340.jpg"
+    },
+    {
+      "value": "Disco",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/07/09/12/17/live-concert-388160__340.jpg"
+    },
+    {
+      "value": "Dom",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/09/28/21/10/church-3710237__340.jpg"
+    },
+    {
+      "value": "Donnerstag",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/06/22/00/01/agenda-3489747__340.jpg"
+    },
+    {
+      "value": "Dorf",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/01/02/11/30/dorset-4735601__340.jpg"
+    },
+    {
+      "value": "Drucker",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/30/15/45/printer-790396__340.jpg"
+    },
+    {
+      "value": "Durchsage",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/06/26/12/05/megaphone-1480342__340.jpg"
+    },
+    {
+      "value": "Durst",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/08/06/20/36/cat-2596083__340.jpg"
+    },
+    {
+      "value": "Dusche",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/11/06/13/39/shower-1027904__340.jpg"
+    },
+    {
+      "value": "E-Mail",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/12/13/08/22/mail-566337__340.jpg"
+    },
+    {
+      "value": "Ecke",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/01/07/19/27/corner-3068121__340.jpg"
+    },
+    {
+      "value": "Ehefrau",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/14/04/25/bride-1822587__340.jpg"
+    },
+    {
+      "value": "Ehemann",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/05/17/00/06/wedding-2319461__340.jpg"
+    },
+    {
+      "value": "Ei",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/09/17/17/19/egg-944495__340.jpg"
+    },
+    {
+      "value": "Einführung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2012/02/23/08/39/brown-15723__340.jpg"
+    },
+    {
+      "value": "Eingang",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/04/22/10/03/door-3340568__340.jpg"
+    },
+    {
+      "value": "Einladung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/09/21/07/44/smiley-3692494__340.jpg"
+    },
+    {
+      "value": "Eintritt",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/04/25/19/27/man-5092325__340.jpg"
+    },
+    {
+      "value": "Einwohner",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/07/31/20/38/building-2560843__340.jpg"
+    },
+    {
+      "value": "Eis",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/03/23/15/00/ice-cream-cone-1274894__340.jpg"
+    },
+    {
+      "value": "Eltern",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/04/06/17/43/kids-2208930__340.jpg"
+    },
+    {
+      "value": "Empfänger",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/12/20/16/13/receiving-hands-1920865__340.png"
+    },
+    {
+      "value": "Empfang",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/06/24/13/31/tower-820001__340.jpg"
+    },
+    {
+      "value": "Ende",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/09/04/21/07/flag-1645262__340.jpg"
+    },
+    {
+      "value": "Enkel",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/11/10/19/36/birthday-3807315__340.jpg"
+    },
+    {
+      "value": "Enkelin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/11/10/19/36/birthday-3807315__340.jpg"
+    },
+    {
+      "value": "Entschuldigung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/01/14/11/03/love-1139688__340.jpg"
+    },
+    {
+      "value": "Erdgeschoss",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/03/21/22/14/dublin-4955328__340.jpg"
+    },
+    {
+      "value": "Erfahrung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/01/18/20/11/old-age-1147287__340.jpg"
+    },
+    {
+      "value": "Ergebnis",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/01/27/08/22/calculator-4796663__340.jpg"
+    },
+    {
+      "value": "Erlaubnis",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/09/03/21/15/smiley-1642736__340.jpg"
+    },
+    {
+      "value": "Ermäßigung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/06/15/23/14/final-sale-3477904__340.jpg"
+    },
+    {
+      "value": "Erwachsene",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/14/04/06/grandmother-1822560__340.jpg"
+    },
+    {
+      "value": "Essen",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://pixabay.com/photos/salad-fruits-berries-healthy-2756467/"
+    },
+    {
+      "value": "Export",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/01/30/13/28/container-3118783__340.jpg"
+    },
+    {
+      "value": "Fähre",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/05/07/14/24/flag-4186073__340.jpg"
+    },
+    {
+      "value": "Führerschein",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/07/24/14/22/drivers-license-2534805__340.jpg"
+    },
+    {
+      "value": "Fabrik",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/09/02/18/38/architecture-1639990__340.jpg"
+    },
+    {
+      "value": "Fahrer",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/12/02/03/08/people-talking-1876726__340.jpg"
+    },
+    {
+      "value": "Fahrerin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/13/12/08/auto-3222366__340.jpg"
+    },
+    {
+      "value": "Fahrkarte",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/11/24/10/43/admission-2974645__340.jpg"
+    },
+    {
+      "value": "Fahrplan",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/02/20/19/48/travel-4865665__340.jpg"
+    },
+    {
+      "value": "Fahrrad",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/29/19/18/bicycle-789648__340.jpg"
+    },
+    {
+      "value": "Familie",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/06/29/19/53/hippo-5354143__340.jpg"
+    },
+    {
+      "value": "Familienname",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/07/24/18/47/wedding-2535674__340.jpg"
+    },
+    {
+      "value": "Familienstand",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/08/25/22/52/control-427510__340.png"
+    },
+    {
+      "value": "Farbe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/06/22/15/32/soap-bubble-3490959__340.jpg"
+    },
+    {
+      "value": "Fax",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/09/25/20/32/printer-958139__340.jpg"
+    },
+    {
+      "value": "Februar",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/28/17/58/calendar-3045827__340.jpg"
+    },
+    {
+      "value": "Fehler",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/10/21/00/50/editing-1756958__340.jpg"
+    },
+    {
+      "value": "Fenster",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/08/01/09/34/white-2563976__340.jpg"
+    },
+    {
+      "value": "Ferien",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/09/02/12/33/books-918521__340.jpg"
+    },
+    {
+      "value": "Fernsehgerät",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/01/01/13/56/vintage-tv-1116587__340.jpg"
+    },
+    {
+      "value": "Fest",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/03/27/18/39/new-years-eve-1283521__340.jpg"
+    },
+    {
+      "value": "Feuer",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2013/06/09/17/04/fire-123784__340.jpg"
+    },
+    {
+      "value": "Feuerwehr",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/11/26/08/37/fire-4653987__340.jpg"
+    },
+    {
+      "value": "Feuerzeug",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/09/10/lighter-1245655__340.jpg"
+    },
+    {
+      "value": "Fieber",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/09/05/11/27/thermometer-3656065__340.jpg"
+    },
+    {
+      "value": "Film",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/07/27/15/24/movie-2545676__340.jpg"
+    },
+    {
+      "value": "Firma",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/03/26/10/48/people-692005__340.jpg"
+    },
+    {
+      "value": "Fisch",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755__340.jpg"
+    },
+    {
+      "value": "Flasche",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/01/23/09/52/water-bottle-2001912__340.jpg"
+    },
+    {
+      "value": "Fleisch",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/11/07/11/00/meat-1030729__340.jpg"
+    },
+    {
+      "value": "Flughafen",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/07/13/20/41/airport-1515448__340.jpg"
+    },
+    {
+      "value": "Flugzeug",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://pixabay.com/photos/airplane-takeoff-plane-2745898/"
+    },
+    {
+      "value": "Flur",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/04/22/13/04/indoors-3341001__340.jpg"
+    },
+    {
+      "value": "Fluss",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/03/09/15/25/water-1246643__340.jpg"
+    },
+    {
+      "value": "Formular",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/06/13/12/28/pen-2398693__340.jpg"
+    },
+    {
+      "value": "Foto",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2013/04/06/11/50/image-editing-101040__340.jpg"
+    },
+    {
+      "value": "Fotoapparat",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/01/28/21/14/lens-3114729__340.jpg"
+    },
+    {
+      "value": "Frühling",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/12/04/14/46/magnolia-trees-556718__340.jpg"
+    },
+    {
+      "value": "Frühstück",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://pixabay.com/photos/breakfast-delicious-drink-food-1835478/"
+    },
+    {
+      "value": "Frage",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/14/20/52/cat-1824668__340.jpg"
+    },
+    {
+      "value": "Frau",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/01/24/19/49/people-3104635__340.jpg"
+    },
+    {
+      "value": "Freitag",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/06/22/00/01/agenda-3489747__340.jpg"
+    },
+    {
+      "value": "Freizeit",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/04/28/13/34/young-woman-2268348__340.jpg"
+    },
+    {
+      "value": "Freund",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/01/19/17/41/friends-1149841__340.jpg"
+    },
+    {
+      "value": "Freundin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/09/26/09/33/girls-462072_960_720.jpg"
+    },
+    {
+      "value": "Friseur",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://pixabay.com/photos/haircut-barber-salon-barber-shop-1007891/"
+    },
+    {
+      "value": "Friseurin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://pixabay.com/photos/hairdresser-scissors-hair-cut-3173438/"
+    },
+    {
+      "value": "Frist",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/05/06/14/49/january-2290045__340.jpg"
     },
     {
       "value": "Fuß",
@@ -161,52 +1569,348 @@
       "imageUrl": "https://cdn.pixabay.com/photo/2017/05/30/21/57/feet-2358333__340.jpg"
     },
     {
-      "value": "Hand",
-      "slot": 0,
-      "article": "die",
-      "timestamp": null,
-      "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2018/01/31/09/42/people-3120717_960_720.jpg"
-    },
-    {
-      "value": "Auge",
-      "slot": 0,
-      "article": "das",
-      "timestamp": null,
-      "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/23/13/58/animal-1853031__340.jpg"
-    },
-    {
-      "value": "Mund",
+      "value": "Fußball",
       "slot": 0,
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2020/01/09/01/45/scream-4751647__340.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/05/16/21/07/football-1396740__340.jpg"
     },
     {
-      "value": "Nase",
+      "value": "Gabel",
       "slot": 0,
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/11/04/14/25/pinocchio-2917652__340.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/12/02/14/49/fork-554064__340.jpg"
     },
     {
-      "value": "Ohr",
+      "value": "Garage",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/09/16/20/11/garage-943249__340.jpg"
+    },
+    {
+      "value": "Garten",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/11/16/19/29/spring-2955582__340.jpg"
+    },
+    {
+      "value": "Gas",
       "slot": 0,
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/22/09/39/grass-3249879__340.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/03/27/12/39/kettle-2178442__340.jpg"
     },
     {
-      "value": "Telefon",
+      "value": "Gast",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/04/07/19/31/boy-5014642__340.jpg"
+    },
+    {
+      "value": "Gebühr",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/07/30/16/12/euro-1557431__340.jpg"
+    },
+    {
+      "value": "Geburtsjahr",
       "slot": 0,
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/04/03/15/52/mobile-phone-2198770_960_720.png"
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/10/13/14/59/candle-1737985__340.jpg"
+    },
+    {
+      "value": "Geburtstag",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/01/10/17/12/guinea-pig-1969698__340.jpg"
+    },
+    {
+      "value": "Gegenteil",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/09/22/12/33/pigeons-2775420__340.jpg"
+    },
+    {
+      "value": "Geld",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/10/09/19/19/coins-1726618__340.jpg"
+    },
+    {
+      "value": "Gemüse",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/30/01/18/vegetables-790022__340.jpg"
+    },
+    {
+      "value": "Gepäck",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/09/09/21/31/luggage-933487__340.jpg"
+    },
+    {
+      "value": "Gericht",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/08/21/13/28/courtroom-898931__340.jpg"
+    },
+    {
+      "value": "Gesamtschule",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/02/24/02/37/classroom-2093743__340.jpg"
+    },
+    {
+      "value": "Geschäft",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/03/02/20/13/shopping-1232944__340.jpg"
+    },
+    {
+      "value": "Geschenk",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/12/01/19/23/gift-553149__340.jpg"
+    },
+    {
+      "value": "Geschirr",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/12/23/07/49/christmas-table-1926936__340.jpg"
+    },
+    {
+      "value": "Geschwister",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/09/03/08/10/children-920131__340.jpg"
+    },
+    {
+      "value": "Gesicht",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/11/28/12/39/makeup-2983550__340.jpg"
+    },
+    {
+      "value": "Gespräch",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/09/29/11/36/listen-1702648__340.jpg"
+    },
+    {
+      "value": "Gesundheit",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/12/10/21/01/doctor-563428__340.jpg"
+    },
+    {
+      "value": "Getränk",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/05/19/07/34/teacup-2325722__340.jpg"
+    },
+    {
+      "value": "Gewicht",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/01/22/14/49/horizontal-1155878__340.jpg"
+    },
+    {
+      "value": "Gewitter",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/06/13/22/12/flash-1455285__340.jpg"
+    },
+    {
+      "value": "Glück",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/11/07/11/17/woman-1031000__340.jpg"
+    },
+    {
+      "value": "Glückwunsch",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/08/28/21/39/roses-3638589__340.jpg"
+    },
+    {
+      "value": "Glas",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/05/15/17/43/calm-2315559__340.jpg"
+    },
+    {
+      "value": "Gleis",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/07/06/09/45/train-4320077__340.jpg"
+    },
+    {
+      "value": "Goethe-Institut",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/07/27/10/13/goethe-3565667__340.jpg"
+    },
+    {
+      "value": "Größe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/06/24/09/26/measurement-1476919__340.jpg"
+    },
+    {
+      "value": "Grenze",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2013/11/22/17/23/wall-215787__340.jpg"
+    },
+    {
+      "value": "Grippe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/04/28/08/31/grandmom-5103358__340.jpg"
+    },
+    {
+      "value": "Großeltern",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/04/03/07/45/grandparents-4997796__340.jpg"
+    },
+    {
+      "value": "Großmutter",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/10/13/13/18/grandmother-1737756__340.jpg"
+    },
+    {
+      "value": "Großvater",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/15/20/39/family-1827369__340.jpg"
+    },
+    {
+      "value": "Gruß",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/05/07/13/50/hi-2292499__340.jpg"
+    },
+    {
+      "value": "Grundschule",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/04/23/14/47/boy-330582__340.jpg"
+    },
+    {
+      "value": "Gruppe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/02/07/18/30/people-3137670__340.jpg"
+    },
+    {
+      "value": "Guthaben",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/12/01/17/50/money-2991387__340.jpg"
+    },
+    {
+      "value": "Gymnasium",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2012/02/22/20/08/classroom-15593__340.jpg"
+    },
+    {
+      "value": "Hähnchen",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/10/05/23/24/chicken-3727097__340.jpg"
+    },
+    {
+      "value": "Haar",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/19/11/22/hair-1838728__340.jpg"
     }
   ]
 }
