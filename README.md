@@ -3,7 +3,7 @@
 ### Roadmap
 
 - [x] Build script to add article data
-- [ ] Set up continous integration (possibly Circle CI)
+- [x] Set up continous integration (possibly Circle CI)
 - [ ] Deployments to PlayStore
 - [ ] Specify and implement statistics screen features
 - [ ] FAQ page
@@ -11,7 +11,7 @@
 - [ ] Content creation for about page, imprint, etc.
 - [ ] More code testing
 - [ ] Refactor Code
-- [ ] Refactor Design (Colors, Fonts, UX)
+- [ ] Refactor Design (Colors, Fonts, UX, responsive)
 - [ ] Create a good README
 - [ ] Streaks ("X correct answers in a row")
 - [ ] Badges
@@ -20,3 +20,8 @@
   - [ ] "Record streak"
   - [ ] Show badges on statistics page
 - [ ] App hints ("Use DDD in a quiet surrounding for better results")
+
+### Bugs
+
+- [ ] pressing articleButton between speaking and listening in autoMode doesn't logIn the answer. app continues listening instead of showing next word
+- [ ] if no words in lessonWords clicking on start lesson shoudn't generate a new lessonHistory
