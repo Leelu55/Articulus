@@ -36,6 +36,7 @@ function AnimatedNumber({
     numbers: {
       transform: [{translateY: 0}],
       position: 'absolute',
+      backgroundColor: 'black',
       padding: spacing,
     },
     numberText: {
