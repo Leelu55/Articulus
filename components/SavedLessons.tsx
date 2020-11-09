@@ -13,51 +13,53 @@ function SavedLessons() {
 
   return (
     <View style={styles.wrapper}>
-      {wordsStore.savedLessons.map((savedLesson, index) => (
-        <Pressable
-          style={styles.lesson}
-          key={index}
-          onPress={() => {
-            setOpenedIndex(openedIndex === index ? -1 : index);
-          }}>
-          <View style={sharedStyles.viewHorizontal}>
-            <Text style={{flex: 1}}>
-              {savedLesson.date.toString().substr(0, 10)}
-            </Text>
-            <View style={styles.lessonCounts}>
-              <FontAwesomeIcon icon="check" color="green" size={20} />
-              <Text style={styles.correctAnswers}>
-                {savedLesson.countCorrectAnswers}
+      {wordsStore.savedLessons
+        .filter((lesson) => lesson.isFinished)
+        .map((savedLesson, index) => (
+          <Pressable
+            style={styles.lesson}
+            key={index}
+            onPress={() => {
+              setOpenedIndex(openedIndex === index ? -1 : index);
+            }}>
+            <View style={sharedStyles.viewHorizontal}>
+              <Text style={{flex: 1}}>
+                {savedLesson.date.toString().substr(0, 10)}
               </Text>
-              <FontAwesomeIcon icon="times" color="red" size={20} />
-              <Text style={styles.wrongAnswers}>
-                {savedLesson.countWrongAnswers}
-              </Text>
+              <View style={styles.lessonCounts}>
+                <FontAwesomeIcon icon="check" color="green" size={20} />
+                <Text style={styles.correctAnswers}>
+                  {savedLesson.countCorrectAnswers}
+                </Text>
+                <FontAwesomeIcon icon="times" color="red" size={20} />
+                <Text style={styles.wrongAnswers}>
+                  {savedLesson.countWrongAnswers}
+                </Text>
+              </View>
             </View>
-          </View>
 
-          {openedIndex === index && (
-            <View style={styles.wordsList}>
-              {savedLesson.words.map((word) => {
-                return (
-                  <View style={styles.word} key={word.value}>
-                    {word.isAnswerCorrect === true && (
-                      <FontAwesomeIcon icon="check" color="green" size={20} />
-                    )}
-                    {word.isAnswerCorrect === false && (
-                      <FontAwesomeIcon icon="times" color="red" size={20} />
-                    )}
-                    {word.isAnswerCorrect === null && (
-                      <FontAwesomeIcon icon="minus" color="grey" size={20} />
-                    )}
-                    <Text style={styles.wordText}>{word.value}</Text>
-                  </View>
-                );
-              })}
-            </View>
-          )}
-        </Pressable>
-      ))}
+            {openedIndex === index && (
+              <View style={styles.wordsList}>
+                {savedLesson.words.map((word) => {
+                  return (
+                    <View style={styles.word} key={word.value}>
+                      {word.isAnswerCorrect === true && (
+                        <FontAwesomeIcon icon="check" color="green" size={20} />
+                      )}
+                      {word.isAnswerCorrect === false && (
+                        <FontAwesomeIcon icon="times" color="red" size={20} />
+                      )}
+                      {word.isAnswerCorrect === null && (
+                        <FontAwesomeIcon icon="minus" color="grey" size={20} />
+                      )}
+                      <Text style={styles.wordText}>{word.value}</Text>
+                    </View>
+                  );
+                })}
+              </View>
+            )}
+          </Pressable>
+        ))}
     </View>
   );
 }

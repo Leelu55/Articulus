@@ -33,6 +33,7 @@ export interface SavedLessonWordType {
 }
 
 export interface SavedLessonType {
+  isFinished: boolean;
   date: Date;
   countCorrectAnswers: number;
   countWrongAnswers: number;
@@ -67,6 +68,7 @@ class WordsStore {
       });
     });
     const newSavedLesson: SavedLessonType = {
+      isFinished: false,
       countCorrectAnswers: 0,
       countWrongAnswers: 0,
       words: savedLessonWords,
@@ -80,6 +82,10 @@ class WordsStore {
 
   @action emptyLesson = () => {
     this.lessonWords = [];
+  };
+
+  @action removeEmptySavedLessons = () => {
+    this.savedLessons = this.savedLessons.filter((lesson) => lesson.isFinished);
   };
 
   @action setAnswerArticleForLessonWord = (

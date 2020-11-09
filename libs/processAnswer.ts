@@ -39,6 +39,7 @@ export default function processAnswer(
         uiStore.setWordIndex(wordIndex + 1);
         uiStore.setLessonState(LessonState.IsSpeaking);
       } else {
+        currentSavedLesson.isFinished = true;
         uiStore.setLessonState(LessonState.IsFinished);
       }
     }
