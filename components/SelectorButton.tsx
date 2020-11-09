@@ -6,7 +6,7 @@ import WordsStore from '../stores/WordsStore';
 import styles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
 import processAnswer from '../libs/processAnswer';
-import audioVoice from '../libs/audioVoice';
+import * as audioVoice from '../libs/audioVoice';
 
 function SelectorButton({articleText}: {articleText: string}) {
   const uiStore = useContext(UIStore);

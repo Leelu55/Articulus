@@ -4,7 +4,7 @@ import sharedStyle from '../styles/sharedStyles';
 import {WordValue} from './WordValue';
 import WordsStore from '../stores/WordsStore';
 
-import audioVoice from '../libs/audioVoice';
+import * as audioVoice from '../libs/audioVoice';
 import UIStore, {LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {WordImage} from './WordImage';

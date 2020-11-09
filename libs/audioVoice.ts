@@ -5,67 +5,99 @@ import extractArticle from './extractArticle';
 import {LessonState} from '../stores/UIStore';
 import processAnswer from './processAnswer';
 
-class AudioVoice {
-  setup(uiStore, wordsStore) {
-    ttsLibrary.addEventListener('tts-finish', () => {
-      this.startUserInteraction(uiStore);
-    });
+console.log('import audiovoice.ts');
+// callbacks for ttsLibrary events to be modified on setup and cleanup
+let onTtsStart = null;
+let onTtsFinish = null;
+let onTtsCancel = null;
+let onTtsError = null;
 
-    voiceLibrary.onSpeechStart = () => {
-      uiStore.setLessonState(LessonState.IsListening);
-    };
+export function setup(uiStore, wordsStore) {
+  console.log('AudioVoice::setup');
 
-    voiceLibrary.onSpeechResults = (event) => {
-      const currentArticle = extractArticle(event.value);
-
-      if (currentArticle === null) {
-        uiStore.setLessonState(LessonState.IsRepeating);
-        return;
+  onTtsFinish = () => {
+    function startUserInteraction() {
+      if (uiStore.autoMode) {
+        voiceStart();
+      } else {
+        uiStore.setLessonState(LessonState.IsWaitingForUserAction);
       }
-      processAnswer(wordsStore, uiStore, currentArticle);
-    };
-
-    voiceLibrary.onSpeechError = () => {
-      if (uiStore.lessonState !== LessonState.IsSpeaking) {
-        uiStore.setLessonState(LessonState.IsRepeating);
-      }
-    };
-  }
-
-  private startUserInteraction(uiStore: any) {
-    if (uiStore.autoMode) {
-      this.voiceStart();
-    } else {
-      uiStore.setLessonState(LessonState.IsWaitingForUserAction);
     }
-  }
 
-  cleanup() {
-    ttsLibrary.stop(0);
-    ttsLibrary.removeEventListener('tts-finish', this.voiceStart);
-    voiceLibrary.destroy();
-  }
+    console.log(
+      '# tts-finish',
+      wordsStore.lessonWords[uiStore.wordIndex].value,
+    );
+    startUserInteraction();
+  };
 
-  voiceStart() {
-    //console.error(1);
-    voiceLibrary.start('de-DE');
-  }
+  onTtsStart = () => {
+    console.log('# tts-start', wordsStore.lessonWords[uiStore.wordIndex].value);
+  };
 
-  voiceStop() {
-    voiceLibrary.destroy();
-  }
+  onTtsCancel = () => {
+    console.log(
+      '# tts-cancel',
+      wordsStore.lessonWords[uiStore.wordIndex].value,
+    );
+  };
 
-  stopSpeakWord() {
-    ttsLibrary.stop();
-  }
+  onTtsError = () => {
+    console.log('# tts-error', wordsStore.lessonWords[uiStore.wordIndex].value);
+  };
 
-  speakWord(wordValue) {
-    ttsLibrary.speak(wordValue);
-  }
+  ttsLibrary.addEventListener('tts-finish', onTtsFinish);
+  ttsLibrary.addEventListener('tts-cancel', onTtsCancel);
+  ttsLibrary.addEventListener('tts-start', onTtsStart);
+  ttsLibrary.addEventListener('tts-error', onTtsError);
 
-  repeatWord(prefixText, wordValue) {
-    ttsLibrary.speak(prefixText + ',,' + wordValue);
-  }
+  voiceLibrary.onSpeechStart = () => {
+    uiStore.setLessonState(LessonState.IsListening);
+  };
+
+  voiceLibrary.onSpeechResults = (event) => {
+    const currentArticle = extractArticle(event.value);
+
+    if (currentArticle === null) {
+      uiStore.setLessonState(LessonState.IsRepeating);
+      return;
+    }
+    processAnswer(wordsStore, uiStore, currentArticle);
+  };
+
+  voiceLibrary.onSpeechError = () => {
+    if (uiStore.lessonState !== LessonState.IsSpeaking) {
+      uiStore.setLessonState(LessonState.IsRepeating);
+    }
+  };
 }
 
-export default new AudioVoice();
+export function cleanup() {
+  ttsLibrary.stop();
+  ttsLibrary.removeEventListener('tts-finish', onTtsFinish);
+  ttsLibrary.removeEventListener('tts-start', onTtsStart);
+  ttsLibrary.removeEventListener('tts-error', onTtsError);
+  ttsLibrary.removeEventListener('tts-cancel', onTtsCancel);
+  voiceLibrary.destroy();
+  console.log('AudioVoice::cleanup');
+}
+
+export function voiceStart() {
+  voiceLibrary.start('de-DE');
+}
+
+export function voiceStop() {
+  voiceLibrary.destroy();
+}
+
+export function stopSpeakWord() {
+  ttsLibrary.stop();
+}
+
+export function speakWord(wordValue) {
+  ttsLibrary.speak(wordValue);
+}
+
+export function repeatWord(prefixText, wordValue) {
+  ttsLibrary.speak(prefixText + ',,' + wordValue);
+}

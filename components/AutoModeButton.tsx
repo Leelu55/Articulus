@@ -4,7 +4,7 @@ import sharedStyles from '../styles/sharedStyles';
 import {observer} from 'mobx-react';
 import UIStore, {LessonState} from '../stores/UIStore';
 import {useContext} from 'react';
-import audioVoice from '../libs/audioVoice';
+import * as audioVoice from '../libs/audioVoice';
 import {View} from 'react-native';
 import {useState} from 'react';
 

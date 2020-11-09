@@ -9,7 +9,7 @@ import {observer} from 'mobx-react';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
-import audioVoice from '../libs/audioVoice';
+import * as audioVoice from '../libs/audioVoice';
 
 export const ICONS = {
   [LessonState.IsInitial]: 'volume-down',
