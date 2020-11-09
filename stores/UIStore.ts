@@ -38,6 +38,14 @@ class UIStore {
   };
 
   @action setLessonState = (lessonState) => {
+    if (
+      this.lessonState === LessonState.IsEvaluating &&
+      lessonState === LessonState.IsListening
+    ) {
+      return;
+    }
+
+    console.log('=> ', {lessonState});
     this.lessonState = lessonState;
   };
 
