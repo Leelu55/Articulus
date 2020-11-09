@@ -143,14 +143,6 @@ android {
             include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
         }
     }
-    signingConfigs {
-        release {
-            keyAlias System.getenv("BITRISEIO_ANDROID_KEYSTORE_ALIAS")
-            keyPassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD")
-            storeFile file(System.getenv("BITRISEIO_ANDROID_KEYSTORE_URL"))
-            storePassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PASSWORD")
-        }
-    }
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
@@ -158,7 +150,6 @@ android {
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
