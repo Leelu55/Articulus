@@ -14,6 +14,57 @@ export enum LessonState {
   IsFinished = 'IsFinished',
 }
 
+const allowedStateTransitions = {
+  [LessonState.IsInitial]: [LessonState.IsSpeaking],
+  [LessonState.IsSpeaking]: [
+    LessonState.IsSpeaking,
+    LessonState.IsWaitingForUserAction,
+    LessonState.IsListening,
+    LessonState.IsEvaluating,
+    LessonState.IsPaused,
+    LessonState.IsFinished,
+  ],
+  [LessonState.IsRepeating]: [
+    LessonState.IsSpeaking,
+    LessonState.IsRepeating,
+    LessonState.IsWaitingForUserAction,
+    LessonState.IsListening,
+    LessonState.IsEvaluating,
+    LessonState.IsPaused,
+    LessonState.IsFinished,
+  ],
+  [LessonState.IsWaitingForUserAction]: [
+    LessonState.IsSpeaking,
+    LessonState.IsWaitingForUserAction,
+    LessonState.IsListening,
+    LessonState.IsEvaluating,
+    LessonState.IsPaused,
+    LessonState.IsFinished,
+  ],
+  [LessonState.IsListening]: [
+    LessonState.IsSpeaking,
+    LessonState.IsWaitingForUserAction,
+    LessonState.IsListening,
+    LessonState.IsEvaluating,
+    LessonState.IsPaused,
+    LessonState.IsFinished,
+  ],
+  [LessonState.IsEvaluating]: [
+    LessonState.IsSpeaking,
+    LessonState.IsRepeating,
+    LessonState.IsEvaluating,
+    LessonState.IsPaused,
+    LessonState.IsFinished,
+  ],
+  [LessonState.IsPaused]: [
+    LessonState.IsSpeaking,
+    LessonState.IsEvaluating,
+    LessonState.IsPaused,
+    LessonState.IsFinished,
+  ],
+  [LessonState.IsFinished]: [LessonState.IsSpeaking, LessonState.IsFinished],
+};
+
 class UIStore {
   @observable wordIndex: number = 0;
   @observable lessonState: LessonState = LessonState.IsInitial;
@@ -38,10 +89,10 @@ class UIStore {
   };
 
   @action setLessonState = (lessonState) => {
-    if (
-      this.lessonState === LessonState.IsEvaluating &&
-      lessonState === LessonState.IsListening
-    ) {
+    if (!allowedStateTransitions[this.lessonState].includes(lessonState)) {
+      console.log(
+        `Transition from ${this.lessonState} to ${lessonState} is not allowed`,
+      );
       return;
     }
 

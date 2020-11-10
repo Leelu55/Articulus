@@ -4,7 +4,9 @@
 
 - [x] Build script to add article data
 - [x] Set up continous integration (possibly Circle CI)
-- [ ] Deployments to PlayStore
+- [x] prevent unallowed state transitions by using a map of allowedStateTransitions when setting state
+- [x] Deployments to PlayStore
+  - [ ] set the correct deployment version in bitrise workflow
 - [ ] Specify and implement statistics screen features
 - [ ] FAQ page
 - [ ] Grammar hints ("Words ending on 'schaft' are feminin")
