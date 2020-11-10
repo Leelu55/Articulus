@@ -3,7 +3,7 @@
     "primary": {
       "normal": "blueviolet",
       "light": "#c05fff",
-      "dark": "#c05fff"
+      "dark": "#5300af"
     },
     "secondary": { "normal": "#ffd700", "light": "#ffff52", "dark": "#c7a600" },
 

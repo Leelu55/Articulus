@@ -128,7 +128,7 @@ function ChartTabs() {
         fontWeight: 'bold',
       }}
       style={{
-        backgroundColor: settings.colors.primary.normal,
+        backgroundColor: settings.colors.secondary.dark,
         padding: 0,
       }}
     />

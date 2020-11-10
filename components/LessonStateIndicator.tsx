@@ -26,7 +26,7 @@ export const ICON_COLORS = {
   [LessonState.IsInitial]: 'black',
   [LessonState.IsSpeaking]: 'black',
   [LessonState.IsRepeating]: 'black',
-  [LessonState.IsWaitingForUserAction]: settings.colors.primary.dark,
+  [LessonState.IsWaitingForUserAction]: settings.colors.primary.normal,
   [LessonState.IsListening]: 'white',
   [LessonState.IsEvaluating]: 'white',
   [LessonState.IsPaused]: 'black',
@@ -102,7 +102,7 @@ function LessonStateIndicator() {
             borderWidth: 5,
             borderColor:
               uiStore.lessonState === LessonState.IsWaitingForUserAction
-                ? settings.colors.primary.light
+                ? settings.colors.primary.normal
                 : bgColor,
             zIndex: 1,
             position: 'absolute',

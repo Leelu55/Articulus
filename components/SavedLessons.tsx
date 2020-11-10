@@ -6,7 +6,6 @@ import {useContext} from 'react';
 import {observer} from 'mobx-react';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import sharedStyles from '../styles/sharedStyles';
-import settings from '../libs/settings.json';
 
 function SavedLessons() {
   const wordsStore = useContext(WordsStore);
