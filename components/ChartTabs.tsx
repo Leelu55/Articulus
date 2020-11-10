@@ -122,7 +122,6 @@ function ChartTabs() {
       indicatorStyle={{
         backgroundColor: settings.colors.secondary.normal,
         top: 0,
-        borderRadius: 50,
         height: 5,
       }}
       labelStyle={{
