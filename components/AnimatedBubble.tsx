@@ -6,7 +6,6 @@ function AnimatedBubble({
   maxSize = 50,
   color = 'red',
   delay = 0,
-  isFilled = true,
   positionRandom = true,
   easingFunction = Easing.inOut(Easing.linear),
   doStart = false,
@@ -15,7 +14,6 @@ function AnimatedBubble({
   maxSize: number;
   color: string;
   delay: number;
-  isFilled: boolean;
   positionRandom: boolean;
   easingFunction?: EasingFunction;
   doStart?: boolean;
@@ -46,9 +44,9 @@ function AnimatedBubble({
     wrapper: {},
     bubble: {
       borderRadius: 1000,
-      borderWidth: 3,
+      //borderWidth: 3,
       borderColor: color,
-      backgroundColor: isFilled ? color : 'transparent',
+      backgroundColor: color,
       width: maxSize,
       height: maxSize,
       elevation: 1000, // works on android

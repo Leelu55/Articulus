@@ -71,11 +71,10 @@ function ProgressBar() {
               )}
             {index === wordIndex && lessonWord.answerArticle !== null && (
               <AnimatedBubble
-                duration={1000}
+                duration={600}
                 maxSize={2000}
                 color={bgColor}
                 delay={0}
-                isFilled={true}
                 positionRandom={false}
                 doStart={true}
               />

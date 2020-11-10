@@ -42,6 +42,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 20,
     margin: 10,
+    marginBottom: 100,
+
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -59,9 +61,9 @@ const styles = StyleSheet.create({
   },
   finishedIconWrapper: {
     borderRadius: 1000,
-    backgroundColor: 'orange',
-    width: 200,
-    height: 200,
+    backgroundColor: 'grey',
+    width: 300,
+    height: 300,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -80,7 +82,7 @@ function FinishedScreen() {
     Animated.sequence([
       Animated.timing(animValue, {
         toValue: 100,
-        duration: 1000,
+        duration: 500,
         useNativeDriver: true,
         easing: Easing.bounce,
       }),
@@ -113,7 +115,6 @@ function FinishedScreen() {
           delay={500 + i * (1000 / numSparkles)}
           key={i}
           positionRandom={true}
-          isFilled={false}
           easingFunction={(x: number): number => {
             return x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
           }}
@@ -162,7 +163,7 @@ function FinishedScreen() {
               ],
             },
           ]}>
-          <FontAwesomeIcon icon="flag-checkered" size={100} color="white" />
+          <FontAwesomeIcon icon="flag-checkered" size={150} color="white" />
         </Animated.View>
       </View>
 
