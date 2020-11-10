@@ -14,6 +14,7 @@ export enum LessonState {
   IsFinished = 'IsFinished',
 }
 
+// https://docs.google.com/spreadsheets/d/14dIMHZnvKTgqzzAMzdh42yP5bV4XNPLLOFb0TzOrbt4/edit?usp=sharing
 const allowedStateTransitions = {
   [LessonState.IsInitial]: [LessonState.IsSpeaking],
   [LessonState.IsSpeaking]: [
@@ -43,6 +44,7 @@ const allowedStateTransitions = {
   ],
   [LessonState.IsListening]: [
     LessonState.IsSpeaking,
+    LessonState.IsRepeating,
     LessonState.IsWaitingForUserAction,
     LessonState.IsListening,
     LessonState.IsEvaluating,
@@ -72,7 +74,6 @@ class UIStore {
   @observable repeatCount: number = 0;
 
   @persist @observable showIntro: boolean = true;
-  @persist @observable showInitialSettings: boolean = true;
 
   @persist @observable autoMode: boolean = false;
 
@@ -109,10 +110,6 @@ class UIStore {
 
   @action hideIntro = () => {
     this.showIntro = false;
-  };
-
-  @action hideInitialSettings = () => {
-    this.showInitialSettings = false;
   };
 }
 

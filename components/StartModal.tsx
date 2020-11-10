@@ -2,7 +2,7 @@
 import React from 'react';
 import {Modal, Pressable, StyleSheet, Text, View} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
-
+import settings from '../libs/settings.json';
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
@@ -48,12 +48,17 @@ function StartModal({
           <Pressable
             style={[
               sharedStyles.bigButton,
-              {marginBottom: 0, backgroundColor: '#00bfff'},
+              {
+                marginBottom: 0,
+                backgroundColor: settings.colors.secondary.light,
+              },
             ]}
             onPress={() => {
               onContinueLesson();
             }}>
-            <Text style={sharedStyles.bigButtonText}>Fortsetzen</Text>
+            <Text style={[sharedStyles.bigButtonText, {color: 'black'}]}>
+              Fortsetzen
+            </Text>
           </Pressable>
 
           <Pressable
@@ -62,7 +67,9 @@ function StartModal({
               onStartLesson();
               setIsModalVisible(false);
             }}>
-            <Text style={sharedStyles.bigButtonText}>Neue Lektion</Text>
+            <Text style={[sharedStyles.bigButtonText, {color: 'white'}]}>
+              Neue Lektion
+            </Text>
           </Pressable>
         </View>
       </View>

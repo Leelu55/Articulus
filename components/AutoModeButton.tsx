@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react';
-import {Pressable, StyleSheet, Text} from 'react-native';
+import {Pressable, StyleSheet} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 import {observer} from 'mobx-react';
 import UIStore, {LessonState} from '../stores/UIStore';
 import {useContext} from 'react';
 import * as audioVoice from '../libs/audioVoice';
-import {View} from 'react-native';
 import {useState} from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
 export function AutoModeButton() {
   const uiStore = useContext(UIStore);
@@ -21,20 +21,9 @@ export function AutoModeButton() {
 
   const styles = StyleSheet.create({
     wrapper: {
-      borderRadius: 20,
+      borderRadius: 1000,
       overflow: 'hidden',
-      backgroundColor: uiStore.autoMode ? '#00bfff' : 'lightgrey',
-    },
-    button: {
-      paddingLeft: 10,
-      paddingRight: 10,
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    text: {
-      fontSize: 18,
-      color: 'white',
-      fontWeight: 'bold',
+      backgroundColor: uiStore.autoMode ? 'black' : 'lightgrey',
     },
   });
 
@@ -63,15 +52,12 @@ export function AutoModeButton() {
   const isDisabled = uiStore.lessonState === LessonState.IsFinished || isFrozen;
 
   return (
-    <View style={styles.wrapper}>
-      <Pressable
-        // android_ripple={{color: 'aquamarin', borderless: true}}
-        style={[sharedStyles.viewHorizontal, styles.button]}
-        onPress={onPress}
-        disabled={isDisabled}>
-        <Text style={styles.text}>Autoplay</Text>
-      </Pressable>
-    </View>
+    <Pressable
+      style={[sharedStyles.controlButton, styles.wrapper]}
+      onPress={onPress}
+      disabled={isDisabled}>
+      <FontAwesomeIcon icon={'magic'} size={30} color="white" />
+    </Pressable>
   );
 }
 

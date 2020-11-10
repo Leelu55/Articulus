@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext} from 'react';
-import {TouchableHighlight, View} from 'react-native';
-import styles from '../styles/sharedStyles';
+import {Pressable, View} from 'react-native';
+import sharedStyles from '../styles/sharedStyles';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
 import UIStore, {LessonState} from '../stores/UIStore';
@@ -14,9 +14,9 @@ function PausePlayButton() {
   const isFinished = uiStore.lessonState === LessonState.IsFinished;
 
   return (
-    <TouchableHighlight
+    <Pressable
       style={[
-        styles.controlButton,
+        sharedStyles.controlButton,
         {
           backgroundColor: isFinished ? 'lightgrey' : 'black',
         },
@@ -32,7 +32,7 @@ function PausePlayButton() {
       <View>
         <FontAwesomeIcon icon={icon} size={20} color="white" />
       </View>
-    </TouchableHighlight>
+    </Pressable>
   );
 }
 

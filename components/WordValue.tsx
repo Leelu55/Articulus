@@ -1,6 +1,16 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import styles from '../styles/sharedStyles';
+import {View, Text, StyleSheet} from 'react-native';
+
+const styles = StyleSheet.create({
+  wordStyle: {
+    fontSize: 80,
+    fontWeight: 'bold',
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: 10,
+  },
+});
+
 export function WordValue({value}: {value: string}) {
   return (
     <View>

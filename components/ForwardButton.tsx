@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext} from 'react';
-import {TouchableHighlight} from 'react-native';
-import styles from '../styles/sharedStyles';
+import {TouchableHighlight, StyleSheet, Pressable} from 'react-native';
+import sharedStyles from '../styles/sharedStyles';
 import fontawesome from '@fortawesome/fontawesome';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faForward} from '@fortawesome/fontawesome-free-solid';
@@ -13,25 +13,27 @@ import WordsStore from '../stores/WordsStore';
 import {observer} from 'mobx-react';
 import nextWord from '../libs/nextWord';
 
+const styles = StyleSheet.create({
+  wrapper: {
+    marginLeft: 5,
+    padding: 5,
+  },
+});
+
 function ForwardButton() {
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
   const isFinished = uiStore.lessonState === LessonState.IsFinished;
 
   return (
-    <TouchableHighlight
-      style={[
-        styles.controlButton,
-        {
-          backgroundColor: isFinished ? 'lightgrey' : 'black',
-        },
-      ]}
+    <Pressable
+      style={styles.wrapper}
       onPress={() => {
         nextWord(uiStore, wordsStore);
       }}
       disabled={isFinished}>
-      <FontAwesomeIcon icon="forward" size={20} color="white" />
-    </TouchableHighlight>
+      <FontAwesomeIcon icon="forward" color="lightgrey" size={30} />
+    </Pressable>
   );
 }
 

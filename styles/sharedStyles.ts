@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import settings from '../libs/settings.json';
 
 const styles = StyleSheet.create({
   screen: {
@@ -31,30 +32,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: 20,
   },
-  word: {
-    flex: 1,
-    flexDirection: 'column',
-    margin: 5,
-    padding: 5,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  wordStyle: {
-    fontSize: 80,
-    fontWeight: 'bold',
-    marginLeft: 10,
-    marginRight: 10,
-  },
-
-  wordImage: {
-    marginTop: 20,
-    borderRadius: 5,
-    borderWidth: 5,
-    borderColor: 'lightgrey',
-    width: 150,
-    height: 150,
-  },
 
   articleButton: {
     flex: 1,
@@ -71,13 +48,7 @@ const styles = StyleSheet.create({
     margin: 20,
     padding: 10,
     borderRadius: 10,
-    backgroundColor: 'orange',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  cancelButton: {
-    marginRight: 5,
+    backgroundColor: settings.colors.primary.normal,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -113,12 +84,6 @@ const styles = StyleSheet.create({
     marginRight: 30,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-
-  controlBar: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 10,
   },
 
   scene: {flex: 1},

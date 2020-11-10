@@ -9,14 +9,12 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import StatisticsScreen from './StatisticsScreen';
 import StartScreen from './StartScreen';
 import SkeletonScreen from './SkeletonScreen';
-import InitialSettingsScreen from './InitialSettingsScreen';
 import UIStore from '../stores/UIStore';
 
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import IntroSlider from './IntroSlider';
 import FinishedScreen from './FinishedScreen';
 
-const SettingsScreen = () => <SkeletonScreen text="Settings" />;
 const AboutScreen = () => <SkeletonScreen text="About" />;
 
 const HomeStack = () => {
@@ -24,15 +22,22 @@ const HomeStack = () => {
   return (
     <Tab.Navigator
       tabBarOptions={{
+        style: {
+          backgroundColor: 'floralwhite',
+          height: 90,
+          padding: 0,
+          margin: 0,
+        },
         showLabel: false,
-        activeTintColor: 'orange',
+        activeTintColor: 'black',
+        inactiveTintColor: 'darkgray',
       }}>
       <Tab.Screen
         name="Home"
         component={StartScreen}
         options={{
-          tabBarIcon: ({color, size}) => (
-            <FontAwesomeIcon icon="home" size={size} color={color} />
+          tabBarIcon: ({color}) => (
+            <FontAwesomeIcon icon="broom" size={40} color={color} />
           ),
         }}
       />
@@ -41,18 +46,8 @@ const HomeStack = () => {
         name="Stats"
         component={StatisticsScreen}
         options={{
-          tabBarIcon: ({color, size}) => (
-            <FontAwesomeIcon icon="chart-bar" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Settings"
-        component={SettingsScreen}
-        initialParams={{text: 'Settings'}}
-        options={{
-          tabBarIcon: ({color, size}) => (
-            <FontAwesomeIcon icon="wrench" size={size} color={color} />
+          tabBarIcon: ({color}) => (
+            <FontAwesomeIcon icon="chart-bar" size={40} color={color} />
           ),
         }}
       />
@@ -62,8 +57,8 @@ const HomeStack = () => {
         component={AboutScreen}
         initialParams={{text: 'About'}}
         options={{
-          tabBarIcon: ({color, size}) => (
-            <FontAwesomeIcon icon="question-circle" size={size} color={color} />
+          tabBarIcon: ({color}) => (
+            <FontAwesomeIcon icon="question-circle" size={40} color={color} />
           ),
         }}
       />
@@ -94,12 +89,7 @@ const MainApp = () => {
         {uiStore.showIntro && (
           <Stack.Screen name="IntroScreen" component={IntroSlider} />
         )}
-        {uiStore.showInitialSettings && (
-          <Stack.Screen
-            name="InitialSettingsScreen"
-            component={InitialSettingsScreen}
-          />
-        )}
+
         <Stack.Screen name="AppScreen" component={AppStack} />
       </Stack.Navigator>
     </NavigationContainer>

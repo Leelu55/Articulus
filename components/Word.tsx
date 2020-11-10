@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react';
-import {View} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import sharedStyle from '../styles/sharedStyles';
 import {WordValue} from './WordValue';
 import WordsStore from '../stores/WordsStore';
@@ -9,6 +9,17 @@ import UIStore, {LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {WordImage} from './WordImage';
 import nextWord from '../libs/nextWord';
+
+const styles = StyleSheet.create({
+  word: {
+    flex: 1,
+    flexDirection: 'column',
+    margin: 5,
+    padding: 5,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
 
 function Word() {
   const uiStore = useContext(UIStore);
@@ -58,9 +69,9 @@ function Word() {
   }, [currentLessonWord.value, uiStore, lessonState, wordsStore]);
 
   return (
-    <View style={sharedStyle.word}>
-      <WordValue value={currentLessonWord.value} />
+    <View style={styles.word}>
       <WordImage imageUrl={currentLessonWord.imageUrl} />
+      <WordValue value={currentLessonWord.value} />
     </View>
   );
 }

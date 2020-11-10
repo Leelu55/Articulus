@@ -22,12 +22,23 @@ export const ICONS = {
   [LessonState.IsFinished]: 'flag-checkered',
 };
 
+export const ICON_COLORS = {
+  [LessonState.IsInitial]: 'black',
+  [LessonState.IsSpeaking]: 'black',
+  [LessonState.IsRepeating]: 'black',
+  [LessonState.IsWaitingForUserAction]: settings.colors.primary.dark,
+  [LessonState.IsListening]: 'white',
+  [LessonState.IsEvaluating]: 'white',
+  [LessonState.IsPaused]: 'black',
+  [LessonState.IsFinished]: settings.colors.correctAnswer,
+};
+
 export const COLORS = {
   [LessonState.IsInitial]: 'black',
-  [LessonState.IsSpeaking]: '#ffa500',
-  [LessonState.IsRepeating]: '#ffa500',
+  [LessonState.IsSpeaking]: 'lightgrey',
+  [LessonState.IsRepeating]: 'lightgrey',
   [LessonState.IsWaitingForUserAction]: 'white',
-  [LessonState.IsListening]: '#00bfff',
+  [LessonState.IsListening]: settings.colors.primary.light,
   [LessonState.IsEvaluating]: settings.colors.correctAnswer,
   [LessonState.IsPaused]: 'lightgrey',
   [LessonState.IsFinished]: settings.colors.correctAnswer,
@@ -65,11 +76,8 @@ function LessonStateIndicator() {
   }, [fadeAnim, lessonState]);
 
   let icon = ICONS[lessonState];
-  const iconColor =
-    !uiStore.autoMode &&
-    uiStore.lessonState === LessonState.IsWaitingForUserAction
-      ? '#00bfff'
-      : 'white';
+  let iconColor = ICON_COLORS[lessonState];
+
   let bgColor = COLORS[lessonState];
   const currentWord = wordsStore.lessonWords[uiStore.wordIndex];
   if (
@@ -94,7 +102,7 @@ function LessonStateIndicator() {
             borderWidth: 5,
             borderColor:
               uiStore.lessonState === LessonState.IsWaitingForUserAction
-                ? '#00bfff'
+                ? settings.colors.primary.light
                 : bgColor,
             zIndex: 1,
             position: 'absolute',

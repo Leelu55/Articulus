@@ -8,9 +8,10 @@
 - [x] Deployments to PlayStore
   - [ ] set the correct deployment version in bitrise workflow
 - [ ] Specify and implement statistics screen features
-- [ ] FAQ page
+- [ ] Specify and implement FAQ tab screen
 - [ ] Grammar hints ("Words ending on 'schaft' are feminin")
 - [ ] Content creation for about page, imprint, etc.
+- [ ] speed up animations and transitions
 - [ ] More code testing
 - [ ] Refactor Code
 - [ ] Refactor Design (Colors, Fonts, UX, responsive)
@@ -22,6 +23,7 @@
   - [ ] "Record streak"
   - [ ] Show badges on statistics page
 - [ ] App hints ("Use DDD in a quiet surrounding for better results")
+- [ ] setup CDN and cloud storage for images (BunnyCDN)
 
 ### Bugs
 

@@ -35,7 +35,8 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
       />
 
       <ImageBackground
-        source={require('../assets/parrots.jpg')}
+        resizeMode="contain"
+        source={require('../assets/halloween-5586567_1920.png')}
         style={{width: '100%', height: '100%', justifyContent: 'flex-end'}}>
         <StartScreenAnimation />
 

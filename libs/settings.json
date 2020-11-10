@@ -1,10 +1,17 @@
 {
   "colors": {
+    "primary": {
+      "normal": "blueviolet",
+      "light": "#c05fff",
+      "dark": "#c05fff"
+    },
+    "secondary": { "normal": "#ffd700", "light": "#ffff52", "dark": "#c7a600" },
+
     "correctAnswer": "#4CBB17",
     "wrongAnswer": "#F4512C"
   },
 
-  "lessonSize": 20,
+  "lessonSize": 15,
   "numberOfSlots": 6,
   "isDebugging": false
 }

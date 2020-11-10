@@ -2,6 +2,7 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 import {observer} from 'mobx-react';
+import settings from '../libs/settings.json';
 
 import {
   VictoryAxis,
@@ -28,7 +29,7 @@ function Chart({vdata = []}: {vdata: any[]}) {
           style={{
             data: {
               strokeWidth: 8,
-              stroke: 'orange',
+              stroke: settings.colors.secondary.normal,
             },
           }}
         />
@@ -61,7 +62,7 @@ function Chart({vdata = []}: {vdata: any[]}) {
           size={8}
           symbol="circle"
           style={{
-            data: {fill: 'green', opacity: 1},
+            data: {fill: settings.colors.primary.normal, opacity: 1},
 
             labels: {
               fill: 'green',

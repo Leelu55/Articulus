@@ -5,6 +5,7 @@ import {StyleSheet, Text, View, useWindowDimensions} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 import WordsStore from '../stores/WordsStore';
 import {useContext} from 'react';
+import settings from '../libs/settings.json';
 
 import {observer} from 'mobx-react';
 
@@ -24,7 +25,7 @@ function Bucket({slot}: {slot: number}) {
       borderWidth: 0,
     },
     BucketIcon: {
-      color: 'green',
+      color: settings.colors.primary.normal,
       margin: 6,
     },
     BucketText: {
