@@ -35,11 +35,9 @@ function SelectorButton({articleText}: {articleText: string}) {
       : styleDefault;
   return (
     <TouchableHighlight
-      disabled={[
-        LessonState.IsEvaluating,
-        LessonState.IsPaused,
-        LessonState.IsFinished,
-      ].includes(uiStore.lessonState)}
+      disabled={[LessonState.IsEvaluating, LessonState.IsFinished].includes(
+        uiStore.lessonState,
+      )}
       style={[styles.articleButton, styleSelector()]}
       onPress={() => {
         audioVoice.voiceStop();
