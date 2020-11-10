@@ -1,6 +1,5 @@
 import React, {useContext, useEffect} from 'react';
 import {View, StyleSheet} from 'react-native';
-import sharedStyle from '../styles/sharedStyles';
 import {WordValue} from './WordValue';
 import WordsStore from '../stores/WordsStore';
 

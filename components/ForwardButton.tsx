@@ -1,7 +1,5 @@
-/* eslint-disable react-native/no-inline-styles */
 import React, {useContext} from 'react';
-import {TouchableHighlight, StyleSheet, Pressable} from 'react-native';
-import sharedStyles from '../styles/sharedStyles';
+import {StyleSheet, Pressable} from 'react-native';
 import fontawesome from '@fortawesome/fontawesome';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faForward} from '@fortawesome/fontawesome-free-solid';

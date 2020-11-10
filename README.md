@@ -13,6 +13,7 @@
 - [ ] Content creation for about page, imprint, etc.
 - [ ] speed up animations and transitions
 - [ ] More code testing
+- [ ] implement back button
 - [ ] Refactor Code
 - [ ] Refactor Design (Colors, Fonts, UX, responsive)
 - [ ] Create a good README

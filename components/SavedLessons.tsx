@@ -6,6 +6,7 @@ import {useContext} from 'react';
 import {observer} from 'mobx-react';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import sharedStyles from '../styles/sharedStyles';
+import settings from '../libs/settings.json';
 
 function SavedLessons() {
   const wordsStore = useContext(WordsStore);
@@ -65,14 +66,16 @@ function SavedLessons() {
 }
 
 const styles = StyleSheet.create({
-  wrapper: {borderColor: 'orange', borderWidth: 1, margin: 10},
+  wrapper: {
+    margin: 10,
+  },
   lesson: {
     padding: 10,
-    borderBottomColor: 'orange',
-    borderBottomWidth: 1,
+    margin: 10,
     flexDirection: 'column',
+    backgroundColor: 'floralwhite',
   },
-  wordsList: {marginTop: 10, backgroundColor: 'lightgrey'},
+  wordsList: {marginTop: 10, backgroundColor: 'floralwhite'},
   word: {marginLeft: 5, alignItems: 'center', flexDirection: 'row'},
   wordText: {fontSize: 15, paddingLeft: 5},
   lessonCounts: {flexDirection: 'row'},

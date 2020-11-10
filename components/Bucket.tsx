@@ -21,8 +21,8 @@ function Bucket({slot}: {slot: number}) {
       alignContent: 'center',
       flexWrap: 'wrap',
       flexDirection: 'row',
-      backgroundColor: 'lightgrey',
-      borderWidth: 0,
+      backgroundColor: 'floralwhite',
+      borderWidth: 1,
     },
     BucketIcon: {
       color: settings.colors.primary.normal,
