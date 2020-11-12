@@ -24,7 +24,7 @@ function BucketBarsChart() {
   }
   for (let slot = 1; slot < settings.numberOfSlots; slot++) {
     bucketBars.push(
-      <BucketBar slot={slot} maxWordsForSlots={maxWordsForSlots} />,
+      <BucketBar slot={slot} key={slot} maxWordsForSlots={maxWordsForSlots} />,
     );
   }
   return (
