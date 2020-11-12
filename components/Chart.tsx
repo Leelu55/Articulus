@@ -47,22 +47,13 @@ function Chart({vdata = []}: {vdata: any[]}) {
           }}
         />
 
-        {/* <VictoryArea
-          data={vdata}
-          style={{data: {fill: 'orange', opacity: 0.5}}}
-          animate={{
-            duration: 2000,
-            onLoad: {duration: 1000},
-          }}
-        /> */}
-
         <VictoryScatter
           labels={({datum}) => datum.y}
           data={vdata}
           size={8}
           symbol="circle"
           style={{
-            data: {fill: settings.colors.primary.normal, opacity: 1},
+            data: {fill: settings.colors.primary.dark, opacity: 1},
 
             labels: {
               fill: 'green',

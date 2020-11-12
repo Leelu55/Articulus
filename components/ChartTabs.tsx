@@ -122,15 +122,19 @@ function ChartTabs() {
       indicatorStyle={{
         backgroundColor: settings.colors.secondary.normal,
         bottom: 0,
-        height: 5,
+        height: 30,
+        borderRadius: 20,
       }}
       labelStyle={{
         fontWeight: 'bold',
+        fontSize: 15,
         color: settings.colors.primary.dark,
+        transform: [{translateY: 10}],
       }}
       style={{
         backgroundColor: 'white',
         padding: 0,
+        elevation: 0,
       }}
     />
   );
@@ -155,7 +159,7 @@ function ChartTabs() {
     }
   };
   return (
-    <View style={styles.chartTabWrapper}>
+    <View style={styles.wrapper}>
       <TabView
         navigationState={{index, routes}}
         renderScene={renderScene}
@@ -170,10 +174,11 @@ function ChartTabs() {
 
 export const styles = StyleSheet.create({
   scene: {flex: 1},
-  chartTabWrapper: {
+  wrapper: {
     borderWidth: 5,
     overflow: 'hidden',
     margin: 10,
+    marginTop: 20,
     borderColor: 'transparent',
   },
 });

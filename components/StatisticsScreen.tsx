@@ -1,11 +1,10 @@
-import React, {useContext, useEffect, useReducer} from 'react';
+import React, {useEffect, useReducer} from 'react';
 import sharedStyles from '../styles/sharedStyles';
-import BucketView from './BucketView';
 import {ScrollView} from 'react-native-gesture-handler';
 import SavedLessons from './SavedLessons';
 import ChartTabs from './ChartTabs';
-import WordsStore from '../stores/WordsStore';
 import ProgressView from './ProgressView';
+import BucketBarsChart from './BucketBarsChart';
 
 function StatisticsScreen({navigation}) {
   // https://reactjs.org/docs/hooks-reference.html#usereducer
@@ -22,8 +21,8 @@ function StatisticsScreen({navigation}) {
   return (
     <ScrollView style={sharedStyles.screen}>
       <ProgressView />
+      <BucketBarsChart />
       <ChartTabs />
-      <BucketView />
       <SavedLessons />
     </ScrollView>
   );

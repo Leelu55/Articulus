@@ -87,6 +87,16 @@ const styles = StyleSheet.create({
   },
 
   scene: {flex: 1},
+  label: {
+    borderRadius: 20,
+    alignSelf: 'flex-start',
+    paddingHorizontal: 15,
+    paddingVertical: 5,
+    fontWeight: 'bold',
+    fontSize: 15,
+    color: settings.colors.primary.dark,
+    backgroundColor: settings.colors.secondary.normal,
+  },
 });
 
 export default styles;

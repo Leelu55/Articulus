@@ -5,6 +5,7 @@ import WordsStore from '../stores/WordsStore';
 import {View, Text, StyleSheet} from 'react-native';
 import settings from '../libs/settings.json';
 import {observer} from 'mobx-react';
+import sharedStyles from '../styles/sharedStyles';
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -24,14 +25,18 @@ const styles = StyleSheet.create({
     minWidth: 30,
   },
   percentText: {
+    flex: 1,
     fontWeight: 'bold',
     textAlign: 'right',
     color: settings.colors.primary.dark,
+    marginLeft: 5,
   },
   labelText: {
     color: settings.colors.primary.dark,
     fontWeight: 'bold',
-    flex: 1,
+    padding: 5,
+    fontSize: 15,
+    backgroundColor: settings.colors.secondary.normal,
   },
 });
 function ProgressView() {
@@ -42,10 +47,12 @@ function ProgressView() {
 
   return (
     <View style={styles.wrapper}>
-      <View style={{flexDirection: 'row'}}>
-        <Text style={styles.labelText}>Lernfortschritt</Text>
-        <Text style={styles.percentText}>{learningProgressPercentage}%</Text>
+      <View
+        style={{flexDirection: 'row', alignItems: 'center', marginBottom: 10}}>
+        <Text style={sharedStyles.label}>LERNFORTSCHRITT</Text>
       </View>
+      <Text style={styles.percentText}>{learningProgressPercentage}%</Text>
+
       <View style={styles.progressBar}>
         <View
           style={[
