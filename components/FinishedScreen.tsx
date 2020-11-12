@@ -12,7 +12,7 @@ import {
   useWindowDimensions,
   View,
 } from 'react-native';
-import startLesson from '../libs/startLesson';
+import startLesson, {startLesson2} from '../libs/startLesson';
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore, {SavedLessonType} from '../stores/WordsStore';
 
