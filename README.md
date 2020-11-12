@@ -25,6 +25,7 @@
   - [ ] Show badges on statistics page
 - [ ] App hints ("Use DDD in a quiet surrounding for better results")
 - [ ] setup CDN and cloud storage for images (BunnyCDN)
+- [ ] don't show StartScreen when there are no words with dueDate == today or new words but StatisticsScreen or GetNewWordPackageScreen (to be implemented)
 
 ### Bugs
 
