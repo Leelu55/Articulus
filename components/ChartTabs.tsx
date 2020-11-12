@@ -121,14 +121,15 @@ function ChartTabs() {
       {...props}
       indicatorStyle={{
         backgroundColor: settings.colors.secondary.normal,
-        top: 0,
+        bottom: 0,
         height: 5,
       }}
       labelStyle={{
         fontWeight: 'bold',
+        color: settings.colors.primary.dark,
       }}
       style={{
-        backgroundColor: settings.colors.secondary.dark,
+        backgroundColor: 'white',
         padding: 0,
       }}
     />
@@ -160,7 +161,7 @@ function ChartTabs() {
         renderScene={renderScene}
         onIndexChange={setIndex}
         initialLayout={initialLayout}
-        tabBarPosition="bottom"
+        tabBarPosition="top"
         renderTabBar={renderTabBar}
       />
     </View>

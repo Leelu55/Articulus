@@ -1,5 +1,7 @@
 import myDayjs from 'dayjs';
 import weekOfYear from 'dayjs/plugin/weekOfYear';
+import {WordType} from '../stores/WordsStore';
+import settings from './settings.json';
 
 myDayjs.extend(weekOfYear);
 
@@ -41,4 +43,13 @@ export function getLastFourCalenderWeeks() {
     _calWeeks.push(cw);
   }
   return _calWeeks;
+}
+
+export function calcLearningProgressPercentage(words: WordType[]): number {
+  // adding up slots of all words, dividing by wordcount * numberOfSlots
+  const reducer = (accumulator: number, word: WordType) =>
+    accumulator + word.slot;
+
+  const maxScore = words.length * (settings.numberOfSlots - 1);
+  return Math.round((words.reduce(reducer, 0) / maxScore) * 100);
 }
