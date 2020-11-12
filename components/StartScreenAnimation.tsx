@@ -7,6 +7,7 @@ import {
   StyleSheet,
   useWindowDimensions,
 } from 'react-native';
+import settings from '../libs/settings.json';
 
 export default function StartScreenAnimation() {
   const anim1 = useRef(new Animated.Value(1)).current;
@@ -93,7 +94,7 @@ export default function StartScreenAnimation() {
             scaleY: anim1,
             translateX: marginHorizontal,
             translateY: styles.appTitleWrapper.height * 0.3,
-            backgroundColor: 'darkgrey',
+            backgroundColor: settings.colors.secondary.normal,
           },
         ]}>
         <Text style={styles.appTitle}>DER</Text>
@@ -107,7 +108,7 @@ export default function StartScreenAnimation() {
             scaleY: anim2,
             translateX: windowWidth / 2 - styles.appTitleWrapper.width / 2,
             translateY: styles.appTitleWrapper.height,
-            backgroundColor: 'darkgrey',
+            backgroundColor: settings.colors.secondary.dark,
           },
         ]}>
         <Text style={styles.appTitle}>DIE</Text>
@@ -122,7 +123,7 @@ export default function StartScreenAnimation() {
             translateX:
               windowWidth - marginHorizontal - styles.appTitleWrapper.width,
             translateY: styles.appTitleWrapper.height * 0.3,
-            backgroundColor: 'darkgrey',
+            backgroundColor: settings.colors.primary.normal,
           },
         ]}>
         <Text style={styles.appTitle}>DAS</Text>
