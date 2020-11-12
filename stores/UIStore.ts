@@ -91,13 +91,9 @@ class UIStore {
 
   @action setLessonState = (lessonState) => {
     if (!allowedStateTransitions[this.lessonState].includes(lessonState)) {
-      console.log(
-        `Transition from ${this.lessonState} to ${lessonState} is not allowed`,
-      );
       return;
     }
 
-    console.log('=> ', {lessonState});
     this.lessonState = lessonState;
   };
 

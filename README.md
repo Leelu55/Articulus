@@ -32,3 +32,5 @@
 - [x] if no words in lessonWords clicking on start lesson shoudn't generate a new lessonHistory
 - [x] on articleButton pressed, answer is counted, but wordIndex not incremented. If pressed again, answer is counted twice, then the wordIndex is incremented.
 - [ ] cancel after clicking article SelectorButton, then returning to lesson and clicking SelectorButton again -> answer is being counted twice
+- [x] clicking startLesson() on FinishedScreen with no more words with dueDate==today or new words leads to a crash because emptyLesson() is called and the PlayerScreen component being still
+      mounted in the background (React.navigation!) is rerendered with empty lessonWords.

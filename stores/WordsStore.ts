@@ -127,13 +127,6 @@ class WordsStore {
   };
 
   nextDueDate = (): Date => {
-    console.log(
-      'word for next duedate',
-      this.words
-        .filter((word) => word.dueDateTime != null)
-        .slice()
-        .sort(sortWordsByDueDateTime)[0],
-    );
     return this.words
       .filter((word) => word.dueDateTime !== null)
       .slice()

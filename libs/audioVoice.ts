@@ -5,7 +5,6 @@ import extractArticle from './extractArticle';
 import {LessonState} from '../stores/UIStore';
 import processAnswer from './processAnswer';
 
-console.log('import audiovoice.ts');
 // callbacks for ttsLibrary events to be modified on setup and cleanup
 let onTtsStart = null;
 let onTtsFinish = null;
@@ -13,8 +12,6 @@ let onTtsCancel = null;
 let onTtsError = null;
 
 export function setup(uiStore, wordsStore) {
-  console.log('AudioVoice::setup');
-
   onTtsFinish = () => {
     function startUserInteraction() {
       if (uiStore.autoMode) {
@@ -24,27 +21,14 @@ export function setup(uiStore, wordsStore) {
       }
     }
 
-    console.log(
-      '# tts-finish',
-      wordsStore.lessonWords[uiStore.wordIndex].value,
-    );
     startUserInteraction();
   };
 
-  onTtsStart = () => {
-    console.log('# tts-start', wordsStore.lessonWords[uiStore.wordIndex].value);
-  };
+  onTtsStart = () => {};
 
-  onTtsCancel = () => {
-    console.log(
-      '# tts-cancel',
-      wordsStore.lessonWords[uiStore.wordIndex].value,
-    );
-  };
+  onTtsCancel = () => {};
 
-  onTtsError = () => {
-    console.log('# tts-error', wordsStore.lessonWords[uiStore.wordIndex].value);
-  };
+  onTtsError = () => {};
 
   ttsLibrary.addEventListener('tts-finish', onTtsFinish);
   ttsLibrary.addEventListener('tts-cancel', onTtsCancel);
@@ -79,7 +63,6 @@ export function cleanup() {
   ttsLibrary.removeEventListener('tts-error', onTtsError);
   ttsLibrary.removeEventListener('tts-cancel', onTtsCancel);
   voiceLibrary.destroy();
-  console.log('AudioVoice::cleanup');
 }
 
 export function voiceStart() {
