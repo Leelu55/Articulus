@@ -93,9 +93,10 @@ export function voiceStop() {
 export function stopSpeakWord() {
   ttsLibrary.stop();
 }
-
+// solving E/AndroidRuntime: FATAL EXCEPTION: TTS.AudioPlaybackThread
+// https://github.com/ak1394/react-native-tts/issues/121
 export function speakWord(wordValue) {
-  ttsLibrary.speak(wordValue);
+  ttsLibrary.speak(wordValue, {KEY_PARAM_STREAM: 'STREAM_MUSIC'});
 }
 
 export function repeatWord(prefixText, wordValue) {
