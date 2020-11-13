@@ -15,6 +15,7 @@
 - [ ] More code testing
 - [ ] implement back button
 - [ ] Refactor Code
+- [ ] https://github.com/ak1394/react-native-tts#no-text-to-speech-engine-installed-on-android
 - [ ] Refactor Design (Colors, Fonts, UX, responsive)
 - [ ] Create a good README
 - [ ] Streaks ("X correct answers in a row")
