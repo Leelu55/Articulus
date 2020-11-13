@@ -74,7 +74,7 @@ class UIStore {
   @observable repeatCount: number = 0;
 
   @persist @observable showIntro: boolean = true;
-
+  @persist @observable isConfigured: boolean = false;
   @persist @observable autoMode: boolean = false;
 
   @action toggleAutoMode = () => {
@@ -106,6 +106,10 @@ class UIStore {
 
   @action hideIntro = () => {
     this.showIntro = false;
+  };
+
+  @action hideConfig = () => {
+    this.isConfigured = true;
   };
 }
 

@@ -40,6 +40,7 @@ function PlayerScreen({navigation}: {navigation: NavigationStackProp}) {
         <SelectorButton articleText="das" />
       </View>
       <Word />
+
       <ControlBar />
     </View>
   );

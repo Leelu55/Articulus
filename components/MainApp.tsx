@@ -14,6 +14,8 @@ import UIStore from '../stores/UIStore';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import IntroSlider from './IntroSlider';
 import FinishedScreen from './FinishedScreen';
+import ConfigScreen from './ConfigScreen';
+import CheckAudioVoiceConfig from './CheckAudioVoiceConfig';
 
 const AboutScreen = () => <SkeletonScreen text="About" />;
 
@@ -79,6 +81,19 @@ const AppStack = () => {
   );
 };
 
+const ConfigStack = () => {
+  const Stack = createStackNavigator();
+
+  return (
+    <Stack.Navigator headerMode="none">
+      <Stack.Screen
+        name="CheckAudioVoiceConfig"
+        component={CheckAudioVoiceConfig}
+      />
+      <Stack.Screen name="ConfigScreen" component={ConfigScreen} />
+    </Stack.Navigator>
+  );
+};
 const MainApp = () => {
   const uiStore = useContext(UIStore);
   const Stack = createStackNavigator();
@@ -88,6 +103,9 @@ const MainApp = () => {
       <Stack.Navigator headerMode="none">
         {uiStore.showIntro && (
           <Stack.Screen name="IntroScreen" component={IntroSlider} />
+        )}
+        {!uiStore.isConfigured && (
+          <Stack.Screen name="ConfigScreen" component={ConfigStack} />
         )}
 
         <Stack.Screen name="AppScreen" component={AppStack} />
