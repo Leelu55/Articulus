@@ -43,6 +43,7 @@ function AnimatedNumber({
       fontWeight: 'bold',
       height: height,
       color: color,
+      alignSelf: 'center',
     },
   });
 

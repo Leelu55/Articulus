@@ -8,6 +8,7 @@
 - [x] Deployments to PlayStore
   - [ ] set the correct deployment version in bitrise workflow
 - [ ] Specify and implement statistics screen features
+- [ ] Design ConfigScreen
 - [ ] Specify and implement FAQ tab screen
 - [ ] Grammar hints ("Words ending on 'schaft' are feminin")
 - [ ] Content creation for about page, imprint, etc.
@@ -36,3 +37,4 @@
 - [ ] cancel after clicking article SelectorButton, then returning to lesson and clicking SelectorButton again -> answer is being counted twice
 - [x] clicking startLesson() on FinishedScreen with no more words with dueDate==today or new words leads to a crash because emptyLesson() is called and the PlayerScreen component being still
       mounted in the background (React.navigation!) is rerendered with empty lessonWords.
+- [x] FinishedScreen: number text in AnimatedNumber counter not centered with number >=10
