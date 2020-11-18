@@ -55,7 +55,6 @@ function ProgressBar() {
               borderBottomRightRadius,
               borderColor: 'black',
               height: 20,
-              marginRight: 0.5,
               justifyContent: 'center',
               alignItems: 'center',
             }}>
