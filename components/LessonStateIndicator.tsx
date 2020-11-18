@@ -26,22 +26,22 @@ export const ICON_COLORS = {
   [LessonState.IsInitial]: 'black',
   [LessonState.IsSpeaking]: 'black',
   [LessonState.IsRepeating]: 'black',
-  [LessonState.IsWaitingForUserAction]: settings.colors.primary.normal,
+  [LessonState.IsWaitingForUserAction]: 'white',
   [LessonState.IsListening]: 'white',
   [LessonState.IsEvaluating]: 'white',
   [LessonState.IsPaused]: 'black',
-  [LessonState.IsFinished]: settings.colors.correctAnswer,
+  [LessonState.IsFinished]: 'black',
 };
 
 export const COLORS = {
   [LessonState.IsInitial]: 'black',
   [LessonState.IsSpeaking]: 'lightgrey',
   [LessonState.IsRepeating]: 'lightgrey',
-  [LessonState.IsWaitingForUserAction]: 'white',
+  [LessonState.IsWaitingForUserAction]: settings.colors.primary.light,
   [LessonState.IsListening]: settings.colors.primary.light,
   [LessonState.IsEvaluating]: settings.colors.correctAnswer,
   [LessonState.IsPaused]: 'lightgrey',
-  [LessonState.IsFinished]: settings.colors.correctAnswer,
+  [LessonState.IsFinished]: 'lightgrey',
 };
 
 function LessonStateIndicator() {
@@ -102,7 +102,7 @@ function LessonStateIndicator() {
             borderWidth: 5,
             borderColor:
               uiStore.lessonState === LessonState.IsWaitingForUserAction
-                ? settings.colors.primary.normal
+                ? 'plum'
                 : bgColor,
             zIndex: 1,
             position: 'absolute',
