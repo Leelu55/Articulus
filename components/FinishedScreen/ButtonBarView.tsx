@@ -7,6 +7,7 @@ import sharedStyles from '../../styles/sharedStyles';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import ButtonBar from '../ButtonBar';
 import {AnimatedValue} from 'react-navigation';
+import settings from '../../libs/settings.json';
 
 export default function ButtonBarView({
   uiStore,
@@ -29,13 +30,12 @@ export default function ButtonBarView({
           outputRange: [0, 1],
         }),
       }}>
-      <Text style={styles.modalText}>Neu beginnen oder aufhören?</Text>
-      <ButtonBar>
+      <ButtonBar text={'Neu beginnen oder aufhören?'}>
         <Pressable
           style={[
             sharedStyles.bigButton,
             {
-              backgroundColor: 'lightgrey',
+              backgroundColor: 'white',
               margin: 0,
               marginRight: 20,
               width: 80,
@@ -47,7 +47,11 @@ export default function ButtonBarView({
             navigation.goBack();
             navigation.goBack();
           }}>
-          <FontAwesomeIcon icon="home" size={30} color="grey" />
+          <FontAwesomeIcon
+            icon="home"
+            size={40}
+            color={settings.colors.primary.normal}
+          />
         </Pressable>
         <Pressable
           style={[
@@ -64,11 +68,3 @@ export default function ButtonBarView({
     </Animated.View>
   );
 }
-
-const styles = StyleSheet.create({
-  modalText: {
-    alignSelf: 'center',
-    fontSize: 20,
-    marginBottom: 0,
-  },
-});

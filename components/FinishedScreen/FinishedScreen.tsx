@@ -86,7 +86,6 @@ const styles = StyleSheet.create({
     backgroundColor: settings.colors.bubbleBackground,
     flex: 1,
     flexDirection: 'column',
-    padding: 10,
   },
   catContentWrapper: {flex: 1, alignItems: 'center', padding: 20},
 });

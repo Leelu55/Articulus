@@ -1,23 +1,40 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, Text} from 'react-native';
 
 function ButtonBar({
   children,
-  flexDirection = 'row',
+  text = '',
 }: {
   children: React.ReactNode;
-  flexDirection?: any;
+  text: string;
 }) {
   const styles = StyleSheet.create({
     wrapper: {
-      marginTop: 10,
-      paddingBottom: 0,
-      flexDirection: flexDirection,
+      backgroundColor: 'plum',
+      padding: 20,
+
+      flexDirection: 'column',
       overflow: 'hidden',
+    },
+    wrapperInner: {
+      marginTop: 10,
+
+      flexDirection: 'row',
+      overflow: 'hidden',
+    },
+    modalText: {
+      alignSelf: 'center',
+      fontSize: 20,
+      marginBottom: 5,
     },
   });
 
-  return <View style={styles.wrapper}>{children}</View>;
+  return (
+    <View style={styles.wrapper}>
+      <Text style={styles.modalText}>{text}</Text>
+      <View style={styles.wrapperInner}>{children}</View>
+    </View>
+  );
 }
 
 export default ButtonBar;
