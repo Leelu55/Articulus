@@ -16,7 +16,7 @@
 - [ ] More code testing
 - [ ] implement back button
 - [ ] Refactor Code
-- [ ] https://github.com/ak1394/react-native-tts#no-text-to-speech-engine-installed-on-android
+- [x] https://github.com/ak1394/react-native-tts#no-text-to-speech-engine-installed-on-android
 - [ ] Refactor Design (Colors, Fonts, UX, responsive)
 - [ ] Create a good README
 - [ ] Streaks ("X correct answers in a row")
@@ -28,6 +28,7 @@
 - [ ] App hints ("Use DDD in a quiet surrounding for better results")
 - [ ] setup CDN and cloud storage for images (BunnyCDN)
 - [ ] don't show StartScreen when there are no words with dueDate == today or new words but StatisticsScreen or GetNewWordPackageScreen (to be implemented)
+- [ ] delete badly pronounced words and add more words
 
 ### Bugs
 
