@@ -1,12 +1,5 @@
-/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  useWindowDimensions,
-  Animated,
-} from 'react-native';
+import {View, Text, StyleSheet, Animated} from 'react-native';
 import AnimatedNumber from '../AnimatedNumber';
 import ChatBubble from '../ChatBubble';
 
@@ -15,16 +8,14 @@ export default function CatChatBubble({
   doAnim,
   currentLesson,
 }) {
-  const windowWidth = useWindowDimensions().width;
-
   return (
     <Animated.View
       style={{
         transform: [
           {
-            translateX: animCatChatBubble.interpolate({
+            scale: animCatChatBubble.interpolate({
               inputRange: [0, 100],
-              outputRange: [windowWidth, 0],
+              outputRange: [0, 1],
             }),
           },
         ],
@@ -47,7 +38,7 @@ export default function CatChatBubble({
             <AnimatedNumber
               to={currentLesson.countWrongAnswers}
               height={30}
-              delay={2000}
+              delay={0}
               duration={2000}
               color="red"
               doStart={doAnim}
@@ -61,7 +52,7 @@ export default function CatChatBubble({
                 currentLesson.countCorrectAnswers
               }
               height={30}
-              delay={4000}
+              delay={0}
               duration={2000}
               color="black"
               doStart={doAnim}
@@ -72,7 +63,7 @@ export default function CatChatBubble({
             <AnimatedNumber
               to={12}
               height={30}
-              delay={4000}
+              delay={0}
               duration={2000}
               color="black"
               doStart={doAnim}
@@ -84,7 +75,7 @@ export default function CatChatBubble({
             <AnimatedNumber
               to={12}
               height={30}
-              delay={4000}
+              delay={0}
               duration={2000}
               color="black"
               doStart={doAnim}
