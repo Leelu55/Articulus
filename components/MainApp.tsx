@@ -16,6 +16,7 @@ import IntroSlider from './IntroSlider';
 import FinishedScreen from './FinishedScreen/FinishedScreen';
 import ConfigScreen from './ConfigScreen';
 import CheckAudioVoiceConfig from './CheckAudioVoiceConfig';
+import {CardStyleInterpolators} from '@react-navigation/stack';
 
 const AboutScreen = () => <SkeletonScreen text="About" />;
 
@@ -76,7 +77,14 @@ const AppStack = () => {
       <Stack.Screen name="StartScreen" component={HomeStack} />
       <Stack.Screen name="PlayerScreen" component={PlayerScreen} />
       <Stack.Screen name="EmptyWordsScreen" component={EmptyWordsScreen} />
-      <Stack.Screen name="FinishedScreen" component={FinishedScreen} />
+      <Stack.Screen
+        name="FinishedScreen"
+        component={FinishedScreen}
+        options={{
+          title: 'FinishedScreen',
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+        }}
+      />
     </Stack.Navigator>
   );
 };
