@@ -1,15 +1,10 @@
 import React from 'react';
-import {Image, useWindowDimensions} from 'react-native';
-import {StyleSheet, Animated} from 'react-native';
+import {useWindowDimensions} from 'react-native';
+import {Animated} from 'react-native';
+import UnicornCat from '../SVGs/UnicornCat';
 
 export default function CatImage({animCat}) {
   const windowWidth = useWindowDimensions().width;
-  const styles = StyleSheet.create({
-    wrapper: {
-      flex: 1,
-      resizeMode: 'center',
-    },
-  });
 
   return (
     <Animated.View
@@ -25,10 +20,12 @@ export default function CatImage({animCat}) {
           },
         ],
       }}>
+      <UnicornCat />
+      {/*
       <Image
         source={require('../../assets/halloween-5586567_1920.png')}
         style={styles.wrapper}
-      />
+      /> */}
     </Animated.View>
   );
 }

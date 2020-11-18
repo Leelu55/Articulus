@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext} from 'react';
-import {View, Text, ImageBackground, Pressable} from 'react-native';
+import {View, Text, Pressable, StyleSheet} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 import WordsStore from '../stores/WordsStore';
 import UIStore, {LessonState} from '../stores/UIStore';
@@ -10,7 +10,7 @@ import {useState} from 'react';
 import StartModal from './StartModal';
 import StartScreenAnimation from './StartScreenAnimation';
 import startLesson from '../libs/startLesson';
-import ChatBubble from './ChatBubble';
+import UnicornCat from './SVGs/UnicornCat';
 
 function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
@@ -34,32 +34,34 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
         onStartLesson={onStartLesson}
         onContinueLesson={onContinueLesson}
       />
-
-      <ImageBackground
-        resizeMode="contain"
-        source={require('../assets/halloween-5586567_1920.png')}
-        style={{width: '100%', height: '100%', justifyContent: 'flex-end'}}>
-        <StartScreenAnimation />
-        <View style={[sharedStyles.viewVertical, {padding: 0, margin: 0}]}>
-          <Pressable
-            style={[sharedStyles.bigButton]}
-            onPress={() => {
-              if (
-                ![LessonState.IsInitial, LessonState.IsFinished].includes(
-                  uiStore.lessonState,
-                )
-              ) {
-                setIsModalVisible(true);
-              } else {
-                onStartLesson();
-              }
-            }}>
-            <Text style={[sharedStyles.bigButtonText]}>Start</Text>
-          </Pressable>
-        </View>
-      </ImageBackground>
+      <StartScreenAnimation />
+      <View style={styles.catWrapper}>
+        <UnicornCat />
+      </View>
+      <View style={[sharedStyles.viewVertical, {padding: 0, margin: 0}]}>
+        <Pressable
+          style={[sharedStyles.bigButton]}
+          onPress={() => {
+            if (
+              ![LessonState.IsInitial, LessonState.IsFinished].includes(
+                uiStore.lessonState,
+              )
+            ) {
+              setIsModalVisible(true);
+            } else {
+              onStartLesson();
+            }
+          }}>
+          <Text style={[sharedStyles.bigButtonText]}>Start</Text>
+        </Pressable>
+      </View>
     </View>
   );
 }
 
+const styles = StyleSheet.create({
+  catWrapper: {
+    alignItems: 'center',
+  },
+});
 export default observer(StartScreen);
