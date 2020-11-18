@@ -11,7 +11,7 @@
     "wrongAnswer": "#F4512C"
   },
 
-  "lessonSize": 10,
+  "lessonSize": 1,
   "numberOfSlots": 6,
   "isDebugging": false
 }
