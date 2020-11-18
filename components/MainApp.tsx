@@ -13,7 +13,7 @@ import UIStore from '../stores/UIStore';
 
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import IntroSlider from './IntroSlider';
-import FinishedScreen from './FinishedScreen';
+import FinishedScreen from './FinishedScreen/FinishedScreen';
 import ConfigScreen from './ConfigScreen';
 import CheckAudioVoiceConfig from './CheckAudioVoiceConfig';
 

@@ -12,7 +12,6 @@ function ButtonBar({
     wrapper: {
       marginTop: 10,
       paddingBottom: 0,
-      backgroundColor: 'white',
       flexDirection: flexDirection,
       overflow: 'hidden',
     },

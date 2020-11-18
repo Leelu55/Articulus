@@ -39,6 +39,7 @@
     "react-native-screens": "^2.14.0",
     "react-native-svg": "^12.1.0",
     "react-native-tab-view": "^2.15.2",
+    "react-native-triangle": "0.0.9",
     "react-native-tts": "^3.2.0",
     "react-navigation": "^4.4.3",
     "react-navigation-stack": "^2.10.1",

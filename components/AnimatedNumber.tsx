@@ -14,12 +14,14 @@ function easeInOutBack(x: number): number {
 
 function AnimatedNumber({
   to,
+  delay = 0,
   duration = 1000,
   height = 20,
   color = 'black',
   doStart = false,
 }: {
   to: number;
+  delay: number;
   duration: number;
   height: number;
   color: string;
@@ -54,9 +56,10 @@ function AnimatedNumber({
         useNativeDriver: true,
         duration: duration,
         easing: easeInOutBack,
+        delay: delay,
       }).start();
     }
-  }, [bounceAnim, doStart, duration, height, to]);
+  }, [bounceAnim, delay, doStart, duration, height, to]);
 
   return (
     <View style={styles.wrapper}>

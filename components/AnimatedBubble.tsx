@@ -39,12 +39,10 @@ function AnimatedBubble({
       left: Math.random() * 100 + '%',
       marginLeft: -maxSize / 2,
       marginTop: -maxSize / 2,
-      //transform: [{translateX: -maxSize / 2, translateY: -maxSize / 2}],
     },
     wrapper: {},
     bubble: {
       borderRadius: 1000,
-      //borderWidth: 3,
       borderColor: color,
       backgroundColor: color,
       width: maxSize,
@@ -56,13 +54,7 @@ function AnimatedBubble({
       }),
       transform: [
         {
-          scaleX: animValue.interpolate({
-            inputRange: [0, 100],
-            outputRange: [0, 1],
-          }),
-        },
-        {
-          scaleY: animValue.interpolate({
+          scale: animValue.interpolate({
             inputRange: [0, 100],
             outputRange: [0, 1],
           }),
@@ -70,6 +62,8 @@ function AnimatedBubble({
       ],
     },
   };
+
+  console.log({wrapperRandom: style.wrapperRandom});
 
   return (
     <View style={positionRandom ? style.wrapperRandom : style.wrapper}>
