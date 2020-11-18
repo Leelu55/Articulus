@@ -9,10 +9,10 @@ const initialLayout = {
 
 const styles = StyleSheet.create({
   wordImage: {
-    marginTop: 20,
     borderRadius: 5,
     borderWidth: 5,
     borderColor: 'lightgrey',
+    flex: 1,
     height: initialLayout.height / 3.5,
     width: initialLayout.height / 3.5,
   },

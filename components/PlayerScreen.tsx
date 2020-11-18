@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 import {observer} from 'mobx-react';
 
@@ -7,7 +7,7 @@ import '../styles/sharedStyles';
 import ControlBar from './ControlBar';
 import {Header} from './Header';
 import Word from './Word';
-import styles from '../styles/sharedStyles';
+import sharedStyles from '../styles/sharedStyles';
 import SelectorButton from './SelectorButton';
 import {NavigationStackProp} from 'react-navigation-stack';
 import UIStore, {LessonState} from '../stores/UIStore';
@@ -24,7 +24,7 @@ function PlayerScreen({navigation}: {navigation: NavigationStackProp}) {
       navigation.navigate('FinishedScreen');
     }
   }, [navigation, uiStore.lessonState]);
-  /* clicking startLesson() woukd to a crash because emptyLesson() is called and the PlayerScreen component being still
+  /* clicking startLesson() would lead to a crash because emptyLesson() is called and the PlayerScreen component being still
   mounted in the background (React.navigation!) would be rerendered with empty lessonWords.
   To prevent this, return null in case lessonWords is empty */
   if (wordsStore.lessonWords.length === 0) {
@@ -34,17 +34,22 @@ function PlayerScreen({navigation}: {navigation: NavigationStackProp}) {
     // eslint-disable-next-line react-native/no-inline-styles
     <View style={{flex: 1}}>
       <Header />
-      <View style={[styles.viewHorizontal]}>
+      <Word />
+      <ControlBar />
+      <View
+        style={[sharedStyles.viewHorizontal, styles.selectorButtonBarWrapper]}>
         <SelectorButton articleText="der" />
         <SelectorButton articleText="die" />
         <SelectorButton articleText="das" />
       </View>
-      <Word />
-
-      <ControlBar />
     </View>
   );
 }
 
+const styles = StyleSheet.create({
+  selectorButtonBarWrapper: {
+    marginBottom: 20,
+  },
+});
 //extended component (observer with word)
 export default observer(PlayerScreen);
