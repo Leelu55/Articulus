@@ -63,8 +63,6 @@ function AnimatedBubble({
     },
   };
 
-  console.log({wrapperRandom: style.wrapperRandom});
-
   return (
     <View style={positionRandom ? style.wrapperRandom : style.wrapper}>
       <Animated.View style={style.bubble} />

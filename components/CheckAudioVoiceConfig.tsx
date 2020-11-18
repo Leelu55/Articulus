@@ -21,7 +21,6 @@ function CheckAudioVoiceConfig({
 
   async function checkVoiceServices() {
     const services = await voiceLibrary.getSpeechRecognitionServices();
-    console.log({services});
     if (
       services &&
       !services.includes('com.google.android.googlequicksearchbox')

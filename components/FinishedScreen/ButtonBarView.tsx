@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Animated, Pressable, StyleSheet, Text} from 'react-native';
+import {Animated, Pressable, Text} from 'react-native';
 import startLesson from '../../libs/startLesson';
 import {LessonState} from '../../stores/UIStore';
 import sharedStyles from '../../styles/sharedStyles';
