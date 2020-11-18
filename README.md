@@ -38,3 +38,4 @@
 - [x] clicking startLesson() on FinishedScreen with no more words with dueDate==today or new words leads to a crash because emptyLesson() is called and the PlayerScreen component being still
       mounted in the background (React.navigation!) is rerendered with empty lessonWords.
 - [x] FinishedScreen: number text in AnimatedNumber counter not centered with number >=10
+- [ ] IntroSlider show up briefly when opening the app (after initial use)

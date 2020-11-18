@@ -10,6 +10,7 @@ import {useState} from 'react';
 import StartModal from './StartModal';
 import StartScreenAnimation from './StartScreenAnimation';
 import startLesson from '../libs/startLesson';
+import ChatBubble from './ChatBubble';
 
 function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
@@ -39,7 +40,6 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
         source={require('../assets/halloween-5586567_1920.png')}
         style={{width: '100%', height: '100%', justifyContent: 'flex-end'}}>
         <StartScreenAnimation />
-
         <View style={[sharedStyles.viewVertical, {padding: 0, margin: 0}]}>
           <Pressable
             style={[sharedStyles.bigButton]}
