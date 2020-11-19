@@ -52,7 +52,7 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
               onStartLesson();
             }
           }}>
-          <Text style={[sharedStyles.bigButtonText]}>Start</Text>
+          <Text style={[sharedStyles.bigButtonText]}>START</Text>
         </Pressable>
       </View>
     </View>

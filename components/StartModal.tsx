@@ -1,8 +1,15 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Modal, Pressable, StyleSheet, Text, View} from 'react-native';
+import {
+  Pressable,
+  StyleSheet,
+  Text,
+  TouchableWithoutFeedback,
+  View,
+} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
+import Modal from 'react-native-modal';
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -40,10 +47,14 @@ function StartModal({
 }) {
   return (
     <Modal
-      animationType="slide"
-      transparent={true}
-      visible={isModalVisible}
-      onRequestClose={() => setIsModalVisible(false)}>
+      style={{margin: 0}}
+      isVisible={isModalVisible}
+      customBackdrop={
+        <TouchableWithoutFeedback onPress={() => setIsModalVisible(false)}>
+          <View style={{flex: 1}} />
+        </TouchableWithoutFeedback>
+      }
+      onBackButtonPress={() => setIsModalVisible(false)}>
       <View style={styles.wrapper}>
         <View style={styles.modalView}>
           <Text style={styles.modalText}>
