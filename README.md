@@ -14,8 +14,9 @@
 - [ ] Content creation for about page, imprint, etc.
 - [x] speed up animations and transitions
 - [ ] More code testing
-- [ ] implement back button
-- [ ] implement savedLessons as dropdown list with dfropdon items to show in StatisticsScreen
+- [x] implement goBack with BackButton in StartModal, disable BackButton on FinishedScreen
+- [ ] implement savedLessons as dropdown list with dropdow
+      items to show in StatisticsScreen
 - [ ] Refactor Code
 - [x] https://github.com/ak1394/react-native-tts#no-text-to-speech-engine-installed-on-android
 - [ ] Refactor Design (Colors, Fonts, UX, responsive)

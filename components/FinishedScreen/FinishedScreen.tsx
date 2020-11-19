@@ -3,7 +3,7 @@ import {observer} from 'mobx-react';
 import React, {useEffect, useRef, useState} from 'react';
 import {useContext} from 'react';
 import {Animated, Easing, StyleSheet, View} from 'react-native';
-import UIStore from '../../stores/UIStore';
+import UIStore, {LessonState} from '../../stores/UIStore';
 import WordsStore, {SavedLessonType} from '../../stores/WordsStore';
 import Sparkles from './Sparkles';
 import ButtonBarView from './ButtonBarView';
@@ -54,6 +54,19 @@ function FinishedScreen() {
     animFlag,
     animFlagOpacity,
   ]);
+
+  useEffect(() => {
+    navigation.addListener('beforeRemove', (e) => {
+      console.log(uiStore.lessonState);
+      if (
+        ![LessonState.IsInitial, LessonState.IsSpeaking].includes(
+          uiStore.lessonState,
+        )
+      ) {
+        e.preventDefault();
+      }
+    });
+  }, [navigation, uiStore.lessonState]);
 
   const currentLesson: SavedLessonType = wordsStore.savedLessons.slice(-1)[0];
   return (

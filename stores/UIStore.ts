@@ -64,7 +64,11 @@ const allowedStateTransitions = {
     LessonState.IsPaused,
     LessonState.IsFinished,
   ],
-  [LessonState.IsFinished]: [LessonState.IsSpeaking, LessonState.IsFinished],
+  [LessonState.IsFinished]: [
+    LessonState.IsSpeaking,
+    LessonState.IsFinished,
+    LessonState.IsInitial,
+  ],
 };
 
 class UIStore {
@@ -91,6 +95,9 @@ class UIStore {
 
   @action setLessonState = (lessonState) => {
     if (!allowedStateTransitions[this.lessonState].includes(lessonState)) {
+      console.log(
+        `tried to do unallowed transition from ${this.lessonState} to ${lessonState}`,
+      );
       return;
     }
 
