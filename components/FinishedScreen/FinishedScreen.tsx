@@ -57,7 +57,6 @@ function FinishedScreen() {
 
   useEffect(() => {
     navigation.addListener('beforeRemove', (e) => {
-      console.log(uiStore.lessonState);
       if (
         ![LessonState.IsInitial, LessonState.IsSpeaking].includes(
           uiStore.lessonState,
