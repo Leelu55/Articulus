@@ -96,7 +96,7 @@ function FinishedScreen() {
 
 const styles = StyleSheet.create({
   wrapper: {
-    backgroundColor: settings.colors.bubbleBackground,
+    backgroundColor: settings.colors.primary.background,
     flex: 1,
     flexDirection: 'column',
   },
