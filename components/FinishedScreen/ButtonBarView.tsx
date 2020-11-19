@@ -61,7 +61,7 @@ export default function ButtonBarView({
           onPress={() => {
             startLesson(wordsStore, uiStore, navigation);
           }}>
-          <Text style={sharedStyles.bigButtonText}>Nächste</Text>
+          <Text style={sharedStyles.bigButtonText}>NOCHMAL</Text>
           <FontAwesomeIcon icon="arrow-right" size={30} color="white" />
         </Pressable>
       </ButtonBar>
