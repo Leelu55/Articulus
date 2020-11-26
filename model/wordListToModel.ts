@@ -8,6 +8,12 @@ const fs = require('fs');
 const text = fs.readFileSync('./wordList.csv').toString('utf-8');
 const textByLine = text.split('\n');
 
+// get staticallyBaseUrl from your own devSettings.json in project root
+// using your own github account for delivering the images via Statically
+// https://statically.io/
+let devSettings = JSON.parse(fs.readFileSync('../devSettings.json'));
+let staticallyBaseURL = devSettings.staticallyBaseURL;
+
 function saveImageToAssetsFolder(imageUrl) {
   const options = {
     url: imageUrl,
@@ -40,10 +46,10 @@ const wordsArray = textByLine
       article: wordData[1],
       timestamp: null,
       dueDateTime: null,
-      imageUrl: wordData[2],
+      imageUrl: staticallyBaseURL + wordData[2].split('/').slice(-1)[0],
     };
   });
-
+//articulus_cat_1024x512.png
 const model = {words: wordsArray};
 console.warn(`There are ${wordsArray.length} words in your model`);
 console.log(JSON.stringify(model));
