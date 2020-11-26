@@ -30,4 +30,5 @@ const wordsArray = textByLine
   });
 
 const model = {words: wordsArray};
+console.warn(`There are ${wordsArray.length} words in your model`);
 console.log(JSON.stringify(model));
