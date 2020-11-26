@@ -24,7 +24,6 @@
   - [ ] "Record streak"
   - [ ] Show badges on statistics page
 - [ ] App Use hints ("Use DDD in a quiet surrounding for better results")
-- [ ] setup CDN and cloud storage for images (BunnyCDN)
 - [ ] don't show StartScreen when there are no words with dueDate == today or new words but StatisticsScreen or GetNewWordPackageScreen (to be implemented)
 - [ ] delete badly pronounced words and add more words
 
@@ -38,6 +37,7 @@
 - [x] speed up animations and transitions
 - [x] implement goBack with BackButton in StartModal, disable BackButton on FinishedScreen
 - [x] https://github.com/ak1394/react-native-tts#no-text-to-speech-engine-installed-on-android
+- [x] setup CDN and cloud storage for images with Statically as CDN and GitHub for storage
 
 ### Bugs
 
