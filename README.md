@@ -29,6 +29,8 @@
 - [ ] delete badly pronounced words and add more words
 
 - [x] Build script to add article data
+      call this script in your shell by executing the command below:
+      \$ node modelTransformer.ts > ../model/model.json
 - [x] Set up continous integration (possibly Circle CI)
 - [x] prevent unallowed state transitions by using a map of allowedStateTransitions when setting state
 - [x] Deployments to PlayStore
