@@ -1,1 +1,4 @@
 declare module "react-native-tts"
+declare module download {
+  image(options: Options): Promise<{ filename: string }>;
+}

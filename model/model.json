@@ -6,7 +6,7 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/get/52e8dd434855af14f1dc8460da29317e113cd7e0525472_640.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/08/19/21/33/boy-3617648__340.jpg"
     },
     {
       "value": "Ärztin",
@@ -118,7 +118,7 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/photos/airport-travelers-persons-business-731196/"
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/04/20/13/17/airport-731196_960_720.jpg"
     },
     {
       "value": "Anmeldung",
@@ -662,7 +662,7 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/photos/woman-model-young-fashion-beauty-1409015/"
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/05/22/18/55/woman-1409015_960_720.jpg"
     },
     {
       "value": "Blut",
@@ -830,7 +830,7 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/photos/boss-software-business-success-734288/"
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/04/22/06/24/boss-734288_960_720.jpg"
     },
     {
       "value": "Chefin",
@@ -1182,7 +1182,7 @@
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/photos/salad-fruits-berries-healthy-2756467/"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_960_720.jpg"
     },
     {
       "value": "Export",
@@ -1430,7 +1430,7 @@
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/photos/airplane-takeoff-plane-2745898/"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/09/13/15/38/airplane-2745898_960_720.jpg"
     },
     {
       "value": "Flur",
@@ -1486,7 +1486,7 @@
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/photos/breakfast-delicious-drink-food-1835478/"
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/11/18/15/53/breakfast-1835478_960_720.jpg"
     },
     {
       "value": "Frage",
@@ -1534,7 +1534,7 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/photos/girls-children-friends-kids-young-462072/"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/09/26/09/33/girls-462072_960_720.jpg"
     },
     {
       "value": "Friseur",
@@ -1542,15 +1542,15 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/photos/haircut-barber-salon-barber-shop-1007891/"
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/10/26/20/46/haircut-1007891_960_720.jpg"
     },
     {
-      "value": "Friseurin",
+      "value": "Frisörin",
       "slot": 0,
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/photos/hairdresser-scissors-hair-cut-3173438/"
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/02/22/17/16/hairdresser-3173438_960_720.jpg"
     },
     {
       "value": "Frist",
@@ -2430,7 +2430,7 @@
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/photos/cinema-curtain-theater-film-4609877/"
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/11/07/20/48/cinema-4609877_960_720.jpg"
     },
     {
       "value": "Kiosk",
@@ -2758,7 +2758,7 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://pixabay.com/get/57e5dc404e52aa14f1dc8460da29317e113cd7e0535276_640.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/09/19/17/40/insects-4489864__340.jpg"
     }
   ]
 }
