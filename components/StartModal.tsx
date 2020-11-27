@@ -49,9 +49,11 @@ function StartModal({
     <Modal
       style={{margin: 0}}
       isVisible={isModalVisible}
+      // https://github.com/react-native-modal/react-native-modal#the-modal-enterexit-animation-flickers
+      backdropTransitionOutTiming={0}
       customBackdrop={
         <TouchableWithoutFeedback onPress={() => setIsModalVisible(false)}>
-          <View style={{flex: 1}} />
+          <View style={{flex: 1, backgroundColor: 'black'}} />
         </TouchableWithoutFeedback>
       }
       onBackButtonPress={() => setIsModalVisible(false)}>
@@ -66,7 +68,7 @@ function StartModal({
               sharedStyles.bigButton,
               {
                 marginBottom: 0,
-                backgroundColor: settings.colors.secondary.light,
+                backgroundColor: settings.colors.secondary.normal,
               },
             ]}
             onPress={() => {
