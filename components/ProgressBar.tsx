@@ -7,8 +7,8 @@ import UIStore, {LessonState} from '../stores/UIStore';
 import styles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import AnimatedBubble from './AnimatedBubble';
-
+/* import AnimatedBubble from './AnimatedBubble';
+ */
 function ProgressBar() {
   const wordIndex = useContext(UIStore).wordIndex;
   //const wordsLength = useContext(WordsStore).words.length;
@@ -68,7 +68,7 @@ function ProgressBar() {
                   style={{opacity: 0.75, position: 'absolute'}}
                 />
               )}
-            {index === wordIndex && lessonWord.answerArticle !== null && (
+            {/*  {index === wordIndex && lessonWord.answerArticle !== null && (
               <AnimatedBubble
                 duration={600}
                 maxSize={2000}
@@ -77,7 +77,7 @@ function ProgressBar() {
                 positionRandom={false}
                 doStart={true}
               />
-            )}
+            )} */}
             {lessonWords[index].answerArticle === null &&
               (index < wordIndex ||
                 uiStore.lessonState === LessonState.IsFinished) && (

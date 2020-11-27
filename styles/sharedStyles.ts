@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'lightgrey',
     alignItems: 'center',
     justifyContent: 'center',
+    height: 70,
   },
 
   bigButton: {
@@ -58,6 +59,7 @@ const styles = StyleSheet.create({
     color: 'black',
     padding: 5,
     fontSize: 30,
+    position: 'absolute',
   },
   bigButtonText: {
     fontWeight: 'bold',

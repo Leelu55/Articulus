@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import {View, Animated, Easing, EasingFunction} from 'react-native';
+import {View, Animated, Easing, EasingFunction, StyleSheet} from 'react-native';
 
 function AnimatedBubble({
   duration = 1000,
@@ -32,7 +32,7 @@ function AnimatedBubble({
     }
   }, [animValue, delay, doStart, duration, easingFunction, maxSize]);
 
-  const style = {
+  const style = StyleSheet.create({
     wrapperRandom: {
       position: 'absolute' as 'absolute',
       top: Math.random() * 100 + '%',
@@ -48,24 +48,27 @@ function AnimatedBubble({
       width: maxSize,
       height: maxSize,
       elevation: 1000, // works on android
-      opacity: animValue.interpolate({
-        inputRange: [0, 100],
-        outputRange: [1, 0],
-      }),
-      transform: [
-        {
-          scale: animValue.interpolate({
-            inputRange: [0, 100],
-            outputRange: [0, 1],
-          }),
-        },
-      ],
     },
+  });
+
+  const animationStyle = {
+    opacity: animValue.interpolate({
+      inputRange: [0, 100],
+      outputRange: [1, 0],
+    }),
+    transform: [
+      {
+        scale: animValue.interpolate({
+          inputRange: [0, 100],
+          outputRange: [0, 1],
+        }),
+      },
+    ],
   };
 
   return (
     <View style={positionRandom ? style.wrapperRandom : style.wrapper}>
-      <Animated.View style={style.bubble} />
+      <Animated.View style={[style.bubble, animationStyle]} />
     </View>
   );
 }
