@@ -10,7 +10,6 @@ import {observer} from 'mobx-react';
 function PausePlayButton() {
   const uiStore = useContext(UIStore);
   const lessonState = uiStore.lessonState;
-  const icon = lessonState === LessonState.IsPaused ? 'play' : 'pause';
   const isFinished = uiStore.lessonState === LessonState.IsFinished;
 
   return (
@@ -18,19 +17,19 @@ function PausePlayButton() {
       style={[
         sharedStyles.controlButton,
         {
-          backgroundColor: isFinished ? 'lightgrey' : 'black',
+          backgroundColor: isFinished
+            ? 'lightgrey'
+            : lessonState === LessonState.IsPaused
+            ? 'black'
+            : 'lightgrey',
         },
       ]}
       onPress={() => {
-        if (lessonState !== LessonState.IsPaused) {
-          uiStore.setLessonState(LessonState.IsPaused);
-        } else if (lessonState === LessonState.IsPaused) {
-          uiStore.setLessonState(LessonState.IsSpeaking);
-        }
+        uiStore.setLessonState(LessonState.IsPaused);
       }}
       disabled={lessonState === LessonState.IsFinished}>
       <View>
-        <FontAwesomeIcon icon={icon} size={20} color="white" />
+        <FontAwesomeIcon icon={'pause'} size={20} color="white" />
       </View>
     </Pressable>
   );

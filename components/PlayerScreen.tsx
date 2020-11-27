@@ -14,6 +14,7 @@ import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 
 import {useContext} from 'react';
+import PauseModal from './PauseModal';
 
 function PlayerScreen({navigation}: {navigation: NavigationStackProp}) {
   const uiStore = useContext(UIStore);
@@ -33,6 +34,12 @@ function PlayerScreen({navigation}: {navigation: NavigationStackProp}) {
   return (
     // eslint-disable-next-line react-native/no-inline-styles
     <View style={{flex: 1}}>
+      <PauseModal
+        isModalVisible={uiStore.lessonState === LessonState.IsPaused}
+        setIsModalVisible={() => {
+          uiStore.setLessonState(LessonState.IsSpeaking);
+        }}
+      />
       <Header />
       <Word />
       <ControlBar />

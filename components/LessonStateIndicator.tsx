@@ -88,9 +88,21 @@ function LessonStateIndicator() {
     bgColor = settings.colors.wrongAnswer;
   }
   function onPress() {
-    audioVoice.voiceStart();
+    console.log('onPress', {lessonState: uiStore.lessonState});
+    if (uiStore.lessonState === LessonState.IsWaitingForUserAction) {
+      audioVoice.voiceStart();
+      return;
+    }
+    if (uiStore.lessonState === LessonState.IsListening) {
+      audioVoice.voiceStop();
+      uiStore.setLessonState(LessonState.IsWaitingForUserAction);
+    }
   }
-  const isDisabled = uiStore.lessonState !== LessonState.IsWaitingForUserAction;
+  const isDisabled =
+    /* uiStore.autoMode || */
+    ![LessonState.IsWaitingForUserAction, LessonState.IsListening].includes(
+      uiStore.lessonState,
+    );
 
   return (
     <Pressable disabled={isDisabled} onPress={onPress}>
@@ -99,7 +111,6 @@ function LessonStateIndicator() {
           styles.lessonStateIndicator,
           {
             backgroundColor: bgColor,
-            borderWidth: 5,
             borderColor:
               uiStore.lessonState === LessonState.IsWaitingForUserAction
                 ? 'plum'

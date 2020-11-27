@@ -38,11 +38,11 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
     padding: 10,
-    borderRadius: 3,
-    backgroundColor: 'lightgrey',
+    borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
     height: 70,
+    backgroundColor: 'lightgrey',
   },
 
   bigButton: {

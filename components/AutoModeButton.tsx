@@ -7,6 +7,7 @@ import {useContext} from 'react';
 import * as audioVoice from '../libs/audioVoice';
 import {useState} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import {faHandSparkles} from '@fortawesome/free-solid-svg-icons';
 
 export function AutoModeButton() {
   const uiStore = useContext(UIStore);
@@ -56,7 +57,7 @@ export function AutoModeButton() {
       style={[sharedStyles.controlButton, styles.wrapper]}
       onPress={onPress}
       disabled={isDisabled}>
-      <FontAwesomeIcon icon={'magic'} size={30} color="white" />
+      <FontAwesomeIcon icon={faHandSparkles} size={35} color="white" />
     </Pressable>
   );
 }

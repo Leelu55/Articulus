@@ -13,8 +13,6 @@
 
 ### Modifications
 
-- [ ] manage disabled/enabled status of ControlButtons according to LessonState
-
 ### Content Creation
 
 - [ ] delete badly pronounced words
@@ -71,6 +69,7 @@
 - [x] setup CDN and cloud storage for images with Statically as CDN and GitHub for storage
 - [x] move sparkle feedback (correct&wrong) animation starting point from ProgressBar to SelectorViews (aka article buttons)
 - [x] include calculated success rate and streak in FinishedScreen
+- [x] manage disabled/enabled status of ControlButtons according to LessonState
 
 ### Bugs
 
