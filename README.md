@@ -9,12 +9,11 @@
 - [ ] specify and implement FAQ tab screen
 - [ ] reimplement EmptyWordsScreen
 - [ ] specify and implement grammar hints
-- [ ] specify app usage hints
+- [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
 
 ### Modifications
 
-- [ ] include labels to ControlBar and LessonStateIndicator and manage disabled/enabled status of ControlButtons according to LessonState
-- [ ] include calculated success rate and streak in FinishedScreen
+- [ ] manage disabled/enabled status of ControlButtons according to LessonState
 
 ### Content Creation
 
@@ -71,6 +70,7 @@
 - [x] https://github.com/ak1394/react-native-tts#no-text-to-speech-engine-installed-on-android
 - [x] setup CDN and cloud storage for images with Statically as CDN and GitHub for storage
 - [x] move sparkle feedback (correct&wrong) animation starting point from ProgressBar to SelectorViews (aka article buttons)
+- [x] include calculated success rate and streak in FinishedScreen
 
 ### Bugs
 
