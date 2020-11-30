@@ -29,6 +29,7 @@ export function showHintModal(
       uiStore.setIsHintModalVisible(false);
       _textTsx = null;
       _hintModalCloseHandler = doNothingFunction;
+      closeHandler();
     };
   }
 
