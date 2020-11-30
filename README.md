@@ -13,6 +13,10 @@
 
 ### Modifications
 
+- [ ] change house icon on FinishedScreen
+- [ ] modify ForwardButton behaviour -> change position of ForwardButton to next to SelectorButton,
+      change icon to "?", onClick: skip word and show the right article as if the corresponding SelectorButton was clicked (green flash, green Sparkle)
+
 ### Content Creation
 
 - [ ] delete badly pronounced words
@@ -73,6 +77,7 @@
 
 ### Bugs
 
+- [ ] words: - Laden wrong article - to delete: Kassettenrekorder, Erwachsene, FormUlar
 - [ ] cancel after clicking article SelectorButton, then returning to lesson and clicking SelectorButton again -> answer is being counted twice
 - [ ] IntroSlider show up briefly when opening the app (after initial use)
 - [ ] navigating with Buttons (StartScreen and PlayerScreen) takes way too long
