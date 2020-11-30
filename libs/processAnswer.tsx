@@ -1,5 +1,8 @@
+import React from 'react';
 import {LessonState} from '../stores/UIStore';
+import {Text} from 'react-native';
 
+import {showHintModal} from '../components/HintModal';
 export default function processAnswer(
   wordsStore: any,
   uiStore: any,
@@ -35,13 +38,21 @@ export default function processAnswer(
   uiStore.setLessonState(LessonState.IsEvaluating);
   setTimeout(() => {
     if (uiStore.lessonState === LessonState.IsEvaluating) {
-      if (wordIndex < lessonWordsLength - 1) {
-        uiStore.setWordIndex(wordIndex + 1);
-        uiStore.setLessonState(LessonState.IsSpeaking);
+      if (currentArticle !== clw.article) {
+        showHintModal(uiStore, <Text>Falsch</Text>, showNextWord);
       } else {
-        currentSavedLesson.isFinished = true;
-        uiStore.setLessonState(LessonState.IsFinished);
+        showNextWord();
       }
     }
   }, 500);
+
+  function showNextWord() {
+    if (wordIndex < lessonWordsLength - 1) {
+      uiStore.setWordIndex(wordIndex + 1);
+      uiStore.setLessonState(LessonState.IsSpeaking);
+    } else {
+      currentSavedLesson.isFinished = true;
+      uiStore.setLessonState(LessonState.IsFinished);
+    }
+  }
 }

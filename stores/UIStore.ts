@@ -76,7 +76,7 @@ class UIStore {
   @observable lessonState: LessonState = LessonState.IsInitial;
   @observable currentAnswer: string = '';
   @observable repeatCount: number = 0;
-
+  @observable isHintModalVisible: boolean = false;
   @persist @observable showIntro: boolean = true;
   @persist @observable isConfigured: boolean = false;
   @persist @observable autoMode: boolean = false;
@@ -87,6 +87,10 @@ class UIStore {
 
   @action setAutoMode = (autoMode) => {
     this.autoMode = autoMode;
+  };
+
+  @action setIsHintModalVisible = (isHintModalVisible) => {
+    this.isHintModalVisible = isHintModalVisible;
   };
 
   @action setWordIndex = (wordIndex) => {

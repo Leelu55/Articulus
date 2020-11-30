@@ -15,6 +15,7 @@ import WordsStore from '../stores/WordsStore';
 
 import {useContext} from 'react';
 import PauseModal from './PauseModal';
+import HintModal from './HintModal';
 
 function PlayerScreen({navigation}: {navigation: NavigationStackProp}) {
   const uiStore = useContext(UIStore);
@@ -43,6 +44,7 @@ function PlayerScreen({navigation}: {navigation: NavigationStackProp}) {
       <Header />
       <Word />
       <ControlBar />
+      <HintModal />
       <View
         style={[sharedStyles.viewHorizontal, styles.selectorButtonBarWrapper]}>
         <SelectorButton articleText="der" />
