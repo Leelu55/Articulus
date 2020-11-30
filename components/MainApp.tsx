@@ -8,7 +8,6 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import StatisticsScreen from './StatisticsScreen';
 import StartScreen from './StartScreen';
-import SkeletonScreen from './SkeletonScreen';
 import UIStore from '../stores/UIStore';
 
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
@@ -17,8 +16,7 @@ import FinishedScreen from './FinishedScreen/FinishedScreen';
 import ConfigScreen from './ConfigScreen';
 import CheckAudioVoiceConfig from './CheckAudioVoiceConfig';
 import {CardStyleInterpolators} from '@react-navigation/stack';
-
-const AboutScreen = () => <SkeletonScreen text="About" />;
+import FaqScreen from './FaqScreen';
 
 const HomeStack = () => {
   const Tab = createBottomTabNavigator();
@@ -57,7 +55,7 @@ const HomeStack = () => {
 
       <Tab.Screen
         name="About"
-        component={AboutScreen}
+        component={FaqScreen}
         initialParams={{text: 'About'}}
         options={{
           tabBarIcon: ({color}) => (
