@@ -79,7 +79,7 @@ class UIStore {
   @observable isHintModalVisible: boolean = false;
   @persist @observable showIntro: boolean = true;
   @persist @observable isConfigured: boolean = false;
-  @persist @observable autoMode: boolean = false;
+  @persist @observable autoMode: boolean = true;
 
   @action toggleAutoMode = () => {
     this.autoMode = !this.autoMode;
