@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     fontSize: 20,
     color: settings.colors.primary.dark,
-    backgroundColor: '#dde',
+    backgroundColor: settings.colors.primary.superlight,
     fontWeight: 'bold',
   },
   ruleText: {fontSize: 20, paddingHorizontal: 20},
