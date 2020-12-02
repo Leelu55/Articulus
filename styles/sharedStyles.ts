@@ -30,9 +30,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     marginTop: 20,
   },
-  screenContent: {
-    padding: 20,
-  },
+  screenContent: {},
   wrongArticle: {
     flex: 1,
     padding: 24,
@@ -121,7 +119,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     paddingVertical: 5,
     fontWeight: 'bold',
-    fontSize: 15,
+    fontSize: 20,
     color: settings.colors.primary.dark,
     backgroundColor: settings.colors.secondary.normal,
   },

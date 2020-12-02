@@ -3,6 +3,7 @@ import {Text, StyleSheet} from 'react-native';
 import settings from './settings.json';
 
 interface RuleType {
+  category: string;
   label: ReactElement;
   text: ReactElement;
   examples: ReactElement;
@@ -19,31 +20,46 @@ const styles = StyleSheet.create({
 });
 
 export const rules: RulesType = {
+  FAQ_RULES_WEEKDAY: {
+    category: 'DER',
+    label: <Text>Wochentag</Text>,
+    text: <Text>Wochentage sind immer männlich.</Text>,
+    examples: (
+      <Text>
+        der<Text style={styles.textHighlight}> Montag</Text>, der
+        <Text style={styles.textHighlight}> Dienstag</Text>, der
+        <Text style={styles.textHighlight}> Mittwoch</Text>
+      </Text>
+    ),
+  },
   FAQ_RULES_MONTH: {
-    label: <Text>Monat : DER</Text>,
+    category: 'DER',
+    label: <Text>Monat</Text>,
     text: <Text>Monatsnamen sind immer männlich.</Text>,
     examples: (
       <Text>
-        <Text style={styles.textHighlight}>Januar</Text>,{' '}
-        <Text style={styles.textHighlight}>Februar</Text>,{' '}
-        <Text style={styles.textHighlight}>März</Text>
+        der<Text style={styles.textHighlight}> Januar</Text>, der
+        <Text style={styles.textHighlight}> Februar</Text>, der
+        <Text style={styles.textHighlight}> März</Text>
       </Text>
     ),
   },
   FAQ_RULES_SEASON: {
-    label: <Text>Jahreszeit : DER</Text>,
+    category: 'DER',
+    label: <Text>Jahreszeit</Text>,
     text: <Text>Jahreszeiten sind immer männlich.</Text>,
     examples: (
       <Text>
-        <Text style={styles.textHighlight}>Frühling</Text>,{' '}
-        <Text style={styles.textHighlight}>Sommer</Text>,{' '}
-        <Text style={styles.textHighlight}>Herbst</Text>,{' '}
-        <Text style={styles.textHighlight}>Winter</Text>
+        der<Text style={styles.textHighlight}> Frühling</Text>, der
+        <Text style={styles.textHighlight}> Sommer</Text>, der
+        <Text style={styles.textHighlight}> Herbst</Text>, der
+        <Text style={styles.textHighlight}> Winter</Text>
       </Text>
     ),
   },
   FAQ_RULES_UNG: {
-    label: <Text>-ung : DIE</Text>,
+    category: 'DIE',
+    label: <Text>-ung</Text>,
     text: (
       <Text>
         Wörter mit der Endung <Text style={styles.textHighlight}>-ung </Text>
@@ -59,7 +75,8 @@ export const rules: RulesType = {
     ),
   },
   FAQ_RULES_IN: {
-    label: <Text>-in : DIE</Text>,
+    category: 'DIE',
+    label: <Text>-in</Text>,
     text: (
       <Text>
         Wörter mit der Endung <Text style={styles.textHighlight}>-in </Text>
@@ -75,7 +92,8 @@ export const rules: RulesType = {
     ),
   },
   FAQ_RULES_IK: {
-    label: <Text>-ik : DIE</Text>,
+    category: 'DIE',
+    label: <Text>-ik</Text>,
     text: (
       <Text>
         Wörter mit der Endung <Text style={styles.textHighlight}>-ik </Text>
@@ -92,7 +110,8 @@ export const rules: RulesType = {
   },
 
   FAQ_RULES_SCHAFT: {
-    label: <Text>-schaft : DIE</Text>,
+    category: 'DIE',
+    label: <Text>-schaft</Text>,
     text: (
       <Text>
         Wörter mit der Endung <Text style={styles.textHighlight}>-schaft </Text>
@@ -108,7 +127,8 @@ export const rules: RulesType = {
     ),
   },
   FAQ_RULES_HEIT: {
-    label: <Text>-heit : DIE</Text>,
+    category: 'DIE',
+    label: <Text>-heit</Text>,
     text: (
       <Text>
         Wörter mit der Endung <Text style={styles.textHighlight}>-heit </Text>
@@ -120,6 +140,43 @@ export const rules: RulesType = {
         Gemein<Text style={styles.textHighlight}>heit</Text>, Krank
         <Text style={styles.textHighlight}>heit</Text>, Ein
         <Text style={styles.textHighlight}>heit</Text>
+      </Text>
+    ),
+  },
+  FAQ_RULES_DIMINUTIV: {
+    category: 'DAS',
+    label: <Text>-chen, -lein</Text>,
+    text: (
+      <Text>
+        Diminutive (Verniedlichungen und Verkleinerungen) mit den Endungen
+        <Text style={styles.textHighlight}>-chen </Text> und{' '}
+        <Text style={styles.textHighlight}>-lein </Text>
+        sind immer sächlich (Neutrum).
+      </Text>
+    ),
+    examples: (
+      <Text>
+        Kanin<Text style={styles.textHighlight}>chen</Text>, Schätz
+        <Text style={styles.textHighlight}>chen</Text>, Fräu
+        <Text style={styles.textHighlight}>lein</Text>
+      </Text>
+    ),
+  },
+  FAQ_RULES_NIS: {
+    category: 'DAS',
+    label: <Text>-nis</Text>,
+    text: (
+      <Text>
+        Die meisten Wörter mit der Endung{' '}
+        <Text style={styles.textHighlight}>-nis </Text>
+        sind sächlich (Neutrum)
+      </Text>
+    ),
+    examples: (
+      <Text>
+        Zeug<Text style={styles.textHighlight}>nis</Text>, Ergeb
+        <Text style={styles.textHighlight}>nis</Text>, Ereig
+        <Text style={styles.textHighlight}>nis</Text>
       </Text>
     ),
   },

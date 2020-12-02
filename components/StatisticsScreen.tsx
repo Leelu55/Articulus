@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {useEffect, useReducer} from 'react';
 import {Text, View} from 'react-native';
 
@@ -24,8 +25,7 @@ function StatisticsScreen({navigation}) {
     <ScrollView style={sharedStyles.screen}>
       <Text style={sharedStyles.screenTitle}>Statistik</Text>
       <Text style={sharedStyles.screenSubTitle}>Deine Erfolge</Text>
-
-      <View style={sharedStyles.screenContent}>
+      <View style={[sharedStyles.screenContent, {margin: 20}]}>
         <ProgressView />
         <BucketBarsChart />
         <ChartTabs />

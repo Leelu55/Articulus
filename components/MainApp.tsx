@@ -66,9 +66,9 @@ const HomeStack = () => {
         }}
       />
       <Tab.Screen
-        name="About"
+        name="Faq"
         component={FaqScreen}
-        initialParams={{text: 'About'}}
+        initialParams={{text: 'FAQ'}}
         options={{
           tabBarIcon: ({color}) => (
             <FontAwesomeIcon icon="question-circle" size={40} color={color} />

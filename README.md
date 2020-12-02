@@ -80,6 +80,7 @@
 
 ### Bugs
 
+- [ ] TTS Error: Error: Language data is missing
 - [ ] words: - Laden wrong article - to delete: Kassettenrekorder, Erwachsene, FormUlar
 - [ ] cancel after clicking article SelectorButton, then returning to lesson and clicking SelectorButton again -> answer is being counted twice
 - [ ] IntroSlider show up briefly when opening the app (after initial use)

@@ -3,8 +3,8 @@ import {View, Text} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 
 import MagicBook from './SVGs/MagicBook';
-import GrammarItems from './GrammarItems';
 import {ScrollView} from 'react-native-gesture-handler';
+import GrammarTabs from './GrammarTabs';
 
 function GrammarScreen() {
   return (
@@ -18,7 +18,7 @@ function GrammarScreen() {
         </View>
 
         <View style={sharedStyles.screenContent}>
-          <GrammarItems />
+          <GrammarTabs />
         </View>
       </View>
     </ScrollView>

@@ -4,23 +4,13 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {Dimensions} from 'react-native';
 import {TabView, TabBar} from 'react-native-tab-view';
-
-import populateLineChart from '../libs/populateLineChart';
-import WeekChartTab from './ChartTabs/WeekChartTab';
-import MonthChartTab from './ChartTabs/MonthChartTab';
-import YearChartTab from './ChartTabs/YearChartTab';
+import sharedStyles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
-import WordsStore from '../stores/WordsStore';
-import {useContext} from 'react';
+import GrammarItems from './GrammarItems';
 
 const initialLayout = {width: Dimensions.get('window').width};
 
-function ChartTabs() {
-  const wordsStore = useContext(WordsStore);
-
-  //get processed and formatted data for displaying week|year|months
-  const chartData = populateLineChart(wordsStore.savedLessons);
-
+function GrammarTabs() {
   // tab index
   const [index, setIndex] = React.useState(0);
 
@@ -43,25 +33,39 @@ function ChartTabs() {
         backgroundColor: 'white',
         padding: 0,
         elevation: 0,
+        marginBottom: 10,
+        marginHorizontal: 10,
       }}
     />
   );
 
   const routes = [
-    {key: 'week', title: 'Week'},
-    {key: 'month', title: 'Month'},
-    {key: 'year', title: 'Year'},
+    {key: 'der', title: 'DER'},
+    {key: 'die', title: 'DIE'},
+    {key: 'das', title: 'DAS'},
   ];
 
   // https://github.com/satya164/react-native-tab-view#optimization-tips
   const renderScene = ({route}) => {
     switch (route.key) {
-      case 'week':
-        return <WeekChartTab weekData={chartData._weekData} />;
-      case 'month':
-        return <MonthChartTab monthData={chartData._monthData} />;
-      case 'year':
-        return <YearChartTab yearData={chartData._yearData} />;
+      case 'der':
+        return (
+          <View style={[sharedStyles.scene]}>
+            <GrammarItems category={'DER'} />
+          </View>
+        );
+      case 'die':
+        return (
+          <View style={[sharedStyles.scene]}>
+            <GrammarItems category={'DIE'} />
+          </View>
+        );
+      case 'das':
+        return (
+          <View style={[sharedStyles.scene]}>
+            <GrammarItems category={'DAS'} />
+          </View>
+        );
       default:
         return null;
     }
@@ -85,10 +89,9 @@ export const styles = StyleSheet.create({
   wrapper: {
     borderWidth: 5,
     overflow: 'hidden',
-
     marginTop: 20,
     borderColor: 'transparent',
   },
 });
 
-export default observer(ChartTabs);
+export default observer(GrammarTabs);

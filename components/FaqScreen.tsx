@@ -17,7 +17,7 @@ function FaqScreen() {
           <FaqUnicorn width={150} />
         </View>
 
-        <View style={sharedStyles.screenContent}>
+        <View style={[sharedStyles.screenContent, {margin: 20}]}>
           <FaqItems />
         </View>
       </View>
