@@ -1,1 +1,3110 @@
-{"words":[{"value":"Ärger","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boy-3617648__340.jpg"},{"value":"Ärztin","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/anesthesia-4677401__340.jpg"},{"value":"Abend","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tree-3063715__340.jpg"},{"value":"Abfahrt","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/girl-1381994__340.jpg"},{"value":"Abflug","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/aircraft-1555434__340.jpg"},{"value":"Absender","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/letters-1659715__340.jpg"},{"value":"Adresse","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/diary-2080420__340.jpg"},{"value":"Alkohol","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bottles-3623317__340.jpg"},{"value":"Alter","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/face-4369947__340.jpg"},{"value":"Ampel","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/traffic-light-876056__340.jpg"},{"value":"Anfang","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/asphalt-2834149__340.jpg"},{"value":"Angebot","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/offer-986378__340.jpg"},{"value":"Angestellte","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tie-690084__340.jpg"},{"value":"Angst","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/danbo-2011237__340.jpg"},{"value":"Ankunft","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airport-731196_960_720.jpg"},{"value":"Anmeldung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/event-registration-3441960__340.jpg"},{"value":"Anrede","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/doorplates-238472__340.jpg"},{"value":"Anruf","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smartphone-564155__340.jpg"},{"value":"Ansage","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/adult-1822449__340.jpg"},{"value":"Anschluss","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/network-1572617__340.jpg"},{"value":"Antwort","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/quiz-4168371__340.jpg"},{"value":"Anzeige","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airport-690556__340.jpg"},{"value":"Anzug","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/men-1979261__340.jpg"},{"value":"Apfel","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/apple-1506119__340.jpg"},{"value":"Apotheke","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pharmacy-380780__340.jpg"},{"value":"Appartement","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/concrete-1864808__340.jpg"},{"value":"Appetit","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/macaron-2462247__340.jpg"},{"value":"April","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/april-3109706__340.jpg"},{"value":"Arbeit","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/engineer-1612104__340.jpg"},{"value":"Arbeitsplatz","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/furniture-4837230__340.jpg"},{"value":"Arm","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/arm-2606730__340.jpg"},{"value":"Arzt","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dentist-4373290__340.jpg"},{"value":"Aufenthalt","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pass-2260989__340.jpg"},{"value":"Aufgabe","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/homework-3235100__340.jpg"},{"value":"Aufzug","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/metro-1354665__340.jpg"},{"value":"Auge","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/skin-3358873__340.jpg"},{"value":"August","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/planner-3485976__340.jpg"},{"value":"Ausbildung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/laptop-3087585__340.jpg"},{"value":"Ausflug","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/istanbul-4930630__340.jpg"},{"value":"Ausgang","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/railway-station-2085267__340.jpg"},{"value":"Auskunft","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/business-315671__340.jpg"},{"value":"Ausland","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/globe-3383088__340.jpg"},{"value":"Ausstellung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/theatre-955148__340.jpg"},{"value":"Ausweis","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/buffer-1143485__340.jpg"},{"value":"Auto","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fiat-4322521__340.jpg"},{"value":"Autobahn","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/traffic-332857__340.jpg"},{"value":"Automat","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/park-ticket-vending-machine-306600__340.jpg"},{"value":"Bäckerei","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bakery-1868925__340.jpg"},{"value":"Büro","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/office-932926__340.jpg"},{"value":"Baby","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/baby-20339__340.jpg"},{"value":"Bad","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bathroom-2094733__340.jpg"},{"value":"Bahn","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/train-62849__340.jpg"},{"value":"Bahnhof","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/railway-station-619082__340.jpg"},{"value":"Bahnsteig","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/train-3384786__340.jpg"},{"value":"Balkon","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/apartments-1845884__340.jpg"},{"value":"Banane","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bananas-3700718__340.jpg"},{"value":"Bank","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/benches-560435__340.jpg"},{"value":"Batterie","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/battery-22119__340.jpg"},{"value":"Baum","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tree-3822149__340.jpg"},{"value":"Beamte","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/office-2360063__340.jpg"},{"value":"Beamtin","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/office-2360063__340.jpg"},{"value":"Bein","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/adult-1867051__340.jpg"},{"value":"Beispiel","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/school-4537531__340.jpg"},{"value":"Bekannte","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/conversation-3337443__340.jpg"},{"value":"Benzin","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/petrol-stations-1275484__340.jpg"},{"value":"Beratung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/it-consultant-3726359__340.jpg"},{"value":"Berg","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/adventure-1807524__340.jpg"},{"value":"Beruf","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lecture-318124__340.jpg"},{"value":"Berufsschule","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/laptop-2562325__340.jpg"},{"value":"Besuch","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandma-1335722__340.jpg"},{"value":"Betrag","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/money-1772641__340.jpg"},{"value":"Bett","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bedroom-1940169__340.jpg"},{"value":"Bewerbung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calculator-4201244__340.jpg"},{"value":"Bier","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/beer-2439237__340.jpg"},{"value":"Bild","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smartphone-1618909__340.jpg"},{"value":"Bildschirm","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/digital-marketing-1433427__340.jpg"},{"value":"Birne","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fruit-1534494__340.jpg"},{"value":"Bitte","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/man-5438612__340.jpg"},{"value":"Blatt","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/leaves-1030816__340.jpg"},{"value":"Bleistift","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/school-93200__340.jpg"},{"value":"Blick","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cat-2969932__340.jpg"},{"value":"Blume","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/rose-3063284__340.jpg"},{"value":"Bluse","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/woman-1409015_960_720.jpg"},{"value":"Blut","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/finger-669008__340.jpg"},{"value":"Bogen","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/arrow-1557462__340.jpg"},{"value":"Bohne","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/beans-4785__340.jpg"},{"value":"Brötchen","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bread-3467243__340.jpg"},{"value":"Brücke","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bridge-53769__340.jpg"},{"value":"Brief","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/communication-3671504__340.jpg"},{"value":"Briefkasten","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/mailbox-2551322__340.jpg"},{"value":"Briefmarke","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/france-1289073__340.jpg"},{"value":"Brieftasche","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wallet-367975__340.jpg"},{"value":"Briefumschlag","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/envelope-2575253__340.jpg"},{"value":"Brille","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/glasses-1246611__340.jpg"},{"value":"Brot","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bread-1510155__340.jpg"},{"value":"Bruder","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/children-887393__340.jpg"},{"value":"Buch","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/book-1659717__340.jpg"},{"value":"Buchstabe","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wood-cube-473703__340.jpg"},{"value":"Bus","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bus-2460482__340.jpg"},{"value":"Butter","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/butter-3411126__340.jpg"},{"value":"Café","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/coffee-shop-1149155__340.jpg"},{"value":"CD","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cd-864402__340.jpg"},{"value":"CD-ROM","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dvd-949228__340.jpg"},{"value":"Chef","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boss-734288_960_720.jpg"},{"value":"Chefin","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/asian-3803525__340.jpg"},{"value":"Computer","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/computer-1245714__340.jpg"},{"value":"Creme","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cream-1464295__340.png"},{"value":"Dach","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/buildings-1207824__340.jpg"},{"value":"Dame","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/old-lady-417174__340.jpg"},{"value":"Dank","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/namaste-1935938__340.jpg"},{"value":"Datum","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/time-273857__340.jpg"},{"value":"Dauer","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/temporal-distance-917364__340.jpg"},{"value":"Dezember","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/winter-3031969__340.jpg"},{"value":"Dienstag","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/agenda-3489747__340.jpg"},{"value":"Ding","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/still-2608676__340.jpg"},{"value":"Disco","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/live-concert-388160__340.jpg"},{"value":"Dom","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/church-3710237__340.jpg"},{"value":"Donnerstag","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/agenda-3489747__340.jpg"},{"value":"Dorf","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dorset-4735601__340.jpg"},{"value":"Drucker","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/printer-790396__340.jpg"},{"value":"Durchsage","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/megaphone-1480342__340.jpg"},{"value":"Durst","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cat-2596083__340.jpg"},{"value":"Dusche","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/shower-1027904__340.jpg"},{"value":"E-Mail","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/mail-566337__340.jpg"},{"value":"Ecke","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/corner-3068121__340.jpg"},{"value":"Ehefrau","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bride-1822587__340.jpg"},{"value":"Ehemann","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wedding-2319461__340.jpg"},{"value":"Ei","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/egg-944495__340.jpg"},{"value":"Einführung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/brown-15723__340.jpg"},{"value":"Eingang","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/door-3340568__340.jpg"},{"value":"Einladung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smiley-3692494__340.jpg"},{"value":"Eintritt","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/man-5092325__340.jpg"},{"value":"Einwohner","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/building-2560843__340.jpg"},{"value":"Eis","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/ice-cream-cone-1274894__340.jpg"},{"value":"Eltern","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/kids-2208930__340.jpg"},{"value":"Empfänger","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/receiving-hands-1920865__340.png"},{"value":"Empfang","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tower-820001__340.jpg"},{"value":"Ende","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/flag-1645262__340.jpg"},{"value":"Enkel","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/birthday-3807315__340.jpg"},{"value":"Enkelin","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/birthday-3807315__340.jpg"},{"value":"Entschuldigung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/love-1139688__340.jpg"},{"value":"Erdgeschoss","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dublin-4955328__340.jpg"},{"value":"Erfahrung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/old-age-1147287__340.jpg"},{"value":"Ergebnis","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calculator-4796663__340.jpg"},{"value":"Erlaubnis","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smiley-1642736__340.jpg"},{"value":"Ermäßigung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/final-sale-3477904__340.jpg"},{"value":"Erwachsene","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandmother-1822560__340.jpg"},{"value":"Essen","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/salad-2756467_960_720.jpg"},{"value":"Export","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/container-3118783__340.jpg"},{"value":"Fähre","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/flag-4186073__340.jpg"},{"value":"Führerschein","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/drivers-license-2534805__340.jpg"},{"value":"Fabrik","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/architecture-1639990__340.jpg"},{"value":"Fahrer","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-talking-1876726__340.jpg"},{"value":"Fahrerin","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/auto-3222366__340.jpg"},{"value":"Fahrkarte","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/admission-2974645__340.jpg"},{"value":"Fahrplan","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/travel-4865665__340.jpg"},{"value":"Fahrrad","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bicycle-789648__340.jpg"},{"value":"Familie","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hippo-5354143__340.jpg"},{"value":"Familienname","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wedding-2535674__340.jpg"},{"value":"Familienstand","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/control-427510__340.png"},{"value":"Farbe","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/soap-bubble-3490959__340.jpg"},{"value":"Fax","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/printer-958139__340.jpg"},{"value":"Februar","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-3045827__340.jpg"},{"value":"Fehler","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/editing-1756958__340.jpg"},{"value":"Fenster","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/white-2563976__340.jpg"},{"value":"Ferien","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/books-918521__340.jpg"},{"value":"Fernsehgerät","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vintage-tv-1116587__340.jpg"},{"value":"Fest","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/new-years-eve-1283521__340.jpg"},{"value":"Feuer","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fire-123784__340.jpg"},{"value":"Feuerwehr","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fire-4653987__340.jpg"},{"value":"Feuerzeug","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lighter-1245655__340.jpg"},{"value":"Fieber","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/thermometer-3656065__340.jpg"},{"value":"Film","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/movie-2545676__340.jpg"},{"value":"Firma","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-692005__340.jpg"},{"value":"Fisch","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/discus-fish-1943755__340.jpg"},{"value":"Flasche","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/water-bottle-2001912__340.jpg"},{"value":"Fleisch","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/meat-1030729__340.jpg"},{"value":"Flughafen","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airport-1515448__340.jpg"},{"value":"Flugzeug","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airplane-2745898_960_720.jpg"},{"value":"Flur","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/indoors-3341001__340.jpg"},{"value":"Fluss","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/water-1246643__340.jpg"},{"value":"Formular","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pen-2398693__340.jpg"},{"value":"Foto","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/image-editing-101040__340.jpg"},{"value":"Fotoapparat","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lens-3114729__340.jpg"},{"value":"Frühling","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/magnolia-trees-556718__340.jpg"},{"value":"Frühstück","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/breakfast-1835478_960_720.jpg"},{"value":"Frage","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cat-1824668__340.jpg"},{"value":"Frau","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-3104635__340.jpg"},{"value":"Freitag","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/agenda-3489747__340.jpg"},{"value":"Freizeit","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/young-woman-2268348__340.jpg"},{"value":"Freund","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/friends-1149841__340.jpg"},{"value":"Freundin","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/girls-462072_960_720.jpg"},{"value":"Friseur","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/haircut-1007891_960_720.jpg"},{"value":"Frisörin","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hairdresser-3173438_960_720.jpg"},{"value":"Frist","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/january-2290045__340.jpg"},{"value":"Fuß","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/feet-2358333__340.jpg"},{"value":"Fußball","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/football-1396740__340.jpg"},{"value":"Gabel","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fork-554064__340.jpg"},{"value":"Garage","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/garage-943249__340.jpg"},{"value":"Garten","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/spring-2955582__340.jpg"},{"value":"Gas","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/kettle-2178442__340.jpg"},{"value":"Gast","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boy-5014642__340.jpg"},{"value":"Gebühr","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/euro-1557431__340.jpg"},{"value":"Geburtsjahr","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/candle-1737985__340.jpg"},{"value":"Geburtsort","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/earth-11008__340.jpg"},{"value":"Geburtstag","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/guinea-pig-1969698__340.jpg"},{"value":"Gegenteil","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pigeons-2775420__340.jpg"},{"value":"Geld","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/coins-1726618__340.jpg"},{"value":"Gemüse","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vegetables-790022__340.jpg"},{"value":"Gepäck","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/luggage-933487__340.jpg"},{"value":"Gericht","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/courtroom-898931__340.jpg"},{"value":"Gesamtschule","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/classroom-2093743__340.jpg"},{"value":"Geschäft","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/shopping-1232944__340.jpg"},{"value":"Geschenk","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/gift-553149__340.jpg"},{"value":"Geschirr","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/christmas-table-1926936__340.jpg"},{"value":"Geschwister","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/children-920131__340.jpg"},{"value":"Gesicht","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/makeup-2983550__340.jpg"},{"value":"Gespräch","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/listen-1702648__340.jpg"},{"value":"Gesundheit","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/doctor-563428__340.jpg"},{"value":"Getränk","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/teacup-2325722__340.jpg"},{"value":"Gewicht","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/horizontal-1155878__340.jpg"},{"value":"Gewitter","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/flash-1455285__340.jpg"},{"value":"Glück","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/woman-1031000__340.jpg"},{"value":"Glückwunsch","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/roses-3638589__340.jpg"},{"value":"Glas","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calm-2315559__340.jpg"},{"value":"Gleis","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/train-4320077__340.jpg"},{"value":"Goethe-Institut","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/goethe-3565667__340.jpg"},{"value":"Größe","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/measurement-1476919__340.jpg"},{"value":"Grenze","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wall-215787__340.jpg"},{"value":"Grippe","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandmom-5103358__340.jpg"},{"value":"Großeltern","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandparents-4997796__340.jpg"},{"value":"Großmutter","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandmother-1737756__340.jpg"},{"value":"Großvater","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/family-1827369__340.jpg"},{"value":"Gruß","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hi-2292499__340.jpg"},{"value":"Grundschule","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boy-330582__340.jpg"},{"value":"Gruppe","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-3137670__340.jpg"},{"value":"Guthaben","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/money-2991387__340.jpg"},{"value":"Gymnasium","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/classroom-15593__340.jpg"},{"value":"Hähnchen","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/chicken-3727097__340.jpg"},{"value":"Haar","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hair-1838728__340.jpg"},{"value":"Halle","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/efaflex-1630741__340.jpg"},{"value":"Hals","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/swan-5586524__340.jpg"},{"value":"Haltestelle","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/metro-4957736__340.jpg"},{"value":"Hand","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-3120717__340.jpg"},{"value":"Handtuch","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/towels-3401733__340.jpg"},{"value":"Handy","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cell-phone-1245663__340.jpg"},{"value":"Haus","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/architecture-1836070__340.jpg"},{"value":"Hausaufgabe","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/book-1853677__340.jpg"},{"value":"Hausfrau","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/anguillara-1692931_960_720.jpg"},{"value":"Haushalt","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cleaning-3977589__340.jpg"},{"value":"Heimat","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/globe-3383088__340.jpg"},{"value":"Heizung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/radiator-250558__340.jpg"},{"value":"Hemd","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/blur-2841225__340.jpg"},{"value":"Herbst","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fall-1072821__340.jpg"},{"value":"Herd","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cooking-1776648__340.jpg"},{"value":"Herr","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/human-1411499__340.jpg"},{"value":"Herz","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/balloon-991680__340.jpg"},{"value":"Hilfe","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hands-2805248__340.png"},{"value":"Hobby","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/art-2578353__340.jpg"},{"value":"Holz","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/batch-1868104__340.jpg"},{"value":"Hose","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/jeans-43347__340.jpg"},{"value":"Hund","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dog-3277416__340.jpg"},{"value":"Hunger","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bird-3350136__340.jpg"},{"value":"Idee","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/man-5723449__340.jpg"},{"value":"Import","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/container-ship-596083__340.jpg"},{"value":"Industrie","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/port-3109757__340.jpg"},{"value":"Information","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/listen-1702648__340.jpg"},{"value":"Inhalt","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/drug-1966407__340.jpg"},{"value":"Internet","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/ipad-820272__340.jpg"},{"value":"Jacke","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/jacket-947395__340.jpg"},{"value":"Jahr","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-2738434__340.jpg"},{"value":"Januar","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/date-2592043__340.jpg"},{"value":"Job","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/worker-1635976__340.jpg"},{"value":"Jugendherberge","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/beds-182964__340.jpg"},{"value":"Jugendliche","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/girl-1245835__340.jpg"},{"value":"Juli","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/july-3356762__340.jpg"},{"value":"Junge","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boy-60659__340.jpg"},{"value":"Juni","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-2428560__340.jpg"},{"value":"Käse","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cheese-1972744__340.jpg"},{"value":"Körper","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dance-4054733__340.jpg"},{"value":"Küche","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/kitchen-2094707__340.jpg"},{"value":"Kühlschrank","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fridge-3475996__340.jpg"},{"value":"Kündigung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/business-3230025__340.jpg"},{"value":"Kaffee","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/coffee-171653__340.jpg"},{"value":"Kalender","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-1255953__340.jpg"},{"value":"Kamera","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lens-3114729__340.jpg"},{"value":"Kanne","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pot-2406976__340.jpg"},{"value":"Karte","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/atlas-1869680__340.jpg"},{"value":"Kartoffel","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/potato-3440360__340.jpg"},{"value":"Kasse","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/register-810546__340.jpg"},{"value":"Kassette","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/music-1436277__340.jpg"},{"value":"Kassettenrecorder","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cassette-player-1836298__340.jpg"},{"value":"Katze","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cat-300572__340.jpg"},{"value":"Keller","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cellar-554404__340.jpg"},{"value":"Kellner","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/india-1514764__340.jpg"},{"value":"Kellnerin","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/waitress-2376728__340.jpg"},{"value":"Kenntnisse","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/books-1281581__340.jpg"},{"value":"Kennzeichen","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/automobile-1846297__340.jpg"},{"value":"Kette","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/chain-3481377__340.jpg"},{"value":"Kfz","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/plymouth-796441__340.jpg"},{"value":"Kind","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/child-817373__340.jpg"},{"value":"Kindergarten","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/toddler-room-569199__340.jpg"},{"value":"Kinderwagen","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/stroller-4161253__340.jpg"},{"value":"Kino","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cinema-4609877_960_720.jpg"},{"value":"Kiosk","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/kiosk-1366372__340.jpg"},{"value":"Kirche","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/mountain-church-3611548__340.jpg"},{"value":"Klasse","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/education-3189934__340.jpg"},{"value":"Kleid","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/clothesline-804812__340.jpg"},{"value":"Kleidung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/store-1338629__340.jpg"},{"value":"Kneipe","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bar-209148__340.jpg"},{"value":"Koffer","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/luggage-2020548__340.jpg"},{"value":"Kollege","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/academic-1822682__340.jpg"},{"value":"Kollegin","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/academic-1822683__340.jpg"},{"value":"Konsulat","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vatican-2500267__340.jpg"},{"value":"Kontakt","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/phone-875488__340.jpg"},{"value":"Konto","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calculator-385506__340.jpg"},{"value":"Kontrolle","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/space-center-693251__340.jpg"},{"value":"Konzert","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lead-singer-455750__340.jpg"},{"value":"Kopf","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/head-2823697__340.jpg"},{"value":"Kosmetik","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/make-up-1209798__340.jpg"},{"value":"Krankenkasse","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/sick-card-491712__340.jpg"},{"value":"Krankheit","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/thermometer-1539191__340.jpg"},{"value":"Kredit","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wallet-2125548__340.jpg"},{"value":"Kreditkarte","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/money-256314__340.jpg"},{"value":"Kreis","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bokeh-961596__340.jpg"},{"value":"Kreuzung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/home-892312__340.jpg"},{"value":"Kuchen","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/birthday-2901945__340.jpg"},{"value":"Kugelschreiber","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pen-1974727__340.jpg"},{"value":"Kunde","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bakery-793856__340.jpg"},{"value":"Kundin","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-2594683__340.jpg"},{"value":"Kurs","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/room-4057554__340.jpg"},{"value":"Löffel","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/teaspoon-554065__340.jpg"},{"value":"Lösung","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/rubiks-cube-5017116__340.jpg"},{"value":"Laden","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/athens-2476281__340.jpg"},{"value":"Lager","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/ikea-2714998__340.jpg"},{"value":"Lampe","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/retro-lampshade-1662061__340.jpg"},{"value":"Land","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/globe-1567578__340.jpg"},{"value":"Landschaft","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/scotland-1761292__340.jpg"},{"value":"Leben","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/buffalo-4305374__340.jpg"},{"value":"Lebensmittel","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vegetables-2008578_960_720.png"},{"value":"Leid","slot":0,"article":"das","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cry-2764843__340.jpg"},{"value":"Lehre","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/i-am-a-student-1412778__340.jpg"},{"value":"Lehrer","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/teacher-476342__340.jpg"},{"value":"Lehrerin","slot":0,"article":"die","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/school-79612__340.jpg"},{"value":"Marienkäfer","slot":0,"article":"der","timestamp":null,"dueDateTime":null,"imageUrl":"https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/insects-4489864__340.jpg"}]}
+{
+  "words": [
+    {
+      "value": "Ärger",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boy-3617648__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ärztin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/anesthesia-4677401__340.jpg",
+      "ruleId": "FAQ_RULES_IN"
+    },
+    {
+      "value": "Abend",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tree-3063715__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Abfahrt",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/girl-1381994__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Abflug",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/aircraft-1555434__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Absender",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/letters-1659715__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Adresse",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/diary-2080420__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Alkohol",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bottles-3623317__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Alter",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/face-4369947__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ampel",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/traffic-light-876056__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Anfang",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/asphalt-2834149__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Angebot",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/offer-986378__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Angestellte",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tie-690084__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Angst",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/danbo-2011237__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ankunft",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airport-731196_960_720.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Anmeldung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/event-registration-3441960__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Anrede",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/doorplates-238472__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Anruf",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smartphone-564155__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ansage",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/adult-1822449__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Anschluss",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/network-1572617__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Antwort",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/quiz-4168371__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Anzeige",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airport-690556__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Anzug",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/men-1979261__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Apfel",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/apple-1506119__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Apotheke",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pharmacy-380780__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Appartement",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/concrete-1864808__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Appetit",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/macaron-2462247__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "April",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/april-3109706__340.jpg",
+      "ruleId": "FAQ_RULES_MONTH"
+    },
+    {
+      "value": "Arbeit",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/engineer-1612104__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Arbeitsplatz",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/furniture-4837230__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Arm",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/arm-2606730__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Arzt",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dentist-4373290__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Aufenthalt",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pass-2260989__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Aufgabe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/homework-3235100__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Aufzug",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/metro-1354665__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Auge",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/skin-3358873__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "August",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/planner-3485976__340.jpg",
+      "ruleId": "FAQ_RULES_MONTH"
+    },
+    {
+      "value": "Ausbildung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/laptop-3087585__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Ausflug",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/istanbul-4930630__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ausgang",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/railway-station-2085267__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Auskunft",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/business-315671__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ausland",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/globe-3383088__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ausstellung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/theatre-955148__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Ausweis",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/buffer-1143485__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Auto",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fiat-4322521__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Autobahn",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/traffic-332857__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Automat",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/park-ticket-vending-machine-306600__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bäckerei",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bakery-1868925__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Büro",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/office-932926__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Baby",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/baby-20339__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bad",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bathroom-2094733__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bahn",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/train-62849__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bahnhof",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/railway-station-619082__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bahnsteig",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/train-3384786__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Balkon",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/apartments-1845884__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Banane",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bananas-3700718__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bank",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/benches-560435__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Batterie",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/battery-22119__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Baum",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tree-3822149__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Beamte",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/office-2360063__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Beamtin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/office-2360063__340.jpg",
+      "ruleId": "FAQ_RULES_IN"
+    },
+    {
+      "value": "Bein",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/adult-1867051__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Beispiel",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/school-4537531__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bekannte",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/conversation-3337443__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Benzin",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/petrol-stations-1275484__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Beratung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/it-consultant-3726359__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Berg",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/adventure-1807524__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Beruf",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lecture-318124__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Berufsschule",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/laptop-2562325__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Besuch",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandma-1335722__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Betrag",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/money-1772641__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bett",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bedroom-1940169__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bewerbung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calculator-4201244__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Bier",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/beer-2439237__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bild",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smartphone-1618909__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bildschirm",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/digital-marketing-1433427__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Birne",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fruit-1534494__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bitte",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/man-5438612__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Blatt",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/leaves-1030816__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bleistift",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/school-93200__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Blick",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cat-2969932__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Blume",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/rose-3063284__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bluse",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/woman-1409015_960_720.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Blut",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/finger-669008__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bogen",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/arrow-1557462__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bohne",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/beans-4785__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Brötchen",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bread-3467243__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Brücke",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bridge-53769__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Brief",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/communication-3671504__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Briefkasten",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/mailbox-2551322__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Briefmarke",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/france-1289073__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Brieftasche",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wallet-367975__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Briefumschlag",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/envelope-2575253__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Brille",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/glasses-1246611__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Brot",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bread-1510155__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bruder",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/children-887393__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Buch",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/book-1659717__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Buchstabe",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wood-cube-473703__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Bus",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bus-2460482__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Butter",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/butter-3411126__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Café",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/coffee-shop-1149155__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "CD",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cd-864402__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "CD-ROM",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dvd-949228__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Chef",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boss-734288_960_720.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Chefin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/asian-3803525__340.jpg",
+      "ruleId": "FAQ_RULES_IN"
+    },
+    {
+      "value": "Computer",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/computer-1245714__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Creme",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cream-1464295__340.png",
+      "ruleId": null
+    },
+    {
+      "value": "Dach",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/buildings-1207824__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Dame",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/old-lady-417174__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Dank",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/namaste-1935938__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Datum",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/time-273857__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Dauer",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/temporal-distance-917364__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Dezember",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/winter-3031969__340.jpg",
+      "ruleId": "FAQ_RULES_MONTH"
+    },
+    {
+      "value": "Dienstag",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/agenda-3489747__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ding",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/still-2608676__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Disco",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/live-concert-388160__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Dom",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/church-3710237__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Donnerstag",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/agenda-3489747__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Dorf",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dorset-4735601__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Drucker",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/printer-790396__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Durchsage",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/megaphone-1480342__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Durst",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cat-2596083__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Dusche",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/shower-1027904__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "E-Mail",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/mail-566337__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ecke",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/corner-3068121__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ehefrau",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bride-1822587__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ehemann",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wedding-2319461__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ei",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/egg-944495__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Einführung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/brown-15723__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Eingang",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/door-3340568__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Einladung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smiley-3692494__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Eintritt",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/man-5092325__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Einwohner",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/building-2560843__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Eis",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/ice-cream-cone-1274894__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Eltern",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/kids-2208930__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Empfänger",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/receiving-hands-1920865__340.png",
+      "ruleId": null
+    },
+    {
+      "value": "Empfang",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tower-820001__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ende",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/flag-1645262__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Enkel",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/birthday-3807315__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Enkelin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/birthday-3807315__340.jpg",
+      "ruleId": "FAQ_RULES_IN"
+    },
+    {
+      "value": "Entschuldigung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/love-1139688__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Erdgeschoss",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dublin-4955328__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Erfahrung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/old-age-1147287__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Ergebnis",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calculator-4796663__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Erlaubnis",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smiley-1642736__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ermäßigung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/final-sale-3477904__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Erwachsene",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandmother-1822560__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Essen",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/salad-2756467_960_720.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Export",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/container-3118783__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fähre",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/flag-4186073__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Führerschein",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/drivers-license-2534805__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fabrik",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/architecture-1639990__340.jpg",
+      "ruleId": "FAQ_RULES_IK"
+    },
+    {
+      "value": "Fahrer",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-talking-1876726__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fahrerin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/auto-3222366__340.jpg",
+      "ruleId": "FAQ_RULES_IN"
+    },
+    {
+      "value": "Fahrkarte",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/admission-2974645__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fahrplan",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/travel-4865665__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fahrrad",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bicycle-789648__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Familie",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hippo-5354143__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Familienname",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wedding-2535674__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Familienstand",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/control-427510__340.png",
+      "ruleId": null
+    },
+    {
+      "value": "Farbe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/soap-bubble-3490959__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fax",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/printer-958139__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Februar",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-3045827__340.jpg",
+      "ruleId": "FAQ_RULES_MONTH"
+    },
+    {
+      "value": "Fehler",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/editing-1756958__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fenster",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/white-2563976__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Ferien",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/books-918521__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fernsehgerät",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vintage-tv-1116587__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fest",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/new-years-eve-1283521__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Feuer",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fire-123784__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Feuerwehr",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fire-4653987__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Feuerzeug",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lighter-1245655__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fieber",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/thermometer-3656065__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Film",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/movie-2545676__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Firma",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-692005__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fisch",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/discus-fish-1943755__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Flasche",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/water-bottle-2001912__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fleisch",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/meat-1030729__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Flughafen",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airport-1515448__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Flugzeug",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airplane-2745898_960_720.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Flur",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/indoors-3341001__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fluss",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/water-1246643__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Formular",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pen-2398693__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Foto",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/image-editing-101040__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fotoapparat",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lens-3114729__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Frühling",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/magnolia-trees-556718__340.jpg",
+      "ruleId": "FAQ_RULES_SEASON"
+    },
+    {
+      "value": "Frühstück",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/breakfast-1835478_960_720.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Frage",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cat-1824668__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Frau",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-3104635__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Freitag",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/agenda-3489747__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Freizeit",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/young-woman-2268348__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Freund",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/friends-1149841__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Freundin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/girls-462072_960_720.jpg",
+      "ruleId": "FAQ_RULES_IN"
+    },
+    {
+      "value": "Friseur",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/haircut-1007891_960_720.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Frisörin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hairdresser-3173438_960_720.jpg",
+      "ruleId": "FAQ_RULES_IN"
+    },
+    {
+      "value": "Frist",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/january-2290045__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fuß",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/feet-2358333__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Fußball",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/football-1396740__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gabel",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fork-554064__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Garage",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/garage-943249__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Garten",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/spring-2955582__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gas",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/kettle-2178442__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gast",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boy-5014642__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gebühr",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/euro-1557431__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Geburtsjahr",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/candle-1737985__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Geburtsort",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/earth-11008__340.jpg",
+      "ruleId": null
+    },
+
+    {
+      "value": "Geburtstag",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/guinea-pig-1969698__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gegenteil",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pigeons-2775420__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Geld",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/coins-1726618__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gemüse",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vegetables-790022__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gepäck",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/luggage-933487__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gericht",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/courtroom-898931__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gesamtschule",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/classroom-2093743__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Geschäft",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/shopping-1232944__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Geschenk",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/gift-553149__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Geschirr",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/christmas-table-1926936__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Geschwister",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/children-920131__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gesicht",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/makeup-2983550__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gespräch",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/listen-1702648__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gesundheit",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/doctor-563428__340.jpg",
+      "ruleId": "FAQ_RULES_HEIT"
+    },
+    {
+      "value": "Getränk",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/teacup-2325722__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gewicht",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/horizontal-1155878__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gewitter",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/flash-1455285__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Glück",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/woman-1031000__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Glückwunsch",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/roses-3638589__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Glas",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calm-2315559__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gleis",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/train-4320077__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Goethe-Institut",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/goethe-3565667__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Größe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/measurement-1476919__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Grenze",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wall-215787__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Grippe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandmom-5103358__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Großeltern",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandparents-4997796__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Großmutter",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandmother-1737756__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Großvater",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/family-1827369__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gruß",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hi-2292499__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Grundschule",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boy-330582__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gruppe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-3137670__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Guthaben",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/money-2991387__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Gymnasium",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/classroom-15593__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Hähnchen",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/chicken-3727097__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Haar",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hair-1838728__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Halle",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/efaflex-1630741__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Hals",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/swan-5586524__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Haltestelle",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/metro-4957736__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Hand",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-3120717__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Handtuch",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/towels-3401733__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Handy",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cell-phone-1245663__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Haus",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/architecture-1836070__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Hausaufgabe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/book-1853677__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Hausfrau",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/anguillara-1692931_960_720.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Haushalt",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cleaning-3977589__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Heimat",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/globe-3383088__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Heizung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/radiator-250558__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Hemd",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/blur-2841225__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Herbst",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fall-1072821__340.jpg",
+      "ruleId": "FAQ_RULES_SEASON"
+    },
+    {
+      "value": "Herd",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cooking-1776648__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Herr",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/human-1411499__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Herz",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/balloon-991680__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Hilfe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hands-2805248__340.png",
+      "ruleId": null
+    },
+    {
+      "value": "Hobby",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/art-2578353__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Holz",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/batch-1868104__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Hose",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/jeans-43347__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Hund",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dog-3277416__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Hunger",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bird-3350136__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Idee",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/man-5723449__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Import",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/container-ship-596083__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Industrie",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/port-3109757__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Information",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/listen-1702648__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Inhalt",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/drug-1966407__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Internet",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/ipad-820272__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Jacke",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/jacket-947395__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Jahr",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-2738434__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Januar",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/date-2592043__340.jpg",
+      "ruleId": "FAQ_RULES_MONTH"
+    },
+    {
+      "value": "Job",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/worker-1635976__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Jugendherberge",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/beds-182964__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Jugendliche",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/girl-1245835__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Juli",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/july-3356762__340.jpg",
+      "ruleId": "FAQ_RULES_MONTH"
+    },
+    {
+      "value": "Junge",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boy-60659__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Juni",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-2428560__340.jpg",
+      "ruleId": "FAQ_RULES_MONTH"
+    },
+    {
+      "value": "Käse",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cheese-1972744__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Körper",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dance-4054733__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Küche",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/kitchen-2094707__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kühlschrank",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fridge-3475996__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kündigung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/business-3230025__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Kaffee",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/coffee-171653__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kalender",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-1255953__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kamera",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lens-3114729__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kanne",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pot-2406976__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Karte",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/atlas-1869680__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kartoffel",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/potato-3440360__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kasse",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/register-810546__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kassette",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/music-1436277__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kassettenrecorder",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cassette-player-1836298__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Katze",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cat-300572__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Keller",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cellar-554404__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kellner",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/india-1514764__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kellnerin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/waitress-2376728__340.jpg",
+      "ruleId": "FAQ_RULES_IN"
+    },
+    {
+      "value": "Kenntnisse",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/books-1281581__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kennzeichen",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/automobile-1846297__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kette",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/chain-3481377__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kfz",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/plymouth-796441__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kind",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/child-817373__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kindergarten",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/toddler-room-569199__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kinderwagen",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/stroller-4161253__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kino",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cinema-4609877_960_720.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kiosk",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/kiosk-1366372__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kirche",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/mountain-church-3611548__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Klasse",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/education-3189934__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kleid",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/clothesline-804812__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kleidung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/store-1338629__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Kneipe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bar-209148__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Koffer",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/luggage-2020548__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kollege",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/academic-1822682__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kollegin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/academic-1822683__340.jpg",
+      "ruleId": "FAQ_RULES_IN"
+    },
+    {
+      "value": "Konsulat",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vatican-2500267__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kontakt",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/phone-875488__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Konto",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calculator-385506__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kontrolle",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/space-center-693251__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Konzert",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lead-singer-455750__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kopf",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/head-2823697__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kosmetik",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/make-up-1209798__340.jpg",
+      "ruleId": "FAQ_RULES_IK"
+    },
+    {
+      "value": "Krankenkasse",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/sick-card-491712__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Krankheit",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/thermometer-1539191__340.jpg",
+      "ruleId": "FAQ_RULES_HEIT"
+    },
+    {
+      "value": "Kredit",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wallet-2125548__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kreditkarte",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/money-256314__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kreis",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bokeh-961596__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kreuzung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/home-892312__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Kuchen",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/birthday-2901945__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kugelschreiber",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pen-1974727__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kunde",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bakery-793856__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Kundin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-2594683__340.jpg",
+      "ruleId": "FAQ_RULES_IN"
+    },
+    {
+      "value": "Kurs",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/room-4057554__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Löffel",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/teaspoon-554065__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Lösung",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/rubiks-cube-5017116__340.jpg",
+      "ruleId": "FAQ_RULES_UNG"
+    },
+    {
+      "value": "Laden",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/athens-2476281__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Lager",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/ikea-2714998__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Lampe",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/retro-lampshade-1662061__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Land",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/globe-1567578__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Landschaft",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/scotland-1761292__340.jpg",
+      "ruleId": "FAQ_RULES_SCHAFT"
+    },
+    {
+      "value": "Leben",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/buffalo-4305374__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Lebensmittel",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vegetables-2008578_960_720.png",
+      "ruleId": null
+    },
+    {
+      "value": "Leid",
+      "slot": 0,
+      "article": "das",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cry-2764843__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Lehre",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/i-am-a-student-1412778__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Lehrer",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/teacher-476342__340.jpg",
+      "ruleId": null
+    },
+    {
+      "value": "Lehrerin",
+      "slot": 0,
+      "article": "die",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/school-79612__340.jpg",
+      "ruleId": "FAQ_RULES_IN"
+    },
+    {
+      "value": "Marienkäfer",
+      "slot": 0,
+      "article": "der",
+      "timestamp": null,
+      "dueDateTime": null,
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/insects-4489864__340.jpg",
+      "ruleId": null
+    }
+  ]
+}

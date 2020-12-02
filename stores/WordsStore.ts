@@ -15,6 +15,7 @@ export interface WordType {
   timestamp: Date;
   imageUrl: string;
   dueDateTime: Date;
+  ruleId: string;
 }
 
 // words in lesson
@@ -23,6 +24,7 @@ export interface LessonWordType {
   article: string;
   answerArticle: string;
   imageUrl: string;
+  ruleId: string;
 }
 
 // words in lesson history

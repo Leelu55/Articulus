@@ -4,6 +4,7 @@
       "background": "#d8bfd8",
       "normal": "blueviolet",
       "light": "#c05fff",
+      "superlight": "#E8C2D8",
       "dark": "#5300af"
     },
     "secondary": { "normal": "#ffd700", "light": "#ffff52", "dark": "#c7a600" },

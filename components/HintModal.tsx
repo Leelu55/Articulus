@@ -1,5 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext} from 'react';
+import sharedStyles from '../styles/sharedStyles';
+import settings from '../libs/settings.json';
+
 import {
   Pressable,
   StyleSheet,
@@ -9,7 +12,6 @@ import {
 } from 'react-native';
 
 import Modal from 'react-native-modal';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import UIStore from '../stores/UIStore';
 import {observer} from 'mobx-react';
 
@@ -32,7 +34,7 @@ export function showHintModal(
       closeHandler();
     };
   }
-
+  uiStore.setGrammarHintShown(true);
   uiStore.setIsHintModalVisible(true);
 }
 function HintModal() {
@@ -52,8 +54,15 @@ function HintModal() {
       <View style={styles.wrapper}>
         <View style={styles.modalView}>
           <Text style={styles.modalText}>{_textTsx}</Text>
-          <Pressable onPress={() => _hintModalCloseHandler()}>
-            <FontAwesomeIcon icon="times" />
+          <Pressable
+            style={[
+              sharedStyles.bigButton,
+              {backgroundColor: settings.colors.secondary.normal},
+            ]}
+            onPress={() => _hintModalCloseHandler()}>
+            <Text style={[sharedStyles.bigButtonText, {color: 'black'}]}>
+              Alles klar!
+            </Text>
           </Pressable>
         </View>
       </View>
@@ -66,20 +75,11 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   modalView: {
+    flexDirection: 'column',
     backgroundColor: 'white',
-    padding: 10,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
+    padding: 0,
   },
   modalText: {
-    fontSize: 20,
-    margin: 20,
     marginBottom: 0,
   },
   cancelButton: {},

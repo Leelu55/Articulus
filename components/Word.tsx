@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
 import {WordValue} from './WordValue';
 import WordsStore from '../stores/WordsStore';
 
@@ -8,6 +8,7 @@ import UIStore, {LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {WordImage} from './WordImage';
 import nextWord from '../libs/nextWord';
+import {showHintModal} from '../components/HintModal';
 
 const styles = StyleSheet.create({
   word: {
@@ -58,7 +59,15 @@ function Word() {
         );
         uiStore.increaseRepeatCount();
       } else {
-        nextWord(uiStore, wordsStore);
+        // TODO write Texts for modals, internationalize
+        showHintModal(
+          uiStore,
+          <Text>
+            Es funkioniert gut, den Artikel mit dem Wort zusammen zu sagen, z.B.
+            "Das Auto"
+          </Text>,
+          () => nextWord(uiStore, wordsStore),
+        );
       }
     } else if (lessonState === LessonState.IsFinished) {
       audioVoice.voiceStop();

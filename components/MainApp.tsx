@@ -16,6 +16,8 @@ import FinishedScreen from './FinishedScreen/FinishedScreen';
 import ConfigScreen from './ConfigScreen';
 import CheckAudioVoiceConfig from './CheckAudioVoiceConfig';
 import {CardStyleInterpolators} from '@react-navigation/stack';
+import GrammarScreen from './GrammarScreen';
+import {faSpellCheck} from '@fortawesome/free-solid-svg-icons';
 import FaqScreen from './FaqScreen';
 
 const HomeStack = () => {
@@ -53,6 +55,16 @@ const HomeStack = () => {
         }}
       />
 
+      <Tab.Screen
+        name="Grammar"
+        component={GrammarScreen}
+        initialParams={{text: 'Grammatik'}}
+        options={{
+          tabBarIcon: ({color}) => (
+            <FontAwesomeIcon icon={faSpellCheck} size={40} color={color} />
+          ),
+        }}
+      />
       <Tab.Screen
         name="About"
         component={FaqScreen}

@@ -71,7 +71,7 @@ const allowedStateTransitions = {
   ],
 };
 
-class UIStore {
+export class UIStore {
   @observable wordIndex: number = 0;
   @observable lessonState: LessonState = LessonState.IsInitial;
   @observable currentAnswer: string = '';
@@ -80,6 +80,9 @@ class UIStore {
   @persist @observable showIntro: boolean = true;
   @persist @observable isConfigured: boolean = false;
   @persist @observable autoMode: boolean = true;
+
+  // will always be reset to false after finishing a lessond
+  @persist @observable grammarHintShown: boolean = false;
 
   @action toggleAutoMode = () => {
     this.autoMode = !this.autoMode;
@@ -91,6 +94,10 @@ class UIStore {
 
   @action setIsHintModalVisible = (isHintModalVisible) => {
     this.isHintModalVisible = isHintModalVisible;
+  };
+
+  @action setGrammarHintShown = (grammarHintShown) => {
+    this.grammarHintShown = grammarHintShown;
   };
 
   @action setWordIndex = (wordIndex) => {

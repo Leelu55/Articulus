@@ -49,6 +49,7 @@ export default function populateLesson(
       article: word.article,
       answerArticle: null,
       imageUrl: word.imageUrl,
+      ruleId: word.ruleId,
     });
   }
   return lessonWords;

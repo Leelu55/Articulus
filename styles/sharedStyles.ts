@@ -6,6 +6,32 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     flexDirection: 'column',
     flex: 1,
+    paddingVertical: 20,
+  },
+  screenTitle: {
+    fontSize: 60,
+    fontWeight: 'bold',
+    color: 'black',
+    alignSelf: 'center',
+  },
+  screenSubTitle: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: 'darkgrey',
+    alignSelf: 'center',
+  },
+  screenHeaderIcon: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 1000,
+    backgroundColor: settings.colors.primary.background,
+    width: 250,
+    height: 250,
+    alignSelf: 'center',
+    marginTop: 20,
+  },
+  screenContent: {
+    padding: 20,
   },
   wrongArticle: {
     flex: 1,

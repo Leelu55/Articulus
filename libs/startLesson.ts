@@ -1,6 +1,8 @@
 import {LessonState} from '../stores/UIStore';
 
 export default function startLesson(wordsStore, uiStore, navigation) {
+  uiStore.setGrammarHintShown(false);
+
   wordsStore.emptyLesson();
   wordsStore.removeEmptySavedLessons();
   if (wordsStore.populateLesson()) {
