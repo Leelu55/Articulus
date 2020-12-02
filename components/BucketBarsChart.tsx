@@ -10,7 +10,7 @@ import WordsStore from '../stores/WordsStore';
 const styles = StyleSheet.create({
   wrapper: {
     flexDirection: 'column',
-    margin: 20,
+    marginVertical: 20,
   },
 });
 function BucketBarsChart() {

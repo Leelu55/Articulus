@@ -85,7 +85,6 @@ export const styles = StyleSheet.create({
   wrapper: {
     borderWidth: 5,
     overflow: 'hidden',
-    margin: 10,
     marginTop: 20,
     borderColor: 'transparent',
   },

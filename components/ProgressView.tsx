@@ -10,7 +10,7 @@ import sharedStyles from '../styles/sharedStyles';
 const styles = StyleSheet.create({
   wrapper: {
     flexDirection: 'column',
-    margin: 20,
+    marginVertical: 20,
   },
   progressBar: {
     backgroundColor: 'lightgrey',

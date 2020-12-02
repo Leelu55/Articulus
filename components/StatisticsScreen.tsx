@@ -1,4 +1,6 @@
 import React, {useEffect, useReducer} from 'react';
+import {Text, View} from 'react-native';
+
 import sharedStyles from '../styles/sharedStyles';
 import {ScrollView} from 'react-native-gesture-handler';
 import SavedLessons from './SavedLessons';
@@ -20,10 +22,15 @@ function StatisticsScreen({navigation}) {
 
   return (
     <ScrollView style={sharedStyles.screen}>
-      <ProgressView />
-      <BucketBarsChart />
-      <ChartTabs />
-      <SavedLessons />
+      <Text style={sharedStyles.screenTitle}>Statistik</Text>
+      <Text style={sharedStyles.screenSubTitle}>Deine Erfolge</Text>
+
+      <View style={sharedStyles.screenContent}>
+        <ProgressView />
+        <BucketBarsChart />
+        <ChartTabs />
+        <SavedLessons />
+      </View>
     </ScrollView>
   );
 }

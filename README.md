@@ -8,7 +8,7 @@
 - [ ] specify and reimplement IntroSlider Screens
 - [ ] specify and implement FAQ tab screen
 - [ ] reimplement EmptyWordsScreen
-- [ ] specify and implement grammar hints
+- [ ] specify and implement GrammarHints and GrammarScreen
 - [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
 
 ### Modifications
@@ -16,9 +16,11 @@
 - [ ] change house icon on FinishedScreen
 - [ ] modify ForwardButton behaviour -> change position of ForwardButton to next to SelectorButton,
       change icon to "?", onClick: skip word and show the right article as if the corresponding SelectorButton was clicked (green flash, green Sparkle)
+- [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
 
 ### Content Creation
 
+- -[ ] write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
 - [ ] delete badly pronounced words
 - [ ] add more words
 - [ ] write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
@@ -57,6 +59,7 @@
   - [ ] "Record streak"
   - [ ] show badges on statistics page
   - [ ] specify modified StartScreen when there are no words with dueDate == today or new words
+- [ ] implement GrammarHint engine to choose grammar hints according to previous behaviour (not show the same hints all the time)
 
 ### Done
 
@@ -82,6 +85,8 @@
 - [ ] IntroSlider show up briefly when opening the app (after initial use)
 - [ ] navigating with Buttons (StartScreen and PlayerScreen) takes way too long
 - [ ] show preview or loading indicator for images while not visible
+- [ ] nextWord is too fast if correct
+- [ ] SelectorButton reaction onPress not instant
 - [x] pressing articleButton between speaking and listening in autoMode doesn't logIn the answer. app continues listening instead of showing next word
 - [x] if no words in lessonWords clicking on start lesson shoudn't generate a new lessonHistory
 - [x] on articleButton pressed, answer is counted, but wordIndex not incremented. If pressed again, answer is counted twice, then the wordIndex is incremented.
