@@ -6,9 +6,8 @@
 
 - [ ] specify & implement ConfigScreen
 - [ ] specify and reimplement IntroSlider Screens
-- [ ] specify and implement FAQ tab screen
+- [ ] specify and implement FaqScreen (including legal notice, usage hints)
 - [ ] reimplement EmptyWordsScreen
-- [ ] specify and implement GrammarHints and GrammarScreen
 - [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
 
 ### Modifications
@@ -20,11 +19,12 @@
 
 ### Content Creation
 
-- -[ ] write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
+- [ ] write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
 - [ ] delete badly pronounced words
 - [ ] add more words
 - [ ] write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
 - [ ] write manual and usage hints ("Use DDD in a quiet surrounding for better results")
+- [ ] write About content (Legal Notice) for FaqScreen
 
 ### Appearance
 
@@ -77,13 +77,14 @@
 - [x] move sparkle feedback (correct&wrong) animation starting point from ProgressBar to SelectorViews (aka article buttons)
 - [x] include calculated success rate and streak in FinishedScreen
 - [x] manage disabled/enabled status of ControlButtons according to LessonState
+- [x] specify and implement GrammarHints and GrammarScreen
 
 ### Bugs
 
-- [ ] TTS Error: Error: Language data is missing
-- [ ] words: - Laden wrong article - to delete: Kassettenrekorder, Erwachsene, FormUlar
+- [ ] TTS Error: Error: Language data is missing on muted sound
+- [ ] words: - to delete: "Kassettenrekorder", "Erwachsene", "Formular", "Beamte"
 - [ ] cancel after clicking article SelectorButton, then returning to lesson and clicking SelectorButton again -> answer is being counted twice
-- [ ] IntroSlider show up briefly when opening the app (after initial use)
+- [ ] IntroSlider show up briefly when opening the app (after initial use) - implement SplashScreen
 - [ ] navigating with Buttons (StartScreen and PlayerScreen) takes way too long
 - [ ] show preview or loading indicator for images while not visible
 - [ ] nextWord is too fast if correct
