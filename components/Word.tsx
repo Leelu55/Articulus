@@ -8,7 +8,7 @@ import UIStore, {LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {WordImage} from './WordImage';
 import nextWord from '../libs/nextWord';
-import {showHintModal} from '../components/HintModal';
+import {showHintModal} from './HintModal';
 
 const styles = StyleSheet.create({
   word: {
