@@ -2,13 +2,14 @@
 
 ## Roadmap
 
-### Specification & Implementation
+### Specification & Implementation FROZEN 4.12.2020 DON'T ADD MORE
 
 - [ ] specify & implement ConfigScreen
-- [ ] specify and reimplement IntroSlider Screens
 - [ ] specify and implement FaqScreen (including legal notice, usage hints)
-- [ ] reimplement EmptyWordsScreen
 - [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
+- [ ] reimplement EmptyWordsScreen
+- [ ] implement SplashScreen to prevent flickering on App start (IntroSlider/Startscreen show condition)
+- [ ] show preview or loading indicator for images while not visible
 
 ### Modifications
 
@@ -19,10 +20,9 @@
 
 ### Content Creation
 
-- [ ] write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
-- [ ] delete badly pronounced words
-- [ ] add more words
-- [ ] write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
+- [ ] INPROGRESS write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
+- [ ] INPROGRESS add more words
+- [ ] delete badly pronounced or ambiguous words: "Kassettenrekorder", "Erwachsene", "Formular", "Beamte", 'CD-ROM', "Bekannte"
 - [ ] write manual and usage hints ("Use DDD in a quiet surrounding for better results")
 - [ ] write About content (Legal Notice) for FaqScreen
 
@@ -78,15 +78,13 @@
 - [x] include calculated success rate and streak in FinishedScreen
 - [x] manage disabled/enabled status of ControlButtons according to LessonState
 - [x] specify and implement GrammarHints and GrammarScreen
+- [x] specify and reimplement IntroSlider Screens
 
 ### Bugs
 
 - [ ] TTS Error: Error: Language data is missing on muted sound
-- [ ] words: - to delete: "Kassettenrekorder", "Erwachsene", "Formular", "Beamte"
 - [ ] cancel after clicking article SelectorButton, then returning to lesson and clicking SelectorButton again -> answer is being counted twice
-- [ ] IntroSlider show up briefly when opening the app (after initial use) - implement SplashScreen
 - [ ] navigating with Buttons (StartScreen and PlayerScreen) takes way too long
-- [ ] show preview or loading indicator for images while not visible
 - [ ] nextWord is too fast if correct
 - [ ] SelectorButton reaction onPress not instant
 - [x] pressing articleButton between speaking and listening in autoMode doesn't logIn the answer. app continues listening instead of showing next word
