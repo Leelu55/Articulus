@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import * as React from 'react';
 import Svg, {SvgProps, Path, G} from 'react-native-svg';
 import {View, Animated} from 'react-native';

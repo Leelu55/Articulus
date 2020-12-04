@@ -1,6 +1,7 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import AppIntroSlider from 'react-native-app-intro-slider';
-import {View, Text, StyleSheet, ViewStyle} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import {observer} from 'mobx-react';
 import UIStore from '../stores/UIStore';
 import {useContext} from 'react';
