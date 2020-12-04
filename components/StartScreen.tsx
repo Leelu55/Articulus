@@ -8,7 +8,6 @@ import {observer} from 'mobx-react';
 import {NavigationStackProp} from 'react-navigation-stack';
 import {useState} from 'react';
 import StartModal from './StartModal';
-import StartScreenAnimation from './StartScreenAnimation';
 import startLesson from '../libs/startLesson';
 import UnicornCat from './SVGs/UnicornCat';
 

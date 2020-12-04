@@ -100,7 +100,7 @@ export default function StartScreenAnimation() {
             backgroundColor: settings.colors.secondary.normal,
           },
         ]}>
-        <Text style={styles.appTitle}>DER</Text>
+        <Text style={[styles.appTitle, {color: 'rgba(0,0,0,0.75)'}]}>DER</Text>
       </Animated.View>
 
       <Animated.View
