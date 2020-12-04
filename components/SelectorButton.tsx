@@ -1,6 +1,6 @@
 import {observer} from 'mobx-react';
 import React, {useContext} from 'react';
-import {Text, TouchableHighlight} from 'react-native';
+import {Pressable, Text, TouchableHighlight} from 'react-native';
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 import styles from '../styles/sharedStyles';
@@ -39,11 +39,12 @@ function SelectorButton({articleText}: {articleText: string}) {
     : settings.colors.wrongAnswer;
 
   return (
-    <TouchableHighlight
+    <Pressable
       disabled={[LessonState.IsEvaluating, LessonState.IsFinished].includes(
         uiStore.lessonState,
       )}
       style={[styles.articleButton, styleSelector()]}
+      android_ripple={{color: settings.colors.ripple}}
       onPress={() => {
         audioVoice.voiceStop();
         audioVoice.stopSpeakWord();
@@ -64,7 +65,7 @@ function SelectorButton({articleText}: {articleText: string}) {
           />
         )}
       </>
-    </TouchableHighlight>
+    </Pressable>
   );
 }
 

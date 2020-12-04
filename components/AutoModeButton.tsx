@@ -1,5 +1,6 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {useEffect} from 'react';
-import {Pressable, StyleSheet} from 'react-native';
+import {Pressable, StyleSheet, View} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 import {observer} from 'mobx-react';
 import UIStore, {LessonState} from '../stores/UIStore';
@@ -8,6 +9,7 @@ import * as audioVoice from '../libs/audioVoice';
 import {useState} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faHandSparkles} from '@fortawesome/free-solid-svg-icons';
+import settings from '../libs/settings.json';
 
 export function AutoModeButton() {
   const uiStore = useContext(UIStore);
@@ -53,12 +55,19 @@ export function AutoModeButton() {
   const isDisabled = uiStore.lessonState === LessonState.IsFinished || isFrozen;
 
   return (
-    <Pressable
-      style={[sharedStyles.controlButton, styles.wrapper]}
-      onPress={onPress}
-      disabled={isDisabled}>
-      <FontAwesomeIcon icon={faHandSparkles} size={35} color="white" />
-    </Pressable>
+    <View
+      style={{
+        overflow: 'hidden',
+        borderRadius: sharedStyles.controlButton.borderRadius,
+      }}>
+      <Pressable
+        style={[sharedStyles.controlButton, styles.wrapper]}
+        onPress={onPress}
+        android_ripple={{color: settings.colors.ripple}}
+        disabled={isDisabled}>
+        <FontAwesomeIcon icon={faHandSparkles} size={35} color="white" />
+      </Pressable>
+    </View>
   );
 }
 

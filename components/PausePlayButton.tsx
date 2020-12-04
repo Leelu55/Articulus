@@ -6,6 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
 import UIStore, {LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
+import settings from '../libs/settings.json';
 
 function PausePlayButton() {
   const uiStore = useContext(UIStore);
@@ -13,25 +14,30 @@ function PausePlayButton() {
   const isFinished = uiStore.lessonState === LessonState.IsFinished;
 
   return (
-    <Pressable
-      style={[
-        sharedStyles.controlButton,
-        {
-          backgroundColor: isFinished
-            ? 'lightgrey'
-            : lessonState === LessonState.IsPaused
-            ? 'black'
-            : 'lightgrey',
-        },
-      ]}
-      onPress={() => {
-        uiStore.setLessonState(LessonState.IsPaused);
-      }}
-      disabled={lessonState === LessonState.IsFinished}>
-      <View>
+    <View
+      style={{
+        overflow: 'hidden',
+        borderRadius: sharedStyles.controlButton.borderRadius,
+      }}>
+      <Pressable
+        style={[
+          sharedStyles.controlButton,
+          {
+            backgroundColor: isFinished
+              ? 'lightgrey'
+              : lessonState === LessonState.IsPaused
+              ? 'black'
+              : 'lightgrey',
+          },
+        ]}
+        android_ripple={{color: settings.colors.ripple}}
+        onPress={() => {
+          uiStore.setLessonState(LessonState.IsPaused);
+        }}
+        disabled={lessonState === LessonState.IsFinished}>
         <FontAwesomeIcon icon={'pause'} size={20} color="white" />
-      </View>
-    </Pressable>
+      </Pressable>
+    </View>
   );
 }
 

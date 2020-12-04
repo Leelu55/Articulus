@@ -8,11 +8,13 @@
       "dark": "#5300af"
     },
     "secondary": { "normal": "#ffd700", "light": "#ffff52", "dark": "#c7a600" },
+    "ripple": "blueviolet",
     "correctAnswer": "#4CBB17",
     "wrongAnswer": "#F4512C"
   },
 
   "lessonSize": 15,
   "numberOfSlots": 6,
-  "isDebugging": false
+  "isDebugging": false,
+  "bottomNavigationTabBarHeight": 90
 }

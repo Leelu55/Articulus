@@ -47,8 +47,7 @@ function ProgressView() {
 
   return (
     <View style={styles.wrapper}>
-      <View
-        style={{flexDirection: 'row', alignItems: 'center', marginBottom: 10}}>
+      <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <Text style={sharedStyles.label}>LERNFORTSCHRITT</Text>
       </View>
       <Text style={styles.percentText}>{learningProgressPercentage}%</Text>

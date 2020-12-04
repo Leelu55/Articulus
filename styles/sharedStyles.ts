@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     flexDirection: 'column',
     flex: 1,
-    paddingVertical: 20,
+    paddingTop: 20,
   },
   screenTitle: {
     fontSize: 60,
@@ -118,6 +118,7 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     paddingHorizontal: 15,
     paddingVertical: 5,
+    marginBottom: 10,
     fontWeight: 'bold',
     fontSize: 20,
     color: settings.colors.primary.dark,
