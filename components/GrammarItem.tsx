@@ -15,14 +15,12 @@ function GrammarItem({ruleId}: {ruleId: string}) {
 
 const styles = StyleSheet.create({
   wrapper: {
-    marginHorizontal: 10,
-    marginVertical: 20,
+    marginHorizontal: 20,
+    marginVertical: 10,
     backgroundColor: '#eee',
     borderRadius: 30,
   },
   label: {
-    borderColor: '#eee',
-    borderWidth: 1,
     borderBottomRightRadius: 0,
     borderBottomLeftRadius: 0,
     borderRadius: 30,
@@ -31,7 +29,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     fontSize: 20,
     color: settings.colors.primary.dark,
-    backgroundColor: settings.colors.primary.superlight,
+    backgroundColor: 'lightgrey',
     fontWeight: 'bold',
   },
   ruleText: {fontSize: 20, paddingHorizontal: 20},
