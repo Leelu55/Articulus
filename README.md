@@ -4,8 +4,8 @@
 
 ### Specification & Implementation FROZEN 4.12.2020 DON'T ADD MORE
 
-- [ ] specify & implement ConfigScreen
 - [ ] specify and implement FaqScreen (including legal notice, usage hints)
+- [ ] specify & implement ConfigScreen
 - [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
 - [ ] reimplement EmptyWordsScreen
 - [ ] implement SplashScreen to prevent flickering on App start (IntroSlider/Startscreen show condition)

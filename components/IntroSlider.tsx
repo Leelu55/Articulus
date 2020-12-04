@@ -14,7 +14,7 @@ import {TextStyle} from 'react-native';
 const slides = [
   {
     key: '1',
-    title: ' Deusch mit Articulus',
+    title: 'Artikel mit Articulus',
     text: 'Verwende Der, Die, Das korrekt und sicher mit Articulus',
     svg: () => <Svg1 />,
     backgroundColor: 'lightgrey',
@@ -41,7 +41,7 @@ const renderItem = ({item}) => {
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: 'pink',
+      paddingHorizontal: 10,
     },
     image: {
       width: 50,
@@ -91,7 +91,7 @@ function IntroSlider() {
 
   return (
     <AppIntroSlider
-      dotStyle={{backgroundColor: settings.colors.secondary.normal}}
+      dotStyle={{backgroundColor: settings.colors.secondary.light}}
       activeDotStyle={{backgroundColor: settings.colors.primary.normal}}
       renderItem={renderItem}
       data={slides}
