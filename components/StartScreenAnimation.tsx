@@ -15,18 +15,17 @@ export default function StartScreenAnimation() {
   const anim3 = useRef(new Animated.Value(1)).current;
 
   const windowWidth = useWindowDimensions().width;
-  const marginHorizontal = windowWidth / 9;
-  const fontSize = windowWidth / 9;
+  const fontSize = windowWidth / 18;
 
   const styles = StyleSheet.create({
     appTitleWrapper: {
       position: 'absolute',
       opacity: 0.75,
-      width: windowWidth / 3.5,
-      height: windowWidth / 3.5,
+      width: 60,
+      height: 60,
       justifyContent: 'center',
       alignItems: 'center',
-      borderRadius: windowWidth / 18,
+      borderRadius: 1000,
     },
     appTitle: {
       fontSize: fontSize,
@@ -85,14 +84,18 @@ export default function StartScreenAnimation() {
   }, [anim1, anim2, anim3]);
 
   return (
-    <View style={{flex: 1}}>
+    <View
+      style={{
+        height: 120,
+        width: 180,
+      }}>
       <Animated.View
         style={[
           styles.appTitleWrapper,
           {
             scaleX: anim1,
             scaleY: anim1,
-            translateX: marginHorizontal,
+            translateX: 0,
             translateY: styles.appTitleWrapper.height * 0.3,
             backgroundColor: settings.colors.secondary.normal,
           },
@@ -106,7 +109,7 @@ export default function StartScreenAnimation() {
           {
             scaleX: anim2,
             scaleY: anim2,
-            translateX: windowWidth / 2 - styles.appTitleWrapper.width / 2,
+            translateX: 60,
             translateY: styles.appTitleWrapper.height,
             backgroundColor: settings.colors.secondary.dark,
           },
@@ -120,8 +123,7 @@ export default function StartScreenAnimation() {
           {
             scaleX: anim3,
             scaleY: anim3,
-            translateX:
-              windowWidth - marginHorizontal - styles.appTitleWrapper.width,
+            translateX: 120,
             translateY: styles.appTitleWrapper.height * 0.3,
             backgroundColor: settings.colors.primary.normal,
           },

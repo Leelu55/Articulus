@@ -34,7 +34,6 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
         onStartLesson={onStartLesson}
         onContinueLesson={onContinueLesson}
       />
-      <StartScreenAnimation />
       <View style={styles.catWrapper}>
         <UnicornCat />
       </View>
@@ -61,6 +60,8 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
 
 const styles = StyleSheet.create({
   catWrapper: {
+    flex: 1,
+    justifyContent: 'center',
     alignItems: 'center',
   },
 });
