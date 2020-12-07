@@ -9,7 +9,6 @@
 - [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
 - [ ] reimplement EmptyWordsScreen
 - [ ] reimplement StartScreen
-- [x] show preview or loading indicator for images while not visible
 
 ### Modifications
 
@@ -81,6 +80,7 @@
 - [x] specify and implement GrammarHints and GrammarScreen
 - [x] specify and reimplement IntroSlider Screens
 - [x] implement SplashScreen to prevent flickering on App start (IntroSlider/Startscreen show condition)
+- [x] show preview or loading indicator for images while not visible
 
 ### Bugs
 
