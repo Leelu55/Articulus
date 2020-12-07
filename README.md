@@ -8,12 +8,13 @@
 - [ ] specify & implement ConfigScreen
 - [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
 - [ ] reimplement EmptyWordsScreen
-- [ ] implement SplashScreen to prevent flickering on App start (IntroSlider/Startscreen show condition)
+- [ ] reimplement StartScreen
 - [ ] show preview or loading indicator for images while not visible
 
 ### Modifications
 
 - [ ] change house icon on FinishedScreen
+- [ ] change appearance of SplashScreen (Just Text Articulus)
 - [ ] modify ForwardButton behaviour -> change position of ForwardButton to next to SelectorButton,
       change icon to "?", onClick: skip word and show the right article as if the corresponding SelectorButton was clicked (green flash, green Sparkle)
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
@@ -59,7 +60,7 @@
   - [ ] "Record streak"
   - [ ] show badges on statistics page
   - [ ] specify modified StartScreen when there are no words with dueDate == today or new words
-- [ ] implement GrammarHint engine to choose grammar hints according to previous behaviour (not show the same hints all the time)
+- [ ] implement GrammarHint engine to choose grammar hints according to previous behaviour (not show the same hints all the time) IDEA: Show the reminder hint of the grammar rule when the user makes the same mistake twice in one lesson
 
 ### Done
 
@@ -79,6 +80,7 @@
 - [x] manage disabled/enabled status of ControlButtons according to LessonState
 - [x] specify and implement GrammarHints and GrammarScreen
 - [x] specify and reimplement IntroSlider Screens
+- [x] implement SplashScreen to prevent flickering on App start (IntroSlider/Startscreen show condition)
 
 ### Bugs
 
