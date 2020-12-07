@@ -9,7 +9,7 @@
 - [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
 - [ ] reimplement EmptyWordsScreen
 - [ ] reimplement StartScreen
-- [ ] show preview or loading indicator for images while not visible
+- [x] show preview or loading indicator for images while not visible
 
 ### Modifications
 
