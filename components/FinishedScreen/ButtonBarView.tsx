@@ -8,6 +8,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import ButtonBar from '../ButtonBar';
 import {AnimatedValue} from 'react-navigation';
 import settings from '../../libs/settings.json';
+import populateLesson from '../../libs/populateLesson';
 
 export default function ButtonBarView({
   uiStore,
@@ -43,9 +44,9 @@ export default function ButtonBarView({
           ]}
           onPress={() => {
             uiStore.setLessonState(LessonState.IsInitial);
+            wordsStore.populateLesson();
             // go back to start screen
-            navigation.goBack();
-            navigation.goBack();
+            navigation.navigate('StartScreen');
           }}>
           <FontAwesomeIcon
             icon="home"
@@ -59,6 +60,7 @@ export default function ButtonBarView({
             {margin: 0, flexDirection: 'row', flex: 1},
           ]}
           onPress={() => {
+            wordsStore.populateLesson();
             startLesson(wordsStore, uiStore, navigation);
           }}>
           <Text style={sharedStyles.bigButtonText}>NOCHMAL</Text>

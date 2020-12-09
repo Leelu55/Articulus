@@ -60,6 +60,7 @@ class WordsStore {
   // @return Boolean true if lesson words not empty, false otherwise
   // calss the populate lesson function with @param words array and current DateTime
   @action populateLesson = (): Boolean => {
+    wordsStore.removeEmptySavedLessons();
     this.lessonWords = populateLesson(this.words, Date.now());
     let savedLessonWords = [];
     this.lessonWords.forEach((word) => {

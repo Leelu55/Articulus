@@ -1,5 +1,5 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {
   View,
   Text,
@@ -19,7 +19,6 @@ import startLesson from '../libs/startLesson';
 import settings from '../libs/settings.json';
 import {useScreenToTop} from './hooks/useScreenToTop';
 import WordListItem from './WordListItem';
-import {isTemplateMiddle} from 'typescript';
 
 function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
@@ -27,6 +26,25 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const ref = React.useRef<ScrollView>(null);
   useScreenToTop(ref);
+
+  useEffect(() => {
+    if (wordsStore.lessonWords.length === 0) {
+      wordsStore.populateLesson();
+    }
+  }, [wordsStore, wordsStore.lessonWords]);
+
+  if (wordsStore.lessonWords.length === 0) {
+    return null;
+  }
+
+  function onStartModalLesson() {
+    wordsStore.populateLesson();
+    uiStore.setGrammarHintShown(false);
+
+    uiStore.setLessonState(LessonState.IsSpeaking);
+    uiStore.setWordIndex(0);
+    navigation.navigate('PlayerScreen');
+  }
 
   function onStartLesson() {
     startLesson(wordsStore, uiStore, navigation);
@@ -36,37 +54,6 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
     navigation.navigate('PlayerScreen');
     setIsModalVisible(false);
   };
-
-  interface SortedType {
-    value: string;
-    imageUrl: string;
-    dueDateTime: Date;
-    slot: number;
-    article: string;
-  }
-  const DATA: SortedType[] = Object.keys(wordsStore.words)
-    .filter((word) => wordsStore.words[word].dueDateTime <= new Date() || null)
-    .sort(() => 0.5 - Math.random())
-    .map<SortedType>((word) => ({
-      value: wordsStore.words[word].value,
-      imageUrl: wordsStore.words[word].imageUrl,
-      dueDateTime: wordsStore.words[word].dueDateTime,
-      slot: wordsStore.words[word].slot,
-      article: wordsStore.words[word].article,
-    }))
-    .sort((a: SortedType, b: SortedType) => {
-      if (a.dueDateTime === null && b.dueDateTime === null) {
-        return 0;
-      }
-      if (a.dueDateTime === null && b.dueDateTime !== null) {
-        return -1;
-      }
-      if (a.dueDateTime !== null && b.dueDateTime === null) {
-        return +1;
-      }
-      return b.dueDateTime.valueOf() - a.dueDateTime.valueOf();
-    })
-    .slice(0, 20);
 
   const renderItem = ({item}) => {
     return (
@@ -84,7 +71,7 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
     <>
       <FlatList
         style={styles.list}
-        data={DATA}
+        data={wordsStore.lessonWords}
         initialNumToRender={3}
         renderItem={renderItem}
         keyExtractor={(item, idx) => 'key' + idx}
@@ -99,7 +86,7 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
         <StartModal
           isModalVisible={isModalVisible}
           setIsModalVisible={setIsModalVisible}
-          onStartLesson={onStartLesson}
+          onStartLesson={onStartModalLesson}
           onContinueLesson={onContinueLesson}
         />
         <View
