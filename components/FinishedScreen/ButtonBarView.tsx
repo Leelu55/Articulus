@@ -8,7 +8,6 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import ButtonBar from '../ButtonBar';
 import {AnimatedValue} from 'react-navigation';
 import settings from '../../libs/settings.json';
-import populateLesson from '../../libs/populateLesson';
 
 export default function ButtonBarView({
   uiStore,

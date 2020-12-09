@@ -88,7 +88,6 @@ function LessonStateIndicator() {
     bgColor = settings.colors.wrongAnswer;
   }
   function onPress() {
-    console.log('onPress', {lessonState: uiStore.lessonState});
     if (uiStore.lessonState === LessonState.IsWaitingForUserAction) {
       audioVoice.voiceStart();
       return;
