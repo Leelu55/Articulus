@@ -4,7 +4,6 @@
 
 ### Specification & Implementation FROZEN 4.12.2020 DON'T ADD MORE
 
-- [ ] reimplement StartScreen
 - [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
 - [ ] specify & implement ConfgiScreen
 - [ ] reimplement EmptyWordsScreen
@@ -15,6 +14,17 @@
 - [ ] change appearance of SplashScreen (Just Text Articulus)
 - [ ] modify ForwardButton behaviour -> change position of ForwardButton to next to SelectorButton, change icon to "?", onClick: skip word and show the right article as if the corresponding SelectorButton was clicked (green flash, green Sparkle)
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
+
+### Bugs
+
+- [ ] TTS Error: Error: Language data is missing on muted sound
+- [ ] cancel after clicking article SelectorButton, then returning to lesson and clicking SelectorButton again -> answer is being counted twice
+- [ ] navigating with Buttons (StartScreen and PlayerScreen) takes way too long
+- [ ] nextWord is too fast if correct
+- [ ] SelectorButton reaction onPress not instant
+- [ ] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
+- [ ] check Unique Words before pushing to model
+- [ ] year LineChart no data displayed
 
 ### Content Creation
 
@@ -58,8 +68,11 @@
   - [ ] show badges on statistics page
   - [ ] specify modified StartScreen when there are no words with dueDate == today or new words
 - [ ] implement GrammarHint engine to choose grammar hints according to previous behaviour (not show the same hints all the time) IDEA: Show the reminder hint of the grammar rule when the user makes the same mistake twice in one lesson
+- [ ] implement search for GrammarRules and FAQs
 
 ### Done
+
+#### Features
 
 - [x] build script to add article data
       call this script in your shell by executing the command below:
@@ -80,6 +93,9 @@
 - [x] implement SplashScreen to prevent flickering on App start (IntroSlider/Startscreen show condition)
 - [x] show preview or loading indicator for images while not visible
 - [x] specify and implement FaqScreen
+- [x] reimplement StartScreen
+
+#### Bugs
 
 - [x] pressing articleButton between speaking and listening in autoMode doesn't logIn the answer. app continues listening instead of showing next word
 - [x] if no words in lessonWords clicking on start lesson shoudn't generate a new lessonHistory
@@ -87,14 +103,3 @@
       [x] clicking startLesson() on FinishedScreen with no more words with dueDate==today or new words leads to a crash because emptyLesson() is called and the PlayerScreen component being still
       mounted in the background (React.navigation!) is rerendered with empty lessonWords.
 - [x] FinishedScreen: number text in AnimatedNumber counter not centered with number >=10
-
-### Bugs
-
-- [ ] TTS Error: Error: Language data is missing on muted sound
-- [ ] cancel after clicking article SelectorButton, then returning to lesson and clicking SelectorButton again -> answer is being counted twice
-- [ ] navigating with Buttons (StartScreen and PlayerScreen) takes way too long
-- [ ] nextWord is too fast if correct
-- [ ] SelectorButton reaction onPress not instant
-- [ ] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
-- [ ] check Unique Words before pushing to model
-- [ ] year LineChart no data displayed
