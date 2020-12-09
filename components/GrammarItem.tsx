@@ -15,15 +15,15 @@ function GrammarItem({ruleId}: {ruleId: string}) {
 
 const styles = StyleSheet.create({
   wrapper: {
-    marginHorizontal: 20,
-    marginVertical: 10,
+    marginHorizontal: 30,
+    marginVertical: 20,
     backgroundColor: '#eee',
-    borderRadius: 30,
+    borderRadius: 10,
   },
   label: {
     borderBottomRightRadius: 0,
     borderBottomLeftRadius: 0,
-    borderRadius: 30,
+    borderRadius: 10,
     paddingHorizontal: 20,
     paddingVertical: 10,
     marginBottom: 20,

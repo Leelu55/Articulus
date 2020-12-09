@@ -1,7 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
 import {observer} from 'mobx-react';
 import React from 'react';
-import {View, StyleSheet, TouchableWithoutFeedback} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  TouchableWithoutFeedback,
+  Pressable,
+} from 'react-native';
 import {Dimensions} from 'react-native';
 import {TabView, TabBar} from 'react-native-tab-view';
 import sharedStyles from '../styles/sharedStyles';
@@ -39,8 +44,6 @@ function GrammarTabs({
       height: windowHeight - settings.bottomNavigationTabBarHeight,
       overflow: 'hidden',
 
-      marginTop: 20,
-      borderColor: 'transparent',
       backgroundColor: 'white',
     },
   });
@@ -50,23 +53,31 @@ function GrammarTabs({
       style={{
         backgroundColor: 'white',
         elevation: tabsAttachedToTop ? 5 : 0,
-        paddingHorizontal: 20,
+        paddingHorizontal: 30,
+        paddingTop: 30,
         margin: 0,
         justifyContent: 'center',
         flexDirection: 'column',
       }}>
-      <TouchableWithoutFeedback onPress={() => screenToTop()}>
+      <Pressable
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          paddingVertical: 5,
+        }}
+        onPress={() => screenToTop()}>
         <FontAwesomeIcon
           icon={faGripLines}
           size={30}
           style={{
             alignSelf: 'center',
-            marginTop: 20,
             opacity: tabsAttachedToTop ? 1 : 0,
           }}
           color="lightgrey"
         />
-      </TouchableWithoutFeedback>
+      </Pressable>
       <TabBar
         {...props}
         indicatorStyle={{
