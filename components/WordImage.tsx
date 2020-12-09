@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
 
 export function WordImage({imageUrl}: {imageUrl: string}) {
   const [isLoading, setIsLoading] = useState(true);
-  console.log({isLoading});
 
   useEffect(() => {
     setIsLoading(true);
