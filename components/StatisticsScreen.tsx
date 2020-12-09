@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useEffect, useReducer} from 'react';
-import {Dimensions, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 
 import sharedStyles from '../styles/sharedStyles';
 import {ScrollView} from 'react-native-gesture-handler';
@@ -9,6 +9,7 @@ import ChartTabs from './ChartTabs';
 import ProgressView from './ProgressView';
 import BucketBarsChart from './BucketBarsChart';
 import {useScreenToTop} from './hooks/useScreenToTop';
+import StatisticGems from './SVGs/StatisticGems';
 
 function StatisticsScreen({navigation}) {
   // https://reactjs.org/docs/hooks-reference.html#usereducer
@@ -29,6 +30,9 @@ function StatisticsScreen({navigation}) {
     <ScrollView style={sharedStyles.screen} ref={ref}>
       <Text style={sharedStyles.screenTitle}>Statistik</Text>
       <Text style={sharedStyles.screenSubTitle}>Deine Erfolge</Text>
+      <View style={sharedStyles.screenHeaderIcon}>
+        <StatisticGems width={150} />
+      </View>
       <View style={[sharedStyles.screenContent, {margin: 20}]}>
         <ProgressView />
         <BucketBarsChart />

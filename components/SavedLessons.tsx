@@ -23,8 +23,8 @@ function SavedLessons() {
         .map((savedLesson, index) => {
           const styleBorderRadius =
             openedIndex === index
-              ? {borderTopLeftRadius: 30, borderTopRightRadius: 30}
-              : {borderRadius: 30};
+              ? {borderTopLeftRadius: 10, borderTopRightRadius: 10}
+              : {borderRadius: 10};
           return (
             <Pressable
               style={[styles.lesson]}
@@ -118,12 +118,12 @@ const styles = StyleSheet.create({
   lesson: {
     backgroundColor: '#eee',
     flexDirection: 'column',
-    borderRadius: 30,
+    borderRadius: 10,
     marginBottom: 10,
   },
   wordsList: {
-    borderBottomLeftRadius: 30,
-    borderBottomRightRadius: 30,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
     padding: 10,
     paddingBottom: 20,
   },
