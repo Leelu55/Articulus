@@ -24,7 +24,6 @@ function FaqScreen() {
   }));
 
   const renderItem = ({item}) => {
-    console.log({item});
     return (
       <FaqItem
         title={item.title}

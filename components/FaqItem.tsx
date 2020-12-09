@@ -26,9 +26,7 @@ function FaqItem({
 }): JSX.Element {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const animValue = useRef(new Animated.Value(0)).current;
-  console.log({faIcon});
   useEffect(() => {
-    console.log({isCollapsed});
     if (!isCollapsed) {
       Animated.timing(animValue, {
         toValue: 1,

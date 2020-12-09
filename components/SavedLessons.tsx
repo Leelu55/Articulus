@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, Pressable, Settings} from 'react-native';
+import {View, Text, StyleSheet, Pressable} from 'react-native';
 import WordsStore from '../stores/WordsStore';
 import {useContext} from 'react';
 import {observer} from 'mobx-react';
