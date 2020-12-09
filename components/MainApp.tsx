@@ -20,6 +20,7 @@ import {CardStyleInterpolators} from '@react-navigation/stack';
 import GrammarScreen from './GrammarScreen';
 import {faSpellCheck} from '@fortawesome/free-solid-svg-icons';
 import FaqScreen from './FaqScreen';
+import settings from '../libs/settings.json';
 
 const HomeStack = () => {
   const Tab = createBottomTabNavigator();
@@ -27,14 +28,14 @@ const HomeStack = () => {
     <Tab.Navigator
       tabBarOptions={{
         style: {
-          backgroundColor: 'floralwhite',
+          backgroundColor: settings.colors.secondary.normal,
           height: 90,
           padding: 0,
           margin: 0,
         },
         showLabel: false,
         activeTintColor: 'black',
-        inactiveTintColor: 'darkgray',
+        inactiveTintColor: 'rgba(0,0,0,0.3)',
       }}>
       <Tab.Screen
         name="Home"
