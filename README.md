@@ -4,25 +4,23 @@
 
 ### Specification & Implementation FROZEN 4.12.2020 DON'T ADD MORE
 
-- [ ] specify and implement FaqScreen (including legal notice, usage hints)
-- [ ] specify & implement ConfigScreen
-- [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
-- [ ] reimplement EmptyWordsScreen
 - [ ] reimplement StartScreen
+- [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
+- [ ] specify & implement ConfgiScreen
+- [ ] reimplement EmptyWordsScreen
 
 ### Modifications
 
 - [ ] change house icon on FinishedScreen
 - [ ] change appearance of SplashScreen (Just Text Articulus)
-- [ ] modify ForwardButton behaviour -> change position of ForwardButton to next to SelectorButton,
-      change icon to "?", onClick: skip word and show the right article as if the corresponding SelectorButton was clicked (green flash, green Sparkle)
+- [ ] modify ForwardButton behaviour -> change position of ForwardButton to next to SelectorButton, change icon to "?", onClick: skip word and show the right article as if the corresponding SelectorButton was clicked (green flash, green Sparkle)
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
 
 ### Content Creation
 
 - [ ] INPROGRESS write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
 - [ ] INPROGRESS add more words
-- [ ] delete badly pronounced or ambiguous words: "Kassettenrekorder", "Erwachsene", "Formular", "Beamte", 'CD-ROM', "Bekannte"
+- [ ] delete badly pronounced or ambiguous words: "Kassettenrekorder", "Erwachsene", "Formular", "Beamte", 'CD-ROM', "Bekannte", "Geburtsort"
 - [ ] write manual and usage hints ("Use DDD in a quiet surrounding for better results")
 - [ ] write About content (Legal Notice) for FaqScreen
 
@@ -81,6 +79,14 @@
 - [x] specify and reimplement IntroSlider Screens
 - [x] implement SplashScreen to prevent flickering on App start (IntroSlider/Startscreen show condition)
 - [x] show preview or loading indicator for images while not visible
+- [x] specify and implement FaqScreen
+
+- [x] pressing articleButton between speaking and listening in autoMode doesn't logIn the answer. app continues listening instead of showing next word
+- [x] if no words in lessonWords clicking on start lesson shoudn't generate a new lessonHistory
+- [x] on articleButton pressed, answer is counted, but wordIndex not incremented. If pressed again, answer is counted twice, then the wordIndex is incremented.
+      [x] clicking startLesson() on FinishedScreen with no more words with dueDate==today or new words leads to a crash because emptyLesson() is called and the PlayerScreen component being still
+      mounted in the background (React.navigation!) is rerendered with empty lessonWords.
+- [x] FinishedScreen: number text in AnimatedNumber counter not centered with number >=10
 
 ### Bugs
 
@@ -89,9 +95,6 @@
 - [ ] navigating with Buttons (StartScreen and PlayerScreen) takes way too long
 - [ ] nextWord is too fast if correct
 - [ ] SelectorButton reaction onPress not instant
-- [x] pressing articleButton between speaking and listening in autoMode doesn't logIn the answer. app continues listening instead of showing next word
-- [x] if no words in lessonWords clicking on start lesson shoudn't generate a new lessonHistory
-- [x] on articleButton pressed, answer is counted, but wordIndex not incremented. If pressed again, answer is counted twice, then the wordIndex is incremented.
-      [x] clicking startLesson() on FinishedScreen with no more words with dueDate==today or new words leads to a crash because emptyLesson() is called and the PlayerScreen component being still
-      mounted in the background (React.navigation!) is rerendered with empty lessonWords.
-- [x] FinishedScreen: number text in AnimatedNumber counter not centered with number >=10
+- [ ] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
+- [ ] check Unique Words before pushing to model
+- [ ] year LineChart no data displayed
