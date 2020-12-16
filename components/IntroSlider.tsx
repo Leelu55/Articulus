@@ -44,13 +44,6 @@ const renderItem = ({item}) => {
       justifyContent: 'center',
       paddingHorizontal: 10,
     },
-    image: {
-      width: 50,
-      height: 50,
-      borderRadius: 500,
-      marginBottom: 20,
-      marginTop: 20,
-    },
     titleText: {
       fontWeight: 'bold',
       fontSize: 30,

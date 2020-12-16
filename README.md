@@ -5,8 +5,7 @@
 ### Specification & Implementation FROZEN 4.12.2020 DON'T ADD MORE
 
 - [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
-- [ ] specify & implement ConfgiScreen
-- [ ] reimplement EmptyWordsScreen
+- [ ] specify & implement ConfigScreen
 
 ### Modifications
 
@@ -94,6 +93,7 @@
 - [x] show preview or loading indicator for images while not visible
 - [x] specify and implement FaqScreen
 - [x] reimplement StartScreen
+- [x] reimplement EmptyWordsScreen
 
 #### Bugs
 
