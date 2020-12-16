@@ -1,4 +1,4 @@
-import {observable, action} from 'mobx';
+import {observable, action, makeObservable} from 'mobx';
 import {create, persist} from 'mobx-persist';
 import {createContext} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
@@ -83,6 +83,12 @@ export class UIStore {
 
   // will always be reset to false after finishing a lessond
   @persist @observable grammarHintShown: boolean = false;
+
+  constructor() {
+    console.log('uist constr called');
+
+    makeObservable(this);
+  }
 
   @action toggleAutoMode = () => {
     this.autoMode = !this.autoMode;

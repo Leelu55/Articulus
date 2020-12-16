@@ -24,16 +24,20 @@ export default function processAnswer(
   if (index === -1) {
     throw new Error('word could not be found');
   }
-  currentSavedLessonRef.words[index].answerArticle = currentArticle;
+  wordsStore.setAnswerArticleForSavedLessonWord(
+    currentSavedLessonRef.words[index],
+    currentArticle,
+  );
 
   if (currentArticle === clw.article) {
     wordsStore.incrementSlotForWord(clw.value);
-    currentSavedLessonRef.countCorrectAnswers++;
-    currentSavedLessonRef.words[index].isAnswerCorrect = true;
+    wordsStore.incrementCountCorrectAnswers(currentSavedLessonRef);
+    wordsStore.setIsAnswerCorrect(currentSavedLessonRef.words[index], true);
   } else {
     wordsStore.decrementSlotForWord(clw.value);
-    currentSavedLessonRef.countWrongAnswers++;
-    currentSavedLessonRef.words[index].isAnswerCorrect = false;
+    wordsStore.incrementCountCorrectAnswers(currentSavedLessonRef);
+    wordsStore.setIsAnswerCorrect(currentSavedLessonRef.words[index]);
+    wordsStore.setIsAnswerCorrect(currentSavedLessonRef.words[index], false);
   }
 
   wordsStore.updateTimeStampForWord(clw.value);
@@ -63,7 +67,7 @@ export default function processAnswer(
       uiStore.setWordIndex(wordIndex + 1);
       uiStore.setLessonState(LessonState.IsSpeaking);
     } else {
-      currentSavedLessonRef.isFinished = true;
+      wordsStore.setSavedLessonIsFinished(currentSavedLessonRef, true);
       uiStore.setLessonState(LessonState.IsFinished);
     }
   }

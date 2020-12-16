@@ -6,7 +6,7 @@ export default function nextWord(uiStore, wordsStore) {
     uiStore.setLessonState(LessonState.IsSpeaking);
   } else {
     const currentSavedLessonRef = wordsStore.savedLessons.slice(-1)[0];
-    currentSavedLessonRef.isFinished = true;
+    wordsStore.setSavedLessonIsFinished(currentSavedLessonRef, true);
     uiStore.setLessonState(LessonState.IsFinished);
   }
 }

@@ -21,6 +21,7 @@ import GrammarScreen from './GrammarScreen';
 import {faSpellCheck} from '@fortawesome/free-solid-svg-icons';
 import FaqScreen from './FaqScreen';
 import settings from '../libs/settings.json';
+import WordsStore from '../stores/WordsStore';
 
 const HomeStack = () => {
   const Tab = createBottomTabNavigator();
@@ -116,6 +117,7 @@ const ConfigStack = () => {
 };
 const MainApp = () => {
   const uiStore = useContext(UIStore);
+
   const Stack = createStackNavigator();
 
   return (

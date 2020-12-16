@@ -10,7 +10,6 @@ import {
 import sharedStyles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
 import Modal from 'react-native-modal';
-import {LessonState} from '../stores/UIStore';
 
 const styles = StyleSheet.create({
   wrapper: {

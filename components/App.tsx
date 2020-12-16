@@ -1,9 +1,7 @@
 import React, {useEffect} from 'react';
 import settings from '../libs/settings.json';
-
 import {Provider} from 'mobx-react';
 import WordsStore from '../stores/WordsStore';
-
 import UIStore from '../stores/UIStore';
 import MainApp from './MainApp';
 import DebugLessonState from './DebugLessonState';

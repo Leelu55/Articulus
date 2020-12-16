@@ -23,6 +23,7 @@ import WordListItem from './WordListItem';
 function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
   const uiStore = useContext(UIStore);
+  //console.log(wordsStore, uiStore);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const ref = React.useRef<ScrollView>(null);
   useScreenToTop(ref);

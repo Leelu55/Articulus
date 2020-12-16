@@ -1,4 +1,4 @@
-import {observable, action} from 'mobx';
+import {observable, action, makeObservable} from 'mobx';
 import {persist, create} from 'mobx-persist';
 import {createContext} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
@@ -44,10 +44,10 @@ export interface SavedLessonType {
 
 //app data state
 class WordsStore {
-  @persist('object') @observable words: WordType[] = [];
-
   //load initial words array into WordsStore
   constructor() {
+    makeObservable(this);
+
     if (this.words.length === 0) {
       let i = 0;
       for (const word of model.words) {
@@ -56,6 +56,7 @@ class WordsStore {
     }
   }
   @persist('object') @observable lessonWords: LessonWordType[] = [];
+  @persist('object') @observable words: WordType[] = [];
 
   // @return Boolean true if lesson words not empty, false otherwise
   // calss the populate lesson function with @param words array and current DateTime
@@ -91,6 +92,12 @@ class WordsStore {
     this.savedLessons = this.savedLessons.filter((lesson) => lesson.isFinished);
   };
 
+  @action incrementCountCorrectAnswers = (savedLesson: SavedLessonType) => {
+    savedLesson.countCorrectAnswers++;
+  };
+  @action incrementCountWrongAnswers = (savedLesson: SavedLessonType) => {
+    savedLesson.countWrongAnswers++;
+  };
   @action setAnswerArticleForLessonWord = (
     value: string,
     answerArticle: string,
@@ -101,6 +108,26 @@ class WordsStore {
     this.lessonWords[index].answerArticle = answerArticle;
   };
 
+  @action setIsAnswerCorrect = (
+    savedLessonWord: SavedLessonWordType,
+    isAnswerCorrect: boolean,
+  ) => {
+    savedLessonWord.isAnswerCorrect = isAnswerCorrect;
+  };
+
+  @action setAnswerArticleForSavedLessonWord = (
+    savedLessonWord: SavedLessonWordType,
+    article: string,
+  ) => {
+    savedLessonWord.answerArticle = article;
+  };
+
+  @action setSavedLessonIsFinished = (
+    savedLesson: SavedLessonType,
+    isFinished: boolean,
+  ) => {
+    savedLesson.isFinished = isFinished;
+  };
   @action incrementSlotForWord = (value: string) => {
     const index = this.words.findIndex((word) => word.value === value);
     if (this.words[index].slot < settings.numberOfSlots - 1) {
