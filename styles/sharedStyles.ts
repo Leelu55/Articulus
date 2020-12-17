@@ -71,7 +71,8 @@ const styles = StyleSheet.create({
 
   bigButton: {
     margin: 20,
-    padding: 5,
+    paddingVertical: 5,
+    paddingHorizontal: 20,
     borderRadius: 10,
     backgroundColor: settings.colors.primary.normal,
     alignItems: 'center',
