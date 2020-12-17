@@ -35,7 +35,7 @@ export default function processAnswer(
     wordsStore.setIsAnswerCorrect(currentSavedLessonRef.words[index], true);
   } else {
     wordsStore.decrementSlotForWord(clw.value);
-    wordsStore.incrementCountCorrectAnswers(currentSavedLessonRef);
+    wordsStore.incrementCountWrongAnswers(currentSavedLessonRef);
     wordsStore.setIsAnswerCorrect(currentSavedLessonRef.words[index]);
     wordsStore.setIsAnswerCorrect(currentSavedLessonRef.words[index], false);
   }
