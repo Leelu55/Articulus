@@ -53,22 +53,6 @@
 - [ ] write documentation for open source code reusability (document installation process, packages, tools etc)
 - [ ] create a good README
 
-### Next Features after first Open Release
-
-- [ ] Learning Stats Animated header for StartScreen
-- [ ] FinishedScreen Articulus display SpeechBubbles with messages for the user ('well done', 'try again', 'good progress' etc)
-- [ ] implement savedLessons as dropdown list with dropdown items to show in StatisticsScreen
-- [ ] Streaks ("X correct answers in a row")
-- [ ] Badges
-  - [ ] "Lesson passed without mistakes"
-  - [ ] "Finalized learning X Words"
-  - [ ] "Record streak"
-  - [ ] show badges on statistics page
-  - [ ] specify modified StartScreen when there are no words with dueDate == today or new words
-- [ ] implement GrammarHint engine to choose grammar hints according to previous behaviour (not show the same hints all the time) IDEA: Show the reminder hint of the grammar rule when the user makes the same mistake twice in one lesson
-- [ ] implement search for GrammarRules and FAQs
-- [ ] enhance and refactor ConfigScreen with Animations and better redirecting
-
 ### Done
 
 #### Features
@@ -104,3 +88,19 @@
       [x] clicking startLesson() on FinishedScreen with no more words with dueDate==today or new words leads to a crash because emptyLesson() is called and the PlayerScreen component being still
       mounted in the background (React.navigation!) is rerendered with empty lessonWords.
 - [x] FinishedScreen: number text in AnimatedNumber counter not centered with number >=10
+
+### Next Features after first Open Release
+
+- [ ] Learning Stats Animated header for StartScreen
+- [ ] FinishedScreen Articulus display SpeechBubbles with messages for the user ('well done', 'try again', 'good progress' etc)
+- [ ] implement savedLessons as dropdown list with dropdown items to show in StatisticsScreen
+- [ ] Streaks ("X correct answers in a row")
+- [ ] Badges
+  - [ ] "Lesson passed without mistakes"
+  - [ ] "Finalized learning X Words"
+  - [ ] "Record streak"
+  - [ ] show badges on statistics page
+  - [ ] specify modified StartScreen when there are no words with dueDate == today or new words
+- [ ] implement GrammarHint engine to choose grammar hints according to previous behaviour (not show the same hints all the time) IDEA: Show the reminder hint of the grammar rule when the user makes the same mistake twice in one lesson
+- [ ] implement search for GrammarRules and FAQs
+- [ ] enhance and refactor ConfigScreen with Animations and better redirecting
