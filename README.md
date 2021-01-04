@@ -28,7 +28,6 @@
 
 - [ ] INPROGRESS write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
 - [ ] INPROGRESS add more words
-- [ ] delete badly pronounced or ambiguous words: "Kassettenrekorder", "Erwachsene", "Formular", "Beamte", 'CD-ROM', "Bekannte", "Geburtsort"
 - [ ] write manual and usage hints ("Use DDD in a quiet surrounding for better results")
 - [ ] write About content (Legal Notice) for FaqScreen
 
@@ -79,6 +78,7 @@
 - [x] reimplement StartScreen
 - [x] reimplement EmptyWordsScreen
 - [x] specify & implement ConfigScreen
+- [x] delete badly pronounced or ambiguous words: "Kassettenrekorder", "Erwachsene", "Formular", "Beamte", 'CD-ROM', "Bekannte", "Geburtsort"
 
 #### Bugs
 
