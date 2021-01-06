@@ -23,6 +23,7 @@
 - [ ] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
 - [ ] check Unique Words before pushing to model
 - [ ] year LineChart no data displayed
+- on Samsung A Galaxy Tab Android 9 TTS and STT don't work
 
 ### Content Creation
 
