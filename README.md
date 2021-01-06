@@ -27,7 +27,7 @@
 ### Content Creation
 
 - [ ] INPROGRESS write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
-- [ ] INPROGRESS add more words
+- [x] add more words
 - [ ] write manual and usage hints ("Use DDD in a quiet surrounding for better results")
 - [ ] write About content (Legal Notice) for FaqScreen
 
