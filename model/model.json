@@ -7,7 +7,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boy-3617648__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Ärztin",
@@ -16,7 +16,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/anesthesia-4677401__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Abend",
@@ -25,7 +25,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tree-3063715__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_DAYTIME"
     },
     {
       "value": "Abfahrt",
@@ -52,7 +52,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/letters-1659715__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Adresse",
@@ -61,7 +61,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/diary-2080420__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Alkohol",
@@ -109,15 +109,6 @@
       "ruleId": ""
     },
     {
-      "value": "Angestellte",
-      "slot": 0,
-      "article": "der",
-      "timestamp": null,
-      "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tie-690084__340.jpg",
-      "ruleId": ""
-    },
-    {
       "value": "Angst",
       "slot": 0,
       "article": "die",
@@ -133,7 +124,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airport-731196_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNFT"
     },
     {
       "value": "Anmeldung",
@@ -142,7 +133,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/event-registration-3441960__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Anrede",
@@ -151,7 +142,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/doorplates-238472__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Anruf",
@@ -169,7 +160,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/adult-1822449__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Anschluss",
@@ -196,7 +187,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airport-690556__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Anzug",
@@ -232,7 +223,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/concrete-1864808__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MENT"
     },
     {
       "value": "Appetit",
@@ -250,7 +241,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/april-3109706__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MONTH"
     },
     {
       "value": "Arbeit",
@@ -268,7 +259,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/furniture-4837230__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Arm",
@@ -286,7 +277,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dentist-4373290__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Aufenthalt",
@@ -331,7 +322,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/planner-3485976__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MONTH"
     },
     {
       "value": "Ausbildung",
@@ -340,7 +331,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/laptop-3087585__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Ausflug",
@@ -367,7 +358,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/business-315671__340.jpg",
-      "ruleId": ""
+      "ruleId": " FAQ_RULES_UNFT"
     },
     {
       "value": "Ausland",
@@ -385,7 +376,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/theatre-955148__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Ausweis",
@@ -412,7 +403,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/traffic-332857__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Automat",
@@ -430,7 +421,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bakery-1868925__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_EI"
     },
     {
       "value": "Büro",
@@ -439,7 +430,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/office-932926__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_O"
     },
     {
       "value": "Baby",
@@ -502,7 +493,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bananas-3700718__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Bank",
@@ -538,7 +529,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/office-2360063__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Bein",
@@ -574,7 +565,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/it-consultant-3726359__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Berg",
@@ -601,7 +592,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/laptop-2562325__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Besuch",
@@ -637,7 +628,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calculator-4201244__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Bier",
@@ -664,7 +655,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/digital-marketing-1433427__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Birne",
@@ -673,7 +664,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fruit-1534494__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Bitte",
@@ -682,7 +673,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/man-5438612__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Blatt",
@@ -700,7 +691,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/school-93200__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Blick",
@@ -727,7 +718,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/woman-1409015_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Blut",
@@ -763,7 +754,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bread-3467243__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_DIMINUTIV"
     },
     {
       "value": "Brücke",
@@ -781,7 +772,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/communication-3671504__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Briefkasten",
@@ -790,7 +781,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/mailbox-2551322__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Briefmarke",
@@ -799,7 +790,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/france-1289073__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Brieftasche",
@@ -808,7 +799,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wallet-367975__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Briefumschlag",
@@ -817,7 +808,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/envelope-2575253__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Brille",
@@ -826,7 +817,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/glasses-1246611__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Brot",
@@ -844,7 +835,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/children-887393__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Buch",
@@ -907,7 +898,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boss-734288_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Chefin",
@@ -916,7 +907,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/asian-3803525__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Computer",
@@ -925,7 +916,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/computer-1245714__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Creme",
@@ -933,7 +924,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cream-1464295__340.png"
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cream-1464295__340.png",
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Dach",
@@ -951,7 +943,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/old-lady-417174__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_FEMALE_PERSON"
     },
     {
       "value": "Dank",
@@ -969,7 +961,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/time-273857__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UM"
     },
     {
       "value": "Dauer",
@@ -987,7 +979,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/winter-3031969__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MONTH"
     },
     {
       "value": "Dienstag",
@@ -996,7 +988,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/agenda-3489747__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_WEEKDAY"
     },
     {
       "value": "Ding",
@@ -1032,7 +1024,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/agenda-3489747__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_WEEKDAY"
     },
     {
       "value": "Dorf",
@@ -1050,7 +1042,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/printer-790396__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Durchsage",
@@ -1059,7 +1051,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/megaphone-1480342__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Durst",
@@ -1095,7 +1087,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/corner-3068121__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Ehefrau",
@@ -1104,7 +1096,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bride-1822587__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Ehemann",
@@ -1113,7 +1105,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wedding-2319461__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Ei",
@@ -1131,7 +1123,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/brown-15723__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Eingang",
@@ -1149,7 +1141,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smiley-3692494__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Eintritt",
@@ -1167,7 +1159,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/building-2560843__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Eis",
@@ -1193,7 +1185,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/receiving-hands-1920865__340.png"
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/receiving-hands-1920865__340.png",
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Empfang",
@@ -1220,7 +1213,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/birthday-3807315__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Enkelin",
@@ -1229,7 +1222,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/birthday-3807315__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Entschuldigung",
@@ -1238,7 +1231,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/love-1139688__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Erdgeschoss",
@@ -1247,7 +1240,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dublin-4955328__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Erfahrung",
@@ -1256,7 +1249,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/old-age-1147287__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Ergebnis",
@@ -1265,7 +1258,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calculator-4796663__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_NIS"
     },
     {
       "value": "Erlaubnis",
@@ -1274,7 +1267,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smiley-1642736__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_NIS"
     },
     {
       "value": "Ermäßigung",
@@ -1283,7 +1276,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/final-sale-3477904__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Essen",
@@ -1310,7 +1303,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/flag-4186073__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Führerschein",
@@ -1319,7 +1312,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/drivers-license-2534805__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Fabrik",
@@ -1328,7 +1321,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/architecture-1639990__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IK"
     },
     {
       "value": "Fahrer",
@@ -1337,7 +1330,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-talking-1876726__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Fahrerin",
@@ -1346,7 +1339,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/auto-3222366__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Fahrkarte",
@@ -1364,7 +1357,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/travel-4865665__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Fahrrad",
@@ -1373,7 +1366,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bicycle-789648__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Familie",
@@ -1391,7 +1384,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wedding-2535674__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Familienstand",
@@ -1399,7 +1392,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/control-427510__340.png"
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/control-427510__340.png",
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Farbe",
@@ -1426,7 +1420,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-3045827__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MONTH"
     },
     {
       "value": "Fehler",
@@ -1435,7 +1429,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/editing-1756958__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Fenster",
@@ -1462,7 +1456,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vintage-tv-1116587__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Fest",
@@ -1498,7 +1492,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lighter-1245655__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Fieber",
@@ -1561,7 +1555,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airport-1515448__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Flugzeug",
@@ -1570,7 +1564,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/airplane-2745898_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Flur",
@@ -1597,7 +1591,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/image-editing-101040__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_O"
     },
     {
       "value": "Fotoapparat",
@@ -1606,7 +1600,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lens-3114729__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Frühling",
@@ -1615,7 +1609,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/magnolia-trees-556718__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_SEASON"
     },
     {
       "value": "Frühstück",
@@ -1624,7 +1618,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/breakfast-1835478_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Frage",
@@ -1633,7 +1627,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cat-1824668__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Frau",
@@ -1642,7 +1636,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-3104635__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_FEMALE_PERSON"
     },
     {
       "value": "Freitag",
@@ -1651,7 +1645,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/agenda-3489747__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_WEEKDAY"
     },
     {
       "value": "Freizeit",
@@ -1660,7 +1654,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/young-woman-2268348__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Freund",
@@ -1669,7 +1663,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/friends-1149841__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Freundin",
@@ -1678,7 +1672,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/girls-462072_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Friseur",
@@ -1687,7 +1681,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/haircut-1007891_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Frisörin",
@@ -1696,7 +1690,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hairdresser-3173438_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Frist",
@@ -1723,7 +1717,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/football-1396740__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Gabel",
@@ -1786,7 +1780,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/candle-1737985__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Geburtstag",
@@ -1795,7 +1789,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/guinea-pig-1969698__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Gegenteil",
@@ -1804,7 +1798,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pigeons-2775420__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Geld",
@@ -1849,7 +1843,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/classroom-2093743__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Geschäft",
@@ -1912,7 +1906,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/doctor-563428__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_HEIT"
     },
     {
       "value": "Getränk",
@@ -1957,7 +1951,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/roses-3638589__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Glas",
@@ -1984,7 +1978,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/goethe-3565667__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Größe",
@@ -1993,7 +1987,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/measurement-1476919__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Grenze",
@@ -2011,7 +2005,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandmom-5103358__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Großeltern",
@@ -2029,7 +2023,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grandmother-1737756__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Großvater",
@@ -2038,7 +2032,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/family-1827369__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Gruß",
@@ -2056,7 +2050,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boy-330582__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Gruppe",
@@ -2065,7 +2059,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-3137670__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Guthaben",
@@ -2092,7 +2086,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/chicken-3727097__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_DIMINUTIV"
     },
     {
       "value": "Haar",
@@ -2128,7 +2122,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/metro-4957736__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Hand",
@@ -2146,7 +2140,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/towels-3401733__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Handy",
@@ -2173,7 +2167,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/book-1853677__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Hausfrau",
@@ -2182,7 +2176,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/anguillara-1692931_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Haushalt",
@@ -2191,7 +2185,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cleaning-3977589__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Hausmann",
@@ -2200,7 +2194,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/family-1635049__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Heimat",
@@ -2218,7 +2212,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/radiator-250558__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Hemd",
@@ -2236,7 +2230,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fall-1072821__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_SEASON"
     },
     {
       "value": "Herd",
@@ -2254,7 +2248,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/human-1411499__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Herz",
@@ -2271,7 +2265,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hands-2805248__340.png"
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hands-2805248__340.png",
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Hobby",
@@ -2280,7 +2275,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/art-2578353__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Holz",
@@ -2298,7 +2293,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/jeans-43347__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Hund",
@@ -2316,7 +2311,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bird-3350136__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Idee",
@@ -2325,7 +2320,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/man-5723449__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Import",
@@ -2343,7 +2338,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/port-3109757__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Information",
@@ -2352,7 +2347,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/listen-1702648__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ION"
     },
     {
       "value": "Inhalt",
@@ -2379,7 +2374,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/jacket-947395__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Jahr",
@@ -2397,7 +2392,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/date-2592043__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MONTH"
     },
     {
       "value": "Job",
@@ -2415,16 +2410,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/beds-182964__340.jpg",
-      "ruleId": ""
-    },
-    {
-      "value": "Jugendliche",
-      "slot": 0,
-      "article": "die",
-      "timestamp": null,
-      "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/girl-1245835__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Juli",
@@ -2433,7 +2419,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/july-3356762__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MONTH"
     },
     {
       "value": "Junge",
@@ -2442,7 +2428,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boy-60659__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Juni",
@@ -2451,7 +2437,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-2428560__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MONTH"
     },
     {
       "value": "Käse",
@@ -2469,7 +2455,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dance-4054733__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Küche",
@@ -2478,7 +2464,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/kitchen-2094707__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Kühlschrank",
@@ -2487,7 +2473,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fridge-3475996__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Kündigung",
@@ -2496,7 +2482,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/business-3230025__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Kaffee",
@@ -2514,7 +2500,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-1255953__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Kamera",
@@ -2532,7 +2518,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pot-2406976__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Karte",
@@ -2541,7 +2527,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/atlas-1869680__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Kartoffel",
@@ -2559,7 +2545,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/register-810546__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Kassette",
@@ -2568,7 +2554,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/music-1436277__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Katze",
@@ -2577,7 +2563,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cat-300572__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Keller",
@@ -2586,7 +2572,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cellar-554404__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Kellner",
@@ -2595,7 +2581,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/india-1514764__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Kellnerin",
@@ -2604,16 +2590,16 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/waitress-2376728__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
-      "value": "Kenntnisse",
+      "value": "Kenntnis",
       "slot": 0,
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/books-1281581__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_NIS"
     },
     {
       "value": "Kennzeichen",
@@ -2622,7 +2608,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/automobile-1846297__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Kette",
@@ -2631,10 +2617,10 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/chain-3481377__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
-      "value": "Kfz",
+      "value": "KFZ",
       "slot": 0,
       "article": "das",
       "timestamp": null,
@@ -2658,7 +2644,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/toddler-room-569199__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Kinderwagen",
@@ -2667,7 +2653,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/stroller-4161253__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Kino",
@@ -2676,7 +2662,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cinema-4609877_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_O"
     },
     {
       "value": "Kiosk",
@@ -2694,7 +2680,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/mountain-church-3611548__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Klasse",
@@ -2703,7 +2689,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/education-3189934__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Kleid",
@@ -2712,7 +2698,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/clothesline-804812__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Kleidung",
@@ -2721,7 +2707,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/store-1338629__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Kneipe",
@@ -2730,7 +2716,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bar-209148__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Koffer",
@@ -2739,7 +2725,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/luggage-2020548__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Kollege",
@@ -2748,7 +2734,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/academic-1822682__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Kollegin",
@@ -2757,7 +2743,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/academic-1822683__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Konsulat",
@@ -2784,7 +2770,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calculator-385506__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_O"
     },
     {
       "value": "Kontrolle",
@@ -2793,7 +2779,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/space-center-693251__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Konzert",
@@ -2820,7 +2806,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/make-up-1209798__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IK"
     },
     {
       "value": "Krankenkasse",
@@ -2829,7 +2815,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/sick-card-491712__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Krankheit",
@@ -2838,7 +2824,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/thermometer-1539191__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_HEIT"
     },
     {
       "value": "Kredit",
@@ -2856,7 +2842,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/money-256314__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Kreis",
@@ -2874,7 +2860,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/home-892312__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Kuchen",
@@ -2892,7 +2878,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pen-1974727__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Kunde",
@@ -2901,7 +2887,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bakery-793856__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Kundin",
@@ -2910,7 +2896,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-2594683__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Kurs",
@@ -2937,12 +2923,12 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/rubiks-cube-5017116__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Laden",
       "slot": 0,
-      "article": "die",
+      "article": "der",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/athens-2476281__340.jpg",
@@ -2964,7 +2950,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/retro-lampshade-1662061__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Land",
@@ -2982,7 +2968,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/scotland-1761292__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_SCHAFT"
     },
     {
       "value": "Leben",
@@ -2999,7 +2985,8 @@
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vegetables-2008578_960_720.png"
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vegetables-2008578_960_720.png",
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Leid",
@@ -3017,7 +3004,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/i-am-a-student-1412778__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Lehrer",
@@ -3026,7 +3013,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/teacher-476342__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Lehrerin",
@@ -3035,7 +3022,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/school-79612__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Leute",
@@ -3065,7 +3052,7 @@
       "ruleId": ""
     },
     {
-      "value": "Lkw",
+      "value": "LKW",
       "slot": 0,
       "article": "der",
       "timestamp": null,
@@ -3134,7 +3121,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/crocus-1281826__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MONTH"
     },
     {
       "value": "Möbel",
@@ -3160,7 +3147,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dustbin-2652779__340.png"
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dustbin-2652779__340.png",
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Magen",
@@ -3178,7 +3166,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lilies-of-the-valley-4240031__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MONTH"
     },
     {
       "value": "Mal",
@@ -3196,7 +3184,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/portrait-3052641__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Mantel",
@@ -3223,7 +3211,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/gears-1236578__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Material",
@@ -3241,7 +3229,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/welder-3018425_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Mechanikerin",
@@ -3250,7 +3238,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/engineer-4701997__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Medikament",
@@ -3259,7 +3247,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pills-2607338__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MENT"
     },
     {
       "value": "Meer",
@@ -3277,7 +3265,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calculator-385506__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Meinung",
@@ -3286,7 +3274,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smileys-5617876__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Menge",
@@ -3295,7 +3283,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lego-1044891__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Mensch",
@@ -3331,7 +3319,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/keys-5238834__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Milch",
@@ -3349,7 +3337,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/time-371226__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Mittag",
@@ -3358,7 +3346,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bread-2178874__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_DAYTIME"
     },
     {
       "value": "Mitte",
@@ -3367,7 +3355,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fidget-spinner-2363080__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Mitteilung",
@@ -3376,7 +3364,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/message-in-a-bottle-3437294__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Mittel",
@@ -3394,7 +3382,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/children-306607__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Mittwoch",
@@ -3403,7 +3391,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-1231038__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_WEEKDAY"
     },
     {
       "value": "Mode",
@@ -3412,7 +3400,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fashion-1031469__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Moment",
@@ -3439,7 +3427,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/postbox-15502__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_WEEKDAY"
     },
     {
       "value": "Morgen",
@@ -3448,7 +3436,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/window-1148929__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_DAYTIME"
     },
     {
       "value": "Motor",
@@ -3475,7 +3463,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-2590655__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UM"
     },
     {
       "value": "Musik",
@@ -3484,7 +3472,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/piano-1655558__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IK"
     },
     {
       "value": "Mutter",
@@ -3493,7 +3481,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/mom-863055__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_FEMALE_PERSON"
     },
     {
       "value": "Nähe",
@@ -3502,7 +3490,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pigeons-3479782__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Nachbar",
@@ -3511,7 +3499,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/childhood-883002__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Nachbarin",
@@ -3520,7 +3508,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/street-4203906__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Nachmittag",
@@ -3529,10 +3517,10 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/landscape-2707313__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_DAYTIME"
     },
     {
-      "value": "Nachrichten",
+      "value": "Nachricht",
       "slot": 0,
       "article": "die",
       "timestamp": null,
@@ -3574,7 +3562,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/forest-547363__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_PRECIPITATION"
     },
     {
       "value": "Norden",
@@ -3583,7 +3571,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/compass-5261062__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPASS_DIRECTION"
     },
     {
       "value": "Notarzt",
@@ -3592,7 +3580,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/emergency-780313__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Notärztin",
@@ -3601,7 +3589,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/doctor-5342890__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Note",
@@ -3609,7 +3597,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/music-sheet-1275485__340.png"
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/music-sheet-1275485__340.png",
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Notfall",
@@ -3672,7 +3661,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fall-1072821__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MONTH"
     },
     {
       "value": "Oma",
@@ -3681,7 +3670,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/learn-963317__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_FEMALE_PERSON"
     },
     {
       "value": "Opa",
@@ -3690,7 +3679,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-2563411__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Operation",
@@ -3699,7 +3688,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/doctor-650534__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ION"
     },
     {
       "value": "Orange",
@@ -3708,7 +3697,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/orange-1995056__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Ordnung",
@@ -3717,7 +3706,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/girl-995187__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Ort",
@@ -3735,7 +3724,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/magnetic-compass-390912__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPASS_DIRECTION"
     },
     {
       "value": "Öl",
@@ -3753,7 +3742,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/parcel-5637123__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_DIMINUTIV"
     },
     {
       "value": "Paket",
@@ -3771,7 +3760,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/flatfoot-76564__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Papier",
@@ -3816,7 +3805,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hands-3348987__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Partnerin",
@@ -3824,7 +3813,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hands-1923185__340.png"
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hands-1923185__340.png",
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Party",
@@ -3851,7 +3841,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/coffee-break-1177540__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Pension",
@@ -3860,10 +3850,10 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/building-66789__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ION"
     },
     {
-      "value": "Pkw",
+      "value": "PKW",
       "slot": 0,
       "article": "der",
       "timestamp": null,
@@ -3905,7 +3895,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/police-275875__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_EI"
     },
     {
       "value": "Pommesfrites",
@@ -3923,7 +3913,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/eat-1002825__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ION"
     },
     {
       "value": "Post",
@@ -3941,7 +3931,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/email-329819__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Prüfung",
@@ -3950,7 +3940,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/checklist-2945401__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Praktikum",
@@ -3959,7 +3949,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/language-school-834138__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UM"
     },
     {
       "value": "Praxis",
@@ -4022,7 +4012,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/sweater-3124635__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Qualität",
@@ -4031,7 +4021,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/thumb-up-605738__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_TÄT:"
     },
     {
       "value": "Quittung",
@@ -4040,7 +4030,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calculator-453792__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Rücken",
@@ -4067,7 +4057,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/radio-2974649__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_O"
     },
     {
       "value": "Rathaus",
@@ -4076,7 +4066,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wrocaw-1511660__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Raucher",
@@ -4085,7 +4075,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smoker-798992__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Raucherin",
@@ -4094,7 +4084,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/smokes-3185982__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Raum",
@@ -4112,7 +4102,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/school-417612__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Rechnung",
@@ -4121,7 +4111,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/accounting-761599__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Regen",
@@ -4130,7 +4120,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/rain-791893__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_PRECIPITATION"
     },
     {
       "value": "Reifen",
@@ -4148,7 +4138,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/putz-bucket-1290951__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Reis",
@@ -4166,7 +4156,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/globe-trotter-1828079__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Reisebüro",
@@ -4175,7 +4165,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/man-4749237__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Reiseführer",
@@ -4184,7 +4174,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/travel-guide-544430__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Reiseführerin",
@@ -4193,7 +4183,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/map-4152197__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Reparatur",
@@ -4229,7 +4219,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/reception-2507752__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ION"
     },
     {
       "value": "Rind",
@@ -4256,7 +4246,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/rose-1642970_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Rundgang",
@@ -4265,7 +4255,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/selfie-4521579__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Süden",
@@ -4274,7 +4264,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/magnetic-compass-390912__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPASS_DIRECTION"
     },
     {
       "value": "S-Bahn",
@@ -4283,7 +4273,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/train-4353230__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Sache",
@@ -4292,7 +4282,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/chaos-227972__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Saft",
@@ -4328,7 +4318,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/time-273857__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_WEEKDAY"
     },
     {
       "value": "Sonnabend",
@@ -4337,7 +4327,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/time-273857__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_WEEKDAY"
     },
     {
       "value": "Satz",
@@ -4355,7 +4345,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/gambia-1880005__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Schülerin",
@@ -4364,7 +4354,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/student-411947__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Schalter",
@@ -4373,7 +4363,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/broken-1845107__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Scheckkarte",
@@ -4382,7 +4372,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/money-256319__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Schiff",
@@ -4463,7 +4453,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wintry-2068298__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_PRECIPITATION"
     },
     {
       "value": "Schnupfen",
@@ -4481,7 +4471,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/chocolate-2554_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Schrank",
@@ -4508,7 +4498,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/children-876543__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Schwein",
@@ -4526,7 +4516,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/children-1720484__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_FEMALE_PERSON"
     },
     {
       "value": "Schwimmbad",
@@ -4535,7 +4525,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/swimming-1900324__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "See",
@@ -4553,7 +4543,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/athens-2589957_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_HEIT_KEIT"
     },
     {
       "value": "Seife",
@@ -4571,7 +4561,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/secretary-544180__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Sektretär",
@@ -4589,7 +4579,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/clock-611619__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Sendung",
@@ -4598,7 +4588,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/package-1081709__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Senior",
@@ -4607,7 +4597,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-2583943__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Seniorin",
@@ -4616,7 +4606,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-2583943__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "September",
@@ -4625,7 +4615,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/september-3614870__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MONTH"
     },
     {
       "value": "Service",
@@ -4661,7 +4651,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/mama-1434708__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Sommer",
@@ -4670,7 +4660,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/sunflower-1627193__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_SEASON"
     },
     {
       "value": "Sonderangebot",
@@ -4679,7 +4669,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/eat-4239509__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Sonne",
@@ -4688,7 +4678,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/sunset-2180346__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Sonntag",
@@ -4697,7 +4687,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-791885__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_WEEKDAY"
     },
     {
       "value": "Sorge",
@@ -4706,7 +4696,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/monkey-5443638__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Spülmaschine",
@@ -4715,7 +4705,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/dishwasher-526358__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Spaß",
@@ -4733,7 +4723,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/pair-2914879__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Speisekarte",
@@ -4742,7 +4732,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/menu-3167859__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Spielplatz",
@@ -4751,7 +4741,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/playground-2263827__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Sprache",
@@ -4760,7 +4750,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/school-4863198__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Sprachschule",
@@ -4769,7 +4759,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/language-school-834138__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Sprechstunde",
@@ -4778,7 +4768,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/doctor-5710150__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Stück",
@@ -4805,7 +4795,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/legoland-172322__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Stempel",
@@ -4850,7 +4840,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/ally-3839139__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Straßenbahn",
@@ -4859,7 +4849,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/trolley-2203329__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Strand",
@@ -4877,7 +4867,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/matchsticks-171578__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Strom",
@@ -4895,7 +4885,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-2557396__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Studentin",
@@ -4904,7 +4894,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/people-2557396__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Studium",
@@ -4913,7 +4903,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/phone-1052023__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UM"
     },
     {
       "value": "Stuhl",
@@ -4931,7 +4921,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/clock-3410034__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Supermarkt",
@@ -4940,7 +4930,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/supermarket-507295__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Suppe",
@@ -4949,7 +4939,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/potato-soup-2152254__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Tür",
@@ -4967,7 +4957,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bag-4091711__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Tag",
@@ -4985,7 +4975,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/froet-gas-195389__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Tasche",
@@ -4994,7 +4984,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bag-1854148__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Tasse",
@@ -5003,7 +4993,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tea-cup-2107599__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Taxi",
@@ -5048,7 +5038,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/diary-2134248__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Teller",
@@ -5057,7 +5047,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/christmas-table-1926936__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Teppich",
@@ -5066,7 +5056,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/rug-1088557__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ICH"
     },
     {
       "value": "Termin",
@@ -5156,7 +5146,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/father-551921__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_FEMALE_PERSON"
     },
     {
       "value": "Toilette",
@@ -5165,7 +5155,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/apartment-5346462__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Tomate",
@@ -5174,7 +5164,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tomatoes-5356__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Topf",
@@ -5201,7 +5191,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/photographer-407068__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Treppe",
@@ -5210,7 +5200,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/stairs-3614468__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Trinkgeld",
@@ -5219,7 +5209,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bottle-2747759__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Turm",
@@ -5237,7 +5227,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/alexanderplatz-2662043__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Uhr",
@@ -5264,7 +5254,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/university-105709__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_TÄT:"
     },
     {
       "value": "Unterhaltung",
@@ -5273,7 +5263,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/old-man-1739154__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Unterkunft",
@@ -5282,7 +5272,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/blue-2375119__340.jpg",
-      "ruleId": ""
+      "ruleId": " FAQ_RULES_UNFT"
     },
     {
       "value": "Unterricht",
@@ -5309,7 +5299,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/contract-1464917__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Untersuchung",
@@ -5318,7 +5308,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/ambulance-2166079__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Urlaub",
@@ -5336,7 +5326,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hotel-316298__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Vater",
@@ -5345,7 +5335,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/father-22194__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_MALE_PERSON"
     },
     {
       "value": "Verbindung",
@@ -5354,7 +5344,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/network-1246209__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Verein",
@@ -5372,7 +5362,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/market-1154999__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Verkäuferin",
@@ -5381,7 +5371,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/purchase-3090818__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Verkehr",
@@ -5390,7 +5380,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/taxi-1209542__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Vermieter",
@@ -5399,7 +5389,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/keys-5238834__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Vermieterin",
@@ -5408,7 +5398,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/keys-5238834__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_IN"
     },
     {
       "value": "Versicherung",
@@ -5417,7 +5407,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/sick-card-491714_960_720.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Verspätung",
@@ -5426,7 +5416,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/watch-1208200__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Vertrag",
@@ -5444,7 +5434,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/video-2562034__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_O"
     },
     {
       "value": "Vogel",
@@ -5456,13 +5446,13 @@
       "ruleId": ""
     },
     {
-      "value": "Volksschule",
+      "value": "Volkshochschule",
       "slot": 0,
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/classroom-663437__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Vormittag",
@@ -5471,7 +5461,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/old-town-2684801__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_DAYTIME"
     },
     {
       "value": "Vorname",
@@ -5480,7 +5470,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cutlery-1614613__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Vorsicht",
@@ -5507,7 +5497,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/clothes-line-615962__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Wagen",
@@ -5516,7 +5506,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/car-1957037__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Wald",
@@ -5579,7 +5569,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tools-1209764__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Westen",
@@ -5588,7 +5578,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/wind-rose-1209398__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPASS_DIRECTION"
     },
     {
       "value": "Wetter",
@@ -5606,7 +5596,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/call-15924__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Wiedersehen",
@@ -5615,7 +5605,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/couple-5422806__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Wind",
@@ -5633,7 +5623,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tree-1959267__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_SEASON"
     },
     {
       "value": "Wirtschaft",
@@ -5642,7 +5632,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/stock-1863880__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_SCHAFT"
     },
     {
       "value": "Woche",
@@ -5651,7 +5641,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-2428560__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Wochenende",
@@ -5660,7 +5650,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/calendar-487695__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Wochentag",
@@ -5678,7 +5668,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/facade-1209331__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Wolke",
@@ -5687,7 +5677,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/clouds-2329680__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Wunsch",
@@ -5731,7 +5721,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/reading-2605540__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Zeitung",
@@ -5740,7 +5730,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/news-1172463__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UNG"
     },
     {
       "value": "Zentrum",
@@ -5749,7 +5739,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/old-town-5062333__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_UM"
     },
     {
       "value": "Zettel",
@@ -5767,7 +5757,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/ielts-1705198__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_NIS"
     },
     {
       "value": "Zigarette",
@@ -5776,7 +5766,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cigarette-1539165__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Zimmer",
@@ -5794,7 +5784,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lemons-2039830__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Zoll",
@@ -5812,7 +5802,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/raspberry-4599580__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Zug",
@@ -5830,7 +5820,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cat-2143332__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Ratte",
@@ -5839,7 +5829,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/animal-1238228__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Kuh",
@@ -5857,7 +5847,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cow-5608144__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Pferd",
@@ -5875,7 +5865,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/horse-1330690__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Esel",
@@ -5911,7 +5901,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/goat-3412678__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Henne",
@@ -5920,7 +5910,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/chicken-5645894__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Hahn",
@@ -5938,7 +5928,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/duck-1463317__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Gans",
@@ -5965,7 +5955,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/impala-5873636__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Bär",
@@ -5983,7 +5973,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/polar-bear-404314__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Eichhörnchen",
@@ -5992,7 +5982,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/animal-1850210__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_DIMINUTIV"
     },
     {
       "value": "Elch",
@@ -6019,7 +6009,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/flying-dog-1633706__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Frettchen",
@@ -6046,7 +6036,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/giraffe-1330814__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Hase",
@@ -6100,7 +6090,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/rhinoceros-768714__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Maus",
@@ -6136,16 +6126,16 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/black-panther-3466399__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Rentier",
       "slot": 0,
-      "article": "der",
+      "article": "das",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/reindeer-4213845__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Schnabeltier",
@@ -6154,7 +6144,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/birds-3701059__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Tiger",
@@ -6163,7 +6153,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/tiger-165189__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Waschbär",
@@ -6172,7 +6162,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/racoon-1414027__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Dachs",
@@ -6199,7 +6189,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/boar-284685__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Wolf",
@@ -6235,7 +6225,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/seal-4923333__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Wal",
@@ -6253,7 +6243,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/walrus-3433748__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Geier",
@@ -6262,7 +6252,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/vulture-708784__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Adler",
@@ -6271,7 +6261,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/eagles-nest-142700__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Amsel",
@@ -6289,7 +6279,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/european-eagle-owl-2010346__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Falke",
@@ -6307,7 +6297,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/sandhill-cranes-2645334__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ICH"
     },
     {
       "value": "Pfau",
@@ -6334,7 +6324,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/turkey-72771__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Schwalbe",
@@ -6343,7 +6333,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/swallow-flying-5228995__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Rebhuhn",
@@ -6352,7 +6342,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bird-5521442__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_NEUT"
     },
     {
       "value": "Reiher",
@@ -6361,7 +6351,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/heron-4353038__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Schwan",
@@ -6379,7 +6369,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/gulls-370012__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Spatz",
@@ -6415,7 +6405,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/turkey-49672__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_MASK"
     },
     {
       "value": "Wachtel",
@@ -6442,7 +6432,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/trout-953012__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Hai",
@@ -6483,11 +6473,11 @@
     {
       "value": "Eidechse",
       "slot": 0,
-      "article": "der",
+      "article": "die",
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lizard-1522253__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Echse",
@@ -6495,7 +6485,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lizard-3064164__340.png"
+      "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lizard-3064164__340.png",
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Kreuzotter",
@@ -6531,7 +6522,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/snake-599489__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Schildkröte",
@@ -6540,7 +6531,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/amphibian-1850190__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Frosch",
@@ -6558,7 +6549,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/fourmie-5061910__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Biene",
@@ -6567,7 +6558,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/bees-4845211__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Blattlaus",
@@ -6576,7 +6567,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/aphid-4243855__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_COMPOUND_WORDS_FEM"
     },
     {
       "value": "Bremse",
@@ -6585,7 +6576,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/housefly-1122462__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Fliege",
@@ -6594,7 +6585,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/housefly-1122462__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Floh",
@@ -6612,7 +6603,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/insect-5151913__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_DIMINUTIV"
     },
     {
       "value": "Grille",
@@ -6621,7 +6612,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/lobster-5054788__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Heuschrecke",
@@ -6630,7 +6621,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/grasshopper-3486866__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Käfer",
@@ -6639,7 +6630,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/insect-3053746__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Kakerlake",
@@ -6648,7 +6639,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/giant-hissing-cockroach-77069__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Laus",
@@ -6666,7 +6657,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/insects-4489936__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Mücke",
@@ -6675,7 +6666,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/mosquito-49141__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Marienkäfer",
@@ -6684,7 +6675,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/insects-4489864__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Motte",
@@ -6702,7 +6693,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/termites-3367350__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Schabe",
@@ -6711,7 +6702,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/cockroaches-2804366__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Wanze",
@@ -6720,7 +6711,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/weevil-564503__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Wespe",
@@ -6729,7 +6720,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/hornet-3336385__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Igel",
@@ -6747,7 +6738,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/caterpillar-1727984__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Schnecke",
@@ -6756,7 +6747,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/snail-4729777__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Skorpion",
@@ -6774,7 +6765,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/insect-2884460__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_E"
     },
     {
       "value": "Tausendfüßler",
@@ -6783,7 +6774,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/arthropod-346160__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Schmetterling",
@@ -6801,7 +6792,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/common-blue-5398789__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Wurm",
@@ -6828,7 +6819,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/crawfish-5043557__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     },
     {
       "value": "Krebs",
@@ -6855,7 +6846,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/squid-4219957__340.jpg",
-      "ruleId": ""
+      "ruleId": "FAQ_RULES_ER"
     }
   ]
 }
