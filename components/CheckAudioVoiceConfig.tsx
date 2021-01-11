@@ -42,7 +42,6 @@ function CheckAudioVoiceConfig({
         setIsTtsChecked(true);
       },
     );
-
     checkVoiceServices();
   }, []);
 

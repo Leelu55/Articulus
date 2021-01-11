@@ -20,7 +20,7 @@ import HintModal from './HintModal';
 function PlayerScreen({navigation}: {navigation: NavigationStackProp}) {
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
-
+  console.log(uiStore.lessonState);
   useEffect(() => {
     if (uiStore.lessonState === LessonState.IsFinished) {
       navigation.navigate('FinishedScreen');
