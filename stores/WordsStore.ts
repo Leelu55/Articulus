@@ -6,6 +6,7 @@ import model from '../model/model.json';
 import settings from '../libs/settings.json';
 import populateLesson from '../libs/populateLesson';
 import {sortWordsByDueDateTime} from '../libs/sortWordsByDueDateTime';
+import dateMethods from '../libs/dateMethods';
 
 // words in pool
 export interface WordType {
@@ -149,10 +150,8 @@ class WordsStore {
 
   @action updateDueDateTimeForWord = (value: string) => {
     const index = this.words.findIndex((word) => word.value === value);
-    this.words[index].dueDateTime = new Date(
-      new Date(
-        Date.now() + Math.pow(2, this.words[index].slot) * 1000 * 60 * 60 * 24,
-      ).setHours(0, 0, 0, 0),
+    this.words[index].dueDateTime = dateMethods.articulusDateToJsDate(
+      dateMethods.getFutureDate(Math.pow(2, this.words[index].slot)),
     );
   };
 

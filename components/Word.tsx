@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import {WordValue} from './WordValue';
 import WordsStore from '../stores/WordsStore';
 
@@ -9,7 +9,10 @@ import {observer} from 'mobx-react';
 import {WordImage} from './WordImage';
 import nextWord from '../libs/nextWord';
 import {showHintModal} from './HintModal';
+import Hint from './Hint';
+import {hasDueHint} from '../libs/Hints';
 
+import {getSpeakHint} from '../libs/Hints';
 const styles = StyleSheet.create({
   word: {
     flex: 1,
@@ -52,22 +55,43 @@ function Word() {
     } else if (lessonState === LessonState.IsRepeating) {
       audioVoice.voiceStop();
       audioVoice.stopSpeakWord();
-      if (uiStore.repeatCount < 2) {
-        audioVoice.repeatWord(
-          'Bitte wiederhole den Artikel für',
-          currentLessonWord.value,
-        );
+
+      // check date for hint
+      const showHint = hasDueHint(
+        uiStore.hintDateString,
+        uiStore.hintsShowCount,
+      );
+
+      const repeatWordMethod = () => {
+        audioVoice.repeatWord('Nochmal ', currentLessonWord.value);
         uiStore.increaseRepeatCount();
+      };
+
+      const nextWordMethod = () => nextWord(uiStore, wordsStore);
+
+      if (uiStore.repeatCount < 2) {
+        if (showHint) {
+          showHintModal(
+            uiStore,
+            <Hint hintId={getSpeakHint(uiStore)} />,
+            showHint,
+            repeatWordMethod,
+          );
+        } else {
+          repeatWordMethod();
+        }
       } else {
         // TODO write Texts for modals, internationalize
-        showHintModal(
-          uiStore,
-          <Text>
-            Es funkioniert gut, den Artikel mit dem Wort zusammen zu sagen, z.B.
-            "Das Auto"
-          </Text>,
-          () => nextWord(uiStore, wordsStore),
-        );
+        if (showHint) {
+          showHintModal(
+            uiStore,
+            <Hint hintId={getSpeakHint(uiStore)} />,
+            showHint,
+            nextWordMethod,
+          );
+        } else {
+          nextWordMethod();
+        }
       }
     } else if (lessonState === LessonState.IsFinished) {
       audioVoice.voiceStop();

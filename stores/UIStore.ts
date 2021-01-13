@@ -2,6 +2,7 @@ import {observable, action, makeObservable} from 'mobx';
 import {create, persist} from 'mobx-persist';
 import {createContext} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
+import {hints} from '../libs/Hints';
 
 export enum LessonState {
   IsInitial = 'IsInitial',
@@ -71,6 +72,11 @@ const allowedStateTransitions = {
   ],
 };
 
+// words in lesson history
+export interface HintsShowCountType {
+  hintId: string;
+  count: number;
+}
 export class UIStore {
   @observable wordIndex: number = 0;
   @observable lessonState: LessonState = LessonState.IsInitial;
@@ -84,11 +90,24 @@ export class UIStore {
   // will always be reset to false after finishing a lessond
   @persist @observable grammarHintShown: boolean = false;
 
-  constructor() {
-    console.log('uist constr called');
+  @persist('object') @observable hintsShowCount: HintsShowCountType[] = [];
+  @persist @observable hintDateString: string = '';
 
+  constructor() {
+    console.log('UIStore constructor called');
     makeObservable(this);
+    Object.keys(hints).forEach((key) =>
+      this.hintsShowCount.push({hintId: key, count: 0}),
+    );
   }
+
+  @action increaseHintsShowCount = (hint: HintsShowCountType) => {
+    hint.count++;
+  };
+  @action updateHintDateString = (date: string) => {
+    console.log(uiStore.hintDateString);
+    this.hintDateString = date;
+  };
 
   @action toggleAutoMode = () => {
     this.autoMode = !this.autoMode;

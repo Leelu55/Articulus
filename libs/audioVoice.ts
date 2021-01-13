@@ -85,5 +85,5 @@ export function speakWord(wordValue) {
 }
 
 export function repeatWord(prefixText, wordValue) {
-  ttsLibrary.speak(prefixText + ',,' + wordValue);
+  ttsLibrary.speak(prefixText + '\n' + wordValue);
 }

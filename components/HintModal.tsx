@@ -23,6 +23,7 @@ let _hintModalCloseHandler = doNothingFunction;
 export function showHintModal(
   uiStore: any,
   textTsx: any,
+  showHint: boolean,
   closeHandler?: Function,
 ) {
   _textTsx = textTsx;
@@ -35,7 +36,7 @@ export function showHintModal(
     };
   }
   uiStore.setGrammarHintShown(true);
-  uiStore.setIsHintModalVisible(true);
+  uiStore.setIsHintModalVisible(showHint);
 }
 function HintModal() {
   const uiStore = useContext(UIStore);
