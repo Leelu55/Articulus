@@ -1,7 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 import GrammarItem from './GrammarItem';
-import {rules} from '../libs/Rules';
+import {rules} from '../libs/rules';
 
 function GrammarItems({category}: {category: string}) {
   return (

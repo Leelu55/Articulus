@@ -57,16 +57,21 @@ const styles = StyleSheet.create({
     height: 20,
   },
 
-  articleButton: {
+  articleButtonWrapper: {
     flex: 1,
+    borderRadius: 10,
+    height: 70,
     marginLeft: 10,
     marginRight: 10,
-    padding: 10,
+  },
+
+  articleButton: {
+    flex: 1,
     borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
     height: 70,
     backgroundColor: 'lightgrey',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
   bigButton: {
@@ -83,7 +88,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'black',
     padding: 5,
-    fontSize: 30,
     position: 'absolute',
   },
   bigButtonText: {
@@ -101,16 +105,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'black',
-  },
-
-  lessonStateIndicator: {
-    width: 120,
-    height: 120,
-    borderRadius: 60,
-    marginLeft: 30,
-    marginRight: 30,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 
   scene: {flex: 1},

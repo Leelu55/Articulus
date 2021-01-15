@@ -10,9 +10,9 @@ import {WordImage} from './WordImage';
 import nextWord from '../libs/nextWord';
 import {showHintModal} from './HintModal';
 import Hint from './Hint';
-import {hasDueHint} from '../libs/Hints';
+import {hasDueHint} from '../libs/hints';
+import {getSpeakHint} from '../libs/hints';
 
-import {getSpeakHint} from '../libs/Hints';
 const styles = StyleSheet.create({
   word: {
     flex: 1,
@@ -71,9 +71,10 @@ function Word() {
 
       if (uiStore.repeatCount < 2) {
         if (showHint) {
+          const hintId = getSpeakHint(uiStore);
           showHintModal(
             uiStore,
-            <Hint hintId={getSpeakHint(uiStore)} />,
+            <Hint hintId={hintId} />,
             showHint,
             repeatWordMethod,
           );

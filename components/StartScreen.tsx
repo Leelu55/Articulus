@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 import WordsStore from '../stores/WordsStore';
-import UIStore, {LessonState} from '../stores/UIStore';
+import UIStore, {HintsShowCountType, LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {NavigationStackProp} from 'react-navigation-stack';
 import {useState} from 'react';
@@ -19,6 +19,7 @@ import startLesson from '../libs/startLesson';
 import settings from '../libs/settings.json';
 import {useScreenToTop} from './hooks/useScreenToTop';
 import WordListItem from './WordListItem';
+import {hints} from '../libs/hints';
 
 function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const wordsStore = useContext(WordsStore);
@@ -27,6 +28,14 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const ref = React.useRef<ScrollView>(null);
   useScreenToTop(ref);
+
+  useEffect(() => {
+    let hintsShowCount: HintsShowCountType[] = [];
+    Object.keys(hints).forEach((key) =>
+      hintsShowCount.push({hintId: key, count: 0}),
+    );
+    uiStore.initializeHintsShowCount(hintsShowCount);
+  }, [uiStore]);
 
   useEffect(() => {
     if (wordsStore.lessonWords.length === 0) {

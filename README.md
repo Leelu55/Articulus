@@ -4,7 +4,7 @@
 
 ### Specification & Implementation FROZEN 4.12.2020 DON'T ADD MORE
 
-- [ ] specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
+- [ ] INPROGRESS specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
 
 ### Modifications
 
@@ -109,3 +109,4 @@
 - [ ] implement GrammarHint engine to choose grammar hints according to previous behaviour (not show the same hints all the time) IDEA: Show the reminder hint of the grammar rule when the user makes the same mistake twice in one lesson
 - [ ] implement search for GrammarRules and FAQs
 - [ ] enhance and refactor ConfigScreen with Animations and better redirecting
+- [ ] implement 'don't show hints again' with setting updateHintDateString to date in the far future

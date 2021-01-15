@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import {rules} from '../libs/Rules';
+import {rules} from '../libs/rules';
 import settings from '../libs/settings.json';
 
 function GrammarItem({ruleId}: {ruleId: string}) {

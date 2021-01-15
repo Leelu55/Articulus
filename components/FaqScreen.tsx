@@ -5,7 +5,7 @@ import FaqUnicorn from './SVGs/FaqUnicorn';
 import {ScrollView} from 'react-native-gesture-handler';
 import {useScreenToTop} from './hooks/useScreenToTop';
 import sharedStyles from '../styles/sharedStyles';
-import {faqs} from '../libs/Faqs';
+import {faqs} from '../libs/faqs';
 import FaqItem from './FaqItem';
 
 const styles = StyleSheet.create({

@@ -2,7 +2,6 @@ import {observable, action, makeObservable} from 'mobx';
 import {create, persist} from 'mobx-persist';
 import {createContext} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
-import {hints} from '../libs/Hints';
 
 export enum LessonState {
   IsInitial = 'IsInitial',
@@ -96,11 +95,11 @@ export class UIStore {
   constructor() {
     console.log('UIStore constructor called');
     makeObservable(this);
-    Object.keys(hints).forEach((key) =>
-      this.hintsShowCount.push({hintId: key, count: 0}),
-    );
   }
 
+  @action initializeHintsShowCount = (hintsShowCount: HintsShowCountType[]) => {
+    this.hintsShowCount = hintsShowCount;
+  };
   @action increaseHintsShowCount = (hint: HintsShowCountType) => {
     hint.count++;
   };

@@ -47,9 +47,15 @@ function PlayerScreen({navigation}: {navigation: NavigationStackProp}) {
       <HintModal />
       <View
         style={[sharedStyles.viewHorizontal, styles.selectorButtonBarWrapper]}>
-        <SelectorButton articleText="der" />
-        <SelectorButton articleText="die" />
-        <SelectorButton articleText="das" />
+        <View style={sharedStyles.articleButtonWrapper}>
+          <SelectorButton articleText="der" />
+        </View>
+        <View style={sharedStyles.articleButtonWrapper}>
+          <SelectorButton articleText="die" />
+        </View>
+        <View style={sharedStyles.articleButtonWrapper}>
+          <SelectorButton articleText="das" />
+        </View>
       </View>
     </View>
   );

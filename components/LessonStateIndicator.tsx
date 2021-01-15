@@ -1,7 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext, useRef} from 'react';
-import {Animated, Pressable, View} from 'react-native';
-import styles from '../styles/sharedStyles';
+import {Animated, Pressable, StyleSheet, View} from 'react-native';
 import settings from '../libs/settings.json';
 
 import UIStore from '../stores/UIStore';
@@ -44,14 +43,21 @@ export const COLORS = {
   [LessonState.IsFinished]: 'lightgrey',
 };
 
-function LessonStateIndicator() {
+function LessonStateIndicator({
+  lessonStateValue,
+  isInteractive,
+  iconSize,
+}: {
+  lessonStateValue: string;
+  isInteractive: boolean;
+  iconSize: number;
+}) {
   const fadeAnim = useRef(new Animated.Value(1.1)).current; // Initial value for opacity: 0
   const uiStore = useContext(UIStore);
-  const lessonState: string = uiStore.lessonState.valueOf();
   const wordsStore = useContext(WordsStore);
 
   React.useEffect(() => {
-    if (lessonState === LessonState.IsListening) {
+    if (lessonStateValue === LessonState.IsListening) {
       Animated.loop(
         Animated.sequence([
           Animated.timing(fadeAnim, {
@@ -73,15 +79,15 @@ function LessonStateIndicator() {
         useNativeDriver: true,
       }).start();
     }
-  }, [fadeAnim, lessonState]);
+  }, [fadeAnim, lessonStateValue]);
 
-  let icon = ICONS[lessonState];
-  let iconColor = ICON_COLORS[lessonState];
+  let icon = ICONS[lessonStateValue];
+  let iconColor = ICON_COLORS[lessonStateValue];
 
-  let bgColor = COLORS[lessonState];
+  let bgColor = COLORS[lessonStateValue];
   const currentWord = wordsStore.lessonWords[uiStore.wordIndex];
   if (
-    lessonState === LessonState.IsEvaluating &&
+    lessonStateValue === LessonState.IsEvaluating &&
     currentWord.answerArticle !== currentWord.article
   ) {
     icon = 'times';
@@ -101,15 +107,27 @@ function LessonStateIndicator() {
     /* uiStore.autoMode || */
     ![LessonState.IsWaitingForUserAction, LessonState.IsListening].includes(
       uiStore.lessonState,
-    );
+    ) && isInteractive;
+
+  const style = StyleSheet.create({
+    lessonStateIndicator: {
+      backgroundColor: bgColor,
+      width: iconSize * 2,
+      height: iconSize * 2,
+      borderRadius: iconSize,
+      marginLeft: 30,
+      marginRight: 30,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
 
   return (
     <Pressable disabled={isDisabled} onPress={onPress}>
       <View // Special animatable View
         style={[
-          styles.lessonStateIndicator,
+          style.lessonStateIndicator,
           {
-            backgroundColor: bgColor,
             borderColor:
               uiStore.lessonState === LessonState.IsWaitingForUserAction
                 ? 'plum'
@@ -118,13 +136,12 @@ function LessonStateIndicator() {
             position: 'absolute',
           }, // Bind opacity to animated value
         ]}>
-        <FontAwesomeIcon icon={icon} size={60} color={iconColor} />
+        <FontAwesomeIcon icon={icon} size={iconSize} color={iconColor} />
       </View>
       <Animated.View // Special animatable View
         style={[
-          styles.lessonStateIndicator,
+          style.lessonStateIndicator,
           {
-            backgroundColor: bgColor,
             opacity: 0.4,
             scaleX: fadeAnim,
             scaleY: fadeAnim,

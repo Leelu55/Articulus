@@ -1,12 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import {observer} from 'mobx-react';
 import React from 'react';
-import {
-  View,
-  StyleSheet,
-  TouchableWithoutFeedback,
-  Pressable,
-} from 'react-native';
+import {View, StyleSheet, Pressable} from 'react-native';
 import {Dimensions} from 'react-native';
 import {TabView, TabBar} from 'react-native-tab-view';
 import sharedStyles from '../styles/sharedStyles';

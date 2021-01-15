@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {View, StyleSheet} from 'react-native';
 import {observer} from 'mobx-react';
 import LessonStateIndicator from './LessonStateIndicator';
 import PausePlayButton from './PausePlayButton';
 import AutoModeButton from './AutoModeButton';
 import sharedStyles from '../styles/sharedStyles';
+import UIStore from '../stores/UIStore';
 
 const styles = StyleSheet.create({
   controlBar: {
@@ -14,11 +15,17 @@ const styles = StyleSheet.create({
   },
 });
 function ControlBar() {
+  const uiStore = useContext(UIStore);
+  const lessonStateValue: string = uiStore.lessonState.valueOf();
   return (
     <View>
       <View style={[sharedStyles.viewHorizontal, styles.controlBar]}>
         <PausePlayButton />
-        <LessonStateIndicator />
+        <LessonStateIndicator
+          lessonStateValue={lessonStateValue}
+          isInteractive={true}
+          iconSize={60}
+        />
         <AutoModeButton />
       </View>
     </View>

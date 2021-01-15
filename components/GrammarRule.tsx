@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, Dimensions} from 'react-native';
-import {rules} from '../libs/Rules';
+import {rules} from '../libs/rules';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faSpellCheck} from '@fortawesome/free-solid-svg-icons';
 import settings from '../libs/settings.json';

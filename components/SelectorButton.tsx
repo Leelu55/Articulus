@@ -9,7 +9,13 @@ import processAnswer from '../libs/processAnswer';
 import * as audioVoice from '../libs/audioVoice';
 import AnimatedBubble from './AnimatedBubble';
 
-function SelectorButton({articleText}: {articleText: string}) {
+function SelectorButton({
+  articleText,
+  fontSize = 30,
+}: {
+  articleText: string;
+  fontSize?: number;
+}) {
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
   const wordIndex = uiStore.wordIndex;
@@ -43,7 +49,7 @@ function SelectorButton({articleText}: {articleText: string}) {
       disabled={[LessonState.IsEvaluating, LessonState.IsFinished].includes(
         uiStore.lessonState,
       )}
-      style={[styles.articleButton, styleSelector()]}
+      style={[styles.articleButton, {padding: 10}, styleSelector()]}
       android_ripple={{color: settings.colors.ripple}}
       onPress={() => {
         audioVoice.voiceStop();
@@ -51,7 +57,7 @@ function SelectorButton({articleText}: {articleText: string}) {
         processAnswer(wordsStore, uiStore, articleText);
       }}>
       <>
-        <Text style={styles.articleButtonText}>
+        <Text style={[styles.articleButtonText, {fontSize}]}>
           {articleText.toUpperCase()}
         </Text>
         {isChosenArticle() && (
