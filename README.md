@@ -4,8 +4,6 @@
 
 ### Specification & Implementation FROZEN 4.12.2020 DON'T ADD MORE
 
-- [ ] INPROGRESS specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
-
 ### Modifications
 
 - [ ] change house icon on FinishedScreen
@@ -80,6 +78,7 @@
 - [x] reimplement EmptyWordsScreen
 - [x] specify & implement ConfigScreen
 - [x] delete badly pronounced or ambiguous words: "Kassettenrekorder", "Erwachsene", "Formular", "Beamte", 'CD-ROM', "Bekannte", "Geburtsort"
+- [x] INPROGRESS specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
 
 #### Content Creation
 

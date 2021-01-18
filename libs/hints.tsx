@@ -160,11 +160,11 @@ export function getSpeakHint(uiStore: UIStoreType): string {
   // No hint to be shown
 
   const hintsArray = [
-    'TURN_OFF_AUTOMODE',
-    'TURN_OFF_AUTOMODE',
-    'TURN_OFF_AUTOMODE',
-    'TURN_OFF_AUTOMODE',
-    'TURN_OFF_AUTOMODE',
+    'SPEAK_AFTER_SIGNAL',
+    'SPEAK_AFTER_SIGNAL_REMIND',
+    'SPEAK_CLEARLY_QUIET_ENVIRONMENT',
+    'SAY_ARTICLE_WITH_WORD',
+    ' USE_ARTICLE_BUTTONS',
 
     'TURN_OFF_AUTOMODE',
   ];
