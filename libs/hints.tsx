@@ -1,18 +1,16 @@
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import React, {ReactElement, useEffect, useRef} from 'react';
+import React, {ReactElement} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import LessonStateIndicator from '../components/LessonStateIndicator';
-import SelectorButton from '../components/SelectorButton';
 import {
   UIStore as UIStoreType,
   HintsShowCountType,
   LessonState,
 } from '../stores/UIStore';
-import sharedStyles from '../styles/sharedStyles';
-import settings from './settings.json';
 import dateMethods from './dateMethods';
 import {getRandomInt} from './utils';
-import {Animated} from 'react-native';
+import {HintSelectorButtons} from '../components/HintSelectorButtons';
+import {faHandSparkles} from '@fortawesome/free-solid-svg-icons';
 interface HintType {
   text: ReactElement;
   icon: JSX.Element;
@@ -20,17 +18,14 @@ interface HintType {
 interface HintsType {
   [key: string]: HintType;
 }
-
+import sharedStyles from '../styles/sharedStyles';
 const styles = StyleSheet.create({
   iconWrapper: {
-    marginTop: 10,
-    marginBottom: 5,
-    width: 60,
-    height: 60,
-    borderRadius: 100,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: settings.colors.primary.light,
+    borderRadius: 1000,
+    overflow: 'hidden',
+    backgroundColor: 'lightgrey',
+    width: 80,
+    height: 80,
   },
 });
 
@@ -122,72 +117,13 @@ export const hints: HintsType = {
       </>
     ),
     icon: (
-      <View style={styles.iconWrapper}>
-        <FontAwesomeIcon icon={'hand-sparkles'} color={'black'} size={30} />
+      <View style={[sharedStyles.controlButton, styles.iconWrapper]}>
+        <FontAwesomeIcon icon={faHandSparkles} size={50} style={{}} />
       </View>
     ),
   },
 };
 
-function HintSelectorButtons(): JSX.Element {
-  return (
-    <View
-      pointerEvents="none"
-      style={[
-        sharedStyles.viewHorizontal,
-        // eslint-disable-next-line react-native/no-inline-styles
-        {
-          marginBottom: 20,
-          flex: 1,
-        },
-      ]}>
-      <HintSelectorButtonWrapper>
-        <SelectorButton articleText="der" fontSize={25} />
-      </HintSelectorButtonWrapper>
-      <HintSelectorButtonWrapper>
-        <SelectorButton articleText="die" fontSize={25} />
-      </HintSelectorButtonWrapper>
-      <HintSelectorButtonWrapper>
-        <SelectorButton articleText="das" fontSize={25} />
-      </HintSelectorButtonWrapper>
-    </View>
-  );
-}
-
-function HintSelectorButtonWrapper({children}): JSX.Element {
-  const animValue = useRef(new Animated.Value(0)).current;
-  useEffect(() => {
-    Animated.loop(
-      Animated.sequence([
-        Animated.timing(animValue, {
-          toValue: 100,
-          duration: 1000,
-          useNativeDriver: false,
-        }),
-        Animated.timing(animValue, {
-          toValue: 0,
-          duration: 1000,
-          useNativeDriver: false,
-        }),
-      ]),
-    ).start();
-  }, [animValue]);
-
-  return (
-    <Animated.View
-      style={[
-        sharedStyles.articleButtonWrapper,
-        {
-          backgroundColor: animValue.interpolate({
-            inputRange: [0, 100],
-            outputRange: ['rgb(244,81,44)', 'rgb(76,187,23)'],
-          }),
-        },
-      ]}>
-      {children}
-    </Animated.View>
-  );
-}
 export function hasDueHint(
   hintDateString: string,
   hintsShowCount: HintsShowCountType[],
@@ -224,11 +160,12 @@ export function getSpeakHint(uiStore: UIStoreType): string {
   // No hint to be shown
 
   const hintsArray = [
-    'SPEAK_AFTER_SIGNAL',
-    'SPEAK_AFTER_SIGNAL_REMIND',
-    'SPEAK_CLEARLY_QUIET_ENVIRONMENT',
-    'SAY_ARTICLE_WITH_WORD',
-    'USE_ARTICLE_BUTTONS',
+    'TURN_OFF_AUTOMODE',
+    'TURN_OFF_AUTOMODE',
+    'TURN_OFF_AUTOMODE',
+    'TURN_OFF_AUTOMODE',
+    'TURN_OFF_AUTOMODE',
+
     'TURN_OFF_AUTOMODE',
   ];
 

@@ -9,8 +9,8 @@
     },
     "secondary": { "normal": "#ffd700", "light": "#ffff52", "dark": "#c7a600" },
     "ripple": "blueviolet",
-    "correctAnswer": "#4CBB17",
-    "wrongAnswer": "#F4512C"
+    "correctAnswer": "rgb(76,187,23)",
+    "wrongAnswer": "rgb(244,81,44)"
   },
 
   "lessonSize": 15,
