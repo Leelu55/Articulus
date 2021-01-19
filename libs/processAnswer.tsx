@@ -54,6 +54,7 @@ export default function processAnswer(
         showHintModal(
           uiStore,
           <GrammarRule ruleId={clw.ruleId} />,
+          true,
           showNextWord,
         );
       } else {
