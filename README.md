@@ -10,7 +10,7 @@
 - [ ] change appearance of SplashScreen (Just Text Articulus)
 - [ ] modify ForwardButton behaviour -> change position of ForwardButton to next to SelectorButton, change icon to "?", onClick: skip word and show the right article as if the corresponding SelectorButton was clicked (green flash, green Sparkle)
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
-- [ ] create and store thumbnails/preview images for start page and faster loading in general
+- [ ] create and store thumbnails/preview images for start page and faster loading in general (can BunnyCDN downgrade image quality & size?)
 
 ### Bugs
 

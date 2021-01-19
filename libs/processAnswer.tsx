@@ -61,7 +61,7 @@ export default function processAnswer(
         showNextWord();
       }
     }
-  }, 1000);
+  }, 500);
 
   function showNextWord() {
     if (wordIndex < lessonWordsLength - 1) {

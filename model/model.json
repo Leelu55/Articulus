@@ -1906,7 +1906,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/doctor-563428__340.jpg",
-      "ruleId": "FAQ_RULES_HEIT"
+      "ruleId": "FAQ_RULES_HEIT_KEIT"
     },
     {
       "value": "Getränk",
@@ -2824,7 +2824,7 @@
       "timestamp": null,
       "dueDateTime": null,
       "imageUrl": "https://cdn.statically.io/gh/Leelu55/Articulus/master/model/images/thermometer-1539191__340.jpg",
-      "ruleId": "FAQ_RULES_HEIT"
+      "ruleId": "FAQ_RULES_HEIT_KEIT"
     },
     {
       "value": "Kredit",
