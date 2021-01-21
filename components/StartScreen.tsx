@@ -12,7 +12,6 @@ import sharedStyles from '../styles/sharedStyles';
 import WordsStore from '../stores/WordsStore';
 import UIStore, {HintsShowCountType, LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
-import {NavigationStackProp} from 'react-navigation-stack';
 import {useState} from 'react';
 import StartModal from './StartModal';
 import startLesson from '../libs/startLesson';
@@ -21,10 +20,9 @@ import {useScreenToTop} from './hooks/useScreenToTop';
 import WordListItem from './WordListItem';
 import {hints} from '../libs/hints';
 
-function StartScreen({navigation}: {navigation: NavigationStackProp}) {
+function StartScreen({navigation, route}) {
   const wordsStore = useContext(WordsStore);
   const uiStore = useContext(UIStore);
-  //console.log(wordsStore, uiStore);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const ref = React.useRef<ScrollView>(null);
   useScreenToTop(ref);
@@ -42,6 +40,15 @@ function StartScreen({navigation}: {navigation: NavigationStackProp}) {
       wordsStore.populateLesson();
     }
   }, [wordsStore, wordsStore.lessonWords]);
+  useEffect(() => {
+    if (route.params?.comingFrom === 'FinishedScreen') {
+      wordsStore.populateLesson();
+      uiStore.setLessonState(LessonState.IsInitial);
+
+      console.log(route, wordsStore.lessonWords);
+    }
+  }, [route, uiStore, wordsStore]);
+  //console.log(wordsStore, uiStore);
 
   if (wordsStore.lessonWords.length === 0) {
     return null;

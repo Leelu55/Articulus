@@ -4,14 +4,13 @@ import {View, Text, Pressable, Linking, StyleSheet, Image} from 'react-native';
 import {observer} from 'mobx-react';
 import {useState} from 'react';
 import ttsLibrary from 'react-native-tts';
-import {NavigationRoute} from 'react-navigation';
 import sharedStyles from '../styles/sharedStyles';
 import RNRestart from 'react-native-restart';
 import ReloadWand from './SVGs/ReloadWand';
 import settings from '../libs/settings.json';
 import InstallNeeded from './SVGs/InstallNeeded';
 
-function ConfigScreen({route}: {route: NavigationRoute}) {
+function ConfigScreen({route}) {
   const {ttsError, voiceError} = route.params;
   const [isConfiguringTts, setIsConfiguringTts] = useState(false);
   const [isConfiguringVoice, setIsConfiguringVoice] = useState(false);

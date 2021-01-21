@@ -9,7 +9,6 @@ import {Header} from './Header';
 import Word from './Word';
 import sharedStyles from '../styles/sharedStyles';
 import SelectorButton from './SelectorButton';
-import {NavigationStackProp} from 'react-navigation-stack';
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 
@@ -17,9 +16,12 @@ import {useContext} from 'react';
 import PauseModal from './PauseModal';
 import HintModal from './HintModal';
 
-function PlayerScreen({navigation}: {navigation: NavigationStackProp}) {
+function PlayerScreen({navigation}) {
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
+  const currentLessonWord = wordsStore.lessonWords[uiStore.wordIndex];
+  const correctArticle = currentLessonWord.article;
+
   console.log(uiStore.lessonState);
   useEffect(() => {
     if (uiStore.lessonState === LessonState.IsFinished) {
@@ -48,13 +50,22 @@ function PlayerScreen({navigation}: {navigation: NavigationStackProp}) {
       <View
         style={[sharedStyles.viewHorizontal, styles.selectorButtonBarWrapper]}>
         <View style={sharedStyles.articleButtonWrapper}>
-          <SelectorButton articleText="der" />
+          <SelectorButton
+            articleText="der"
+            isCorrectArticle={correctArticle === 'der'}
+          />
         </View>
         <View style={sharedStyles.articleButtonWrapper}>
-          <SelectorButton articleText="die" />
+          <SelectorButton
+            articleText="die"
+            isCorrectArticle={correctArticle === 'die'}
+          />
         </View>
         <View style={sharedStyles.articleButtonWrapper}>
-          <SelectorButton articleText="das" />
+          <SelectorButton
+            articleText="das"
+            isCorrectArticle={correctArticle === 'das'}
+          />
         </View>
       </View>
     </View>

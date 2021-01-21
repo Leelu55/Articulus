@@ -24,11 +24,11 @@ export default function processAnswer(
   if (index === -1) {
     throw new Error('word could not be found');
   }
+
   wordsStore.setAnswerArticleForSavedLessonWord(
     currentSavedLessonRef.words[index],
     currentArticle,
   );
-
   if (currentArticle === clw.article) {
     wordsStore.incrementSlotForWord(clw.value);
     wordsStore.incrementCountCorrectAnswers(currentSavedLessonRef);

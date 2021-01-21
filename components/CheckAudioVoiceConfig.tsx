@@ -3,17 +3,12 @@ import React, {useContext, useEffect, useRef} from 'react';
 import {View, ActivityIndicator} from 'react-native';
 import UIStore from '../stores/UIStore';
 import {observer} from 'mobx-react';
-import {NavigationStackProp} from 'react-navigation-stack';
 import {useState} from 'react';
 import settings from '../libs/settings.json';
 import ttsLibrary from 'react-native-tts';
 import voiceLibrary from '@react-native-community/voice';
 
-function CheckAudioVoiceConfig({
-  navigation,
-}: {
-  navigation: NavigationStackProp;
-}) {
+function CheckAudioVoiceConfig({navigation}) {
   const uiStore = useContext(UIStore);
   const [isTtsChecked, setIsTtsChecked] = useState(false);
   const [isVoiceChecked, setIsVoiceChecked] = useState(false);

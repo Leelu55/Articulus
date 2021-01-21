@@ -2,12 +2,11 @@
 import React from 'react';
 import {Animated, Pressable, Text} from 'react-native';
 import startLesson from '../../libs/startLesson';
-import {LessonState} from '../../stores/UIStore';
 import sharedStyles from '../../styles/sharedStyles';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import ButtonBar from '../ButtonBar';
-import {AnimatedValue} from 'react-navigation';
 import settings from '../../libs/settings.json';
+import {LessonState} from '../../stores/UIStore';
 
 export default function ButtonBarView({
   uiStore,
@@ -18,7 +17,7 @@ export default function ButtonBarView({
   uiStore;
   navigation;
   wordsStore;
-  animButtonBarView: AnimatedValue;
+  animButtonBarView: Animated.Value;
 }) {
   return (
     <Animated.View
@@ -42,10 +41,12 @@ export default function ButtonBarView({
             },
           ]}
           onPress={() => {
-            uiStore.setLessonState(LessonState.IsInitial);
-            wordsStore.populateLesson();
             // go back to start screen
-            navigation.navigate('StartScreen');
+            // console.log('onPress');
+            // wordsStore.populateLesson();
+
+            navigation.navigate('Home', {comingFrom: 'FinishedScreen'});
+            console.log('navigate');
           }}>
           <FontAwesomeIcon
             icon="home"

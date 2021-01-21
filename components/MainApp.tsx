@@ -22,7 +22,8 @@ import {faSpellCheck} from '@fortawesome/free-solid-svg-icons';
 import FaqScreen from './FaqScreen';
 import settings from '../libs/settings.json';
 
-const HomeStack = () => {
+const HomeStack = ({navigation, route}) => {
+  //console.log('homestack', {route});
   const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator

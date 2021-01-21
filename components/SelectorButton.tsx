@@ -1,6 +1,6 @@
 import {observer} from 'mobx-react';
 import React, {useContext} from 'react';
-import {Pressable, Text} from 'react-native';
+import {InteractionManager, Pressable, Text} from 'react-native';
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 import styles from '../styles/sharedStyles';
@@ -12,20 +12,19 @@ import AnimatedBubble from './AnimatedBubble';
 function SelectorButton({
   articleText,
   fontSize = 30,
+  isCorrectArticle,
 }: {
   articleText: string;
   fontSize?: number;
+  isCorrectArticle: boolean;
 }) {
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
   const wordIndex = uiStore.wordIndex;
   const currentLessonWord = wordsStore.lessonWords[wordIndex];
-  const isCorrectArticle =
-    currentLessonWord.answerArticle === currentLessonWord.article;
 
   const isChosenArticle = () =>
     currentLessonWord.answerArticle === articleText ? true : false;
-
   const styleDefault = {opacity: 0.5};
   const styleCorrect = {
     backgroundColor: settings.colors.correctAnswer,
@@ -54,12 +53,14 @@ function SelectorButton({
       onPress={() => {
         audioVoice.voiceStop();
         audioVoice.stopSpeakWord();
+
         processAnswer(wordsStore, uiStore, articleText);
       }}>
       <>
         <Text style={[styles.articleButtonText, {fontSize}]}>
           {articleText.toUpperCase()}
         </Text>
+
         {isChosenArticle() && (
           <AnimatedBubble
             duration={600}

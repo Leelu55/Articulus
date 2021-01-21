@@ -3,12 +3,11 @@ import React from 'react';
 import {View, Text, StyleSheet, Pressable} from 'react-native';
 import SuccessIcon from './SuccessIcon';
 import {observer} from 'mobx-react';
-import {NavigationStackProp} from 'react-navigation-stack';
 import sharedStyles from '../styles/sharedStyles';
 import WordsStore from '../stores/WordsStore';
 import {useContext} from 'react';
 
-function EmptyWordsScreen({navigation}: {navigation: NavigationStackProp}) {
+function EmptyWordsScreen({navigation}) {
   const wordsStore = useContext(WordsStore);
   const nextLearningDay = wordsStore.words.reduce(function (prev, curr) {
     return prev.dueDateTime < curr.dueDateTime ? prev : curr;
