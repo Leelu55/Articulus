@@ -19,13 +19,13 @@
     "@react-native-community/masked-view": "^0.1.10",
     "@react-native-community/voice": "^1.1.9",
     "@react-navigation/bottom-tabs": "^5.11.2",
-    "@react-navigation/native": "^5.8.10",
+    "@react-navigation/native": "^5.9.0",
     "@react-navigation/stack": "^5.12.8",
     "android": "0.0.8",
     "dayjs": "^1.9.7",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "image-downloader": "^4.0.2",
     "hermes-engine": "^0.5.2-rc1",
+    "image-downloader": "^4.0.2",
     "mobx": "^6.0.4",
     "mobx-persist": "^0.4.1",
     "mobx-react": "^6.3.1",
@@ -47,8 +47,6 @@
     "react-native-triangle": "0.0.9",
     "react-native-tts": "^3.2.0",
     "react-native-vector-icons": "^7.1.0",
-    "react-navigation": "^4.4.3",
-    "react-navigation-stack": "^2.10.2",
     "victory-native": "^35.3.1"
   },
   "devDependencies": {
@@ -73,13 +71,6 @@
   },
   "jest": {
     "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
   }
 }
