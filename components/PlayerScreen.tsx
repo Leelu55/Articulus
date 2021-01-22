@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {StyleSheet, View} from 'react-native';
 
 import {observer} from 'mobx-react';
@@ -19,10 +19,16 @@ import HintModal from './HintModal';
 function PlayerScreen({navigation}) {
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
+  //used for fast animation of SelectorButtons, LessonStateIndicator
+  const [chosenArticle, setChosenArticle] = useState(null);
   const currentLessonWord = wordsStore.lessonWords[uiStore.wordIndex];
   const correctArticle = currentLessonWord.article;
 
-  console.log(uiStore.lessonState);
+  //reset chosenArticle for each new word of lesson
+  useEffect(() => {
+    setChosenArticle(null);
+  }, [currentLessonWord]);
+
   useEffect(() => {
     if (uiStore.lessonState === LessonState.IsFinished) {
       navigation.navigate('FinishedScreen');
@@ -45,7 +51,7 @@ function PlayerScreen({navigation}) {
       />
       <Header />
       <Word />
-      <ControlBar />
+      <ControlBar chosenArticle={chosenArticle} />
       <HintModal />
       <View
         style={[sharedStyles.viewHorizontal, styles.selectorButtonBarWrapper]}>
@@ -53,18 +59,24 @@ function PlayerScreen({navigation}) {
           <SelectorButton
             articleText="der"
             isCorrectArticle={correctArticle === 'der'}
+            isChosenArticle={chosenArticle === 'der'}
+            onPressAfter={() => setChosenArticle('der')}
           />
         </View>
         <View style={sharedStyles.articleButtonWrapper}>
           <SelectorButton
             articleText="die"
             isCorrectArticle={correctArticle === 'die'}
+            isChosenArticle={chosenArticle === 'die'}
+            onPressAfter={() => setChosenArticle('die')}
           />
         </View>
         <View style={sharedStyles.articleButtonWrapper}>
           <SelectorButton
             articleText="das"
             isCorrectArticle={correctArticle === 'das'}
+            isChosenArticle={chosenArticle === 'das'}
+            onPressAfter={() => setChosenArticle('das')}
           />
         </View>
       </View>

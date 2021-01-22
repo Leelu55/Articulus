@@ -1,6 +1,6 @@
 import {observer} from 'mobx-react';
 import React, {useContext} from 'react';
-import {InteractionManager, Pressable, Text} from 'react-native';
+import {Pressable, Text} from 'react-native';
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 import styles from '../styles/sharedStyles';
@@ -13,18 +13,20 @@ function SelectorButton({
   articleText,
   fontSize = 30,
   isCorrectArticle,
+  isChosenArticle,
+  onPressAfter: onPressAfter,
 }: {
   articleText: string;
   fontSize?: number;
   isCorrectArticle: boolean;
+  isChosenArticle: boolean;
+  onPressAfter: Function;
 }) {
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
-  const wordIndex = uiStore.wordIndex;
-  const currentLessonWord = wordsStore.lessonWords[wordIndex];
 
-  const isChosenArticle = () =>
-    currentLessonWord.answerArticle === articleText ? true : false;
+  // const isChosenArticle = () =>
+  //   currentLessonWord.answerArticle === articleText ? true : false;
   const styleDefault = {opacity: 0.5};
   const styleCorrect = {
     backgroundColor: settings.colors.correctAnswer,
@@ -33,9 +35,9 @@ function SelectorButton({
   const styleWrong = {backgroundColor: settings.colors.wrongAnswer, opacity: 1};
 
   const styleSelector = () =>
-    isChosenArticle() && isCorrectArticle
+    isChosenArticle && isCorrectArticle
       ? styleCorrect
-      : isChosenArticle() && !isCorrectArticle
+      : isChosenArticle && !isCorrectArticle
       ? styleWrong
       : styleDefault;
 
@@ -54,14 +56,15 @@ function SelectorButton({
         audioVoice.voiceStop();
         audioVoice.stopSpeakWord();
 
-        processAnswer(wordsStore, uiStore, articleText);
+        //if(onPressAfter) onPressAfter()
+        onPressAfter && onPressAfter();
       }}>
       <>
         <Text style={[styles.articleButtonText, {fontSize}]}>
           {articleText.toUpperCase()}
         </Text>
 
-        {isChosenArticle() && (
+        {isChosenArticle && (
           <AnimatedBubble
             duration={600}
             maxSize={2000}
@@ -69,6 +72,12 @@ function SelectorButton({
             delay={0}
             positionRandom={false}
             doStart={true}
+            onAnimationEnd={({finished}) => {
+              //console.log('onAnimationEnd', {finished});
+              if (finished) {
+                processAnswer(wordsStore, uiStore, articleText);
+              }
+            }}
           />
         )}
       </>

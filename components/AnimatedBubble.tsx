@@ -8,6 +8,7 @@ function AnimatedBubble({
   delay = 0,
   positionRandom = true,
   easingFunction = Easing.inOut(Easing.linear),
+  onAnimationEnd = undefined,
   doStart = false,
 }: {
   duration: number;
@@ -16,6 +17,7 @@ function AnimatedBubble({
   delay: number;
   positionRandom: boolean;
   easingFunction?: EasingFunction;
+  onAnimationEnd?: ({finished}) => void;
   doStart?: boolean;
 }) {
   const animValue = useRef(new Animated.Value(0)).current;
@@ -28,9 +30,18 @@ function AnimatedBubble({
         duration: duration,
         delay: delay,
         easing: easingFunction,
-      }).start();
+        //do other things after the animation
+      }).start(onAnimationEnd);
     }
-  }, [animValue, delay, doStart, duration, easingFunction, maxSize]);
+  }, [
+    animValue,
+    delay,
+    doStart,
+    duration,
+    easingFunction,
+    maxSize,
+    onAnimationEnd,
+  ]);
 
   const style = StyleSheet.create({
     wrapperRandom: {

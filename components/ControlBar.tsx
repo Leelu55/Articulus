@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     marginBottom: 25,
   },
 });
-function ControlBar() {
+function ControlBar({chosenArticle}: {chosenArticle: string}) {
   const uiStore = useContext(UIStore);
   const lessonStateValue: string = uiStore.lessonState.valueOf();
   return (
@@ -22,6 +22,7 @@ function ControlBar() {
       <View style={[sharedStyles.viewHorizontal, styles.controlBar]}>
         <PausePlayButton />
         <LessonStateIndicator
+          chosenArticle={chosenArticle}
           lessonStateValue={lessonStateValue}
           isInteractive={true}
           iconSize={60}

@@ -14,11 +14,9 @@
 
 ### Bugs
 
-- [ ] TTS Error: Error: Language data is missing on muted sound
-- [ ] cancel after clicking article SelectorButton, then returning to lesson and clicking SelectorButton again -> answer is being counted twice
-- [ ] navigating with Buttons (StartScreen and PlayerScreen) takes way too long
 - [ ] nextWord is too fast if correct
-- [ ] SelectorButton reaction onPress not instant
+- [ ] speed up LessonState Indicator Animation
+- [ ] animate Selectorbuttons onChosenArticle
 - [ ] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
 - [ ] check Unique Words before pushing to model
 - [ ] year LineChart no data displayed
@@ -46,7 +44,7 @@
 - [ ] set the correct deployment version in bitrise workflow
 - [ ] content creation for about page, imprint, etc.
 - [ ] more code testing
-- [ ] refactor code
+- [ ] refactor code (https://mobx.js.org/react-optimizations.html)
 - [ ] update state diagram
 - [ ] write documentation for open source code reusability (document installation process, packages, tools etc)
 - [ ] create a good README
@@ -92,6 +90,10 @@
       [x] clicking startLesson() on FinishedScreen with no more words with dueDate==today or new words leads to a crash because emptyLesson() is called and the PlayerScreen component being still
       mounted in the background (React.navigation!) is rerendered with empty lessonWords.
 - [x] FinishedScreen: number text in AnimatedNumber counter not centered with number >=10
+- [x] TTS Error: Error: Language data is missing on muted sound
+- [x] cancel after clicking article SelectorButton, then returning to lesson and clicking SelectorButton again -> answer is being counted twice
+- [x] navigating from FinishedScreen to StartScreen is to slow
+- [x] SelectorButton reaction onPress not instant
 
 ### Next Features after first Open Release
 

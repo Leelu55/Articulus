@@ -47,10 +47,12 @@ function LessonStateIndicator({
   lessonStateValue,
   isInteractive,
   iconSize,
+  chosenArticle,
 }: {
   lessonStateValue: string;
   isInteractive: boolean;
   iconSize: number;
+  chosenArticle: string;
 }) {
   const fadeAnim = useRef(new Animated.Value(1.1)).current; // Initial value for opacity: 0
   const uiStore = useContext(UIStore);
@@ -88,7 +90,7 @@ function LessonStateIndicator({
   const currentWord = wordsStore.lessonWords[uiStore.wordIndex];
   if (
     lessonStateValue === LessonState.IsEvaluating &&
-    currentWord.answerArticle !== currentWord.article
+    chosenArticle !== currentWord.article
   ) {
     icon = 'times';
     bgColor = settings.colors.wrongAnswer;
