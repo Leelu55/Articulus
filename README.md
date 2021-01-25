@@ -14,19 +14,16 @@
 
 ### Bugs
 
-- [ ] nextWord is too fast if correct
 - [ ] speed up LessonState Indicator Animation
-- [x] Fix animate SelectorButtons onChosenArticle
 - [ ] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
 - [ ] check Unique Words before pushing to model
 - [ ] year LineChart no data displayed
 - [ ] on Samsung A Galaxy Tab Android 9 TTS and STT don't work initially because the Google Speech engine is not used by default -> implement at least an explanation how to enable it
-- [x] (DONE with preventing selector button animations triggering processAnswer to run twice) When GrammarHints are shown, LessonState should not change as long as HintModal is visible or the app continues with next word. Also errors are countet twice, the number of played words is too high in the end also the number of errors
 
 ### Content Creation
 
 - [ ] INPROGRESS write grammar rules and grammar hint texts ("Words ending on 'schaft' are feminin")
-- [ ] write manual and usage hints ("Use DDD in a quiet surrounding for better results")
+- [ ] INPROGRESS write manual and usage hints ("Use DDD in a quiet surrounding for better results")
 - [ ] write About content (Legal Notice) for FaqScreen
 
 ### Appearance
@@ -95,6 +92,9 @@
 - [x] cancel after clicking article SelectorButton, then returning to lesson and clicking SelectorButton again -> answer is being counted twice
 - [x] navigating from FinishedScreen to StartScreen is to slow
 - [x] SelectorButton reaction onPress not instant
+- [x] Fix animate SelectorButtons onChosenArticle
+- [x] (DONE with preventing selector button animations triggering processAnswer to run twice) When GrammarHints are shown, LessonState should not change as long as HintModal is visible or the app continues with next word. Also errors are countet twice, the number of played words is too high in the end also the number of errors
+- [x] FIXED BY FIXING SELECTORBUTTON ANIMATION nextWord is too fast if correct
 
 ### Next Features after first Open Release
 
