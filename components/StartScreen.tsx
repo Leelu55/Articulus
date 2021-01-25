@@ -45,7 +45,7 @@ function StartScreen({navigation, route}) {
       wordsStore.populateLesson();
       uiStore.setLessonState(LessonState.IsInitial);
 
-      console.log(route, wordsStore.lessonWords);
+      console.log(route, wordsStore.lessonWords.length);
     }
   }, [route, uiStore, wordsStore]);
   //console.log(wordsStore, uiStore);
@@ -54,17 +54,13 @@ function StartScreen({navigation, route}) {
     return null;
   }
 
-  function onStartModalLesson() {
+  function onStartNewLesson() {
     wordsStore.populateLesson();
     uiStore.setGrammarHintShown(false);
 
     uiStore.setLessonState(LessonState.IsSpeaking);
     uiStore.setWordIndex(0);
     navigation.navigate('PlayerScreen');
-  }
-
-  function onStartLesson() {
-    startLesson(wordsStore, uiStore, navigation);
   }
 
   const onContinueLesson = () => {
@@ -103,7 +99,7 @@ function StartScreen({navigation, route}) {
         <StartModal
           isModalVisible={isModalVisible}
           setIsModalVisible={setIsModalVisible}
-          onStartLesson={onStartModalLesson}
+          onStartLesson={onStartNewLesson}
           onContinueLesson={onContinueLesson}
         />
         <View
@@ -123,7 +119,7 @@ function StartScreen({navigation, route}) {
               ) {
                 setIsModalVisible(true);
               } else {
-                onStartLesson();
+                startLesson(wordsStore, uiStore, navigation);
               }
             }}>
             <Text style={[sharedStyles.bigButtonText]}>START</Text>

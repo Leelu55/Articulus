@@ -78,6 +78,7 @@ export interface HintsShowCountType {
 }
 export class UIStore {
   @observable wordIndex: number = 0;
+  @observable spokenWordIndex: number = 0;
   @observable lessonState: LessonState = LessonState.IsInitial;
   @observable currentAnswer: string = '';
   @observable repeatCount: number = 0;
@@ -97,12 +98,18 @@ export class UIStore {
     makeObservable(this);
   }
 
+  @action incrementSpokenWordIndex = () => {
+    this.spokenWordIndex++;
+  };
+
   @action initializeHintsShowCount = (hintsShowCount: HintsShowCountType[]) => {
     this.hintsShowCount = hintsShowCount;
   };
+
   @action increaseHintsShowCount = (hint: HintsShowCountType) => {
     hint.count++;
   };
+
   @action updateHintDateString = (date: string) => {
     console.log(uiStore.hintDateString);
     this.hintDateString = date;
@@ -114,6 +121,10 @@ export class UIStore {
 
   @action setAutoMode = (autoMode) => {
     this.autoMode = autoMode;
+  };
+
+  @action setCurrentAnswer = (currentAnswer) => {
+    this.currentAnswer = currentAnswer;
   };
 
   @action setIsHintModalVisible = (isHintModalVisible) => {

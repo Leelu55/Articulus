@@ -1,5 +1,5 @@
 import {observer} from 'mobx-react';
-import React, {useContext} from 'react';
+import React, {useCallback, useContext, useEffect, useState} from 'react';
 import {Pressable, Text} from 'react-native';
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
@@ -24,9 +24,27 @@ function SelectorButton({
 }) {
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
+  // console.log(
+  //   'selector button',
+  //   {articleText},
+  //   {word: wordsStore.lessonWords[uiStore.wordIndex].value},
+  // );
+  // prevent animation from rerunning when PlayerScreen is rerendered so that processAnswer is not called twice
+  const [isAnimating, setIsAnimating] = useState(true);
+  useEffect(() => {
+    setIsAnimating(true);
+  }, [uiStore.wordIndex]);
 
-  // const isChosenArticle = () =>
-  //   currentLessonWord.answerArticle === articleText ? true : false;
+  const onAnimationEnd = useCallback(
+    ({finished}) => {
+      setIsAnimating(false);
+
+      if (finished) {
+        processAnswer(wordsStore, uiStore, articleText);
+      }
+    },
+    [articleText, uiStore, wordsStore],
+  );
   const styleDefault = {opacity: 0.5};
   const styleCorrect = {
     backgroundColor: settings.colors.correctAnswer,
@@ -71,13 +89,8 @@ function SelectorButton({
             color={animationColor}
             delay={0}
             positionRandom={false}
-            doStart={true}
-            onAnimationEnd={({finished}) => {
-              //console.log('onAnimationEnd', {finished});
-              if (finished) {
-                processAnswer(wordsStore, uiStore, articleText);
-              }
-            }}
+            doStart={isAnimating}
+            onAnimationEnd={onAnimationEnd}
           />
         )}
       </>

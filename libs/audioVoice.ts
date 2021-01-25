@@ -46,6 +46,9 @@ export function setup(uiStore, wordsStore) {
       uiStore.setLessonState(LessonState.IsRepeating);
       return;
     }
+
+    uiStore.setCurrentAnswer(currentArticle);
+    uiStore.incrementSpokenWordIndex();
     processAnswer(wordsStore, uiStore, currentArticle);
   };
 

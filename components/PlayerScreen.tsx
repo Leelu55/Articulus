@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import {StyleSheet, View} from 'react-native';
 
 import {observer} from 'mobx-react';
@@ -23,6 +23,13 @@ function PlayerScreen({navigation}) {
   const [chosenArticle, setChosenArticle] = useState(null);
   const currentLessonWord = wordsStore.lessonWords[uiStore.wordIndex];
   const correctArticle = currentLessonWord.article;
+  useEffect(() => {
+    console.log('useEffect change current answer', {
+      spokenWordIndex: uiStore.spokenWordIndex,
+      currentAnswer: uiStore.currentAnswer,
+    });
+    setChosenArticle(uiStore.currentAnswer);
+  }, [uiStore.currentAnswer, uiStore.spokenWordIndex]);
 
   //reset chosenArticle for each new word of lesson
   useEffect(() => {
@@ -30,16 +37,26 @@ function PlayerScreen({navigation}) {
   }, [currentLessonWord]);
 
   useEffect(() => {
+    console.log('useEffect Playerscreen 3', {lessonstate: uiStore.lessonState});
     if (uiStore.lessonState === LessonState.IsFinished) {
       navigation.navigate('FinishedScreen');
     }
   }, [navigation, uiStore.lessonState]);
+
+  const setChosenArticleDer = useCallback(() => setChosenArticle('der'), []);
+  const setChosenArticleDie = useCallback(() => setChosenArticle('die'), []);
+  const setChosenArticleDas = useCallback(() => setChosenArticle('das'), []);
+
   /* clicking startLesson() would lead to a crash because emptyLesson() is called and the PlayerScreen component being still
   mounted in the background (React.navigation!) would be rerendered with empty lessonWords.
   To prevent this, return null in case lessonWords is empty */
   if (wordsStore.lessonWords.length === 0) {
     return null;
   }
+
+  console.log('render playerScreen', {
+    word: wordsStore.lessonWords[uiStore.wordIndex].value,
+  });
   return (
     // eslint-disable-next-line react-native/no-inline-styles
     <View style={{flex: 1}}>
@@ -60,7 +77,7 @@ function PlayerScreen({navigation}) {
             articleText="der"
             isCorrectArticle={correctArticle === 'der'}
             isChosenArticle={chosenArticle === 'der'}
-            onPressAfter={() => setChosenArticle('der')}
+            onPressAfter={setChosenArticleDer}
           />
         </View>
         <View style={sharedStyles.articleButtonWrapper}>
@@ -68,7 +85,7 @@ function PlayerScreen({navigation}) {
             articleText="die"
             isCorrectArticle={correctArticle === 'die'}
             isChosenArticle={chosenArticle === 'die'}
-            onPressAfter={() => setChosenArticle('die')}
+            onPressAfter={setChosenArticleDie}
           />
         </View>
         <View style={sharedStyles.articleButtonWrapper}>
@@ -76,7 +93,7 @@ function PlayerScreen({navigation}) {
             articleText="das"
             isCorrectArticle={correctArticle === 'das'}
             isChosenArticle={chosenArticle === 'das'}
-            onPressAfter={() => setChosenArticle('das')}
+            onPressAfter={setChosenArticleDas}
           />
         </View>
       </View>
