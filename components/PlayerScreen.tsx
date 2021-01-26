@@ -20,14 +20,12 @@ function PlayerScreen({navigation}) {
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
   //used for fast animation of SelectorButtons, LessonStateIndicator
-  const [chosenArticle, setChosenArticle] = useState(null);
+  const [chosenArticle, setChosenArticle] = useState<string>(null);
   const currentLessonWord = wordsStore.lessonWords[uiStore.wordIndex];
   const correctArticle = currentLessonWord.article;
+  const isCorrectArticle = correctArticle === chosenArticle;
+
   useEffect(() => {
-    console.log('useEffect change current answer', {
-      spokenWordIndex: uiStore.spokenWordIndex,
-      currentAnswer: uiStore.currentAnswer,
-    });
     setChosenArticle(uiStore.currentAnswer);
   }, [uiStore.currentAnswer, uiStore.spokenWordIndex]);
 
@@ -37,7 +35,6 @@ function PlayerScreen({navigation}) {
   }, [currentLessonWord]);
 
   useEffect(() => {
-    console.log('useEffect Playerscreen 3', {lessonstate: uiStore.lessonState});
     if (uiStore.lessonState === LessonState.IsFinished) {
       navigation.navigate('FinishedScreen');
     }
@@ -68,7 +65,10 @@ function PlayerScreen({navigation}) {
       />
       <Header />
       <Word />
-      <ControlBar chosenArticle={chosenArticle} />
+      <ControlBar
+        chosenArticle={chosenArticle}
+        isCorrectArticle={isCorrectArticle}
+      />
       <HintModal />
       <View
         style={[sharedStyles.viewHorizontal, styles.selectorButtonBarWrapper]}>

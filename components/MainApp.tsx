@@ -23,7 +23,6 @@ import FaqScreen from './FaqScreen';
 import settings from '../libs/settings.json';
 
 const HomeStack = ({navigation, route}) => {
-  //console.log('homestack', {route});
   const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator

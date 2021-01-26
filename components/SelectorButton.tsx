@@ -12,15 +12,15 @@ import AnimatedBubble from './AnimatedBubble';
 function SelectorButton({
   articleText,
   fontSize = 30,
-  isCorrectArticle,
-  isChosenArticle,
-  onPressAfter: onPressAfter,
+  isCorrectArticle = false,
+  isChosenArticle = false,
+  onPressAfter = () => {},
 }: {
   articleText: string;
   fontSize?: number;
-  isCorrectArticle: boolean;
-  isChosenArticle: boolean;
-  onPressAfter: Function;
+  isCorrectArticle?: boolean;
+  isChosenArticle?: boolean;
+  onPressAfter?: Function;
 }) {
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
@@ -40,6 +40,7 @@ function SelectorButton({
       setIsAnimating(false);
 
       if (finished) {
+        console.error('processAnswer');
         processAnswer(wordsStore, uiStore, articleText);
       }
     },

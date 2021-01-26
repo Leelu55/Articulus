@@ -47,19 +47,24 @@ function LessonStateIndicator({
   lessonStateValue,
   isInteractive,
   iconSize,
-  chosenArticle,
+  chosenArticle = null,
+  isCorrectArticle = undefined,
 }: {
   lessonStateValue: string;
   isInteractive: boolean;
   iconSize: number;
-  chosenArticle: string;
+  chosenArticle?: string;
+  isCorrectArticle?: boolean;
 }) {
   const fadeAnim = useRef(new Animated.Value(1.1)).current; // Initial value for opacity: 0
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
-
+  console.log('LessonStateIndicator', {chosenArticle});
   React.useEffect(() => {
-    if (lessonStateValue === LessonState.IsListening) {
+    if (
+      lessonStateValue === LessonState.IsListening &&
+      chosenArticle === null
+    ) {
       Animated.loop(
         Animated.sequence([
           Animated.timing(fadeAnim, {
@@ -81,7 +86,7 @@ function LessonStateIndicator({
         useNativeDriver: true,
       }).start();
     }
-  }, [fadeAnim, lessonStateValue]);
+  }, [chosenArticle, fadeAnim, lessonStateValue]);
 
   let icon = ICONS[lessonStateValue];
   let iconColor = ICON_COLORS[lessonStateValue];
@@ -95,6 +100,14 @@ function LessonStateIndicator({
     icon = 'times';
     bgColor = settings.colors.wrongAnswer;
   }
+
+  if (chosenArticle !== null) {
+    icon = isCorrectArticle ? ICONS[LessonState.IsEvaluating] : 'times';
+    iconColor = ICON_COLORS[LessonState.IsEvaluating];
+    bgColor = isCorrectArticle
+      ? settings.colors.correctAnswer
+      : settings.colors.wrongAnswer;
+  }
   function onPress() {
     if (uiStore.lessonState === LessonState.IsWaitingForUserAction) {
       audioVoice.voiceStart();
@@ -105,6 +118,7 @@ function LessonStateIndicator({
       uiStore.setLessonState(LessonState.IsWaitingForUserAction);
     }
   }
+
   const isDisabled =
     /* uiStore.autoMode || */
     ![LessonState.IsWaitingForUserAction, LessonState.IsListening].includes(

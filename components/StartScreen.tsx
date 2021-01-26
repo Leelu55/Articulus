@@ -44,8 +44,6 @@ function StartScreen({navigation, route}) {
     if (route.params?.comingFrom === 'FinishedScreen') {
       wordsStore.populateLesson();
       uiStore.setLessonState(LessonState.IsInitial);
-
-      console.log(route, wordsStore.lessonWords.length);
     }
   }, [route, uiStore, wordsStore]);
   //console.log(wordsStore, uiStore);

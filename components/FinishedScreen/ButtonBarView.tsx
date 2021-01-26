@@ -46,7 +46,6 @@ export default function ButtonBarView({
             // wordsStore.populateLesson();
 
             navigation.navigate('Home', {comingFrom: 'FinishedScreen'});
-            console.log('navigate');
           }}>
           <FontAwesomeIcon
             icon="home"

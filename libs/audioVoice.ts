@@ -1,9 +1,7 @@
 import ttsLibrary from 'react-native-tts';
 import voiceLibrary from '@react-native-community/voice';
-
 import extractArticle from './extractArticle';
 import {LessonState} from '../stores/UIStore';
-import processAnswer from './processAnswer';
 
 // callbacks for ttsLibrary events to be modified on setup and cleanup
 let onTtsStart = null;
@@ -11,7 +9,7 @@ let onTtsFinish = null;
 let onTtsCancel = null;
 let onTtsError = null;
 
-export function setup(uiStore, wordsStore) {
+export function setup(uiStore) {
   onTtsFinish = () => {
     function startUserInteraction() {
       if (uiStore.autoMode) {
@@ -49,7 +47,6 @@ export function setup(uiStore, wordsStore) {
 
     uiStore.setCurrentAnswer(currentArticle);
     uiStore.incrementSpokenWordIndex();
-    processAnswer(wordsStore, uiStore, currentArticle);
   };
 
   voiceLibrary.onSpeechError = () => {

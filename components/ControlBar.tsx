@@ -14,7 +14,13 @@ const styles = StyleSheet.create({
     marginBottom: 25,
   },
 });
-function ControlBar({chosenArticle}: {chosenArticle: string}) {
+function ControlBar({
+  chosenArticle,
+  isCorrectArticle,
+}: {
+  chosenArticle: string;
+  isCorrectArticle: boolean;
+}) {
   const uiStore = useContext(UIStore);
   const lessonStateValue: string = uiStore.lessonState.valueOf();
   return (
@@ -23,6 +29,7 @@ function ControlBar({chosenArticle}: {chosenArticle: string}) {
         <PausePlayButton />
         <LessonStateIndicator
           chosenArticle={chosenArticle}
+          isCorrectArticle={isCorrectArticle}
           lessonStateValue={lessonStateValue}
           isInteractive={true}
           iconSize={60}

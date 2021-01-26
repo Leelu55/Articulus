@@ -23,7 +23,6 @@ function AnimatedBubble({
   const animValue = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
-    console.log('doStart');
     if (doStart) {
       Animated.timing(animValue, {
         toValue: 100,

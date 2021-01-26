@@ -111,7 +111,6 @@ export class UIStore {
   };
 
   @action updateHintDateString = (date: string) => {
-    console.log(uiStore.hintDateString);
     this.hintDateString = date;
   };
 
