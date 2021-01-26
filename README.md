@@ -8,7 +8,6 @@
 
 - [ ] change house icon on FinishedScreen
 - [ ] change appearance of SplashScreen (Just Text Articulus)
-- [ ] modify ForwardButton behaviour -> change position of ForwardButton to next to SelectorButton, change icon to "?", onClick: skip word and show the right article as if the corresponding SelectorButton was clicked (green flash, green Sparkle)
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
 - [ ] create and store thumbnails/preview images for start page and faster loading in general (can BunnyCDN downgrade image quality & size?)
 
@@ -26,7 +25,6 @@
 
 ### Appearance
 
-- [ ] redesign StartScreenAnimation
 - [ ] choose and use fonts
 - [ ] use color palette consistently
 - [ ] make all screens responsive to screen size
@@ -73,6 +71,10 @@
 - [x] specify & implement ConfigScreen
 - [x] delete badly pronounced or ambiguous words: "Kassettenrekorder", "Erwachsene", "Formular", "Beamte", 'CD-ROM', "Bekannte", "Geburtsort"
 - [x] INPROGRESS specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
+
+#### Modifications
+
+- [x] Skip Icon with text and ripple effect
 
 #### Content Creation
 

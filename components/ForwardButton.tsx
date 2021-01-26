@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {StyleSheet, Pressable} from 'react-native';
+import {StyleSheet, Pressable, Text, View} from 'react-native';
 import fontawesome from '@fortawesome/fontawesome';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faForward} from '@fortawesome/fontawesome-free-solid';
@@ -12,9 +12,27 @@ import {observer} from 'mobx-react';
 import nextWord from '../libs/nextWord';
 
 const styles = StyleSheet.create({
-  wrapper: {
+  wrapperAll: {
     marginLeft: 5,
+  },
+  wrapper: {
+    borderRadius: 5,
+    overflow: 'hidden',
+  },
+  pressable: {
     padding: 5,
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  text: {
+    fontSize: 12,
+    color: '#bbb',
+    fontWeight: 'bold',
+    position: 'absolute',
+    top: 35,
+    left: 0,
+    right: 0,
+    textAlign: 'center',
   },
 });
 
@@ -24,14 +42,20 @@ function ForwardButton() {
   const isFinished = uiStore.lessonState === LessonState.IsFinished;
 
   return (
-    <Pressable
-      style={styles.wrapper}
-      onPress={() => {
-        nextWord(uiStore, wordsStore);
-      }}
-      disabled={isFinished}>
-      <FontAwesomeIcon icon="forward" color="lightgrey" size={30} />
-    </Pressable>
+    <View style={styles.wrapperAll}>
+      <View style={styles.wrapper}>
+        <Pressable
+          style={styles.pressable}
+          android_ripple={{color: 'lightgrey'}}
+          onPress={() => {
+            nextWord(uiStore, wordsStore);
+          }}
+          disabled={isFinished}>
+          <FontAwesomeIcon icon="forward" color="lightgrey" size={30} />
+        </Pressable>
+      </View>
+      <Text style={styles.text}>skip</Text>
+    </View>
   );
 }
 

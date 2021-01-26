@@ -1,6 +1,6 @@
 import {observer} from 'mobx-react';
 import React, {useCallback, useContext, useEffect, useState} from 'react';
-import {Pressable, Text, View} from 'react-native';
+import {Pressable, Text} from 'react-native';
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 import styles from '../styles/sharedStyles';
