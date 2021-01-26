@@ -131,15 +131,7 @@ export function hasDueHint(
   const totalHintShowCount = hintsShowCount
     .map((hint) => hint.count)
     .reduce((a, b) => a + b);
-  console.log({
-    totalHintShowCount,
-    compareDates: dateMethods.compareDates(
-      dateMethods.stringToDate(hintDateString),
-      dateMethods.getCurrentDate(),
-    ),
-    stringToDate: dateMethods.stringToDate(hintDateString),
-    getCurrentDate: dateMethods.getCurrentDate(),
-  });
+
   if (
     totalHintShowCount > 5 &&
     hintDateString !== '' &&

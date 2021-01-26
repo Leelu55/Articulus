@@ -51,9 +51,6 @@ function PlayerScreen({navigation}) {
     return null;
   }
 
-  console.log('render playerScreen', {
-    word: wordsStore.lessonWords[uiStore.wordIndex].value,
-  });
   return (
     // eslint-disable-next-line react-native/no-inline-styles
     <View style={{flex: 1}}>

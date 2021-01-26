@@ -46,7 +46,6 @@ export default function processAnswer(
 
   setTimeout(() => {
     if (uiStore.lessonState === LessonState.IsEvaluating) {
-      //console.log(uiStore.lessonState);
       if (
         currentArticle !== clw.article &&
         clw.ruleId &&

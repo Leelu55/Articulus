@@ -41,10 +41,6 @@ export default function ButtonBarView({
             },
           ]}
           onPress={() => {
-            // go back to start screen
-            // console.log('onPress');
-            // wordsStore.populateLesson();
-
             navigation.navigate('Home', {comingFrom: 'FinishedScreen'});
           }}>
           <FontAwesomeIcon

@@ -24,12 +24,7 @@ function SelectorButton({
 }) {
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
-  // console.log(
-  //   'selector button',
-  //   {articleText},
-  //   {word: wordsStore.lessonWords[uiStore.wordIndex].value},
-  // );
-  // prevent animation from rerunning when PlayerScreen is rerendered so that processAnswer is not called twice
+
   const [isAnimating, setIsAnimating] = useState(true);
   useEffect(() => {
     setIsAnimating(true);

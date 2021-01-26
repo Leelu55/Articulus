@@ -59,7 +59,6 @@ function LessonStateIndicator({
   const fadeAnim = useRef(new Animated.Value(1.1)).current; // Initial value for opacity: 0
   const uiStore = useContext(UIStore);
   const wordsStore = useContext(WordsStore);
-  console.log('LessonStateIndicator', {chosenArticle});
   React.useEffect(() => {
     if (
       lessonStateValue === LessonState.IsListening &&

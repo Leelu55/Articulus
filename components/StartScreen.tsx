@@ -46,7 +46,6 @@ function StartScreen({navigation, route}) {
       uiStore.setLessonState(LessonState.IsInitial);
     }
   }, [route, uiStore, wordsStore]);
-  //console.log(wordsStore, uiStore);
 
   if (wordsStore.lessonWords.length === 0) {
     return null;
