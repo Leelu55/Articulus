@@ -14,7 +14,6 @@
 
 ### Bugs
 
-- [ ] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
 - [ ] check Unique Words before pushing to model
 - [ ] year LineChart no data displayed
 - [ ] on Samsung A Galaxy Tab Android 9 TTS and STT don't work initially because the Google Speech engine is not used by default -> implement at least an explanation how to enable it
@@ -31,7 +30,7 @@
 - [ ] choose and use fonts
 - [ ] use color palette consistently
 - [ ] make all screens responsive to screen size
-- [ ] check paddings, margins, positions, sizes. make sure they are used consistently on all screens
+- [ ] check paddings, margins, positions, sizes. make sure they are used consistently on all screens, also cleanUp sharedStyles
 - [ ] check all buttons, links, views (functionality and usability)
 - [ ] change android StatusBar appearence according to our colors
 - [ ] new logo
@@ -95,6 +94,7 @@
 - [x] (DONE with preventing selector button animations triggering processAnswer to run twice) When GrammarHints are shown, LessonState should not change as long as HintModal is visible or the app continues with next word. Also errors are countet twice, the number of played words is too high in the end also the number of errors
 - [x] FIXED BY FIXING SELECTORBUTTON ANIMATION nextWord is too fast if correct
 - [x] speed up LessonState Indicator Animation
+- [x] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
 
 ### Next Features after first Open Release
 

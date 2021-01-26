@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'lightgrey',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 10,
   },
 
   bigButton: {

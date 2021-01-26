@@ -1,6 +1,6 @@
 import {observer} from 'mobx-react';
 import React, {useCallback, useContext, useEffect, useState} from 'react';
-import {Pressable, Text} from 'react-native';
+import {Pressable, Text, View} from 'react-native';
 import UIStore, {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 import styles from '../styles/sharedStyles';
@@ -40,7 +40,6 @@ function SelectorButton({
       setIsAnimating(false);
 
       if (finished) {
-        console.error('processAnswer');
         processAnswer(wordsStore, uiStore, articleText);
       }
     },
@@ -69,8 +68,8 @@ function SelectorButton({
       disabled={[LessonState.IsEvaluating, LessonState.IsFinished].includes(
         uiStore.lessonState,
       )}
-      style={[styles.articleButton, {padding: 10}, styleSelector()]}
-      android_ripple={{color: settings.colors.ripple}}
+      style={[styles.articleButton, styleSelector()]}
+      android_ripple={{color: 'white'}}
       onPress={() => {
         audioVoice.voiceStop();
         audioVoice.stopSpeakWord();
