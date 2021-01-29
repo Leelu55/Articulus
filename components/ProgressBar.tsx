@@ -1,19 +1,73 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useContext} from 'react';
-import {View} from 'react-native';
+import React, {useContext, useEffect} from 'react';
+import {View, StyleSheet} from 'react-native';
 import WordsStore from '../stores/WordsStore';
 import {observer} from 'mobx-react';
 import UIStore, {LessonState} from '../stores/UIStore';
-import styles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-/* import AnimatedBubble from './AnimatedBubble';
- */
-function ProgressBar() {
+import Animated, {
+  useAnimatedStyle,
+  useSharedValue,
+  interpolate,
+  withTiming,
+  Easing,
+} from 'react-native-reanimated';
+
+function ProgressBar({
+  doAnimate = false,
+  chosenArticle,
+}: {
+  doAnimate: boolean;
+  chosenArticle: string;
+}) {
   const wordIndex = useContext(UIStore).wordIndex;
-  //const wordsLength = useContext(WordsStore).words.length;
-  const lessonWords = useContext(WordsStore).lessonWords;
+  const wordsStore = useContext(WordsStore);
+  const lessonWords = wordsStore.lessonWords;
   const uiStore = useContext(UIStore);
+  const animValue = useSharedValue(0, !doAnimate);
+
+  useEffect(() => {
+    if (doAnimate) {
+      animValue.value = 100;
+    } else {
+      animValue.value = 0;
+    }
+  }, [animValue, doAnimate]);
+
+  const animStyle = useAnimatedStyle(() => {
+    const animSize = withTiming(
+      interpolate(animValue.value, [0, 100], [3, 50]),
+      {duration: doAnimate ? 200 : 0, easing: Easing.inOut(Easing.linear)},
+    );
+
+    return {
+      width: animSize,
+      height: animSize,
+    };
+  }, [animValue, doAnimate]);
+
+  let backgroundCurrentWord = 'grey';
+  if (chosenArticle !== null) {
+    backgroundCurrentWord =
+      chosenArticle === wordsStore.lessonWords[uiStore.wordIndex].article
+        ? settings.colors.correctAnswer
+        : settings.colors.wrongAnswer;
+  }
+
+  const styles = StyleSheet.create({
+    progressBar: {
+      flex: 1,
+      flexDirection: 'row',
+      height: 20,
+    },
+    currentWordMarker: {
+      backgroundColor: backgroundCurrentWord,
+      borderRadius: 100,
+      width: 5,
+      height: 5,
+    },
+  });
 
   return (
     <View style={styles.progressBar}>
@@ -57,27 +111,13 @@ function ProgressBar() {
               height: 20,
               justifyContent: 'center',
               alignItems: 'center',
+              overflow: 'hidden',
             }}>
             {index === wordIndex &&
               lessonWord.answerArticle === null &&
               uiStore.lessonState !== LessonState.IsFinished && (
-                <FontAwesomeIcon
-                  icon="circle"
-                  size={5}
-                  color="black"
-                  style={{opacity: 0.75, position: 'absolute'}}
-                />
+                <Animated.View style={[styles.currentWordMarker, animStyle]} />
               )}
-            {/*  {index === wordIndex && lessonWord.answerArticle !== null && (
-              <AnimatedBubble
-                duration={600}
-                maxSize={2000}
-                color={bgColor}
-                delay={0}
-                positionRandom={false}
-                doStart={true}
-              />
-            )} */}
             {lessonWords[index].answerArticle === null &&
               (index < wordIndex ||
                 uiStore.lessonState === LessonState.IsFinished) && (

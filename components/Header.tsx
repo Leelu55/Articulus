@@ -6,11 +6,17 @@ import ProgressBar from './ProgressBar';
 import {CancelButton} from './CancelButton';
 import ForwardButton from './ForwardButton';
 
-export function Header() {
+export function Header({
+  doAnimate,
+  chosenArticle,
+}: {
+  doAnimate?: boolean;
+  chosenArticle: string;
+}) {
   return (
     <View style={[styles.viewHorizontal, {alignItems: 'center'}]}>
       <CancelButton />
-      <ProgressBar />
+      <ProgressBar doAnimate={doAnimate} chosenArticle={chosenArticle} />
       <ForwardButton />
     </View>
   );

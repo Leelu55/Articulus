@@ -60,7 +60,10 @@ function PlayerScreen({navigation}) {
           uiStore.setLessonState(LessonState.IsSpeaking);
         }}
       />
-      <Header />
+      <Header
+        doAnimate={chosenArticle !== null}
+        chosenArticle={chosenArticle}
+      />
       <Word />
       <ControlBar
         chosenArticle={chosenArticle}
