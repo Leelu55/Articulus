@@ -115,3 +115,4 @@
 - [ ] enhance and refactor ConfigScreen with Animations and better redirecting
 - [ ] implement 'don't show hints again' with setting updateHintDateString to date in the far future
 - [ ] implement sound for SelectorButton click (success/fail)
+- [ ] animate skip word in ProgessBar
