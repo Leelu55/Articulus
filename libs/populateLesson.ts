@@ -2,7 +2,7 @@ import {LessonWordType, WordType} from '../stores/WordsStore';
 import settings from './settings.json';
 import {getRandomInt} from '../libs/utils';
 import {sortWordsByDueDateTime} from './sortWordsByDueDateTime';
-
+import {Image} from 'react-native';
 export function getRandomNewWords(numberOfNewWords: number, words: WordType[]) {
   let randomNewWords: WordType[] = [];
   const newWords = words.filter(
@@ -44,6 +44,7 @@ export default function populateLesson(
     wordPickerFunction(settings.lessonSize - _lessonWords.length, words),
   );
   for (const word of _lessonWords) {
+    Image.prefetch(word.imageUrl);
     lessonWords.push({
       value: word.value,
       article: word.article,

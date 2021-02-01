@@ -8,7 +8,6 @@
 
 - [ ] change house icon on FinishedScreen
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
-- [ ] create and store thumbnails/preview images for start page and faster loading in general (can BunnyCDN downgrade image quality & size?)
 
 ### Bugs
 
@@ -75,6 +74,7 @@
 
 - [x] Skip Icon with text and ripple effect
 - [x] change appearance of SplashScreen (Text Articulus)
+- [x] use thumbnails/preview images for FlatList on start page using statically.io url with "?w=SMALLERWIDTH"
 
 #### Content Creation
 

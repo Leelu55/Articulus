@@ -40,6 +40,7 @@ function StartScreen({navigation, route}) {
       wordsStore.populateLesson();
     }
   }, [wordsStore, wordsStore.lessonWords]);
+
   useEffect(() => {
     if (route.params?.comingFrom === 'FinishedScreen') {
       wordsStore.populateLesson();
