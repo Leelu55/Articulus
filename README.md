@@ -7,7 +7,6 @@
 ### Modifications
 
 - [ ] change house icon on FinishedScreen
-- [ ] change appearance of SplashScreen (Just Text Articulus)
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
 - [ ] create and store thumbnails/preview images for start page and faster loading in general (can BunnyCDN downgrade image quality & size?)
 
@@ -75,6 +74,7 @@
 #### Modifications
 
 - [x] Skip Icon with text and ripple effect
+- [x] change appearance of SplashScreen (Text Articulus)
 
 #### Content Creation
 
