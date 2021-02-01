@@ -8,6 +8,7 @@
 
 - [ ] change house icon on FinishedScreen
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
+- [x] optimizing image display time in lessons
 
 ### Bugs
 
@@ -75,6 +76,7 @@
 - [x] Skip Icon with text and ripple effect
 - [x] change appearance of SplashScreen (Text Articulus)
 - [x] use thumbnails/preview images for FlatList on start page using statically.io url with "?w=SMALLERWIDTH"
+- [x] optimizing image display time in lessons
 
 #### Content Creation
 

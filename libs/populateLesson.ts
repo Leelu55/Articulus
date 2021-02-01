@@ -45,6 +45,7 @@ export default function populateLesson(
   );
   for (const word of _lessonWords) {
     Image.prefetch(word.imageUrl);
+    Image.prefetch(word.imageUrl + '?w=' + settings.thumbNailSize);
     lessonWords.push({
       value: word.value,
       article: word.article,
