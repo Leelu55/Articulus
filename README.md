@@ -8,7 +8,6 @@
 
 - [ ] change house icon on FinishedScreen
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
-- [x] optimizing image display time in lessons
 
 ### Bugs
 
