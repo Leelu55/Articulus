@@ -1,5 +1,7 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {Text, StyleSheet, View, Image} from 'react-native';
+import settings from '../libs/settings.json';
 
 //import settings from '../libs/settings.json';
 
@@ -8,7 +10,6 @@ function WordListItem({
   imageUrl,
   dueDateTime,
   slot,
-  article,
 }: {
   value: JSX.Element;
   imageUrl: string;
@@ -49,7 +50,11 @@ const styles = StyleSheet.create({
   },
   textDateWrapper: {flexDirection: 'column', flex: 1, paddingLeft: 10},
   text: {flex: 1, fontSize: 20, fontWeight: 'bold'},
-  image: {height: 45, width: 45, borderRadius: 5},
+  image: {
+    height: settings.thumbNailSize,
+    width: settings.thumbNailSize,
+    borderRadius: 5,
+  },
   dueDate: {fontSize: 13},
   slot: {fontWeight: 'bold', fontSize: 20, paddingHorizontal: 10},
 });

@@ -66,10 +66,12 @@ function StartScreen({navigation, route}) {
   };
 
   const renderItem = ({item}) => {
+    //use small image resizing in statically for FlatList
+    const miniUrl = item.imageUrl + '?w=' + settings.thumbNailSize;
     return (
       <WordListItem
         value={item.value}
-        imageUrl={item.imageUrl}
+        imageUrl={miniUrl}
         dueDateTime={item.dueDateTime}
         slot={item.slot}
         article={item.article}

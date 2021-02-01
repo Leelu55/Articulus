@@ -16,5 +16,6 @@
   "lessonSize": 15,
   "numberOfSlots": 6,
   "isDebugging": false,
-  "bottomNavigationTabBarHeight": 90
+  "bottomNavigationTabBarHeight": 90,
+  "thumbNailSize": 45
 }
