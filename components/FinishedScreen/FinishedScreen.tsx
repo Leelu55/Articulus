@@ -70,8 +70,6 @@ function FinishedScreen() {
   const currentLesson: SavedLessonType = wordsStore.savedLessons.slice(-1)[0];
   return (
     <View style={styles.wrapper}>
-      {/*       <FlagLayer animFlag={animFlag} animFlagOpacity={animFlagOpacity} />
-       */}
       <View style={styles.catContentWrapper}>
         <CatChatBubble
           animCatChatBubble={animCatChatBubble}

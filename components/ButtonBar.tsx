@@ -6,7 +6,7 @@ function ButtonBar({
   text = '',
 }: {
   children: React.ReactNode;
-  text: string;
+  text?: string;
 }) {
   const styles = StyleSheet.create({
     wrapper: {
@@ -17,21 +17,19 @@ function ButtonBar({
       overflow: 'hidden',
     },
     wrapperInner: {
-      marginTop: 10,
-
       flexDirection: 'row',
       overflow: 'hidden',
     },
     modalText: {
       alignSelf: 'center',
       fontSize: 20,
-      marginBottom: 5,
+      marginBottom: 20,
     },
   });
 
   return (
     <View style={styles.wrapper}>
-      <Text style={styles.modalText}>{text}</Text>
+      {text !== '' && <Text style={styles.modalText}>{text}</Text>}
       <View style={styles.wrapperInner}>{children}</View>
     </View>
   );

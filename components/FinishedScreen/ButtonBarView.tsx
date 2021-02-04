@@ -6,7 +6,6 @@ import sharedStyles from '../../styles/sharedStyles';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import ButtonBar from '../ButtonBar';
 import settings from '../../libs/settings.json';
-import {LessonState} from '../../stores/UIStore';
 
 export default function ButtonBarView({
   uiStore,
@@ -29,7 +28,7 @@ export default function ButtonBarView({
           outputRange: [0, 1],
         }),
       }}>
-      <ButtonBar text={'Neu beginnen oder aufhören?'}>
+      <ButtonBar>
         <Pressable
           style={[
             sharedStyles.bigButton,
@@ -58,8 +57,7 @@ export default function ButtonBarView({
             wordsStore.populateLesson();
             startLesson(wordsStore, uiStore, navigation);
           }}>
-          <Text style={sharedStyles.bigButtonText}>NOCHMAL</Text>
-          <FontAwesomeIcon icon="arrow-right" size={30} color="white" />
+          <Text style={sharedStyles.bigButtonText}>Neue Runde</Text>
         </Pressable>
       </ButtonBar>
     </Animated.View>

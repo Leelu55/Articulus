@@ -6,7 +6,6 @@
 
 ### Modifications
 
-- [ ] change house icon on FinishedScreen
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
 
 ### Bugs
@@ -69,6 +68,7 @@
 - [x] specify & implement ConfigScreen
 - [x] delete badly pronounced or ambiguous words: "Kassettenrekorder", "Erwachsene", "Formular", "Beamte", 'CD-ROM', "Bekannte", "Geburtsort"
 - [x] INPROGRESS specify app usage hints (ControlBar, LessonStateIndicator, AutoModeButton)
+- [x] modify ButtonBar style on FinishedScreen
 
 #### Modifications
 
