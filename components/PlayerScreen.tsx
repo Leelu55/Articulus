@@ -77,6 +77,7 @@ function PlayerScreen({navigation}) {
             articleText="der"
             isCorrectArticle={correctArticle === 'der'}
             isChosenArticle={chosenArticle === 'der'}
+            hasChosenArticle={chosenArticle !== null}
             onPressAfter={setChosenArticleDer}
           />
         </View>
@@ -85,6 +86,7 @@ function PlayerScreen({navigation}) {
             articleText="die"
             isCorrectArticle={correctArticle === 'die'}
             isChosenArticle={chosenArticle === 'die'}
+            hasChosenArticle={chosenArticle !== null}
             onPressAfter={setChosenArticleDie}
           />
         </View>
@@ -93,6 +95,7 @@ function PlayerScreen({navigation}) {
             articleText="das"
             isCorrectArticle={correctArticle === 'das'}
             isChosenArticle={chosenArticle === 'das'}
+            hasChosenArticle={chosenArticle !== null}
             onPressAfter={setChosenArticleDas}
           />
         </View>

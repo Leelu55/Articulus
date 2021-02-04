@@ -7,7 +7,6 @@
 ### Modifications
 
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
-- [ ] PlayerScreen: show user the right article and give feedback for each chosen article
 - [ ] include share button in FinishedScreen with android intent to share results in messenger
 
 ### Bugs
@@ -80,6 +79,7 @@
 - [x] optimizing image display time in lessons
 - [x] change TabNavigation library
 - [x] PlayerScreen: next word should slide in from the right instead of just be replaced
+- [x] PlayerScreen: show user the right article and give feedback for each chosen article
 
 #### Content Creation
 

@@ -43,25 +43,22 @@ export default function processAnswer(
   wordsStore.updateTimeStampForWord(clw.value);
   wordsStore.updateDueDateTimeForWord(clw.value);
   uiStore.setLessonState(LessonState.IsEvaluating);
-
-  setTimeout(() => {
-    if (uiStore.lessonState === LessonState.IsEvaluating) {
-      if (
-        currentArticle !== clw.article &&
-        clw.ruleId &&
-        !uiStore.grammarHintShown
-      ) {
-        showHintModal(
-          uiStore,
-          <GrammarRule ruleId={clw.ruleId} />,
-          true,
-          showNextWord,
-        );
-      } else {
-        showNextWord();
-      }
+  if (uiStore.lessonState === LessonState.IsEvaluating) {
+    if (
+      currentArticle !== clw.article &&
+      clw.ruleId &&
+      !uiStore.grammarHintShown
+    ) {
+      showHintModal(
+        uiStore,
+        <GrammarRule ruleId={clw.ruleId} />,
+        true,
+        showNextWord,
+      );
+    } else {
+      showNextWord();
     }
-  }, 500);
+  }
 
   function showNextWord() {
     if (wordIndex < lessonWordsLength - 1) {

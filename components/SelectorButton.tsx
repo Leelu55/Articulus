@@ -14,12 +14,14 @@ function SelectorButton({
   fontSize = 30,
   isCorrectArticle = false,
   isChosenArticle = false,
+  hasChosenArticle = false,
   onPressAfter = () => {},
 }: {
   articleText: string;
   fontSize?: number;
   isCorrectArticle?: boolean;
   isChosenArticle?: boolean;
+  hasChosenArticle?: boolean;
   onPressAfter?: Function;
 }) {
   const uiStore = useContext(UIStore);
@@ -46,13 +48,26 @@ function SelectorButton({
     opacity: 1,
   };
   const styleWrong = {backgroundColor: settings.colors.wrongAnswer, opacity: 1};
+  const styleBlink = {
+    backgroundColor: settings.colors.correctAnswer,
+    opacity: 1,
+  };
 
-  const styleSelector = () =>
-    isChosenArticle && isCorrectArticle
-      ? styleCorrect
-      : isChosenArticle && !isCorrectArticle
-      ? styleWrong
-      : styleDefault;
+  const styleSelector = () => {
+    if (isChosenArticle && isCorrectArticle) {
+      return styleCorrect;
+    }
+
+    if (isChosenArticle && !isCorrectArticle) {
+      return styleWrong;
+    }
+
+    if (hasChosenArticle && !isChosenArticle && isCorrectArticle) {
+      return styleBlink;
+    }
+
+    return styleDefault;
+  };
 
   const animationColor = isCorrectArticle
     ? settings.colors.correctAnswer
