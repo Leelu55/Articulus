@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, useWindowDimensions} from 'react-native';
 import {WordValue} from './WordValue';
 import WordsStore from '../stores/WordsStore';
 
@@ -12,16 +12,22 @@ import {showHintModal} from './HintModal';
 import Hint from './Hint';
 import {hasDueHint} from '../libs/hints';
 import {getSpeakHint} from '../libs/hints';
+import Animated, {
+  Easing,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 
 const styles = StyleSheet.create({
   word: {
-    flex: 1,
     flexDirection: 'column',
-    margin: 5,
+    //margin: 5,
     padding: 5,
     alignItems: 'center',
     justifyContent: 'center',
   },
+  slider: {flexDirection: 'row', flex: 1},
 });
 
 function Word() {
@@ -33,7 +39,7 @@ function Word() {
   const lessonState = uiStore.lessonState;
 
   useEffect(() => {
-    audioVoice.setup(uiStore, wordsStore);
+    audioVoice.setup(uiStore);
     uiStore.setLessonState(LessonState.IsSpeaking);
     return audioVoice.cleanup;
   }, [uiStore, wordsStore]);
@@ -101,11 +107,34 @@ function Word() {
     }
   }, [currentLessonWord.value, uiStore, lessonState, wordsStore]);
 
+  //sliding animation
+  const animValue = useSharedValue(0);
+  const windowWith = useWindowDimensions().width;
+
+  useEffect(() => {
+    animValue.value = -windowWith * uiStore.wordIndex;
+  }, [animValue, uiStore.wordIndex, windowWith]);
+
+  const animStyle = useAnimatedStyle(() => {
+    const animTranslateX = withTiming(animValue.value, {
+      duration: 100,
+      easing: Easing.inOut(Easing.linear),
+    });
+
+    return {
+      transform: [{translateX: animTranslateX}],
+    };
+  }, [animValue]);
+
   return (
-    <View style={styles.word}>
-      <WordImage imageUrl={currentLessonWord.imageUrl} />
-      <WordValue value={currentLessonWord.value} />
-    </View>
+    <Animated.View style={[styles.slider, animStyle]}>
+      {wordsStore.lessonWords.map((word) => (
+        <View style={[styles.word, {width: windowWith}]} key={word.value}>
+          <WordImage imageUrl={word.imageUrl} />
+          <WordValue value={word.value} />
+        </View>
+      ))}
+    </Animated.View>
   );
 }
 

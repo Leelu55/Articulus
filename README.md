@@ -9,7 +9,6 @@
 - [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
 - [ ] PlayerScreen: show user the right article and give feedback for each chosen article
 - [ ] include share button in FinishedScreen with android intent to share results in messenger
-- [ ] change TabNavigation library
 
 ### Bugs
 
@@ -79,6 +78,8 @@
 - [x] change appearance of SplashScreen (Text Articulus)
 - [x] use thumbnails/preview images for FlatList on start page using statically.io url with "?w=SMALLERWIDTH"
 - [x] optimizing image display time in lessons
+- [x] change TabNavigation library
+- [x] PlayerScreen: next word should slide in from the right instead of just be replaced
 
 #### Content Creation
 
