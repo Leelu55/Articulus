@@ -16,7 +16,6 @@ function WordListItem({
   slot: number;
   article: string;
 }): JSX.Element {
-  console.log(imageUrl);
   return (
     <View style={styles.wrapper}>
       <Image style={styles.image} source={{uri: imageUrl}} />

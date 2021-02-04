@@ -21,61 +21,85 @@ import GrammarScreen from './GrammarScreen';
 import {faSpellCheck} from '@fortawesome/free-solid-svg-icons';
 import FaqScreen from './FaqScreen';
 import settings from '../libs/settings.json';
+import AnimatedTabBar, {
+  TabsConfig,
+  MaterialTabBarItemConfig,
+} from '@gorhom/animated-tabbar';
+
+const tabs: TabsConfig<MaterialTabBarItemConfig> = {
+  Home: {
+    icon: {
+      component: () => (
+        <FontAwesomeIcon icon="broom" size={40} color={'black'} />
+      ),
+      color: 'rgba(0,0,0,1)',
+    },
+    ripple: {
+      color: settings.colors.secondary.normal,
+    },
+  },
+  Stats: {
+    icon: {
+      component: () => (
+        <FontAwesomeIcon icon="chart-bar" size={40} color={'black'} />
+      ),
+      color: 'rgba(0,0,0,1)',
+    },
+    ripple: {
+      color: settings.colors.secondary.normal,
+    },
+  },
+  Grammar: {
+    icon: {
+      component: () => (
+        <FontAwesomeIcon icon={faSpellCheck} size={40} color={'black'} />
+      ),
+      color: 'rgba(0,0,0,1)',
+    },
+    ripple: {
+      color: settings.colors.secondary.normal,
+    },
+  },
+  Faq: {
+    icon: {
+      component: () => (
+        <FontAwesomeIcon icon="question-circle" size={40} color={'black'} />
+      ),
+      color: 'rgba(0,0,0,1)',
+    },
+    ripple: {
+      color: settings.colors.secondary.normal,
+    },
+  },
+};
 
 const HomeStack = () => {
   const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator
-      tabBarOptions={{
-        style: {
-          backgroundColor: settings.colors.secondary.normal,
-          height: 90,
-          padding: 0,
-          margin: 0,
-        },
-        showLabel: false,
-        activeTintColor: 'black',
-        inactiveTintColor: 'rgba(0,0,0,0.3)',
-      }}>
-      <Tab.Screen
-        name="Home"
-        component={StartScreen}
-        options={{
-          tabBarIcon: ({color}) => (
-            <FontAwesomeIcon icon="broom" size={40} color={color} />
-          ),
-        }}
-      />
-
-      <Tab.Screen
-        name="Stats"
-        component={StatisticsScreen}
-        options={{
-          tabBarIcon: ({color}) => (
-            <FontAwesomeIcon icon="chart-bar" size={40} color={color} />
-          ),
-        }}
-      />
-
+      tabBar={(props) => (
+        <AnimatedTabBar
+          tabs={tabs}
+          preset="material"
+          animation="iconOnly"
+          inactiveOpacity={0.35}
+          inactiveScale={0.8}
+          // eslint-disable-next-line react-native/no-inline-styles
+          style={{paddingVertical: 10}}
+          {...props}
+        />
+      )}>
+      <Tab.Screen name="Home" component={StartScreen} />
+      <Tab.Screen name="Stats" component={StatisticsScreen} />
       <Tab.Screen
         name="Grammar"
         component={GrammarScreen}
         initialParams={{text: 'Grammatik'}}
-        options={{
-          tabBarIcon: ({color}) => (
-            <FontAwesomeIcon icon={faSpellCheck} size={40} color={color} />
-          ),
-        }}
       />
       <Tab.Screen
         name="Faq"
         component={FaqScreen}
         initialParams={{text: 'FAQ'}}
-        options={{
-          tabBarIcon: ({color}) => (
-            <FontAwesomeIcon icon="question-circle" size={40} color={color} />
-          ),
-        }}
       />
     </Tab.Navigator>
   );
