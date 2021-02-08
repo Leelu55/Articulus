@@ -2,7 +2,15 @@ import {useNavigation} from '@react-navigation/native';
 import {observer} from 'mobx-react';
 import React, {useEffect, useRef, useState} from 'react';
 import {useContext} from 'react';
-import {Animated, Easing, StyleSheet, View} from 'react-native';
+import {
+  Animated,
+  Easing,
+  Pressable,
+  StyleSheet,
+  View,
+  Text,
+  Linking,
+} from 'react-native';
 import UIStore, {LessonState} from '../../stores/UIStore';
 import WordsStore, {SavedLessonType} from '../../stores/WordsStore';
 import Sparkles from './Sparkles';
@@ -10,6 +18,8 @@ import ButtonBarView from './ButtonBarView';
 import CatImage from './CatImage';
 import CatChatBubble from './CatChatBubble';
 import settings from '../../libs/settings.json';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import {text} from '@fortawesome/fontawesome-svg-core';
 
 function FinishedScreen() {
   const [doAnimSparkles, setDoAnimSparkles] = useState(false);
@@ -68,6 +78,14 @@ function FinishedScreen() {
   }, [navigation, uiStore.lessonState]);
 
   const currentLesson: SavedLessonType = wordsStore.savedLessons.slice(-1)[0];
+  const intentText =
+    'Ich habe gerade ' +
+    currentLesson.countCorrectAnswers +
+    ' deutsche Artikel mit Articulus gelernt! ';
+  const intentUrl =
+    'https://play.google.com/store/apps/details?id=com.derdiedas';
+  var SendIntentAndroid = require('react-native-send-intent');
+
   return (
     <View style={styles.wrapper}>
       <View style={styles.catContentWrapper}>
@@ -80,7 +98,17 @@ function FinishedScreen() {
       </View>
 
       <Sparkles doCountAnim={doAnimSparkles} />
-
+      <Pressable
+        onPress={() =>
+          SendIntentAndroid.sendText({
+            title: 'Please share this text',
+            text: intentText + intentUrl,
+            type: SendIntentAndroid.TEXT_PLAIN,
+          })
+        }
+        style={styles.shareButton}>
+        <FontAwesomeIcon icon="share-alt" size={30} />
+      </Pressable>
       <ButtonBarView
         animButtonBarView={animButtonBarView}
         uiStore={uiStore}
@@ -98,6 +126,15 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   catContentWrapper: {flex: 1, alignItems: 'center', padding: 20},
+  shareButton: {
+    alignSelf: 'flex-end',
+    padding: 10,
+    marginBottom: 10,
+    marginRight: 20,
+    backgroundColor: settings.colors.secondary.normal,
+    borderRadius: 50,
+    justifyContent: 'center',
+  },
 });
 
 export default observer(FinishedScreen);
