@@ -2,15 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import {observer} from 'mobx-react';
 import React, {useEffect, useRef, useState} from 'react';
 import {useContext} from 'react';
-import {
-  Animated,
-  Easing,
-  Pressable,
-  StyleSheet,
-  View,
-  Text,
-  Linking,
-} from 'react-native';
+import {Animated, Easing, Pressable, StyleSheet, View} from 'react-native';
 import UIStore, {LessonState} from '../../stores/UIStore';
 import WordsStore, {SavedLessonType} from '../../stores/WordsStore';
 import Sparkles from './Sparkles';
@@ -19,7 +11,6 @@ import CatImage from './CatImage';
 import CatChatBubble from './CatChatBubble';
 import settings from '../../libs/settings.json';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {text} from '@fortawesome/fontawesome-svg-core';
 
 function FinishedScreen() {
   const [doAnimSparkles, setDoAnimSparkles] = useState(false);

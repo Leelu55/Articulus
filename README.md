@@ -6,12 +6,8 @@
 
 ### Modifications
 
-- [ ] PauseModal can be a HintModal too with closeFunction = setLessonState(LessonState.IsSpeaking)
-- [ ] include share button in FinishedScreen with android intent to share results in messenger
-
 ### Bugs
 
-- [ ] check Unique Words before pushing to model
 - [ ] year LineChart no data displayed
 - [ ] on Samsung A Galaxy Tab Android 9 TTS and STT don't work initially because the Google Speech engine is not used by default -> implement at least an explanation how to enable it
 
@@ -80,6 +76,7 @@
 - [x] change TabNavigation library
 - [x] PlayerScreen: next word should slide in from the right instead of just be replaced
 - [x] PlayerScreen: show user the right article and give feedback for each chosen article
+- [x] include share button in FinishedScreen with android intent to share results in messenger
 
 #### Content Creation
 
@@ -102,6 +99,7 @@
 - [x] FIXED BY FIXING SELECTORBUTTON ANIMATION nextWord is too fast if correct
 - [x] speed up LessonState Indicator Animation
 - [x] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
+- [x] check Unique Words before pushing to model
 
 ### Next Features after first Open Release
 

@@ -4017,22 +4017,6 @@
       "imageUrl": "https://cdn.statically.io/img/raw.githubusercontent.com/Leelu55/Articulus/master/model/images/children-876543__340.jpg"
     },
     {
-      "value": "Schwein",
-      "slot": 0,
-      "article": "das",
-      "timestamp": null,
-      "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/img/raw.githubusercontent.com/Leelu55/Articulus/master/model/images/piglet-3386356__340.jpg"
-    },
-    {
-      "value": "Schwester",
-      "slot": 0,
-      "article": "die",
-      "timestamp": null,
-      "dueDateTime": null,
-      "imageUrl": "https://cdn.statically.io/img/raw.githubusercontent.com/Leelu55/Articulus/master/model/images/children-1720484__340.jpg"
-    },
-    {
       "value": "Schwimmbad",
       "slot": 0,
       "article": "das",
