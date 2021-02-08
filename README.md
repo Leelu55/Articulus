@@ -6,6 +6,8 @@
 
 ### Modifications
 
+- [ ] pretify "Lektionen" section on StatisticsScreen
+
 ### Bugs
 
 - [ ] on Samsung A Galaxy Tab Android 9 TTS and STT don't work initially because the Google Speech engine is not used by default -> implement at least an explanation how to enable it
