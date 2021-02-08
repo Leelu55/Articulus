@@ -55,7 +55,7 @@ export default function mapChartData(_savedLessons) {
     'D',
   ];
   months.forEach((month, index) => {
-    _yearData.push({x: month, y: yearData[index] ?? 0});
+    _yearData.push({x: month, y: yearData[index + 1] ?? 0});
   });
   _yearData = arrayRotate(_yearData, today.month() - 11);
 

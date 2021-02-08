@@ -8,7 +8,6 @@
 
 ### Bugs
 
-- [ ] year LineChart no data displayed
 - [ ] on Samsung A Galaxy Tab Android 9 TTS and STT don't work initially because the Google Speech engine is not used by default -> implement at least an explanation how to enable it
 
 ### Content Creation
@@ -100,6 +99,7 @@
 - [x] speed up LessonState Indicator Animation
 - [x] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
 - [x] check Unique Words before pushing to model
+- [x] year LineChart no data displayed
 
 ### Next Features after first Open Release
 
