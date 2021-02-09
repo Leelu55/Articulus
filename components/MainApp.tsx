@@ -25,6 +25,7 @@ import AnimatedTabBar, {
   TabsConfig,
   MaterialTabBarItemConfig,
 } from '@gorhom/animated-tabbar';
+import {StatusBar} from 'react-native';
 
 const tabs: TabsConfig<MaterialTabBarItemConfig> = {
   Home: {
@@ -145,6 +146,11 @@ const MainApp = () => {
 
   return (
     <NavigationContainer>
+      <StatusBar
+        translucent={true}
+        backgroundColor="transparent"
+        barStyle="dark-content"
+      />
       <Stack.Navigator headerMode="none">
         {uiStore.showIntro && (
           <Stack.Screen name="IntroScreen" component={IntroSlider} />

@@ -3,13 +3,7 @@ import React, {useContext} from 'react';
 import sharedStyles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
 
-import {
-  Pressable,
-  StyleSheet,
-  Text,
-  TouchableWithoutFeedback,
-  View,
-} from 'react-native';
+import {Dimensions, Pressable, StyleSheet, Text, View} from 'react-native';
 
 import Modal from 'react-native-modal';
 import UIStore from '../stores/UIStore';
@@ -43,14 +37,13 @@ function HintModal() {
 
   return (
     <Modal
+      coverScreen={false}
+      deviceHeight={Dimensions.get('screen').height}
       style={{margin: 0}}
       isVisible={uiStore.isHintModalVisible}
-      backdropTransitionOutTiming={0}
-      customBackdrop={
-        <TouchableWithoutFeedback onPress={() => _hintModalCloseHandler()}>
-          <View style={{flex: 1, backgroundColor: 'black'}} />
-        </TouchableWithoutFeedback>
-      }
+      useNativeDriver={true}
+      hideModalContentWhileAnimating={true}
+      onBackdropPress={() => _hintModalCloseHandler()}
       onBackButtonPress={() => _hintModalCloseHandler()}>
       <View style={styles.wrapper}>
         <View style={styles.modalView}>

@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     flexDirection: 'column',
     flex: 1,
-    paddingTop: 20,
   },
   screenTitle: {
     fontSize: 60,

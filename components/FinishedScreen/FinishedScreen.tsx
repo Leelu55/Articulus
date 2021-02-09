@@ -2,7 +2,14 @@ import {useNavigation} from '@react-navigation/native';
 import {observer} from 'mobx-react';
 import React, {useEffect, useRef, useState} from 'react';
 import {useContext} from 'react';
-import {Animated, Easing, Pressable, StyleSheet, View} from 'react-native';
+import {
+  Animated,
+  Easing,
+  Pressable,
+  StatusBar,
+  StyleSheet,
+  View,
+} from 'react-native';
 import UIStore, {LessonState} from '../../stores/UIStore';
 import WordsStore, {SavedLessonType} from '../../stores/WordsStore';
 import Sparkles from './Sparkles';
@@ -78,7 +85,7 @@ function FinishedScreen() {
   var SendIntentAndroid = require('react-native-send-intent');
 
   return (
-    <View style={styles.wrapper}>
+    <View style={[styles.wrapper, {paddingTop: StatusBar.currentHeight}]}>
       <View style={styles.catContentWrapper}>
         <CatChatBubble
           animCatChatBubble={animCatChatBubble}

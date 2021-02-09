@@ -4,9 +4,10 @@ import {
   View,
   Text,
   Pressable,
-  StyleSheet,
   FlatList,
   ScrollView,
+  StatusBar,
+  SafeAreaView,
 } from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 import WordsStore from '../stores/WordsStore';
@@ -81,56 +82,51 @@ function StartScreen({navigation, route}) {
   };
 
   return (
-    <>
+    <SafeAreaView style={sharedStyles.screen}>
       <FlatList
-        style={styles.list}
+        contentContainerStyle={{paddingTop: StatusBar.currentHeight}}
         data={wordsStore.lessonWords}
         initialNumToRender={3}
         renderItem={renderItem}
         keyExtractor={(item, idx) => 'key' + idx}
         ListHeaderComponent={
-          <View style={[sharedStyles.screen, {paddingBottom: 20}]}>
+          <View style={[{paddingBottom: 20}]}>
             <Text style={sharedStyles.screenTitle}>Willkommen</Text>
             <Text style={sharedStyles.screenSubTitle}>Heute lernst Du</Text>
           </View>
         }
       />
-      <View style={styles.wrapper}>
-        <StartModal
-          isModalVisible={isModalVisible}
-          setIsModalVisible={setIsModalVisible}
-          onStartLesson={onStartNewLesson}
-          onContinueLesson={onContinueLesson}
-        />
-        <View
-          style={{
-            borderRadius: 10,
-            overflow: 'hidden',
-            margin: 20,
+      <StartModal
+        isModalVisible={isModalVisible}
+        setIsModalVisible={setIsModalVisible}
+        onStartLesson={onStartNewLesson}
+        onContinueLesson={onContinueLesson}
+      />
+      <View
+        style={{
+          borderRadius: 10,
+          overflow: 'hidden',
+          margin: 20,
+        }}>
+        <Pressable
+          android_ripple={{color: settings.colors.primary.superlight}}
+          style={[sharedStyles.bigButton, {margin: 0}]}
+          onPress={() => {
+            if (
+              ![LessonState.IsInitial, LessonState.IsFinished].includes(
+                uiStore.lessonState,
+              )
+            ) {
+              setIsModalVisible(true);
+            } else {
+              startLesson(wordsStore, uiStore, navigation);
+            }
           }}>
-          <Pressable
-            android_ripple={{color: settings.colors.primary.superlight}}
-            style={[sharedStyles.bigButton, {margin: 0}]}
-            onPress={() => {
-              if (
-                ![LessonState.IsInitial, LessonState.IsFinished].includes(
-                  uiStore.lessonState,
-                )
-              ) {
-                setIsModalVisible(true);
-              } else {
-                startLesson(wordsStore, uiStore, navigation);
-              }
-            }}>
-            <Text style={[sharedStyles.bigButtonText]}>START</Text>
-          </Pressable>
-        </View>
+          <Text style={[sharedStyles.bigButtonText]}>START</Text>
+        </Pressable>
       </View>
-    </>
+    </SafeAreaView>
   );
 }
-const styles = StyleSheet.create({
-  wrapper: {backgroundColor: 'white'},
-  list: {backgroundColor: 'white'},
-});
+
 export default observer(StartScreen);

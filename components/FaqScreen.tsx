@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, SafeAreaView, StyleSheet, FlatList} from 'react-native';
+import {View, Text, SafeAreaView, FlatList, StatusBar} from 'react-native';
 
 import FaqUnicorn from './SVGs/FaqUnicorn';
 import {ScrollView} from 'react-native-gesture-handler';
@@ -7,10 +7,6 @@ import {useScreenToTop} from './hooks/useScreenToTop';
 import sharedStyles from '../styles/sharedStyles';
 import {faqs} from '../libs/faqs';
 import FaqItem from './FaqItem';
-
-const styles = StyleSheet.create({
-  list: {backgroundColor: 'white'},
-});
 
 function FaqScreen() {
   const ref = React.useRef<ScrollView>(null);
@@ -35,14 +31,15 @@ function FaqScreen() {
   };
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={sharedStyles.screen}>
       <FlatList
-        style={styles.list}
+        contentContainerStyle={{paddingTop: StatusBar.currentHeight}}
         data={DATA}
         renderItem={renderItem}
         keyExtractor={(item, idx) => 'key' + idx}
         ListHeaderComponent={
-          <View style={[sharedStyles.screen, {paddingBottom: 20}]}>
+          // eslint-disable-next-line react-native/no-inline-styles
+          <View style={{paddingBottom: 20}}>
             <Text style={sharedStyles.screenTitle}>FAQ</Text>
             <Text style={sharedStyles.screenSubTitle}>Nutzungshinweise</Text>
             <View style={sharedStyles.screenHeaderIcon}>

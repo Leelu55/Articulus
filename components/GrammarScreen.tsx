@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StatusBar} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 
 import MagicBook from './SVGs/MagicBook';
@@ -26,7 +26,8 @@ function GrammarScreen() {
         let paddingToBottom = e.nativeEvent.layoutMeasurement.height;
         setTabsAttachedToTop(offsetY >= height - paddingToBottom);
       }}>
-      <View style={sharedStyles.screen}>
+      <View
+        style={[sharedStyles.screen, {paddingTop: StatusBar.currentHeight}]}>
         <Text style={sharedStyles.screenTitle}>Regeln</Text>
         <Text style={sharedStyles.screenSubTitle}>Der - Die - Das</Text>
 

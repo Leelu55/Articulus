@@ -1,6 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {StyleSheet, Text, TouchableWithoutFeedback, View} from 'react-native';
+import {
+  Dimensions,
+  StyleSheet,
+  Text,
+  TouchableWithoutFeedback,
+  View,
+} from 'react-native';
 import settings from '../libs/settings.json';
 import Modal from 'react-native-modal';
 import UnicornCat from './SVGs/UnicornCat';
@@ -37,15 +43,15 @@ function PauseModal({
 }) {
   return (
     <Modal
+      // https://github.com/react-native-modal/react-native-modal/issues/50#issuecomment-563552741
+      coverScreen={false}
+      deviceHeight={Dimensions.get('screen').height}
       style={{margin: 0}}
       isVisible={isModalVisible}
       // https://github.com/react-native-modal/react-native-modal#the-modal-enterexit-animation-flickers
-      backdropTransitionOutTiming={0}
-      customBackdrop={
-        <TouchableWithoutFeedback onPress={() => setIsModalVisible(false)}>
-          <View style={{flex: 1, backgroundColor: 'black'}} />
-        </TouchableWithoutFeedback>
-      }
+      useNativeDriver={true}
+      hideModalContentWhileAnimating={true}
+      onBackdropPress={() => setIsModalVisible(false)}
       onBackButtonPress={() => setIsModalVisible(false)}>
       <TouchableWithoutFeedback onPress={() => setIsModalVisible(false)}>
         <View style={styles.wrapper}>

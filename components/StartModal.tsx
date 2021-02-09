@@ -1,12 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {
-  Pressable,
-  StyleSheet,
-  Text,
-  TouchableWithoutFeedback,
-  View,
-} from 'react-native';
+import {Dimensions, Pressable, StyleSheet, Text, View} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
 import Modal from 'react-native-modal';
@@ -24,9 +18,6 @@ const styles = StyleSheet.create({
       width: 0,
       height: 2,
     },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
   },
   modalText: {
     fontSize: 20,
@@ -47,15 +38,14 @@ function StartModal({
 }) {
   return (
     <Modal
+      coverScreen={false}
+      deviceHeight={Dimensions.get('screen').height}
       style={{margin: 0}}
       isVisible={isModalVisible}
       // https://github.com/react-native-modal/react-native-modal#the-modal-enterexit-animation-flickers
-      backdropTransitionOutTiming={0}
-      customBackdrop={
-        <TouchableWithoutFeedback onPress={() => setIsModalVisible(false)}>
-          <View style={{flex: 1, backgroundColor: 'black'}} />
-        </TouchableWithoutFeedback>
-      }
+      useNativeDriver={true}
+      hideModalContentWhileAnimating={true}
+      onBackdropPress={() => setIsModalVisible(false)}
       onBackButtonPress={() => setIsModalVisible(false)}>
       <View style={styles.wrapper}>
         <View style={styles.modalView}>

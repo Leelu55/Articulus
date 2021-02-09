@@ -11,6 +11,7 @@
 ### Bugs
 
 - [ ] on Samsung A Galaxy Tab Android 9 TTS and STT don't work initially because the Google Speech engine is not used by default -> implement at least an explanation how to enable it
+- [ ] adding or modifying words can not be done by running the script as it deletes all the grammar rules. so either include grammar rules in csv already and extend the script to include these in model or add words only directly to model or ?
 
 ### Content Creation
 

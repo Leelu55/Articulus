@@ -1,5 +1,5 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StatusBar, StyleSheet, View} from 'react-native';
 
 import {observer} from 'mobx-react';
 
@@ -53,7 +53,7 @@ function PlayerScreen({navigation}) {
 
   return (
     // eslint-disable-next-line react-native/no-inline-styles
-    <View style={{flex: 1}}>
+    <View style={{flex: 1, paddingTop: StatusBar.currentHeight}}>
       <PauseModal
         isModalVisible={uiStore.lessonState === LessonState.IsPaused}
         setIsModalVisible={() => {
