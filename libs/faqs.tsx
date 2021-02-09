@@ -1,7 +1,6 @@
 import React, {ReactElement} from 'react';
 import {
   faHandSparkles,
-  IconDefinition,
   faMicrophone,
   faVolumeDown,
 } from '@fortawesome/free-solid-svg-icons';
@@ -11,7 +10,7 @@ interface FaqType {
   label: ReactElement;
   text: ReactElement;
   shortText: ReactElement;
-  faIcon: IconDefinition;
+  faIcon: any;
 }
 export interface FaqsType {
   [key: string]: FaqType;

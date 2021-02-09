@@ -1,8 +1,7 @@
 import React from 'react';
-import {View, Text, SafeAreaView, FlatList, StatusBar} from 'react-native';
+import {StatusBar, ScrollView, View, Text} from 'react-native';
 
 import FaqUnicorn from './SVGs/FaqUnicorn';
-import {ScrollView} from 'react-native-gesture-handler';
 import {useScreenToTop} from './hooks/useScreenToTop';
 import sharedStyles from '../styles/sharedStyles';
 import {faqs} from '../libs/faqs';
@@ -19,36 +18,39 @@ function FaqScreen() {
     faIcon: faqs[faq].faIcon,
   }));
 
-  const renderItem = ({item}) => {
-    return (
-      <FaqItem
-        title={item.title}
-        text={item.text}
-        faIcon={item.faIcon}
-        shortText={item.shortText}
-      />
-    );
-  };
+  // const renderItem = ({item}) => {
+  //   return (
+  //     <FaqItem
+  //       title={item.title}
+  //       text={item.text}
+  //       faIcon={item.faIcon}
+  //       shortText={item.shortText}
+  //     />
+  //   );
+  // };
 
   return (
-    <SafeAreaView style={sharedStyles.screen}>
-      <FlatList
-        contentContainerStyle={{paddingTop: StatusBar.currentHeight}}
-        data={DATA}
-        renderItem={renderItem}
-        keyExtractor={(item, idx) => 'key' + idx}
-        ListHeaderComponent={
-          // eslint-disable-next-line react-native/no-inline-styles
-          <View style={{paddingBottom: 20}}>
-            <Text style={sharedStyles.screenTitle}>FAQ</Text>
-            <Text style={sharedStyles.screenSubTitle}>Nutzungshinweise</Text>
-            <View style={sharedStyles.screenHeaderIcon}>
-              <FaqUnicorn width={150} />
-            </View>
-          </View>
-        }
-      />
-    </SafeAreaView>
+    <ScrollView
+      style={sharedStyles.screen}
+      contentContainerStyle={{paddingTop: StatusBar.currentHeight}}
+      ref={ref}>
+      <View style={{paddingBottom: 20}}>
+        <Text style={sharedStyles.screenTitle}>FAQ</Text>
+        <Text style={sharedStyles.screenSubTitle}>Nutzungshinweise</Text>
+        <View style={sharedStyles.screenHeaderIcon}>
+          <FaqUnicorn width={150} />
+        </View>
+      </View>
+
+      {DATA.map((item) => (
+        <FaqItem
+          title={item.title}
+          text={item.text}
+          faIcon={item.faIcon}
+          shortText={item.shortText}
+        />
+      ))}
+    </ScrollView>
   );
 }
 export default FaqScreen;
