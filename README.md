@@ -26,7 +26,6 @@
 - [ ] check paddings, margins, positions, sizes. make sure they are used consistently on all screens, also cleanUp sharedStyles
 - [ ] check all buttons, links, views (functionality and usability)
 - [ ] change android StatusBar appearence according to our colors
-- [x] new logo
 
 ### Documentation and Pre-Release Tasks
 
@@ -102,6 +101,10 @@
 - [x] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
 - [x] check Unique Words before pushing to model
 - [x] year LineChart no data displayed
+
+### Appearance
+
+- [x] new logo
 
 ### Next Features after first Open Release
 
