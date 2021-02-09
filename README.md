@@ -26,7 +26,7 @@
 - [ ] check paddings, margins, positions, sizes. make sure they are used consistently on all screens, also cleanUp sharedStyles
 - [ ] check all buttons, links, views (functionality and usability)
 - [ ] change android StatusBar appearence according to our colors
-- [ ] new logo
+- [x] new logo
 
 ### Documentation and Pre-Release Tasks
 
