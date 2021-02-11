@@ -7,11 +7,13 @@
 ### Modifications
 
 - [ ] pretify "Lektionen" section on StatisticsScreen
+- [ ] don't show hints more than once
+- [ ] make list items on StartCreen clickable, onClick show article, slot and say word(?)
 
 ### Bugs
 
 - [ ] on Samsung A Galaxy Tab Android 9 TTS and STT don't work initially because the Google Speech engine is not used by default -> implement at least an explanation how to enable it
-- [ ] adding or modifying words can not be done by running the script as it deletes all the grammar rules. so either include grammar rules in csv already and extend the script to include these in model or add words only directly to model or ?
+- [ ] Fix GrammarScreen scroll bug
 
 ### Content Creation
 
@@ -101,6 +103,7 @@
 - [x] ripple on Selector buttons borderRadius not correct (sharp instead of rounded edges)
 - [x] check Unique Words before pushing to model
 - [x] year LineChart no data displayed
+- [x] adding or modifying words can not be done by running the script as it deletes all the grammar rules. so either include grammar rules in csv already and extend the script to include these in model or add words only directly to model or ?
 
 ### Appearance
 
