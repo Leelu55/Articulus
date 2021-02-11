@@ -20,11 +20,14 @@ function GrammarScreen() {
     <ScrollView
       ref={ref}
       onScroll={(e) => {
-        const height = e.nativeEvent.contentSize.height;
-        const offsetY = e.nativeEvent.contentOffset.y;
-
-        let paddingToBottom = e.nativeEvent.layoutMeasurement.height;
-        setTabsAttachedToTop(offsetY >= height - paddingToBottom);
+        // Math.floor() to use height and offsetY as integers for exact comparability
+        const height = Math.floor(e.nativeEvent.contentSize.height);
+        const offsetY = Math.floor(e.nativeEvent.contentOffset.y);
+        let paddingToBottom = Math.floor(
+          e.nativeEvent.layoutMeasurement.height,
+        );
+        const heightWithoutPaddingToBottom = height - paddingToBottom;
+        setTabsAttachedToTop(offsetY >= heightWithoutPaddingToBottom);
       }}>
       <View
         style={[sharedStyles.screen, {paddingTop: StatusBar.currentHeight}]}>

@@ -42,8 +42,9 @@ function FaqScreen() {
         </View>
       </View>
 
-      {DATA.map((item) => (
+      {DATA.map((item, idx) => (
         <FaqItem
+          key={idx}
           title={item.title}
           text={item.text}
           faIcon={item.faIcon}
