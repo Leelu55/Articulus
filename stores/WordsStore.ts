@@ -16,7 +16,7 @@ export interface WordType {
   timestamp: Date;
   imageUrl: string;
   dueDateTime: Date;
-  ruleId?: string;
+  ruleId: string;
 }
 
 // words in lesson

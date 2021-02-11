@@ -31,7 +31,7 @@ const articles = ['der', 'die', 'das'];
 const wordsArray = textByLine
   .filter((wordRaw) => {
     const wordData = wordRaw.split(' ');
-    const wordOK = wordData.length === 3 && articles.includes(wordData[1]);
+    const wordOK = wordData.length >= 3 && articles.includes(wordData[1]);
     if (!wordOK) {
       console.error(`Error because word ${wordData[0]} doesn't match rules`);
     }
@@ -47,6 +47,7 @@ const wordsArray = textByLine
       timestamp: null,
       dueDateTime: null,
       imageUrl: staticallyBaseURL + wordData[2].split('/').slice(-1)[0],
+      ruleId: wordData[3] ? wordData[3] : '',
     };
   });
 //filter duplicates by using an object with unique values as entries
