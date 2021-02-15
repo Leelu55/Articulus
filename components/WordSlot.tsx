@@ -26,6 +26,7 @@ function WordSlot({slot}: {slot: number}) {
     const borderTopRightRadius = i === settings.numberOfSlots - 1 ? 2.5 : 0;
     slots.push(
       <View
+        key={i}
         style={[
           styles.slot,
           {
