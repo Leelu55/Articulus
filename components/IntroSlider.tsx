@@ -1,5 +1,5 @@
 /* eslint-disable react-native/no-inline-styles */
-import React from 'react';
+import React, {useState} from 'react';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import {View, Text, StyleSheet} from 'react-native';
 import {observer} from 'mobx-react';
@@ -10,39 +10,52 @@ import settings from '../libs/settings.json';
 import Svg1 from './intro/Slide1';
 import Svg2 from './intro/Slide2';
 import Svg3 from './intro/Slide3';
+import Svg4 from './intro/Slide4';
+
 import {TextStyle} from 'react-native';
 
-const slides = [
-  {
-    key: '1',
-    title: 'Artikel mit Articulus',
-    text: 'Verwende Der, Die, Das korrekt und sicher mit Articulus',
-    svg: () => <Svg1 />,
-    backgroundColor: 'lightgrey',
-  },
-  {
-    key: '2',
-    title: 'Sprich die Artikel',
-    text: 'Sprich einfach den Artikel für jedes Wort und lerne freihändig',
-    svg: () => <Svg2 />,
-    backgroundColor: 'lightgrey',
-  },
-  {
-    key: '3',
-    title: 'Deutsch wie ein Profi',
-    text: 'Mit der Zeit perfektionierst du den Gebrauch von Artikeln',
-    svg: () => <Svg3 />,
-    backgroundColor: 'lightgrey',
-  },
-];
+function getSlides(index: number) {
+  return [
+    {
+      key: '1',
+      title: 'Artikel mit Articulus',
+      text: 'Verwende Der, Die, Das korrekt und sicher mit Articulus',
+      svg: () => <Svg1 />,
+      backgroundColor: 'lightgrey',
+    },
+    {
+      key: '2',
+      title: 'Sprich die Artikel',
+      text: 'Sprich einfach den Artikel für jedes Wort und lerne freihändig',
+      svg: () => <Svg2 />,
+      backgroundColor: 'lightgrey',
+    },
+    {
+      key: '3',
+      title: 'Deutsch wie ein Profi',
+      text: 'Mit der Zeit perfektionierst du den Gebrauch von Artikeln',
+      svg: () => <Svg3 />,
+      backgroundColor: 'lightgrey',
+    },
+    {
+      key: '4',
+      title: 'Teste dein Mikrofon',
+      text:
+        'Du brauchst dein Mikrofon um die Artikel einfach sprechen zu können.',
+      svg: () => <Svg4 isActive={index === 3} />,
+      backgroundColor: 'lightgrey',
+    },
+  ];
+}
 
-const renderItem = ({item}) => {
+const renderItem = ({item, index}) => {
   const styles = StyleSheet.create({
     wrapper: {
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
       paddingHorizontal: 10,
+      flexDirection: 'column',
     },
     titleText: {
       fontWeight: 'bold',
@@ -62,8 +75,14 @@ const renderItem = ({item}) => {
   return (
     <View style={[styles.wrapper, {backgroundColor: item.backgroundColor}]}>
       <Text style={styles.titleText}>{item.title}</Text>
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        {item.svg()}
+      <View
+        style={{
+          flex: 1,
+          alignSelf: 'stretch',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+        {item.svg(index)}
       </View>
       <Text style={styles.descriptionText}>{item.text}</Text>
     </View>
@@ -72,6 +91,7 @@ const renderItem = ({item}) => {
 
 function IntroSlider() {
   const uiStore = useContext(UIStore);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   const styleSliderButton: TextStyle = {
     fontSize: 20,
@@ -82,18 +102,19 @@ function IntroSlider() {
   };
   const renderNextButton = () => <Text style={styleSliderButton}>Weiter</Text>;
   const renderDoneButton = () => <Text style={styleSliderButton}>Fertig</Text>;
-
+  const onSlideChange = (index: number) => setCurrentSlideIndex(index);
   return (
     <AppIntroSlider
       dotStyle={{backgroundColor: settings.colors.secondary.light}}
       activeDotStyle={{backgroundColor: settings.colors.primary.normal}}
       renderItem={renderItem}
-      data={slides}
+      data={getSlides(currentSlideIndex)}
       onDone={uiStore.hideIntro}
       showNextButton
       showDoneButton
       renderNextButton={renderNextButton}
       renderDoneButton={renderDoneButton}
+      onSlideChange={onSlideChange}
     />
   );
 }

@@ -26,6 +26,7 @@ import AnimatedTabBar, {
   MaterialTabBarItemConfig,
 } from '@gorhom/animated-tabbar';
 import {StatusBar} from 'react-native';
+import ttsLibrary, {Engine} from 'react-native-tts';
 
 const tabs: TabsConfig<MaterialTabBarItemConfig> = {
   Home: {

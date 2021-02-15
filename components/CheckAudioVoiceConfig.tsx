@@ -5,7 +5,7 @@ import UIStore from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {useState} from 'react';
 import settings from '../libs/settings.json';
-import ttsLibrary from 'react-native-tts';
+import ttsLibrary, {Engine} from 'react-native-tts';
 import voiceLibrary from '@react-native-community/voice';
 
 function CheckAudioVoiceConfig({navigation}) {
@@ -26,22 +26,34 @@ function CheckAudioVoiceConfig({navigation}) {
   }
 
   useEffect(() => {
+    // use google.android.tts engine for tts and stt
     ttsLibrary.getInitStatus().then(
       () => {
-        setIsTtsChecked(true);
+        ttsLibrary.engines().then((engines: Engine[]) => {
+          engines = engines.filter(
+            (engine: Engine) => engine.name === 'com.google.android.tts',
+          );
+          //console.log({enginesLength: engines.length, engines});
+          if (engines.length === 1) {
+            ttsLibrary.setDefaultEngine('com.google.android.tts');
+          }
+          if (engines.length === 0) {
+            errors.current.push('ttsError');
+          }
+          setIsTtsChecked(true);
+        });
       },
       (err) => {
         if (err.code === 'no_engine') {
           errors.current.push('ttsError');
         }
-        setIsTtsChecked(true);
       },
     );
     checkVoiceServices();
   }, []);
 
   useEffect(() => {
-    if (isTtsChecked && isVoiceChecked) {
+    if (isTtsChecked || isVoiceChecked) {
       if (errors.current.length) {
         navigation.navigate('ConfigScreen', {
           ttsError: errors.current.includes('ttsError'),
