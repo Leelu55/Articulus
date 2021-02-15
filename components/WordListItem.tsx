@@ -37,7 +37,6 @@ function WordListItem({
       easing: Easing.ease,
     }).start();
   }
-  console.log(slot);
   return (
     <View style={styles.wrapper}>
       <Pressable

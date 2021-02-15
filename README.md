@@ -8,12 +8,8 @@
 
 - [ ] pretify "Lektionen" section on StatisticsScreen
 - [ ] don't show hints more than once
-- [ ] make list items on StartCreen clickable, onClick show article, slot and say word(?)
 
 ### Bugs
-
-- [ ] on Samsung A Galaxy Tab Android 9 TTS and STT don't work initially because the Google Speech engine is not used by default -> implement at least an explanation how to enable it
-- [ ] Fix GrammarScreen scroll bug
 
 ### Content Creation
 
@@ -79,6 +75,7 @@
 - [x] PlayerScreen: next word should slide in from the right instead of just be replaced
 - [x] PlayerScreen: show user the right article and give feedback for each chosen article
 - [x] include share button in FinishedScreen with android intent to share results in messenger
+- [x] make list items on StartCreen clickable, onClick show article
 
 #### Content Creation
 
@@ -104,6 +101,8 @@
 - [x] check Unique Words before pushing to model
 - [x] year LineChart no data displayed
 - [x] adding or modifying words can not be done by running the script as it deletes all the grammar rules. so either include grammar rules in csv already and extend the script to include these in model or add words only directly to model or ?
+- [x] Fix GrammarScreen scroll bug
+- [x] on Samsung A Galaxy Tab Android 9 TTS and STT don't work initially because the Google Speech engine is not used by default -> implement at least an explanation how to enable it
 
 ### Appearance
 
