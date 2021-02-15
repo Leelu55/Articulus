@@ -51,9 +51,6 @@ function WordListItem({
             </Text>
           </View>
           <WordSlot slot={slot} />
-          {/* <Text style={styles.slot}>
-          Stufe {slot} von {settings.numberOfSlots - 1}
-        </Text> */}
         </View>
         <Animated.View
           style={[
