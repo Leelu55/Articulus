@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
   },
 });
 function WordSlot({slot}: {slot: number}) {
+  // TODO put real slot in
   slot = Math.ceil(Math.random() * settings.numberOfSlots);
   let slots = [];
   for (let i = 0; i < settings.numberOfSlots; i++) {
