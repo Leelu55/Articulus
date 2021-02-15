@@ -95,9 +95,9 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
   },
   text: {flex: 1, fontSize: 20, fontWeight: 'bold'},
-  animatedText: {fontSize: 20, fontWeight: 'bold'},
+  animatedText: {fontSize: 20, fontWeight: 'bold', color: 'white'},
   animatedTextWrapper: {
-    backgroundColor: settings.colors.secondary.normal,
+    backgroundColor: settings.colors.correctAnswer,
     padding: 10,
     borderRadius: 10,
   },
