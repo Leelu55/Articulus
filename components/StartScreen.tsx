@@ -75,7 +75,7 @@ function StartScreen({navigation, route}) {
         value={item.value}
         imageUrl={miniUrl}
         dueDateTime={item.dueDateTime}
-        slot={item.slot}
+        slot={item.slot ? item.slot : 0}
         article={item.article}
       />
     );
@@ -90,7 +90,7 @@ function StartScreen({navigation, route}) {
         renderItem={renderItem}
         keyExtractor={(item, idx) => 'key' + idx}
         ListHeaderComponent={
-          <View style={[{paddingBottom: 20}]}>
+          <View style={[{paddingBottom: 20, marginTop: 10}]}>
             <Text style={sharedStyles.screenTitle}>Willkommen</Text>
             <Text style={sharedStyles.screenSubTitle}>Heute lernst Du</Text>
           </View>
