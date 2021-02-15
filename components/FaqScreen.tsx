@@ -1,5 +1,5 @@
 import React from 'react';
-import {StatusBar, ScrollView, View, Text} from 'react-native';
+import {StatusBar, ScrollView, View, Text, StyleSheet} from 'react-native';
 
 import FaqUnicorn from './SVGs/FaqUnicorn';
 import {useScreenToTop} from './hooks/useScreenToTop';
@@ -29,12 +29,15 @@ function FaqScreen() {
   //   );
   // };
 
+  const styles = StyleSheet.create({
+    header: {paddingBottom: 20, marginTop: 10},
+  });
   return (
     <ScrollView
       style={sharedStyles.screen}
       contentContainerStyle={{paddingTop: StatusBar.currentHeight}}
       ref={ref}>
-      <View style={{paddingBottom: 20}}>
+      <View style={styles.header}>
         <Text style={sharedStyles.screenTitle}>FAQ</Text>
         <Text style={sharedStyles.screenSubTitle}>Nutzungshinweise</Text>
         <View style={sharedStyles.screenHeaderIcon}>

@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   screenTitle: {
-    fontSize: 60,
+    fontSize: 50,
     fontWeight: 'bold',
     color: 'black',
     alignSelf: 'center',

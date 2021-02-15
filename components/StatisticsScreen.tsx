@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useEffect, useReducer} from 'react';
-import {StatusBar, Text, View} from 'react-native';
+import {StatusBar, Text, View, StyleSheet} from 'react-native';
 
 import sharedStyles from '../styles/sharedStyles';
 import {ScrollView} from 'react-native-gesture-handler';
@@ -25,11 +25,15 @@ function StatisticsScreen({navigation}) {
 
   const ref = React.useRef<ScrollView>(null);
   useScreenToTop(ref);
-
+  const styles = StyleSheet.create({
+    header: {
+      paddingBottom: 20,
+      marginTop: 10,
+      paddingTop: StatusBar.currentHeight,
+    },
+  });
   return (
-    <ScrollView
-      style={[sharedStyles.screen, {paddingTop: StatusBar.currentHeight}]}
-      ref={ref}>
+    <ScrollView style={[sharedStyles.screen, styles.header]} ref={ref}>
       <Text style={sharedStyles.screenTitle}>Statistik</Text>
       <Text style={sharedStyles.screenSubTitle}>Deine Erfolge</Text>
       <View style={sharedStyles.screenHeaderIcon}>

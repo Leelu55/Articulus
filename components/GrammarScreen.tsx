@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StatusBar} from 'react-native';
+import {View, Text, StatusBar, StyleSheet} from 'react-native';
 import sharedStyles from '../styles/sharedStyles';
 
 import MagicBook from './SVGs/MagicBook';
@@ -15,7 +15,13 @@ function GrammarScreen() {
   function screenToTop() {
     ref.current.scrollTo({y: 0, animated: true});
   }
-
+  const styles = StyleSheet.create({
+    header: {
+      paddingBottom: 20,
+      marginTop: 10,
+      paddingTop: StatusBar.currentHeight,
+    },
+  });
   return (
     <ScrollView
       ref={ref}
@@ -29,8 +35,7 @@ function GrammarScreen() {
         const heightWithoutPaddingToBottom = height - paddingToBottom;
         setTabsAttachedToTop(offsetY >= heightWithoutPaddingToBottom);
       }}>
-      <View
-        style={[sharedStyles.screen, {paddingTop: StatusBar.currentHeight}]}>
+      <View style={[sharedStyles.screen, styles.header]}>
         <Text style={sharedStyles.screenTitle}>Regeln</Text>
         <Text style={sharedStyles.screenSubTitle}>Der - Die - Das</Text>
 
