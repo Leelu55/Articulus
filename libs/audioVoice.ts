@@ -80,7 +80,14 @@ export function stopSpeakWord() {
 // https://github.com/ak1394/react-native-tts/issues/121
 export function speakWord(wordValue) {
   ttsLibrary.speak(wordValue, {
-    androidParams: {KEY_PARAM_STREAM: 'STREAM_MUSIC'},
+    androidParams: {
+      KEY_PARAM_PAN: 0,
+      KEY_PARAM_VOLUME: 1,
+      KEY_PARAM_STREAM: 'STREAM_MUSIC',
+    },
+    // these two ios specific params are only set to satisfy TypeScript
+    iosVoiceId: 'com.apple.ttsbundle.Moira-compact',
+    rate: 0.6,
   });
 }
 
