@@ -74,27 +74,11 @@ const styles = StyleSheet.create({
     padding: 10,
   },
 
-  bigButton: {
-    margin: 20,
-    paddingVertical: 5,
-    paddingHorizontal: 20,
-    borderRadius: 10,
-    backgroundColor: settings.colors.primary.normal,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
   articleButtonText: {
     fontWeight: 'bold',
     color: 'black',
     padding: 5,
     position: 'absolute',
-  },
-  bigButtonText: {
-    fontWeight: 'bold',
-    color: 'white',
-    padding: 5,
-    fontSize: 30,
   },
 
   controlButton: {

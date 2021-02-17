@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useCallback, useEffect, useState} from 'react';
-import {StatusBar, StyleSheet, View, Text, Pressable} from 'react-native';
+import {StatusBar, StyleSheet, View, Text} from 'react-native';
 
 import {observer} from 'mobx-react';
 
@@ -18,7 +18,6 @@ import PauseModal from './PauseModal';
 import HintModal from './HintModal';
 import PlayerOverlay from './PlayerOverlay';
 import HintBubble from './HintBubble';
-import settings from '../libs/settings.json';
 import SnackBar from './SnackBar';
 
 function PlayerScreen({navigation}) {
@@ -61,7 +60,6 @@ function PlayerScreen({navigation}) {
   }
 
   return (
-    // eslint-disable-next-line react-native/no-inline-styles
     <View style={{flex: 1, paddingTop: StatusBar.currentHeight}}>
       <PauseModal
         isModalVisible={uiStore.lessonState === LessonState.IsPaused}

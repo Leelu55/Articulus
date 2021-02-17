@@ -1,11 +1,11 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Animated, Pressable, Text} from 'react-native';
+import {Animated} from 'react-native';
 import startLesson from '../../libs/startLesson';
-import sharedStyles from '../../styles/sharedStyles';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import ButtonBar from '../ButtonBar';
 import settings from '../../libs/settings.json';
+import BigButton from '../BigButton';
 
 export default function ButtonBarView({
   uiStore,
@@ -29,36 +29,31 @@ export default function ButtonBarView({
         }),
       }}>
       <ButtonBar>
-        <Pressable
-          style={[
-            sharedStyles.bigButton,
-            {
-              backgroundColor: 'white',
-              margin: 0,
-              marginRight: 20,
-              width: 80,
-            },
-          ]}
+        <BigButton
+          style={{
+            backgroundColor: 'white',
+            margin: 0,
+          }}
           onPress={() => {
             navigation.navigate('Home', {comingFrom: 'FinishedScreen'});
-          }}>
-          <FontAwesomeIcon
-            icon="home"
-            size={40}
-            color={settings.colors.primary.normal}
-          />
-        </Pressable>
-        <Pressable
-          style={[
-            sharedStyles.bigButton,
-            {margin: 0, flexDirection: 'row', flex: 1},
-          ]}
+          }}
+          text={
+            <FontAwesomeIcon
+              icon="home"
+              size={40}
+              color={settings.colors.primary.normal}
+            />
+          }
+        />
+
+        <BigButton
+          style={{margin: 0}}
           onPress={() => {
             wordsStore.populateLesson();
             startLesson(wordsStore, uiStore, navigation);
-          }}>
-          <Text style={sharedStyles.bigButtonText}>Neue Runde</Text>
-        </Pressable>
+          }}
+          text="NEUE RUNDE"
+        />
       </ButtonBar>
     </Animated.View>
   );

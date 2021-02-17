@@ -1,14 +1,14 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text, Pressable, Linking, StyleSheet, Image} from 'react-native';
+import {View, Text, Linking, StyleSheet, Image} from 'react-native';
 import {observer} from 'mobx-react';
 import {useState} from 'react';
 import ttsLibrary from 'react-native-tts';
-import sharedStyles from '../styles/sharedStyles';
 import RNRestart from 'react-native-restart';
 import ReloadWand from './SVGs/ReloadWand';
 import settings from '../libs/settings.json';
 import InstallNeeded from './SVGs/InstallNeeded';
+import BigButton from './BigButton';
 
 function ConfigScreen({route}) {
   const {ttsError, voiceError} = route.params;
@@ -74,13 +74,12 @@ function ConfigScreen({route}) {
         <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
           <ReloadWand />
         </View>
-        <Pressable
-          style={[sharedStyles.bigButton, styles.bigButtonColor]}
-          onPress={onReload}>
-          <Text style={[sharedStyles.bigButtonText, styles.bigButtonTextColor]}>
-            Reload App
-          </Text>
-        </Pressable>
+        <BigButton
+          text={'NEUSTARTEN'}
+          style={styles.bigButtonColor}
+          textStyle={styles.bigButtonTextColor}
+          onPress={onReload}
+        />
       </View>
     );
   }
@@ -93,13 +92,13 @@ function ConfigScreen({route}) {
         <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
           <ReloadWand />
         </View>
-        <Pressable
-          style={[sharedStyles.bigButton, styles.bigButtonColor]}
-          onPress={onReload}>
-          <Text style={[sharedStyles.bigButtonText, styles.bigButtonTextColor]}>
-            Reload App
-          </Text>
-        </Pressable>
+
+        <BigButton
+          text={'NEUSTARTEN'}
+          style={styles.bigButtonColor}
+          textStyle={styles.bigButtonTextColor}
+          onPress={onReload}
+        />
       </View>
     );
   }
@@ -121,13 +120,13 @@ function ConfigScreen({route}) {
           />
           <InstallNeeded />
         </View>
-        <Pressable
-          style={[sharedStyles.bigButton, styles.bigButtonColor]}
-          onPress={onConfigureTts}>
-          <Text style={[sharedStyles.bigButtonText, styles.bigButtonTextColor]}>
-            Installieren
-          </Text>
-        </Pressable>
+
+        <BigButton
+          text={'INSTALLIEREN'}
+          style={styles.bigButtonColor}
+          textStyle={styles.bigButtonTextColor}
+          onPress={onConfigureTts}
+        />
       </View>
     );
   }
@@ -149,13 +148,13 @@ function ConfigScreen({route}) {
           />
           <InstallNeeded />
         </View>
-        <Pressable
-          style={[sharedStyles.bigButton, styles.bigButtonColor]}
-          onPress={onConfigureVoice}>
-          <Text style={[sharedStyles.bigButtonText, styles.bigButtonTextColor]}>
-            Installieren
-          </Text>
-        </Pressable>
+
+        <BigButton
+          text={'INSTALLIEREN'}
+          style={styles.bigButtonColor}
+          textStyle={styles.bigButtonTextColor}
+          onPress={onConfigureVoice}
+        />
       </View>
     );
   }
@@ -167,13 +166,12 @@ function ConfigScreen({route}) {
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
         <ReloadWand />
       </View>
-      <Pressable
-        style={[sharedStyles.bigButton, styles.bigButtonColor]}
-        onPress={onReload}>
-        <Text style={[sharedStyles.bigButtonText, styles.bigButtonTextColor]}>
-          Reload App
-        </Text>
-      </Pressable>
+      <BigButton
+        text={'NEUSTARTEN'}
+        style={styles.bigButtonColor}
+        textStyle={styles.bigButtonTextColor}
+        onPress={onReload}
+      />
     </View>
   );
 }

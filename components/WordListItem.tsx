@@ -57,7 +57,7 @@ function WordListItem({
             styles.animatedTextWrapper,
             {
               opacity: animValue.interpolate({
-                inputRange: [0, 0.2, 0.8, 1],
+                inputRange: [0, 0.1, 0.8, 1],
                 outputRange: [0, 1, 1, 0],
               }),
             },

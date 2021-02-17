@@ -1,9 +1,9 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Dimensions, Pressable, StyleSheet, Text, View} from 'react-native';
-import sharedStyles from '../styles/sharedStyles';
+import {Dimensions, StyleSheet, Text, View} from 'react-native';
 import settings from '../libs/settings.json';
 import Modal from 'react-native-modal';
+import BigButton from './BigButton';
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -53,32 +53,28 @@ function StartModal({
             Unterbrochene Lektion fortsetzen oder neu beginnen?
           </Text>
 
-          <Pressable
-            style={[
-              sharedStyles.bigButton,
-              {
-                marginBottom: 0,
-                backgroundColor: settings.colors.secondary.normal,
-              },
-            ]}
+          <BigButton
+            style={{
+              marginBottom: 0,
+              backgroundColor: settings.colors.secondary.normal,
+            }}
+            textStyle={{color: 'black'}}
             onPress={() => {
-              onContinueLesson();
-            }}>
-            <Text style={[sharedStyles.bigButtonText, {color: 'black'}]}>
-              Fortsetzen
-            </Text>
-          </Pressable>
+              setTimeout(onContinueLesson, 0);
+            }}
+            text="FORTSETZEN"
+          />
 
-          <Pressable
-            style={[sharedStyles.bigButton]}
+          <BigButton
             onPress={() => {
-              onStartLesson();
-              setIsModalVisible(false);
-            }}>
-            <Text style={[sharedStyles.bigButtonText, {color: 'white'}]}>
-              Neue Lektion
-            </Text>
-          </Pressable>
+              setTimeout(() => {
+                onStartLesson();
+                setIsModalVisible(false);
+              }, 0);
+            }}
+            textStyle={{color: 'white'}}
+            text="NEUE LEKTION"
+          />
         </View>
       </View>
     </Modal>

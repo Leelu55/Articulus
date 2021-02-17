@@ -1,9 +1,9 @@
 /* eslint-disable react-native/no-inline-styles */
 import * as React from 'react';
 import {useState} from 'react';
-import {Pressable, Text, View} from 'react-native';
+import {View} from 'react-native';
 import MicLevel from '../MicLevel';
-import sharedStyles from '../../styles/sharedStyles';
+import BigButton from '../BigButton';
 export default function ({isActive}: {isActive: boolean}) {
   const [width, setWidth] = useState(0);
 
@@ -18,11 +18,11 @@ export default function ({isActive}: {isActive: boolean}) {
       }}
       onLayout={onLayout}>
       {width !== 0 && <MicLevel isActive={isActive} width={width} />}
-      <Pressable style={sharedStyles.bigButton}>
-        <Text style={[sharedStyles.bigButtonText, {fontSize: 25}]}>
-          Ich kann nichts sehen
-        </Text>
-      </Pressable>
+      <BigButton
+        text="Ich kann nichts sehen"
+        textStyle={{fontSize: 25}}
+        onPress={() => {}}
+      />
     </View>
   );
 }

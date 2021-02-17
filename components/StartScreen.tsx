@@ -3,7 +3,6 @@ import React, {useContext, useEffect} from 'react';
 import {
   View,
   Text,
-  Pressable,
   FlatList,
   ScrollView,
   StatusBar,
@@ -19,6 +18,7 @@ import startLesson from '../libs/startLesson';
 import settings from '../libs/settings.json';
 import {useScreenToTop} from './hooks/useScreenToTop';
 import WordListItem from './WordListItem';
+import BigButton from './BigButton';
 
 function StartScreen({navigation, route}) {
   const wordsStore = useContext(WordsStore);
@@ -96,29 +96,20 @@ function StartScreen({navigation, route}) {
         onStartLesson={onStartNewLesson}
         onContinueLesson={onContinueLesson}
       />
-      <View
-        style={{
-          borderRadius: 10,
-          overflow: 'hidden',
-          margin: 20,
-        }}>
-        <Pressable
-          android_ripple={{color: settings.colors.primary.superlight}}
-          style={[sharedStyles.bigButton, {margin: 0}]}
-          onPress={() => {
-            if (
-              ![LessonState.IsInitial, LessonState.IsFinished].includes(
-                uiStore.lessonState,
-              )
-            ) {
-              setIsModalVisible(true);
-            } else {
-              startLesson(wordsStore, uiStore, navigation);
-            }
-          }}>
-          <Text style={[sharedStyles.bigButtonText]}>START</Text>
-        </Pressable>
-      </View>
+      <BigButton
+        text={'START'}
+        onPress={() => {
+          if (
+            ![LessonState.IsInitial, LessonState.IsFinished].includes(
+              uiStore.lessonState,
+            )
+          ) {
+            setIsModalVisible(true);
+          } else {
+            startLesson(wordsStore, uiStore, navigation);
+          }
+        }}
+      />
     </SafeAreaView>
   );
 }

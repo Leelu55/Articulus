@@ -141,7 +141,6 @@ const ConfigStack = () => {
 };
 const MainApp = () => {
   const uiStore = useContext(UIStore);
-
   const Stack = createStackNavigator();
 
   return (

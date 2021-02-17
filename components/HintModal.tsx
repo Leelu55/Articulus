@@ -1,13 +1,13 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext} from 'react';
-import sharedStyles from '../styles/sharedStyles';
 import settings from '../libs/settings.json';
 
-import {Dimensions, Pressable, StyleSheet, Text, View} from 'react-native';
+import {Dimensions, StyleSheet, Text, View} from 'react-native';
 
 import Modal from 'react-native-modal';
 import UIStore from '../stores/UIStore';
 import {observer} from 'mobx-react';
+import BigButton from './BigButton';
 
 function doNothingFunction() {}
 
@@ -48,16 +48,12 @@ function HintModal() {
       <View style={styles.wrapper}>
         <View style={styles.modalView}>
           <Text style={styles.modalText}>{_textTsx}</Text>
-          <Pressable
-            style={[
-              sharedStyles.bigButton,
-              {backgroundColor: settings.colors.secondary.normal},
-            ]}
-            onPress={() => _hintModalCloseHandler()}>
-            <Text style={[sharedStyles.bigButtonText, {color: 'black'}]}>
-              Alles klar!
-            </Text>
-          </Pressable>
+          <BigButton
+            style={{backgroundColor: settings.colors.secondary.normal}}
+            onPress={_hintModalCloseHandler}
+            textStyle={{color: 'black'}}
+            text="ALLES KLAR"
+          />
         </View>
       </View>
     </Modal>

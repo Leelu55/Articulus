@@ -14,11 +14,11 @@ function ButtonBar({
       padding: 20,
 
       flexDirection: 'column',
-      overflow: 'hidden',
     },
     wrapperInner: {
       flexDirection: 'row',
       overflow: 'hidden',
+      justifyContent: 'space-between',
     },
     modalText: {
       alignSelf: 'center',

@@ -1,11 +1,11 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text, StyleSheet, Pressable} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import SuccessIcon from './SuccessIcon';
 import {observer} from 'mobx-react';
-import sharedStyles from '../styles/sharedStyles';
 import WordsStore from '../stores/WordsStore';
 import {useContext} from 'react';
+import BigButton from './BigButton';
 
 function EmptyWordsScreen({navigation}) {
   const wordsStore = useContext(WordsStore);
@@ -43,9 +43,7 @@ function EmptyWordsScreen({navigation}) {
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
         <SuccessIcon />
       </View>
-      <Pressable style={[sharedStyles.bigButton]} onPress={onContinueLesson}>
-        <Text style={sharedStyles.bigButtonText}>Zurück</Text>
-      </Pressable>
+      <BigButton onPress={onContinueLesson} text="ZURÜCK" />
       <Text style={styles.descriptionText}>
         Komm
         {nextLearningDay
