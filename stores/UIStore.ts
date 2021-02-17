@@ -71,11 +71,6 @@ const allowedStateTransitions = {
   ],
 };
 
-// words in lesson history
-export interface HintsShowCountType {
-  hintId: string;
-  count: number;
-}
 export class UIStore {
   @observable wordIndex: number = 0;
   @observable spokenWordIndex: number = 0;
@@ -90,9 +85,6 @@ export class UIStore {
   // will always be reset to false after finishing a lessond
   @persist @observable grammarHintShown: boolean = false;
 
-  @persist('object') @observable hintsShowCount: HintsShowCountType[] = [];
-  @persist @observable hintDateString: string = '';
-
   constructor() {
     console.log('UIStore constructor called');
     makeObservable(this);
@@ -100,18 +92,6 @@ export class UIStore {
 
   @action incrementSpokenWordIndex = () => {
     this.spokenWordIndex++;
-  };
-
-  @action initializeHintsShowCount = (hintsShowCount: HintsShowCountType[]) => {
-    this.hintsShowCount = hintsShowCount;
-  };
-
-  @action increaseHintsShowCount = (hint: HintsShowCountType) => {
-    hint.count++;
-  };
-
-  @action updateHintDateString = (date: string) => {
-    this.hintDateString = date;
   };
 
   @action toggleAutoMode = () => {

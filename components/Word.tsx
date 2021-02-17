@@ -8,10 +8,6 @@ import UIStore, {LessonState} from '../stores/UIStore';
 import {observer} from 'mobx-react';
 import {WordImage} from './WordImage';
 import nextWord from '../libs/nextWord';
-import {showHintModal} from './HintModal';
-import Hint from './Hint';
-import {hasDueHint} from '../libs/hints';
-import {getSpeakHint} from '../libs/hints';
 import Animated, {
   Easing,
   useAnimatedStyle,
@@ -62,12 +58,6 @@ function Word() {
       audioVoice.voiceStop();
       audioVoice.stopSpeakWord();
 
-      // check date for hint
-      const showHint = hasDueHint(
-        uiStore.hintDateString,
-        uiStore.hintsShowCount,
-      );
-
       const repeatWordMethod = () => {
         audioVoice.repeatWord('Nochmal ', currentLessonWord.value);
         uiStore.increaseRepeatCount();
@@ -76,29 +66,9 @@ function Word() {
       const nextWordMethod = () => nextWord(uiStore, wordsStore);
 
       if (uiStore.repeatCount < 2) {
-        if (showHint) {
-          const hintId = getSpeakHint(uiStore);
-          showHintModal(
-            uiStore,
-            <Hint hintId={hintId} />,
-            showHint,
-            repeatWordMethod,
-          );
-        } else {
-          repeatWordMethod();
-        }
+        repeatWordMethod();
       } else {
-        // TODO write Texts for modals, internationalize
-        if (showHint) {
-          showHintModal(
-            uiStore,
-            <Hint hintId={getSpeakHint(uiStore)} />,
-            showHint,
-            nextWordMethod,
-          );
-        } else {
-          nextWordMethod();
-        }
+        nextWordMethod();
       }
     } else if (lessonState === LessonState.IsFinished) {
       audioVoice.voiceStop();
