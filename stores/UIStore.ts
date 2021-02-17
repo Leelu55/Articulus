@@ -5,6 +5,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 
 export enum LessonState {
   IsInitial = 'IsInitial',
+  IsDemo = 'IsDemo',
   IsSpeaking = 'IsSpeaking',
   IsRepeating = 'IsRepeating',
   IsWaitingForUserAction = 'IsWaitingForUserAction',
@@ -16,7 +17,8 @@ export enum LessonState {
 
 // https://docs.google.com/spreadsheets/d/14dIMHZnvKTgqzzAMzdh42yP5bV4XNPLLOFb0TzOrbt4/edit?usp=sharing
 const allowedStateTransitions = {
-  [LessonState.IsInitial]: [LessonState.IsSpeaking],
+  [LessonState.IsInitial]: [LessonState.IsSpeaking, LessonState.IsDemo],
+  [LessonState.IsDemo]: [LessonState.IsSpeaking],
   [LessonState.IsSpeaking]: [
     LessonState.IsSpeaking,
     LessonState.IsWaitingForUserAction,
@@ -81,6 +83,7 @@ export class UIStore {
   @persist @observable showIntro: boolean = true;
   @persist @observable isConfigured: boolean = false;
   @persist @observable autoMode: boolean = true;
+  @persist @observable isDemoShown: boolean = false;
 
   // will always be reset to false after finishing a lessond
   @persist @observable grammarHintShown: boolean = false;
@@ -112,6 +115,10 @@ export class UIStore {
 
   @action setGrammarHintShown = (grammarHintShown) => {
     this.grammarHintShown = grammarHintShown;
+  };
+
+  @action setIsDemoShown = () => {
+    this.isDemoShown = true;
   };
 
   @action setWordIndex = (wordIndex) => {

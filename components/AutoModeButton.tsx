@@ -10,6 +10,7 @@ import {useState} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faHandSparkles} from '@fortawesome/free-solid-svg-icons';
 import settings from '../libs/settings.json';
+import HintBubble from './HintBubble';
 
 export function AutoModeButton() {
   const uiStore = useContext(UIStore);
@@ -55,18 +56,27 @@ export function AutoModeButton() {
   const isDisabled = uiStore.lessonState === LessonState.IsFinished || isFrozen;
 
   return (
-    <View
-      style={{
-        overflow: 'hidden',
-        borderRadius: sharedStyles.controlButton.borderRadius,
-      }}>
-      <Pressable
-        style={[sharedStyles.controlButton, styles.wrapper]}
-        onPress={onPress}
-        android_ripple={{color: settings.colors.ripple}}
-        disabled={isDisabled}>
-        <FontAwesomeIcon icon={faHandSparkles} size={35} color="white" />
-      </Pressable>
+    <View>
+      <View
+        style={{
+          overflow: 'hidden',
+          borderRadius: sharedStyles.controlButton.borderRadius,
+        }}>
+        <Pressable
+          style={[sharedStyles.controlButton, styles.wrapper]}
+          onPress={onPress}
+          android_ripple={{color: settings.colors.ripple}}
+          disabled={isDisabled}>
+          <FontAwesomeIcon icon={faHandSparkles} size={35} color="white" />
+        </Pressable>
+      </View>
+      <HintBubble
+        hintText="Sprechen an/aus"
+        position="topRight"
+        offsetX={28}
+        offsetY={45}
+        delay={500}
+      />
     </View>
   );
 }

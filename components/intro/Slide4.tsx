@@ -8,9 +8,7 @@ export default function ({isActive}: {isActive: boolean}) {
   const [width, setWidth] = useState(0);
 
   const onLayout = (e: {nativeEvent: {layout: {width: any}}}) => {
-    console.log('onLayout');
     setWidth(e.nativeEvent.layout.width);
-    console.log(width);
   };
   return (
     <View

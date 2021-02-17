@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useContext, useRef} from 'react';
-import {Animated, Pressable, StyleSheet, View} from 'react-native';
+import {Animated, Pressable, StyleSheet, View, Text} from 'react-native';
 import settings from '../libs/settings.json';
 
 import UIStore from '../stores/UIStore';
@@ -9,6 +9,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {LessonState} from '../stores/UIStore';
 import WordsStore from '../stores/WordsStore';
 import * as audioVoice from '../libs/audioVoice';
+import HintBubble from './HintBubble';
 
 export const ICONS = {
   [LessonState.IsInitial]: 'volume-down',
@@ -19,6 +20,7 @@ export const ICONS = {
   [LessonState.IsEvaluating]: 'check',
   [LessonState.IsPaused]: 'coffee',
   [LessonState.IsFinished]: 'flag-checkered',
+  [LessonState.IsDemo]: 'microphone',
 };
 
 export const ICON_COLORS = {
@@ -30,6 +32,7 @@ export const ICON_COLORS = {
   [LessonState.IsEvaluating]: 'white',
   [LessonState.IsPaused]: 'black',
   [LessonState.IsFinished]: 'black',
+  [LessonState.IsDemo]: 'white',
 };
 
 export const COLORS = {
@@ -41,6 +44,7 @@ export const COLORS = {
   [LessonState.IsEvaluating]: settings.colors.correctAnswer,
   [LessonState.IsPaused]: 'lightgrey',
   [LessonState.IsFinished]: 'lightgrey',
+  [LessonState.IsDemo]: settings.colors.primary.light,
 };
 
 function LessonStateIndicator({
@@ -61,8 +65,9 @@ function LessonStateIndicator({
   const wordsStore = useContext(WordsStore);
   React.useEffect(() => {
     if (
-      lessonStateValue === LessonState.IsListening &&
-      chosenArticle === null
+      (lessonStateValue === LessonState.IsListening &&
+        chosenArticle === null) ||
+      lessonStateValue === LessonState.IsDemo
     ) {
       Animated.loop(
         Animated.sequence([
@@ -162,6 +167,23 @@ function LessonStateIndicator({
             scaleY: fadeAnim,
           }, // Bind opacity to animated value
         ]}
+      />
+      <HintBubble
+        hintText={
+          <Text>
+            Sprich Artikel und Wort{' '}
+            <Text style={{fontWeight: 'bold'}}>
+              "{currentWord.article} {currentWord.value}"
+            </Text>{' '}
+            deutlich und erst, wenn das Mikrofon lila pulsiert.
+          </Text>
+        }
+        zIndex={2}
+        position="topLeft"
+        offsetX={50}
+        offsetY={100}
+        lineLength={130}
+        delay={750}
       />
     </Pressable>
   );

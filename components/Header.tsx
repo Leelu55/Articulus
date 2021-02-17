@@ -9,12 +9,18 @@ import ForwardButton from './ForwardButton';
 export function Header({
   doAnimate,
   chosenArticle,
+  isHidden,
 }: {
   doAnimate?: boolean;
   chosenArticle: string;
+  isHidden: boolean;
 }) {
   return (
-    <View style={[styles.viewHorizontal, {alignItems: 'center'}]}>
+    <View
+      style={[
+        styles.viewHorizontal,
+        {alignItems: 'center', opacity: isHidden ? 0 : 1},
+      ]}>
       <CancelButton />
       <ProgressBar doAnimate={doAnimate} chosenArticle={chosenArticle} />
       <ForwardButton />

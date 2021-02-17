@@ -47,8 +47,11 @@ function StartScreen({navigation, route}) {
   function onStartNewLesson() {
     wordsStore.populateLesson();
     uiStore.setGrammarHintShown(false);
-
-    uiStore.setLessonState(LessonState.IsSpeaking);
+    if (!uiStore.isDemoShown) {
+      uiStore.setLessonState(LessonState.IsDemo);
+    } else {
+      uiStore.setLessonState(LessonState.IsSpeaking);
+    }
     uiStore.setWordIndex(0);
     navigation.navigate('PlayerScreen');
   }

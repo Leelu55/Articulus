@@ -1,5 +1,6 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {useCallback, useEffect, useState} from 'react';
-import {StatusBar, StyleSheet, View} from 'react-native';
+import {StatusBar, StyleSheet, View, Text, Pressable} from 'react-native';
 
 import {observer} from 'mobx-react';
 
@@ -15,6 +16,10 @@ import WordsStore from '../stores/WordsStore';
 import {useContext} from 'react';
 import PauseModal from './PauseModal';
 import HintModal from './HintModal';
+import PlayerOverlay from './PlayerOverlay';
+import HintBubble from './HintBubble';
+import settings from '../libs/settings.json';
+import SnackBar from './SnackBar';
 
 function PlayerScreen({navigation}) {
   const uiStore = useContext(UIStore);
@@ -44,6 +49,10 @@ function PlayerScreen({navigation}) {
   const setChosenArticleDie = useCallback(() => setChosenArticle('die'), []);
   const setChosenArticleDas = useCallback(() => setChosenArticle('das'), []);
 
+  const onPressOverlay = useCallback(() => {
+    uiStore.setIsDemoShown();
+    uiStore.setLessonState(LessonState.IsSpeaking);
+  }, [uiStore]);
   /* clicking startLesson() would lead to a crash because emptyLesson() is called and the PlayerScreen component being still
   mounted in the background (React.navigation!) would be rerendered with empty lessonWords.
   To prevent this, return null in case lessonWords is empty */
@@ -60,10 +69,13 @@ function PlayerScreen({navigation}) {
           uiStore.setLessonState(LessonState.IsSpeaking);
         }}
       />
+
       <Header
+        isHidden={!uiStore.isDemoShown}
         doAnimate={chosenArticle !== null}
         chosenArticle={chosenArticle}
       />
+
       <Word />
       <ControlBar
         chosenArticle={chosenArticle}
@@ -79,6 +91,17 @@ function PlayerScreen({navigation}) {
             isChosenArticle={chosenArticle === 'der'}
             hasChosenArticle={chosenArticle !== null}
             onPressAfter={setChosenArticleDer}
+          />
+          <HintBubble
+            hintText={
+              <Text>
+                <Text style={{fontWeight: 'bold'}}>*Click* </Text>einen Artikel
+              </Text>
+            }
+            position="topLeft"
+            offsetX={10}
+            offsetY={50}
+            delay={250}
           />
         </View>
         <View style={sharedStyles.articleButtonWrapper}>
@@ -100,6 +123,10 @@ function PlayerScreen({navigation}) {
           />
         </View>
       </View>
+      {uiStore.lessonState === LessonState.IsDemo && (
+        <PlayerOverlay onPress={onPressOverlay} />
+      )}
+      {uiStore.lessonState === LessonState.IsDemo && <SnackBar />}
     </View>
   );
 }

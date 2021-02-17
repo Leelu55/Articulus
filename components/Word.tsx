@@ -36,7 +36,13 @@ function Word() {
 
   useEffect(() => {
     audioVoice.setup(uiStore);
-    uiStore.setLessonState(LessonState.IsSpeaking);
+    if (uiStore.lessonState !== LessonState.IsDemo) {
+      uiStore.setLessonState(LessonState.IsSpeaking);
+
+      // console.log(uiStore.lessonState);
+      // uiStore.setIsDemoShown();
+      // uiStore.setLessonState(LessonState.IsSpeaking);
+    }
     return audioVoice.cleanup;
   }, [uiStore, wordsStore]);
 
