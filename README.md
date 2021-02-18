@@ -7,7 +7,6 @@
 ### Modifications
 
 - [ ] pretify "Lektionen" section on StatisticsScreen
-- [ ] don't show hints more than once
 
 ### Bugs
 
@@ -76,6 +75,7 @@
 - [x] PlayerScreen: show user the right article and give feedback for each chosen article
 - [x] include share button in FinishedScreen with android intent to share results in messenger
 - [x] make list items on StartCreen clickable, onClick show article
+- [x] don't show hints more than once
 
 #### Content Creation
 
@@ -127,3 +127,4 @@
 - [ ] implement 'don't show hints again' with setting updateHintDateString to date in the far future
 - [ ] implement sound for SelectorButton click (success/fail)
 - [ ] animate skip word in ProgessBar
+# react-native-animated-miclevel

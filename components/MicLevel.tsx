@@ -1,3 +1,5 @@
+//TODO Unused Componend, pack it as npm package
+
 import React, {useEffect} from 'react';
 import {View, StyleSheet, PermissionsAndroid} from 'react-native';
 import {observer} from 'mobx-react';

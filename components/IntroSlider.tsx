@@ -1,5 +1,5 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useState} from 'react';
+import React from 'react';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import {View, Text, StyleSheet} from 'react-native';
 import {observer} from 'mobx-react';
@@ -10,11 +10,10 @@ import settings from '../libs/settings.json';
 import Svg1 from './intro/Slide1';
 import Svg2 from './intro/Slide2';
 import Svg3 from './intro/Slide3';
-import Svg4 from './intro/Slide4';
 
 import {TextStyle} from 'react-native';
 
-function getSlides(index: number) {
+function getSlides() {
   return [
     {
       key: '1',
@@ -35,14 +34,6 @@ function getSlides(index: number) {
       title: 'Deutsch wie ein Profi',
       text: 'Mit der Zeit perfektionierst du den Gebrauch von Artikeln',
       svg: () => <Svg3 />,
-      backgroundColor: 'lightgrey',
-    },
-    {
-      key: '4',
-      title: 'Teste dein Mikrofon',
-      text:
-        'Du brauchst dein Mikrofon um die Artikel einfach sprechen zu können.',
-      svg: () => <Svg4 isActive={index === 3} />,
       backgroundColor: 'lightgrey',
     },
   ];
@@ -91,7 +82,6 @@ const renderItem = ({item, index}) => {
 
 function IntroSlider() {
   const uiStore = useContext(UIStore);
-  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   const styleSliderButton: TextStyle = {
     fontSize: 20,
@@ -102,19 +92,17 @@ function IntroSlider() {
   };
   const renderNextButton = () => <Text style={styleSliderButton}>Weiter</Text>;
   const renderDoneButton = () => <Text style={styleSliderButton}>Fertig</Text>;
-  const onSlideChange = (index: number) => setCurrentSlideIndex(index);
   return (
     <AppIntroSlider
       dotStyle={{backgroundColor: settings.colors.secondary.light}}
       activeDotStyle={{backgroundColor: settings.colors.primary.normal}}
       renderItem={renderItem}
-      data={getSlides(currentSlideIndex)}
+      data={getSlides()}
       onDone={uiStore.hideIntro}
       showNextButton
       showDoneButton
       renderNextButton={renderNextButton}
       renderDoneButton={renderDoneButton}
-      onSlideChange={onSlideChange}
     />
   );
 }
