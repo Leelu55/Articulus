@@ -17,21 +17,21 @@ function getSlides() {
   return [
     {
       key: '1',
-      title: 'Artikel mit Articulus',
+      title: 'Artikel lernen mit Articulus',
       text: 'Verwende Der, Die, Das korrekt und sicher mit Articulus',
       svg: () => <Svg1 />,
       backgroundColor: 'lightgrey',
     },
     {
       key: '2',
-      title: 'Sprich die Artikel',
+      title: 'Sprich die Artikel um sie dir einzuprägen',
       text: 'Sprich einfach den Artikel für jedes Wort und lerne freihändig',
       svg: () => <Svg2 />,
       backgroundColor: 'lightgrey',
     },
     {
       key: '3',
-      title: 'Deutsch wie ein Profi',
+      title: 'Verbessere deine Deutschkenntnisse',
       text: 'Mit der Zeit perfektionierst du den Gebrauch von Artikeln',
       svg: () => <Svg3 />,
       backgroundColor: 'lightgrey',
@@ -53,7 +53,7 @@ const renderItem = ({item, index}) => {
       fontSize: 30,
       marginBottom: 10,
       textAlign: 'center',
-      marginTop: 30,
+      marginTop: 80,
     },
     descriptionText: {
       fontSize: 20,

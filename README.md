@@ -6,7 +6,7 @@
 
 ### Modifications
 
-- [ ] pretify "Lektionen" section on StatisticsScreen
+- [ ] prettify "Lektionen" section on StatisticsScreen
 
 ### Bugs
 
@@ -127,4 +127,5 @@
 - [ ] implement 'don't show hints again' with setting updateHintDateString to date in the far future
 - [ ] implement sound for SelectorButton click (success/fail)
 - [ ] animate skip word in ProgessBar
+
 # react-native-animated-miclevel
