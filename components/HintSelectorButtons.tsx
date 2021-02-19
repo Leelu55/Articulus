@@ -1,3 +1,5 @@
+//TODO Remove
+
 import React, {useEffect, useRef} from 'react';
 import {Easing, View} from 'react-native';
 import SelectorButton from './SelectorButton';

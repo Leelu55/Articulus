@@ -10,7 +10,7 @@ import sharedStyles from '../styles/sharedStyles';
 const styles = StyleSheet.create({
   wrapper: {
     flexDirection: 'column',
-    marginVertical: 20,
+    marginTop: 0,
   },
   progressBar: {
     backgroundColor: 'lightgrey',
@@ -47,9 +47,9 @@ function ProgressView() {
 
   return (
     <View style={styles.wrapper}>
-      <View style={{flexDirection: 'row', alignItems: 'center'}}>
-        <Text style={sharedStyles.label}>LERNFORTSCHRITT</Text>
-      </View>
+      <Text style={[sharedStyles.label, {marginBottom: 0}]}>
+        LERNFORTSCHRITT
+      </Text>
       <Text style={styles.percentText}>{learningProgressPercentage}%</Text>
 
       <View style={styles.progressBar}>

@@ -6,8 +6,6 @@
 
 ### Modifications
 
-- [ ] prettify "Lektionen" section on StatisticsScreen
-
 ### Bugs
 
 ### Content Creation
@@ -76,6 +74,7 @@
 - [x] include share button in FinishedScreen with android intent to share results in messenger
 - [x] make list items on StartCreen clickable, onClick show article
 - [x] don't show hints more than once
+- [x] prettify "Lektionen" section on StatisticsScreen
 
 #### Content Creation
 
