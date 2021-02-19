@@ -1,6 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, Pressable} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Pressable,
+  useWindowDimensions,
+} from 'react-native';
 import WordsStore from '../stores/WordsStore';
 import {useContext} from 'react';
 import {observer} from 'mobx-react';
@@ -11,13 +17,11 @@ import settings from '../libs/settings.json';
 function SavedLessons() {
   const wordsStore = useContext(WordsStore);
   const [openedIndex, setOpenedIndex] = useState(-1);
+  const windowWidth = useWindowDimensions().width;
 
   return (
     <View style={styles.wrapper}>
-      <View
-        style={{flexDirection: 'row', alignItems: 'center', marginBottom: 10}}>
-        <Text style={sharedStyles.label}>LEKTIONEN</Text>
-      </View>
+      <Text style={sharedStyles.label}>LEKTIONEN</Text>
       {wordsStore.savedLessons
         .filter((lesson) => lesson.isFinished)
         .map((savedLesson, index) => {
@@ -27,61 +31,46 @@ function SavedLessons() {
               : {borderRadius: 10};
           return (
             <Pressable
-              style={[styles.lesson]}
+              style={styles.lesson}
               key={index}
               onPress={() => {
                 setOpenedIndex(openedIndex === index ? -1 : index);
               }}>
-              <View
-                style={[
-                  sharedStyles.viewHorizontal,
-                  styles.label,
-                  styleBorderRadius,
-                ]}>
-                <Text style={styles.labelText}>
-                  {savedLesson.date.toString().substr(0, 10)}
-                </Text>
+              <View style={[styles.label, styleBorderRadius]}>
                 <View style={styles.lessonCounts}>
-                  <FontAwesomeIcon icon="check" color="green" size={20} />
+                  <View style={styles.lessonCountsIconWrapper}>
+                    <FontAwesomeIcon icon="check" color="green" size={20} />
+                  </View>
                   <Text
                     style={[styles.correctAnswers, styles.lessonCountsText]}>
                     {savedLesson.countCorrectAnswers}
                   </Text>
-                  <FontAwesomeIcon icon="times" color="red" size={20} />
+                  <View style={styles.lessonCountsIconWrapper}>
+                    <FontAwesomeIcon icon="times" color="red" size={20} />
+                  </View>
                   <Text style={[styles.wrongAnswers, styles.lessonCountsText]}>
                     {savedLesson.countWrongAnswers}
                   </Text>
                 </View>
+                <Text style={styles.dateText}>
+                  {savedLesson.date.toString().substr(0, 10)}
+                </Text>
               </View>
 
               {openedIndex === index && (
                 <View style={styles.wordsList}>
                   {savedLesson.words.map((word, idx) => {
-                    const styleBackground = {
-                      backgroundColor: idx % 2 ? '#eee' : '#f5f5f5',
-                    };
                     return (
-                      <View
-                        style={[styles.word, styleBackground]}
-                        key={word.value}>
-                        {word.isAnswerCorrect === true && (
-                          <FontAwesomeIcon
-                            icon="check"
-                            color="green"
-                            size={20}
-                          />
-                        )}
-                        {word.isAnswerCorrect === false && (
-                          <FontAwesomeIcon icon="times" color="red" size={20} />
-                        )}
-                        {word.isAnswerCorrect === null && (
-                          <FontAwesomeIcon
-                            icon="minus"
-                            color="grey"
-                            size={20}
-                          />
-                        )}
-                        <Text style={styles.wordText}>{word.value}</Text>
+                      <View style={styles.wordWrapper} key={idx}>
+                        <ArticleButton word={word} article="der" />
+                        <ArticleButton word={word} article="die" />
+                        <ArticleButton word={word} article="das" />
+                        <Text
+                          style={[styles.wordText, {width: windowWidth / 3}]}
+                          adjustsFontSizeToFit
+                          numberOfLines={1}>
+                          {word.value}
+                        </Text>
                       </View>
                     );
                   })}
@@ -94,26 +83,51 @@ function SavedLessons() {
   );
 }
 
+const ArticleButton = ({word, article}: {word: any; article: string}) => {
+  return (
+    <View
+      style={[
+        styles.articleButton,
+        {
+          backgroundColor:
+            word.answerArticle === article
+              ? word.isAnswerCorrect
+                ? 'green'
+                : 'red'
+              : 'lightgrey',
+        },
+      ]}>
+      <Text
+        style={[
+          styles.articleButtonText,
+          {
+            color: word.answerArticle === article ? 'white' : 'black',
+          },
+        ]}>
+        der
+      </Text>
+    </View>
+  );
+};
 const styles = StyleSheet.create({
   wrapper: {
     margin: 10,
   },
   label: {
-    margin: 0,
-    padding: 0,
-
-    paddingHorizontal: 20,
     paddingVertical: 10,
     fontSize: 25,
     color: settings.colors.primary.dark,
-    backgroundColor: '#ddd',
+    backgroundColor: '#e5e5e5',
     fontWeight: 'bold',
+    flexDirection: 'row',
+    padding: 10,
     alignItems: 'center',
   },
-  labelText: {
+  dateText: {
     flex: 1,
     fontSize: 20,
-    fontWeight: 'bold',
+    color: 'grey',
+    textAlign: 'right',
   },
   lesson: {
     backgroundColor: '#eee',
@@ -127,16 +141,35 @@ const styles = StyleSheet.create({
     padding: 10,
     paddingBottom: 20,
   },
-  word: {
-    marginLeft: 5,
-    alignItems: 'center',
-    padding: 10,
+
+  wordText: {fontSize: 20},
+  lessonCountsIconWrapper: {
     flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'lightgrey',
+    padding: 10,
+    borderRadius: 30,
   },
-  wordText: {fontSize: 15, paddingLeft: 5},
   lessonCounts: {flexDirection: 'row', alignItems: 'center'},
-  lessonCountsText: {fontSize: 20, fontWeight: 'bold'},
+  lessonCountsText: {fontSize: 20, fontWeight: 'bold', marginRight: 10},
   correctAnswers: {color: 'green', marginLeft: 5, marginRight: 5},
   wrongAnswers: {color: 'red', marginLeft: 5, marginRight: 5},
+  wordWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 5,
+  },
+  articleButton: {
+    backgroundColor: 'lightgrey',
+    marginRight: 10,
+    padding: 5,
+    borderRadius: 50,
+    marginVertical: 5,
+    width: 30,
+    height: 30,
+    justifyContent: 'center',
+  },
+  articleButtonText: {fontSize: 12, textAlign: 'center'},
 });
 export default observer(SavedLessons);

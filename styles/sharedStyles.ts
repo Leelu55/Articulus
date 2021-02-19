@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     paddingHorizontal: 15,
     paddingVertical: 5,
-    marginBottom: 10,
+    marginVertical: 20,
     fontWeight: 'bold',
     fontSize: 20,
     color: settings.colors.primary.dark,
