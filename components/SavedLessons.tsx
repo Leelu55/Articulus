@@ -91,7 +91,6 @@ const ArticleButton = ({
   word: SavedLessonWordType;
   article: string;
 }) => {
-  console.log(word.article);
   return (
     <View
       style={[

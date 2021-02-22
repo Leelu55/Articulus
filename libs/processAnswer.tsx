@@ -62,8 +62,15 @@ export default function processAnswer(
 
   function showNextWord() {
     if (wordIndex < lessonWordsLength - 1) {
-      uiStore.setWordIndex(wordIndex + 1);
-      uiStore.setLessonState(LessonState.IsSpeaking);
+      if (currentArticle === clw.article) {
+        uiStore.setWordIndex(uiStore.wordIndex + 1);
+        uiStore.setLessonState(LessonState.IsSpeaking);
+      } else {
+        setTimeout(() => {
+          uiStore.setWordIndex(uiStore.wordIndex + 1);
+          uiStore.setLessonState(LessonState.IsSpeaking);
+        }, 500);
+      }
     } else {
       wordsStore.setSavedLessonIsFinished(currentSavedLessonRef, true);
       uiStore.setLessonState(LessonState.IsFinished);

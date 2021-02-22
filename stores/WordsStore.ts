@@ -73,7 +73,6 @@ class WordsStore {
         isAnswerCorrect: null,
         article: word.article,
       });
-      console.log(word.article);
     });
     const newSavedLesson: SavedLessonType = {
       isFinished: false,
