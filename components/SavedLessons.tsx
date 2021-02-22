@@ -7,7 +7,7 @@ import {
   Pressable,
   useWindowDimensions,
 } from 'react-native';
-import WordsStore from '../stores/WordsStore';
+import WordsStore, {SavedLessonWordType} from '../stores/WordsStore';
 import {useContext} from 'react';
 import {observer} from 'mobx-react';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
@@ -70,6 +70,7 @@ function SavedLessons() {
                           adjustsFontSizeToFit
                           numberOfLines={1}>
                           {word.value}
+                          {word.answerArticle === '' ? ' (–)' : ''}
                         </Text>
                       </View>
                     );
@@ -83,17 +84,26 @@ function SavedLessons() {
   );
 }
 
-const ArticleButton = ({word, article}: {word: any; article: string}) => {
+const ArticleButton = ({
+  word,
+  article,
+}: {
+  word: SavedLessonWordType;
+  article: string;
+}) => {
+  console.log(word.article);
   return (
     <View
       style={[
         styles.articleButton,
         {
           backgroundColor:
-            word.answerArticle === article
-              ? word.isAnswerCorrect
-                ? 'green'
-                : 'red'
+            word.article === article
+              ? word.answerArticle === ''
+                ? 'rgba(0,128,0,0.25)'
+                : 'green'
+              : article === word.answerArticle && !word.isAnswerCorrect
+              ? 'red'
               : 'lightgrey',
         },
       ]}>
@@ -101,10 +111,15 @@ const ArticleButton = ({word, article}: {word: any; article: string}) => {
         style={[
           styles.articleButtonText,
           {
-            color: word.answerArticle === article ? 'white' : 'black',
+            color:
+              word.article === article
+                ? 'white'
+                : article === word.answerArticle && !word.isAnswerCorrect
+                ? 'white'
+                : 'black',
           },
         ]}>
-        der
+        {article}
       </Text>
     </View>
   );

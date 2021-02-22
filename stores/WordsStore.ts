@@ -33,6 +33,7 @@ export interface SavedLessonWordType {
   value: string;
   answerArticle: string;
   isAnswerCorrect: boolean | null;
+  article: string;
 }
 
 export interface SavedLessonType {
@@ -70,7 +71,9 @@ class WordsStore {
         value: word.value,
         answerArticle: '',
         isAnswerCorrect: null,
+        article: word.article,
       });
+      console.log(word.article);
     });
     const newSavedLesson: SavedLessonType = {
       isFinished: false,
