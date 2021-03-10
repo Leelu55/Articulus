@@ -39,6 +39,9 @@ export interface SavedLessonWordType {
 export interface SavedLessonType {
   isFinished: boolean;
   date: Date;
+  /**
+   * counts the number of correct answers in the current lesson
+   */
   countCorrectAnswers: number;
   countWrongAnswers: number;
   words: SavedLessonWordType[];
