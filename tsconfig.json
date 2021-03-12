@@ -1,8 +1,4 @@
 {
-  "typedocOptions": {
-    "skipLibCheck": true,
-    "strict": false /* Enable all strict type-checking options. */
-  },
   "compilerOptions": {
     /* Marias additions */
     "resolveJsonModule": true,
