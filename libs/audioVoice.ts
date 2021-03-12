@@ -9,6 +9,10 @@ let onTtsFinish = null;
 let onTtsCancel = null;
 let onTtsError = null;
 
+/**
+ * configures event listeners for ttsLibrary and voiceLibrary
+ * @param uiStore
+ */
 export function setup(uiStore) {
   onTtsFinish = () => {
     function startUserInteraction() {
