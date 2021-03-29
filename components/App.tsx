@@ -8,6 +8,8 @@ import DebugLessonState from './DebugLessonState';
 // make following changes to App.js
 import SplashScreen from 'react-native-splash-screen';
 
+/** @module Components */
+
 const App = () => {
   /*  https://www.linkedin.com/pulse/easiest-way-add-splash-screen-react-native-app-2020-aldrin-jenson-1c
   call SplashScreen.hide() inside a useEffect hook.

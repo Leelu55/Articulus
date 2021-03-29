@@ -68,5 +68,10 @@
     "metro.config.js",
     "jest.config.js"
   ],
-  "include": ["type_defs/decs.d.ts", "./components/"]
+  "include": ["type_defs/decs.d.ts", "./components/"],
+  "typedocOptions": {
+    "entryPoints": ["."],
+    "exclude": ["./node_modules/"],
+    "excludePrivate": true
+  }
 }

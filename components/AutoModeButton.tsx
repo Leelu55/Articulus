@@ -12,6 +12,8 @@ import {faHandSparkles} from '@fortawesome/free-solid-svg-icons';
 import settings from '../libs/settings.json';
 import HintBubble from './HintBubble';
 
+/**@module Components */
+
 export function AutoModeButton() {
   const uiStore = useContext(UIStore);
   const [isFrozen, setIsFrozen] = useState(false);
