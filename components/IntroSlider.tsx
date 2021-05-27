@@ -47,6 +47,7 @@ const renderItem = ({item, index}) => {
       justifyContent: 'center',
       paddingHorizontal: 10,
       flexDirection: 'column',
+      backgroundColor: 'red',
     },
     titleText: {
       fontWeight: 'bold',
