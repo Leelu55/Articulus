@@ -38,11 +38,11 @@
 - Hands-free learning using Text-To-Speech and Speech-To-Text technology to enable voice-controlled lessons
 - Grammar hints in lessons to improve language skills
 - Learning with flash cards-based system, repeating correctly answered words in increasingly greater intervals. This learning method is based on the <a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition</a> learning technique
-- Statistics of learning progress, frequency and a overview of former lessons to increase learning motivation
+- Statistics of learning progress, frequency and an overview of former lessons to increase learning motivation
 
 ## Develop and Extend
 
-Issues and :beetle: are welcome, just create an issue.
+Issues and :beetle: are <a href="https://github.com/Leelu55/Articulus/issues/new">welcome</a>
 
 Pull requests are welcome, feel free to contribute, change, and reuse.
 
@@ -58,13 +58,13 @@ For setting up the React Native developement environment, follow the <a href="ht
 
 ### Installing npm Packages:
 
-to install all necessary libraries run `npm install`
+To install all necessary libraries run `npm install`
 
 ### Run on Device
 
-1. USB-connect your Android phone or tablet to the computer and <a href="https://developer.android.com/studio/debug/dev-options">configure the developer mode on your mobile device</a>
-2. run `npm start` to start the Metro JS bundler
-3. in a second terminal run `npm run android` inside the project folder or run the app directly from Android Studio
+1. USB-connect your Android phone to the computer and <a href="https://developer.android.com/studio/debug/dev-options"> configure the developer mode</a>
+2. Run `npm start` to start the Metro JS bundler
+3. In a second terminal run `npm run android` inside the project folder or run the app directly from Android Studio
 
 ## Download
 
@@ -84,6 +84,20 @@ You can download Articulus in the <a href="https://play.google.com/store/apps/de
 - Loading images :running: :running: :running: superfast was made possible with <a href="https://statically.io/">Statically</a> as CDN serving from the <a href="https://github.com/Leelu55/Articulus/tree/master/model/images">Articulus Github repo</a>
 
 - State management was done with the :superhero: superpowers of <a href="https://mobx.js.org/README.html">MobX</a>
+
+<b>Special thanks go out to the developers of:</b>
+
+- <a href="https://reactjs.org/">React</a> and <a href="https://reactnative.dev/">React Native</a> for making mobile app development so much fun
+
+- <a href="https://github.com/ak1394/react-native-tts">React Native TTS</a> and <a href="https://github.com/react-native-voice/voice">React Native Voice</a> for the Text-To-Speech and Speech-To-Text libraries
+
+- <a href="https://github.com/FormidableLabs/victory-native"> Victory Native</a> for their great chart and data visualization components library
+
+- <a href="https://github.com/react-native-svg/react-native-svg">react-native-svg</a> for SVG support library and <a href="https://github.com/gregberge/svgr">SVGR</a> for their SVG-to-JSX <a href="https://react-svgr.com/playground/">Playground</a>
+
+- <a href="https://fontawesome.com/">Font Awesome</a> for their icon set
+
+- <a href="https://github.com/software-mansion/react-native-reanimated">React Native Reanimated</a> for enabling really cool animations
 
 ## License
 
