@@ -48,7 +48,7 @@ Pull requests are welcome, feel free to contribute, change, and reuse.
 
 ### Setup React Native:
 
-minimal prerequisites are
+Minimal prerequisites are
 
 - <a href="http://openjdk.java.net/">JDK</a>,
 - <a href="https://developer.android.com/studio">Android Studio</a> and
@@ -58,7 +58,7 @@ For setting up the React Native developement environment, follow the <a href="ht
 
 ### Installing npm Packages:
 
-to install all necessary libraries run `npm install --save`
+to install all necessary libraries run `npm install`
 
 ### Run on Device
 
