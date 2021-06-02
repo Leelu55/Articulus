@@ -35,12 +35,32 @@
 
 ## Key Features
 
-- Hands-free learning using Text-To-Speech and Speech-To-Text-Technology to enable voice-controlled lessons
+- Hands-free learning using Text-To-Speech and Speech-To-Text technology to enable voice-controlled lessons
 - Grammar hints in lessons to improve language skills
 - Learning with flash cards-based system, repeating correctly answered words in increasingly greater intervals. This learning method is based on the <a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition</a> learning technique
 - Statistics of learning progress, frequency and a overview of former lessons to increase learning motivation
 
 ## How To Use
+
+### First step(Setup React Native):
+
+- minimal prerequisites are
+
+* <a href="http://openjdk.java.net/">JDK</a>,
+* <a href="https://developer.android.com/studio">Android Studio</a> and
+* <a href="https://nodejs.org/en/download/package-manager/">Node.js</a>
+
+- For setting up the React Native developement environment, follow the <a href="https://reactnative.dev/docs/environment-setup">setup steps</a>
+
+### Second step(Installing npm Packages):
+
+- to install all necessary libraries run `npm install --save`
+
+### Third step(Run on Device)
+
+- connect your Android phone or tablet to the computer and <a href="https://developer.android.com/studio/debug/dev-options">configure the developer mode on your mobile device</a>
+- run `npm start` to start the JS bundler Metro
+- in a second tab run `npm run android` inside the project folder or run the App directly from Android Studio
 
 ## Download
 
