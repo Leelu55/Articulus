@@ -40,9 +40,9 @@
 - Learning with flash cards-based system, repeating correctly answered words in increasingly greater intervals. This learning method is based on the <a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition</a> learning technique
 - Statistics of learning progress, frequency and a overview of former lessons to increase learning motivation
 
-## How To Use
+## Develop and Extend
 
-### First step(Setup React Native):
+### Setup React Native:
 
 - minimal prerequisites are
 
@@ -52,24 +52,40 @@
 
 - For setting up the React Native developement environment, follow the <a href="https://reactnative.dev/docs/environment-setup">setup steps</a>
 
-### Second step(Installing npm Packages):
+### Installing npm Packages:
 
 - to install all necessary libraries run `npm install --save`
 
-### Third step(Run on Device)
+### Run on Device
 
-- connect your Android phone or tablet to the computer and <a href="https://developer.android.com/studio/debug/dev-options">configure the developer mode on your mobile device</a>
-- run `npm start` to start the JS bundler Metro
-- in a second tab run `npm run android` inside the project folder or run the App directly from Android Studio
+- USB-connect your Android phone or tablet to the computer and <a href="https://developer.android.com/studio/debug/dev-options">configure the developer mode on your mobile device</a>
+- run `npm start` to start the Metro JS bundler
+- in a second terminal run `npm run android` inside the project folder or run the app directly from Android Studio
 
 ## Download
 
-You can download Articulus in the <a href="https://play.google.com/store/apps/details?id=com.derdiedas">Google Play Store</a>
+- You can download Articulus in the <a href="https://play.google.com/store/apps/details?id=com.derdiedas">Google Play Store</a>
 
-<div align="center"><a href="https://play.google.com/store/apps/details?id=com.derdiedas"><img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/google-play-badge.png"
+<div align="left"><a href="https://play.google.com/store/apps/details?id=com.derdiedas"><img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/google-play-badge.png"
   alt="Get it on Google Play"
-  width="142" height="62"></a></div>
+  width="288" height="124"></a></div>
 
 ## Credits
 
+- Thank you for all the beautiful Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+
+- The word images are all free images from <a href="https://pixabay.com/" title="Pixabay">Pixabay</a>. Thank you to all the creators!
+
+- Loading images fast was made possible with <a href="https://statically.io/">Statically</a> as CDN serving from the <a href="https://github.com/Leelu55/Articulus/tree/master/model/images">Articulus Github repo</a>
+
+- State management was done with the superpowes of <a href="https://mobx.js.org/README.html">MobX</a>
+
 ## License
+
+Issues are welcome. Please add a screenshot of you bug and a code snippet. Quickest way to solve issue is to reproduce it in one of the examples.
+
+Pull requests are welcome. If you want to change the API or do something big it is best to create an issue and discuss it first.
+
+---
+
+**[MIT Licensed](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/LICENSE)**
