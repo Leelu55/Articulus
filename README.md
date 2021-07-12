@@ -42,7 +42,13 @@
 
 ## Develop and Extend
 
-Issues and :beetle: are <a href="https://github.com/Leelu55/Articulus/issues/new">welcome</a>
+The flow of the Articulus app is controlled by a simple state engine. It makes sure only valid state transitions happen:
+
+![State Engine](./doc/plantUml.svg)
+
+For the implementation of the state engine see <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L6">here</a>, <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L19">here</a> and <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L128">here</a>.
+
+Issues and :beetle: are <a href="https://github.com/Leelu55/Articulus/issues/new">welcome</a>.
 
 Pull requests are welcome, feel free to contribute, change, and reuse.
 
