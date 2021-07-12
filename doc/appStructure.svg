@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="343px" preserveAspectRatio="none" style="width:987px;height:343px;background:#FFFFFF;" version="1.1" viewBox="0 0 987 343" width="987px" zoomAndPan="magnify"><defs><filter height="300%" id="fgfxxxt6rlhf5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[00f6a34ce15b9a2495982fbb6c4364d9]
+entity MainApp--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="83" x="358.5" y="7"/><a href="../components/MainApp.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="368.5" y="29.9951">MainApp</text></a><!--MD5=[63c792f75c62172a76029bbfde08b40e]
+entity Intro--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="55" x="160.5" y="103"/><a href="../components/intro"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="170.5" y="125.9951">Intro</text></a><!--MD5=[2c8113cc364a23b9ee674e814acb7abf]
+entity Config--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="67" x="366.5" y="103"/><a href="../components/MainApp.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="376.5" y="125.9951">Config</text></a><!--MD5=[6e8f311b0aa23032184ffba0ef926f91]
+entity App--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="50" x="656" y="103"/><a href="../components/MainApp.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="666" y="125.9951">App</text></a><!--MD5=[d676dd4dc07e76f558e08addb39b1a55]
+entity Slide1--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="64" x="7" y="199"/><a href="../components/intro/Slide1.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="17" y="221.9951">Slide1</text></a><!--MD5=[b78ce163c88ca2d520084bb26877f212]
+entity Slide2--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="63" x="106.5" y="199"/><a href="../components/intro/Slide2.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="116.5" y="221.9951">Slide2</text></a><!--MD5=[4afa1067e60175cc67048c7ce0c40a82]
+entity Slide3--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="64" x="205" y="199"/><a href="../components/intro/Slide3.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="215" y="221.9951">Slide3</text></a><!--MD5=[c31692a536a995ac2068114356b61fdc]
+entity Check--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="65" x="304.5" y="199"/><a href="../components/CheckAudioVoiceConfig.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="314.5" y="221.9951">Check</text></a><!--MD5=[fcf86e7d146ef87193eafa875b1338e8]
+entity ConfigScreen--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="117" x="404.5" y="199"/><a href="../components/ConfigScreen.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="414.5" y="221.9951">ConfigScreen</text></a><!--MD5=[d7cea73982686e0aae5c34c3251d28cd]
+entity Home--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="70" x="556.5" y="199"/><a href="../components/MainApp.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44 " x="566.5" y="221.9951">Home</text></a><!--MD5=[de2effd8dc5bf946a609466312d0f75f]
+entity Player--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="64" x="649" y="199"/><a href="../components/PlayerScreen.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="659" y="221.9951">Player</text></a><!--MD5=[4e3a0e1ba3d56a6e7e53d72508542b33]
+entity EmptyWords--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="113" x="748.5" y="199"/><a href="../components/EmptyWordsScreen.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="758.5" y="221.9951">EmptyWords</text></a><!--MD5=[a7716fe59bf4500c39d221d1ab938f3f]
+entity Finished--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="79" x="896.5" y="199"/><a href="../components/FinishedScreen/FinishedScreen.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="906.5" y="221.9951">Finished</text></a><!--MD5=[cfbf5bfb2284cb4360c7117782840247]
+entity Start--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="62" x="382" y="295"/><a href="../components/StartScreen.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="392" y="317.9951">Start</text></a><!--MD5=[acdad9cc4a2e41d203bde57278ff518b]
+entity Statistics--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="88" x="479" y="295"/><a href="../components/StatisticsScreen.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="489" y="317.9951">Statistics</text></a><!--MD5=[f1b9accdb39545bff5220a9c5ba12722]
+entity Grammar--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="87" x="602.5" y="295"/><a href="../components/GrammarScreen.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="612.5" y="317.9951">Grammar</text></a><!--MD5=[7936db50d1613b2daed3553561a4d5b6]
+entity FAQ--><rect fill="#FEFECE" filter="url(#fgfxxxt6rlhf5)" height="36.2969" style="stroke:#000000;stroke-width:1.5;" width="49" x="724.5" y="295"/><a href="../components/FaqScreen.tsx"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="734.5" y="317.9951">FAQ</text></a><!--MD5=[a31a6201c4fdd264fa7833fb130358b7]
+link MainApp to Intro--><path d="M361.608,43.023 C319.488,61.699 252.924,91.213 215.643,107.743 " fill="none" id="MainApp-Intro" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0f825453de22d3c565347612ae62ba17]
+link MainApp to Config--><path d="M400,43.241 C400,60.202 400,85.945 400,102.868 " fill="none" id="MainApp-Config" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d9f0a8afd1ab0b8c44f2eb1856641f9]
+link MainApp to App--><path d="M441.765,39.971 C500.932,59.764 607.336,95.358 655.764,111.558 " fill="none" id="MainApp-App" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4e63bbe638c83c4eb75a14d76ef6593a]
+link Intro to Slide1--><path d="M161.017,139.023 C134.097,156.006 92.9711,181.951 66.0334,198.945 " fill="none" id="Intro-Slide1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[704f77fbe7ebd391265e8983cb684753]
+link Intro to Slide2--><path d="M178.829,139.241 C169.808,156.202 156.114,181.945 147.113,198.868 " fill="none" id="Intro-Slide2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[95b9cd339e8586eaed592edbeea08e59]
+link Intro to Slide3--><path d="M196.987,139.241 C205.829,156.202 219.248,181.945 228.07,198.868 " fill="none" id="Intro-Slide3" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8a982f61f7346b26f3423c15d6fff144]
+link Config to Check--><path d="M388.445,139.241 C377.078,156.202 359.824,181.945 348.482,198.868 " fill="none" id="Config-Check" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ae1b3975720cbe17ef78394bcb2ef996]
+link Config to ConfigScreen--><path d="M411.555,139.241 C422.922,156.202 440.176,181.945 451.518,198.868 " fill="none" id="Config-ConfigScreen" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9ccaa7716d7504c768f0bfd89b64d6f0]
+link App to Home--><path d="M663.392,139.241 C646.071,156.202 619.779,181.945 602.496,198.868 " fill="none" id="App-Home" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8ee4318d40aa8f32295e0273ac8b6e92]
+link App to Player--><path d="M681,139.241 C681,156.202 681,181.945 681,198.868 " fill="none" id="App-Player" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[63f3ed0e98a39209ab20fc6eb58c4392]
+link App to EmptyWords--><path d="M703.455,139.023 C725.789,155.953 759.871,181.79 782.293,198.786 " fill="none" id="App-EmptyWords" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[555c68a6cb96fe6f438876ebaf314b56]
+link App to Finished--><path d="M706.383,131.357 C750.852,147.749 843.15,181.773 896.187,201.324 " fill="none" id="App-Finished" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[65929cea65e1c5ee7554325ce56fea89]
+link Home to Start--><path d="M556.211,233.7335 C525.226,250.6672 476.107,277.5112 444.213,294.9416 " fill="none" id="Home-Start" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b3a22e58134946b976b49486b1c67131]
+link Home to Statistics--><path d="M573.628,235.241 C562.441,252.2017 545.461,277.9455 534.3,294.8683 " fill="none" id="Home-Statistics" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c04a54144de4b07dc38bbbe56b819acb]
+link Home to Grammar--><path d="M596.188,235.241 C607.195,252.2017 623.901,277.9455 634.883,294.8683 " fill="none" id="Home-Grammar" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c8f3623ffc30a2fd6af83970396fae1a]
+link Home to FAQ--><path d="M613.567,234.3736 C644.861,252.3104 694.545,280.7881 724.242,297.8095 " fill="none" id="Home-FAQ" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1240d67c1d2116ddfb953a7388fc08ee]
+@startuml
+skinparam componentStyle rectangle
+
+[MainApp] - - [Intro]
+[MainApp] - - [Config]
+[MainApp] - -[App]
+
+[Intro] - - [Slide1]
+[Intro] - - [Slide2]
+[Intro] - - [Slide3]
+
+[Config] - - [Check]
+[Config] - - [ConfigScreen]
+
+[App] - - [Home]
+[App] - - [Player]
+[App] - - [EmptyWords]
+[App] - - [Finished]
+
+[Home] - - [Start]
+[Home] - - [Statistics]
+[Home] - - [Grammar]
+[Home] - - [FAQ]
+@enduml
+
+PlantUML version 1.2021.9beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

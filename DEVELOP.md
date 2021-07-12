@@ -8,50 +8,64 @@
 <h4 align="center">An Audiobased Learning App for Android</h4>
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#license">License</a>
+
+<a href="#react-native-and-typescript">React Native and TypeScript</a>
+<a href="#app-structure-and-screens">App Structure and Screens</a>
+<a href="#data">Data</a>
+<a href="#state-machine">State Machine</a>
+<a href="#state-management-with-mobx">State Management with MobX</a>
+<a href="#speech-to-text-and-text-to-speech">Speech-To-Text and Text-To-Speech</a>
+<a href="#animations">Animations</a>
+<a href="#data-visualizations">Data Visualization</a>
+<a href="#react-navigation">React Navigation</a>
+<a href="#displaying-svgs">Displaying SVGS</a>
+<a href="#learning-algorithm">Learning Algorithm</a>
+<a href="#cdn-with-statically-and-github">CDN with Statically and Github</a>
+<a href="#cd-and-ci-with-bitrise">CD and CI with Bitrise</a>
+<a href="#license">License</a>
+
 </p>
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/googleplay_pics/image2.jpeg"
-  alt="Lerne Artikel mit Articulus"
-  width="138" height="300">
-<img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/googleplay_pics/image3.jpeg"
-  alt="Lerne Artikel mit Articulus"
-  width="138" height="300">
-<img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/googleplay_pics/image4.jpeg"
-  alt="Lerne Artikel mit Articulus"
-  width="138" height="300">
-<img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/googleplay_pics/image5.jpeg"
-  alt="Lerne Artikel mit Articulus"
-  width="138" height="300">
-      <img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/googleplay_pics/image6.jpeg"
-  alt="Lerne Artikel mit Articulus"
-  width="138" height="300">
-      </div>
+## React Native and TypeScript
 
-## Key Features
+This app was created using React Native with TypeScript.
 
-- Hands-free learning using Text-To-Speech and Speech-To-Text technology to enable voice-controlled lessons
-- Grammar hints in lessons to improve language skills
-- Learning with flash cards-based system, repeating correctly answered words in increasingly greater intervals. This learning method is based on the <a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition</a> learning technique
-- Statistics of learning progress, frequency and an overview of former lessons to increase learning motivation
+## App Structure and Screens
 
-## Develop and Extend
+The starting point for the app is [index.js](./index.js)
+registering [App.tsx](./components/App.tsx) as the main component.
 
-Everythink you need to participate or extend Articulus you will find <a href="https://github.com/Leelu55/Articulus/blob/master/DEVELOP.md">here</a>
+All React Native components reside in [./components](./components)
+
+![App Structure](./doc/appStructure.svg)
+
+## Data
+
+## State Machine
+
 The flow of the Articulus app is controlled by a simple state engine. It makes sure only valid state transitions happen:
 
 ![State Engine](./doc/stateTransitions.svg)
 
 For the implementation of the state engine see <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L6">here</a>, <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L19">here</a> and <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L128">here</a>.
 
-Issues and :beetle: are <a href="https://github.com/Leelu55/Articulus/issues/new">welcome</a>.
+## State Management with MobX
 
-Pull requests are welcome, feel free to contribute, change, and reuse.
+## Speech-To-Text and Text-To-Speech
+
+## Animations
+
+## Data Visualization
+
+## Displaying SVGS
+
+## Learning Algorithm
+
+## CDN with Statically and Github
+
+## CD and CI with Bitrise
+
+## License
 
 ### Setup React Native
 
