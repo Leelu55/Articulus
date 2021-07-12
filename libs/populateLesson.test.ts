@@ -22,6 +22,7 @@ it('test getRandomNewWords', () => {
       timestamp: word.timestamp,
       dueDateTime: word.dueDateTime,
       imageUrl: word.imageUrl,
+      ruleId: word.ruleId,
     };
     newWordArray.push(newWord);
   });
@@ -40,6 +41,7 @@ it('test sortWordsByDueDateTime', () => {
         Date.now() + Math.pow(2, word.slot) * 1000 * 60 * 60 * 24,
       ),
       imageUrl: word.imageUrl,
+      ruleId: word.ruleId,
     };
     newWordArray.push(newWord);
   });

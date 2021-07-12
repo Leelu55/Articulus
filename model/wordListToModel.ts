@@ -14,7 +14,7 @@ const textByLine = text.split('\n');
 let devSettings = JSON.parse(fs.readFileSync('../devSettings.json'));
 let staticallyBaseURL = devSettings.staticallyBaseURL;
 
-function saveImageToAssetsFolder(imageUrl) {
+function saveImageToAssetsFolder(imageUrl: string) {
   const options = {
     url: imageUrl,
     dest: './images/',

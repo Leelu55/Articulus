@@ -6,7 +6,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2016/04/18/11/33/dwarf-1336356_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/04/18/11/33/dwarf-1336356_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Schornsteinfeger",
@@ -14,7 +15,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/02/24/18/37/chimney-sweep-647678_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/02/24/18/37/chimney-sweep-647678_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Haus",
@@ -22,7 +24,8 @@
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2020/09/02/22/30/cottage-5539685_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/09/02/22/30/cottage-5539685_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Baum",
@@ -30,7 +33,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/03/26/10/50/green-692079_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/03/26/10/50/green-692079_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Hund",
@@ -38,7 +42,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/18/18/06/australian-shepherd-3237735_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/18/18/06/australian-shepherd-3237735_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Katze",
@@ -46,7 +51,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Tasse",
@@ -54,7 +60,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/03/27/14/48/tea-2179175_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/03/27/14/48/tea-2179175_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Sonne",
@@ -62,7 +69,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/03/27/21/38/sunset-2180346_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/03/27/21/38/sunset-2180346_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Mensch",
@@ -70,7 +78,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/07/31/00/26/woman-868522_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/07/31/00/26/woman-868522_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Wasser",
@@ -78,7 +87,8 @@
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/12/24/05/02/drops-of-water-578897_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/12/24/05/02/drops-of-water-578897_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Tisch",
@@ -86,7 +96,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/11/20/08/modern-kitchen-3217932_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/03/11/20/08/modern-kitchen-3217932_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Eule",
@@ -94,7 +105,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2017/01/26/11/17/european-eagle-owl-2010346_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2017/01/26/11/17/european-eagle-owl-2010346_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Sonnenbrille",
@@ -102,7 +114,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/09/07/22/16/sunglasses-438429_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/09/07/22/16/sunglasses-438429_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Computer",
@@ -110,7 +123,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/15/02/07/computer-767781_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/15/02/07/computer-767781_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Handtasche",
@@ -118,7 +132,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2018/10/06/14/51/leather-craft-3728005_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2018/10/06/14/51/leather-craft-3728005_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Taschentuch",
@@ -126,7 +141,8 @@
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/10/22/07/55/tissues-1000849_960_720.png"
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/10/22/07/55/tissues-1000849_960_720.png",
+      "ruleId": ""
     },
     {
       "value": "Weihnachtsmann",
@@ -134,7 +150,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Zahn",
@@ -142,7 +159,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Kopf",
@@ -150,7 +168,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Fuß",
@@ -158,7 +177,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Hand",
@@ -166,7 +186,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Auge",
@@ -174,7 +195,8 @@
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Mund",
@@ -182,7 +204,8 @@
       "article": "der",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Nase",
@@ -190,7 +213,8 @@
       "article": "die",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Ohr",
@@ -198,7 +222,8 @@
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg",
+      "ruleId": ""
     },
     {
       "value": "Handy",
@@ -206,7 +231,8 @@
       "article": "das",
       "timestamp": null,
       "dueDateTime": null,
-      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg"
+      "imageUrl": "https://cdn.pixabay.com/photo/2014/10/16/09/45/chocolate-santa-claus-490825_960_720.jpg",
+      "ruleId": ""
     }
   ]
 }
