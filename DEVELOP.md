@@ -99,6 +99,10 @@ For the current word image Statically checks if the imageis already in its cache
 **Lesson Flow**
 In Articulus the user starts lessons to learn correct articles for german nouns. In a lesson each word is being shown on screen with its corresponding image and being read aloud. Then the user can choose the correct answer either saying it aloud or clicking on an article button. Then the next word is presented. Words can be skipped, the lesson can be paused or canceled. If the speech recognition fails to identify a valid answer the word is repeated. Once all words of the particular lesson have been shown, a [FinishedScreen](./components/FinishedScreen/FinishedScreen.tsx) appears and the user can start another lesson or stop learning.
 
+<p align="center">
+<img src="./assets/articulus_lesson_flow.gif" width="200" height="400" />
+</p>
+
 **Controlling State Change**  
 Text-to-speech output of lesson words, speech recognition of user answers and the processing of those answers happen asynchronously. In the same time the user can interact with the app directly by touch interface thus interrupting the flow. This can lead to a wide range of bugs and unexpected behaviour if not managed. To prevent this a simple state engine makes sure only valid state transitions happen:
 
@@ -145,6 +149,9 @@ A good example of Animation library use is the [AnimatedNumber](./components/Ani
 
 Reanimated was used for animating [HintBubbles](./components/HintBubble.tsx) for the tutorial view on initial lesson start.
 
+<p align="center">
+<img src="./assets/reanimated_animation.gif"  width="200" height="400" />
+</p>
 ## Usage of SVG Files
 
 **Conversion of SVGs to React Native Component**

@@ -42,16 +42,7 @@
 
 ## Develop and Extend
 
-Everythink you need to participate or extend Articulus you will find <a href="https://github.com/Leelu55/Articulus/blob/master/DEVELOP.md">here</a>
-The flow of the Articulus app is controlled by a simple state engine. It makes sure only valid state transitions happen:
-
-![State Engine](./doc/stateTransitions.svg)
-
-For the implementation of the state engine see <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L6">here</a>, <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L19">here</a> and <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L128">here</a>.
-
-Issues and :beetle: are <a href="https://github.com/Leelu55/Articulus/issues/new">welcome</a>.
-
-Pull requests are welcome, feel free to contribute, change, and reuse.
+Everything you need to participate or extend Articulus you will find <a href="https://github.com/Leelu55/Articulus/blob/master/DEVELOP.md">here</a>
 
 ### Setup React Native
 
@@ -72,6 +63,9 @@ To install all necessary libraries run `npm install`
 1. USB-connect your Android phone to the computer and <a href="https://developer.android.com/studio/debug/dev-options"> configure the developer mode</a>
 2. Run `npm start` to start the Metro JS bundler
 3. In a second terminal run `npm run android` inside the project folder or run the app directly from Android Studio
+
+Issues and :beetle: are <a href="https://github.com/Leelu55/Articulus/issues/new">welcome</a>.
+Pull requests are welcome, feel free to contribute, change, and reuse.
 
 ## Download
 
