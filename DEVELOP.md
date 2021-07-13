@@ -1,27 +1,15 @@
-<h1 align="center">
+<h1>
   <br>
 <img src="https://github.com/Leelu55/Articulus/blob/5ed5f08f66639473249d777a8ba858e1921cab7b/assets/logo_raw.png" alt="Articulus" width="200">
   <br>
   Articulus
   <br>
 </h1>
-<h4 align="center">An Audiobased Learning App for Android</h4>
-
-- [React Native & TypeScript](#react-native---typescript)
-- [App Structure, Screens & Entry Points](#app-structure--screens---entry-points)
-- [Word Data](#word-data)
-- [CDN with Statically and Github](#cdn-with-statically-and-github)
-- [State Engine](#state-engine)
-- [State Management with MobX](#state-management-with-mobx)
-- [Speech-To-Text and Text-To-Speech](#speech-to-text-and-text-to-speech)
-- [Animations](#animations)
-- [Usage of SVG Files](#usage-of-svg-files)
-- [Learning Algorithm](#learning-algorithm)
-- [CD and CI with Bitrise](#cd-and-ci-with-bitrise)
+An Audiobased Learning App for Android</h4>
 
 ## React Native & TypeScript
 
-The Articulus app is a small pet project that was programmed with TypeScript, using React Native. Currently it is only tested on Android phones and available only on the Google Play Store. With little effort It should also be possible to run it on iOS though.
+Articulus is a small pet project programmed with TypeScript and built on top of React Native. Currently it is only tested on Android phones and available on the <a href="https://play.google.com/store/apps/details?id=com.derdiedas">Google Play Store</a>. With little effort it should also run on iOS though.
 
 ## App Structure, Screens & Entry Points
 
@@ -30,6 +18,7 @@ The Articulus app is a small pet project that was programmed with TypeScript, us
 - The entry file for the app is [/index.js](./index.js)
 - The entry component is [/components/App.tsx](./components/App.tsx)
 - All components are stored in [/components/](./components) folder
+- **React Navigation** is used to navigate between Stacks and Screens on user input and depending on UI state variables
 - [MainApp](./components/MainApp.tsx) renders a _\<NavigationContainer />_ with [IntroSlider](./components/IntroSlider.tsx), [ConfigStack](./components/MainApp.tsx) & [AppStack](./components/MainApp.tsx)
 - [ConfigStack](./components/MainApp.tsx) renders [CheckAudioVoiceConfig](./components/CheckAudioVoiceConfig.tsx) & [ConfigScreen](./components/ConfigScreen.tsx)
 - [AppStack](./components/MainApp.tsx) navigates between [HomeStack](./components/MainApp.tsx), [PlayerScreen](./components/PlayerScreen.tsx), [FinishedScreen](./components/FinishedScreen.tsx) & [EmptyWordsScreen](./components/EmptyWordsScreen.tsx) by user interaction or LessonState change
@@ -107,7 +96,11 @@ For the current word image Statically checks if the imageis already in its cache
 
 ## State Engine
 
-The flow of the Articulus app is (partly) controlled by a simple state engine. It makes sure only valid state transitions happen:
+**Lesson Flow**
+In Articulus the user starts lessons to learn correct articles for german nouns. In a lesson each word is being shown on screen with its corresponding image and being read aloud. Then the user can choose the correct answer either saying it aloud or clicking on an article button. Then the next word is presented. Words can be skipped, the lesson can be paused or canceled. If the speech recognition fails to identify a valid answer the word is repeated. Once all words of the particular lesson have been shown, a [FinishedScreen](./components/FinishedScreen/FinishedScreen.tsx) appears and the user can start another lesson or stop learning.
+
+**Controlling State Change**  
+Text-to-speech output of lesson words, speech recognition of user answers and the processing of those answers happen asynchronously. In the same time the user can interact with the app directly by touch interface thus interrupting the flow. This can lead to a wide range of bugs and unexpected behaviour if not managed. To prevent this a simple state engine makes sure only valid state transitions happen:
 
 ![State Engine](./doc/stateTransitions.svg)
 
@@ -131,18 +124,12 @@ The app state is split into two stores:
 
 ## Speech-To-Text and Text-To-Speech
 
-As an audiobased learning app Articulus supports voice commands as answers. During a lesson each displayed word is pronounced by the app using the <a href="https://github.com/ak1394/react-native-tts#speaking">React Native TTS library</a>.
+As an audiobased learning app Articulus supports voice commands as answers. During a lesson each displayed word is pronounced by the app using the <a href="https://github.com/ak1394/react-native-tts#speaking">React Native TTS library</a>. The speech-to-text functionality was implemented using the <a href="https://github.com/react-native-voice/voice">React Native Voice library</a>. Listener methods for both libraries are configured inside [audioVoice.ts](./libs/audioVoice.ts).
 
-The speech-to-text functionality was implemented using the <a href="https://github.com/react-native-voice/voice">React Native Voice library</a>.
+**Automatic and Manual Mode**
+There are two modes to play a lesson: automatic and manual. Both modes allow spoken answers. In automatic mode after the word was pronounced the app listens for the vocal answer of the user. In manual mode the microphone symbol has to be clicked before speaking.
 
-The interaction of text-to-speech, speech-to-text and use input triggers and is being triggered by allowed state changes as determined by the state engine.
-
-Listener methods for both libraries are configured inside [audioVoice.ts](./libs/audioVoice.ts).
-
-**automatic and manual mode**
-There are two modes to play a lesson: automatic and manual. Both modes allow spoken answers, but in automatic mode after spoken word the app listens for the vocal answer of the user. In manual mode to say the right article aloud, the microphone symbol has to be clicked.
-
-**handling errors and evaluating results**
+**Handling Errors and Evaluating Results**
 The built-in error handling of the voice recognition library is implemented to allow the user two more tries in case the answer was not eligable because of background noise, low volume or other problems. If there is a speech result, the custom[ extract article function](./libs/extractArticle.ts) checks if the answer
 
 1. is not too long (maximum five words to reduce the time for checking the answer) and

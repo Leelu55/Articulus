@@ -27,6 +27,7 @@ function AnimatedNumber({
   color: string;
   doStart?: boolean;
 }) {
+  // bounceAnim controls translateY for the outer numbers-container and opacity for the individual numbers during animation
   const bounceAnim = useRef(new Animated.Value(0)).current;
 
   const spacing = 0;
@@ -52,7 +53,7 @@ function AnimatedNumber({
   useEffect(() => {
     if (doStart) {
       Animated.timing(bounceAnim, {
-        toValue: to * -height,
+        toValue: to * -height, // animate bounceAnim in such a way that "to" is visible in the end
         useNativeDriver: true,
         duration: duration,
         easing: easeInOutBack,
@@ -66,19 +67,38 @@ function AnimatedNumber({
       <Text style={[styles.numberText, {opacity: 0, margin: spacing}]}>
         {to}
       </Text>
+
+      {/* outer numbers-container */}
       <Animated.View
-        style={[styles.numbers, {transform: [{translateY: bounceAnim}]}]}>
+        style={[
+          styles.numbers,
+          {
+            // by animating translateY on the container, we move the
+            // container inside the visible "window" up and down
+            //
+            // Given the height for the numbers is 20 pixels, then:
+            // - number 1 is visible at translateY = 0
+            // - number 2 is visible at translateY = -1 * 20 = -20
+            // - number 3 is visible at translateY = -2 * 20 = -40
+            // - number 4 is visible at translateY = -3 * 20 = -60
+            // - ...
+
+            transform: [{translateY: bounceAnim}],
+          },
+        ]}>
+        {/* renders "to" numbers inside the container. "to" = 6 results in 6 numbers being rendered */}
         {Array.from(Array(to + 1), (e, i) => {
           return (
             <Animated.Text
               style={[
                 styles.numberText,
                 {
+                  // control opacity of individual numbers for even smoother animation
                   opacity: bounceAnim.interpolate({
                     inputRange: [
-                      -(i + 1) * height,
-                      -i * height,
-                      -(i - 1) * height,
+                      -(i + 1) * height, // reduced opacity for the number preceding "to" number (i.e. 7)
+                      -i * height, // full opacity for the "to" number (i.e. 8)
+                      -(i - 1) * height, // reduced opacity for the number following "to" number (i.e. 9)
                     ],
                     outputRange: [0, 1, 0],
                   }),
