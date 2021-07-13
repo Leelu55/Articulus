@@ -107,15 +107,15 @@ For the current word image Statically checks if the imageis already in its cache
 
 ## State Engine
 
-The flow of the Articulus app is controlled by a simple state engine. It makes sure only valid state transitions happen:
+The flow of the Articulus app is (partly) controlled by a simple state engine. It makes sure only valid state transitions happen:
 
 ![State Engine](./doc/stateTransitions.svg)
 
-For the implementation of the state engine see <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L6">here</a>, <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L19">here</a> and <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L128">here</a>.
+Look inside the implementation of the state engine <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L6">here</a>, <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L19">here</a> and <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L128">here</a>.
 
 ## State Management with MobX
 
-To provide and share state between components, the state management library [MobX](https://mobx.js.org/README.html) is used
+To provide and persist state for components, the state management library [MobX](https://mobx.js.org/README.html) is used:
 
 ```javascript
 <Provider {...stores}>
@@ -124,7 +124,7 @@ To provide and share state between components, the state management library [Mob
 </Provider>
 ```
 
-The apps state is split into two stores:
+The app state is split into two stores:
 
 - [UIStore](./stores/UIStore.ts) for UI state including the state engine
 - [WordsStore](./stores/WordsStore.ts) for app data state and keeping track of learning progress
@@ -132,11 +132,12 @@ The apps state is split into two stores:
 ## Speech-To-Text and Text-To-Speech
 
 As an audiobased learning app Articulus supports voice commands as answers. During a lesson each displayed word is pronounced by the app using the <a href="https://github.com/ak1394/react-native-tts#speaking">React Native TTS library</a>.
+
 The speech-to-text functionality was implemented using the <a href="https://github.com/react-native-voice/voice">React Native Voice library</a>.
 
 The interaction of text-to-speech, speech-to-text and use input triggers and is being triggered by allowed state changes as determined by the state engine.
 
-In the [audioVoice.ts](./libs/audioVoice.ts) script listeners for both libraries are set up to be used when called for each Word.
+Listener methods for both libraries are configured inside [audioVoice.ts](./libs/audioVoice.ts).
 
 **automatic and manual mode**
 There are two modes to play a lesson: automatic and manual. Both modes allow spoken answers, but in automatic mode after spoken word the app listens for the vocal answer of the user. In manual mode to say the right article aloud, the microphone symbol has to be clicked.
