@@ -1,7 +1,7 @@
 <h1 align="center">
   <img align="left" src="./assets/logo_raw.png" alt="Articulus" height="200" />
   <img align="right" src="https://media.giphy.com/media/ujUdrdpX7Ok5W/giphy.gif" height="200" />
-  <img src="./doc/README/CssInjector.svg" width="400" alt="Articulus" />
+  <img src="./doc/README/CssInjector.svg" width="350" alt="Articulus" />
   <h2 align="center">Learn <a>Der</a>, <a>Die</a>, <a>Das</a> the <u>easy way</u></h2>
 </h1>
 
@@ -19,15 +19,6 @@
   <img src="./doc/README/Word-Magen.jpg" width="180" alt="Screenshot of Word: Magen" border="1" />
   <img src="./doc/README/FinishedScreen.jpg" width="180" alt="Screenshot of FinishedScreen" border="1" /> 
   <img src="./doc/README/StatisticsScreen.jpg" width="180" alt="Screenshot of StatisticsScreen" border="1" />
-</p>
-
----
-
-<p align="center">
-  <a href="#install">Install</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#license">License</a>
 </p>
 
 ---

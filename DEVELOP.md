@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./doc/README/CssInjector.svg" width="400" alt="Articulus" />
+  <img src="./doc/README/CssInjector.svg" width="350" alt="Articulus" />
   <h2 align="center">A super <u>Development Guide</u> for React Native Coders</h2>
 </h1>
 
