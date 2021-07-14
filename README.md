@@ -1,79 +1,48 @@
 <h1 align="center">
-  <br>
-<img src="https://github.com/Leelu55/Articulus/blob/5ed5f08f66639473249d777a8ba858e1921cab7b/assets/logo_raw.png" alt="Articulus" width="200">
-  <br>
-  Articulus
-  <br>
+  <img align="left" src="./assets/logo_raw.png" alt="Articulus" height="200" />
+  <img align="right" src="https://media.giphy.com/media/ujUdrdpX7Ok5W/giphy.gif" height="200" />
+  <img src="./doc/README/CssInjector.svg" width="400" alt="Articulus" />
+  <h2 align="center">Learn <a>Der</a>, <a>Die</a>, <a>Das</a> the <u>easy way</u></h2>
 </h1>
-<h4 align="center">An Audiobased Learning App for Android</h4>
 
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#license">License</a>
-</p>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/googleplay_pics/image2.jpeg"
-  alt="Lerne Artikel mit Articulus"
-  width="138" height="300">
-<img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/googleplay_pics/image3.jpeg"
-  alt="Lerne Artikel mit Articulus"
-  width="138" height="300">
-<img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/googleplay_pics/image4.jpeg"
-  alt="Lerne Artikel mit Articulus"
-  width="138" height="300">
-<img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/googleplay_pics/image5.jpeg"
-  alt="Lerne Artikel mit Articulus"
-  width="138" height="300">
-      <img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/googleplay_pics/image6.jpeg"
-  alt="Lerne Artikel mit Articulus"
-  width="138" height="300">
-      </div>
-
-## Key Features
+---
 
 - Hands-free learning using Text-To-Speech and Speech-To-Text technology to enable voice-controlled lessons
 - Grammar hints in lessons to improve language skills
 - Learning with flash cards-based system, repeating correctly answered words in increasingly greater intervals. This learning method is based on the <a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition</a> learning technique
 - Statistics of learning progress, frequency and an overview of former lessons to increase learning motivation
 
-## Develop and Extend
+---
 
-Everything you need to participate or extend Articulus you will find <a href="https://github.com/Leelu55/Articulus/blob/master/DEVELOP.md">here</a>
+<p float="center" align="middle">
+  <img src="./doc/README/Word-Arbeitsplatz.jpg" width="180" alt="Screenshot of Word: Arbeitsplatz" border="1" />
+  <img src="./doc/README/Word-Magen.jpg" width="180" alt="Screenshot of Word: Magen" border="1" />
+  <img src="./doc/README/FinishedScreen.jpg" width="180" alt="Screenshot of FinishedScreen" border="1" /> 
+  <img src="./doc/README/StatisticsScreen.jpg" width="180" alt="Screenshot of StatisticsScreen" border="1" />
+</p>
 
-### Setup React Native
+---
 
-Minimal prerequisites are
+<p align="center">
+  <a href="#install">Install</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#license">License</a>
+</p>
 
-- <a href="http://openjdk.java.net/">JDK</a>,
-- <a href="https://developer.android.com/studio">Android Studio</a> and
-- <a href="https://nodejs.org/en/download/package-manager/">Node.js</a>
+---
 
-For setting up the React Native developement environment, follow the <a href="https://reactnative.dev/docs/environment-setup">setup steps</a>
+## Articulus for Android
 
-### Installing npm Packages:
+Install Articulus on your Android phone on the <a href="https://play.google.com/store/apps/details?id=com.derdiedas">Google Play Store</a>
 
-To install all necessary libraries run `npm install`
-
-### Run on Device
-
-1. USB-connect your Android phone to the computer and <a href="https://developer.android.com/studio/debug/dev-options"> configure the developer mode</a>
-2. Run `npm start` to start the Metro JS bundler
-3. In a second terminal run `npm run android` inside the project folder or run the app directly from Android Studio
-
-Issues and :beetle: are <a href="https://github.com/Leelu55/Articulus/issues/new">welcome</a>.
-Pull requests are welcome, feel free to contribute, change, and reuse.
-
-## Download
-
-You can download Articulus in the <a href="https://play.google.com/store/apps/details?id=com.derdiedas">Google Play Store</a>
-
-<div align="left"><a href="https://play.google.com/store/apps/details?id=com.derdiedas"><img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/google-play-badge.png"
+<a href="https://play.google.com/store/apps/details?id=com.derdiedas"><img src="https://raw.githubusercontent.com/Leelu55/Articulus/master/assets/google-play-badge.png"
   alt="Get it on Google Play"
-  width="288" height="124"></a></div>
+  width="288"></a>
+
+## Git Clone to Contribute or Copy Cat
+
+Articulus is an Open Source app built on top of React Native. Feel free to create pull requests to contribute to Articulus. Or even build your own App base on Articulus. Head over to the [Development Guide](./DEVELOP.md) to learn everything you need to know.
 
 ## Credits
 

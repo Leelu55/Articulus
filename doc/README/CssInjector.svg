@@ -1,0 +1,39 @@
+<svg fill="none" viewBox="0 0 400 100" width="400" height="100" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+            .wrapper {
+                font-family: arial;
+                font-weight: bold;
+                font-size: 80px;
+
+                text-align: center;
+                animation: mymove 2s;
+                background: #eee;
+                color: black;
+            }
+
+            @keyframes mymove {
+                0% {
+                    color: #fff;
+                    background: #fff;
+                    transform: scale(0.4);
+                }
+                75% {
+                    color: blueviolet;
+                    background: #ffd700;
+                    transform: scale(1.1);
+                }
+                100% {
+                    color: black;
+                    background: #eee;
+                    transform: scale(1);
+                }
+            }
+            </style>
+            <div class="wrapper">
+                Articulus
+            </div>
+        </div>
+    </foreignObject>
+</svg>

@@ -1,15 +1,37 @@
-<h1>
-  <br>
-<img src="https://github.com/Leelu55/Articulus/blob/5ed5f08f66639473249d777a8ba858e1921cab7b/assets/logo_raw.png" alt="Articulus" width="200">
-  <br>
-  Articulus
-  <br>
+<h1 align="center">
+  <img src="./doc/README/CssInjector.svg" width="400" alt="Articulus" />
+  <h2 align="center">A super <u>Development Guide</u> for React Native Coders</h2>
 </h1>
-An Audiobased Learning App for Android</h4>
+
+---
+
+**:beetle: Pull requests are welcome. Feel free to Contribute, Change, and Reuse.**
+
+---
+
+## Setting up the Development Environment
+
+Make sure React Native is available by <a href="https://reactnative.dev/docs/environment-setup">Setting up the development environment</a>
+
+**Install the Project on your Computer**
+
+1. `cd <my-development-directory>`
+2. `git clone https://github.com/Leelu55/Articulus.git`
+3. `cd Articulus`
+4. `npm install`
+
+**Run it on your virtual or physical Device**
+
+1. Run `npm start` to start the Metro JS bundler
+2. In a second terminal run `npm run android` inside the project folder or run the app directly from Android Studio
+
+---
 
 ## React Native & TypeScript
 
 Articulus is a small pet project programmed with TypeScript and built on top of React Native. Currently it is only tested on Android phones and available on the <a href="https://play.google.com/store/apps/details?id=com.derdiedas">Google Play Store</a>. With little effort it should also run on iOS though.
+
+---
 
 ## App Structure, Screens & Entry Points
 
@@ -23,6 +45,8 @@ Articulus is a small pet project programmed with TypeScript and built on top of 
 - [ConfigStack](./components/MainApp.tsx) renders [CheckAudioVoiceConfig](./components/CheckAudioVoiceConfig.tsx) & [ConfigScreen](./components/ConfigScreen.tsx)
 - [AppStack](./components/MainApp.tsx) navigates between [HomeStack](./components/MainApp.tsx), [PlayerScreen](./components/PlayerScreen.tsx), [FinishedScreen](./components/FinishedScreen.tsx) & [EmptyWordsScreen](./components/EmptyWordsScreen.tsx) by user interaction or LessonState change
 - [HomeStack](./components/MainApp.tsx) renders a _\<Tab.Navigator />_ with the tabs [StartScreen](./components/StartScreen.tsx), [StatisticsScreen](./components/StatisticsScreen.tsx), [GrammarScreen](./components/GrammarScreen.tsx) & [FaqScreen](./components/FaqScreen.tsx)
+
+---
 
 ## Word Data
 
@@ -74,6 +98,8 @@ Additions and changes to the images folder have to be pushed to the Articulus Gi
 
 The generated [model.json](./model/model.json) file is used in the MobX [WordsStore](./stores/WordsStore.ts) constructor to load the word data as a state into the app on initialization.
 
+---
+
 ## Image CDN with Statically and Github
 
 To reduce app size, heavy word image files can not be delivered with the app. Instead they are dynamically loaded from the internet whenever a word is shown within the app.
@@ -94,6 +120,8 @@ https://github.com/Leelu55/Articulus/master/model/images/traffic-light-876056__3
 
 For the current word image Statically checks if the imageis already in its cache. If so, it is delivered directly from cache, otherwise it's downloaded from Github Articulus repo.
 
+---
+
 ## State Engine
 
 **Lesson Flow**
@@ -109,6 +137,8 @@ Text-to-speech output of lesson words, speech recognition of user answers and th
 ![State Engine](./doc/stateTransitions.svg)
 
 Look inside the implementation of the state engine <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L6">here</a>, <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L19">here</a> and <a href="https://github.com/Leelu55/Articulus/blob/99ec9166bd0d1331d684998d30879f7bffea8528/stores/UIStore.ts#L128">here</a>.
+
+---
 
 ## State Management with MobX
 
@@ -126,6 +156,8 @@ The app state is split into two stores:
 - [UIStore](./stores/UIStore.ts) for UI state including the state engine
 - [WordsStore](./stores/WordsStore.ts) for app data state and keeping track of learning progress
 
+---
+
 ## Speech-To-Text and Text-To-Speech
 
 As an audiobased learning app Articulus supports voice commands as answers. During a lesson each displayed word is pronounced by the app using the <a href="https://github.com/ak1394/react-native-tts#speaking">React Native TTS library</a>. The speech-to-text functionality was implemented using the <a href="https://github.com/react-native-voice/voice">React Native Voice library</a>. Listener methods for both libraries are configured inside [audioVoice.ts](./libs/audioVoice.ts).
@@ -140,6 +172,8 @@ The built-in error handling of the voice recognition library is implemented to a
 2. includes an article ('der', 'die' or 'das').
 
 If both conditions are met, it returns the article. The extracted article is then compared to the correct word article. Otherwise the word is again being repeated up to two times, then skipped.
+
+---
 
 ## Animations
 
@@ -161,6 +195,8 @@ Articulus uses a bunch of nice Vector Graphics (SVGs), many of them taken from [
 **Animating SVGs**
 
 After converting an SVG to an ordinary RN Component, we can also apply complex RN Animations to those SVGs, like [here](./components/SVGs/UnicornCat.tsx), [here](./components/intro/Slide2.tsx) and [here](./components/intro/Slide3.tsx).
+
+---
 
 ## Learning Algorithm
 
@@ -186,6 +222,8 @@ For example a word with a slot of 1 will be repeated the day after tomorrow, a w
 
 ```
 
+---
+
 ## Testing
 
 Currently, there are only a handful of unit tests available, only for some of the most hairy parts of the app:
@@ -198,6 +236,8 @@ Currently, there are only a handful of unit tests available, only for some of th
 Although that's not nearly enough tests, the existing ones in conjunction with the [State Engine](#state-engine) make the Articulus development "feel" quiet stable at the moment.
 
 Tests are run manually with `yarn test` or automatically during CI/CD.
+
+---
 
 ## CD and CI with Bitrise
 
